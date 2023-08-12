@@ -4,10 +4,11 @@ main:
     url: /Projects/
   - title: "Work Experiences"
     url: /Work%Experiences/
-  - #title: "Resources"
-    #url: /resources/
+  - title: "Skills"
+    url: /skills/
   - title: "Awards and Achievements"
     url: /Awards%and%Achievements/
   - title: "Documents"
     url: /documents/  
+    
     # main links
