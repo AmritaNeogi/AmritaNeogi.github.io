@@ -1,7 +1,7 @@
 ---
 layout: single
-title: "Publications"
-permalink: /publications/
+title: "Awards and Achievements"
+permalink: /Awards and Achievements/
 date: 2023-7-24
 categories: pages
 ---

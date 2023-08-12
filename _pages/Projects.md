@@ -1,7 +1,7 @@
 ---
 layout: single
-title: "Research"
-permalink: /Research/
+title: "Projects"
+permalink: /Projects/
 date: 2023-7-21
 categories: pages
 toc: true

@@ -2,12 +2,12 @@
 main:
   - title: "Projects"
     url: /Research/
-  - title: "Work Experiences & Skills"
-    url: /Skills%20and%20Awards/
+  - title: "Work Experiences and Skills"
+    url: /Work%Experiences%and%Skills/
   - #title: "Resources"
     #url: /resources/
-  - title: "Awards & Achievements"
-    url: /publications/
+  - title: "Awards and Achievements"
+    url: /Awards%and%Achievements/
   - title: "Documents"
     url: /documents/  
     # main links
