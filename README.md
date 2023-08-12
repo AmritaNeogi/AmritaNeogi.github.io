@@ -1,1 +1,1 @@
-# [Krishnendu Mukheree's personal website](https://mukherjee07.github.io/)
+# [Amrita Neogi's personal website](https://AmritaNeogi.github.io/)
