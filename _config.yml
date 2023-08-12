@@ -108,8 +108,7 @@ author:
   name             : "Amrita Neogi"
   avatar           : "/assets/images/Amrita_avatar.png"
   bio              : "Master of Science in Data Science"
-  location         : "The University of Arizona
-                      Tucson, Arizona"
+  location         : "University of Arizona"                      
   email            : "amritaneogi@arizona.edu"
   links:
     - label: "amritaneogi@arizona.edu"
