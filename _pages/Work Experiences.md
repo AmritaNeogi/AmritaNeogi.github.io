@@ -1,7 +1,7 @@
 ---
 layout: single
-title: "Work Experiences and Skills"
-permalink: /Work Experiences and Skills/
+title: "Work Experiences"
+permalink: /Work Experiences/
 date: 2023-7-21
 categories: pages
 ---

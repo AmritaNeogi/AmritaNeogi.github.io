@@ -2,8 +2,8 @@
 main:
   - title: "Projects"
     url: /Projects/
-  - title: "Work Experiences and Skills"
-    url: /Work%Experiences%and%Skills/
+  - title: "Work Experiences"
+    url: /Work%Experiences/
   - #title: "Resources"
     #url: /resources/
   - title: "Awards and Achievements"
