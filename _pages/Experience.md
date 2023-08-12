@@ -6,8 +6,9 @@ date: 2023-7-21
 categories: pages
 ---
 
-## University of Arizona, Arid Lab ##                                      ## Feb 2023 - Present ##
-### Graduate Research Assistant ###
+### I. University of Arizona, Arid Lab ###                                        
+#### Graduate Research Assistant ####
+   #### Feb 2023 - Present ####
 
 
 
@@ -20,9 +21,9 @@ categories: pages
 
 
 
-
-## Tata Consultancy Services ##                                            ## Mar 2018 - July 2022 ##
-### System Engineer ###
+### II. Tata Consultancy Services ###                                           
+#### System Engineer ####
+   #### Mar 2018 - July 2022 ####
 
 **ETL experience working with Informatica PowerCenter 9.x**:
 1. Exhibited adeptness in utilizing Informatica Power Exchange and PowerCenter 9.x to perform data extraction, transformation, and loading from a variety of sources, comprising mainframe systems, flat files, Teradata databases, and EDW (Enterprise Data Warehouse). 
