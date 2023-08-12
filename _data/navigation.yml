@@ -1,11 +1,13 @@
 # main links
 main:
-  - title: "My Research"
+  - title: "Projects"
     url: /Research/
-  - title: "Skills and Awards"
+  - title: "Work Experiences & Skills"
     url: /Skills%20and%20Awards/
-  - title: "Resources"
-    url: /resources/
-  - title: "Publications"
+  - #title: "Resources"
+    #url: /resources/
+  - title: "Awards & Achievements"
     url: /publications/
+  - title: "Documents"
+    url: /documents/  
     # main links
