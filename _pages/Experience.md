@@ -1,10 +1,26 @@
 ---
 layout: single
-title: "Work Experiences"
-permalink: /Work Experiences/
+title: "Experience"
+permalink: /Experience/
 date: 2023-7-21
 categories: pages
 ---
+
+## University of Arizona, Arid Lab ##                                      ## Feb 2023 - Present ##
+### Graduate Research Assistant ###
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Tata Consultancy Services ##                                            ## Mar 2018 - July 2022 ##
 ### System Engineer ###
 

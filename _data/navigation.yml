@@ -2,13 +2,13 @@
 main:
   - title: "Projects"
     url: /Projects/
-  - title: "Work Experiences"
-    url: /Work%Experiences/
+  - title: "Experience"
+    url: /Experience/
   - title: "Skills"
     url: /skills/
   - title: "Awards and Achievements"
     url: /Awards%and%Achievements/
   - title: "Documents"
     url: /documents/  
-    
+
     # main links
