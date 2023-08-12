@@ -3,11 +3,12 @@ permalink: /
 title: "About me"
 subtitle: "Welcome to my website!"
 excerpt: "About me"
-author_profile: true
+author_profile: false
 redirect_from: 
   - /about/
   - /about.html
 ---
+
 I'm delighted to have you here and share a glimpse into my journey.
 
 I am currently in the final year of my **Master of Science in Data Science** program at the esteemed University of Arizona, Tucson. Throughout my academic journey, I have consistently maintained a perfect **CGPA of 4.0 on a 4.0 scale**, showcasing my dedication to excellence and passion for learning in the field of data science.
