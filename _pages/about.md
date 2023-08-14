@@ -16,9 +16,8 @@ redirect_from:
 
 <br>I'm delighted to have you here and share a glimpse into my journey.
 </p>
-  <br>
-  <p style="line-height: 1.5;">
-I am currently in the final year of my <strong>Master of Science in Data Science </strong> program at the esteemed University of Arizona, Tucson. Throughout my academic journey, I have consistently maintained a perfect <strong>CGPA of 4.0 on a 4.0 scale</strong>, showcasing my dedication to excellence and passion for learning in the field of data science.
+<p style="line-height: 1.5;">
+I am currently in the final year of my masters program, majoring in <strong>Data Science</strong> program at the esteemed University of Arizona, Tucson. I am deeply passionate about data and intrigued by the process of extracting meaningful insights from it.
 <br>
 <br>
 Prior to my academic pursuits, I gained invaluable real-world experience as an Informatica ETL developer at Tata Consultancy Services in India. Over a span of <strong>4.5 years</strong>, I delved into the intricate realm of transforming raw data into meaningful insights. My time there not only refined my technical skills but also ignited my passion for leveraging data to solve complex business challenges. This hands-on experience not only equipped me with technical expertise but also fostered a deep appreciation for the practical applications of data science.
