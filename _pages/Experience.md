@@ -10,7 +10,7 @@ categories: pages
   <p style="line-height: 1.5; font-size: 18px;">
       <strong><br> I. University of Arizona, Department of Pediatrics 
       </strong><br>                          
-            <strong>Graduate Research Assistant     </strong>
+            <strong>Graduate Research Assistant&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
                   <i>Feb 2023 - Present</i>
    </p>
      <br>
@@ -39,7 +39,7 @@ categories: pages
      <br>
       <p style="line-height: 1.5;font-size: 18px;">
          <strong> II. Tata Consultancy Services </strong><br>                                           
-                  <strong> Systems Engineer     </strong>
+                  <strong> Systems Engineer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
                   <i>Mar 2018 - July 2022</i>
        </p>
      <br>
