@@ -4,7 +4,8 @@ main:
     url: /Projects/
   - title: "Experience"
     url: /Experience/
-
+  - title: "Skills"
+    url: /skills/
   - title: "Accomplishments"
     url: /Awards/
   - title: "Documents"
