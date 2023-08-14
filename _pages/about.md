@@ -8,6 +8,8 @@ redirect_from:
   - /about/
   - /about.html
 ---
+<div style="text-align: center; font-size: 14px;">
+  <p style="line-height: 1.5;">
 
 I'm delighted to have you here and share a glimpse into my journey.
 
@@ -21,4 +23,5 @@ As I approach the culmination of my academic journey, I am excited to blend my a
 
 Thank you for visiting my website. Feel free to explore further and connect with me to share insights, ideas, and opportunities.
 
-
+  </p>
+</div>
