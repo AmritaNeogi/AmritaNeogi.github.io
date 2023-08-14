@@ -26,17 +26,18 @@ categories: pages
 
 .progress-95 {
   background-color: #4caf50; /* Green */
-  width: 95%;
 }
 
 .progress-90 {
   background-color: #ff9800; /* Yellow */
-  width: 90%;
 }
 
 .progress-80 {
   background-color: #ff5722; /* Red */
-  width: 80%;
+}
+
+.progress-75 {
+  background-color: #ffcc00; /* Orange */
 }
 </style>
 
@@ -45,27 +46,27 @@ categories: pages
 <div class="skill">
   <span class="skill-name">Python</span>
   <div class="progress-bar">
-    <div class="progress progress-95"></div>
+    <div class="progress progress-95" style="width: 95%;"></div>
   </div>
 </div>
 
 <div class="skill">
   <span class="skill-name">R</span>
   <div class="progress-bar">
-    <div class="progress progress-95"></div>
+    <div class="progress progress-95" style="width: 95%;"></div>
   </div>
 </div>
 
 <div class="skill">
   <span class="skill-name">SQL</span>
   <div class="progress-bar">
-    <div class="progress progress-90"></div>
+    <div class="progress progress-90" style="width: 90%;"></div>
   </div>
 </div>
 <div class="skill">
   <span class="skill-name">Core Java</span>
   <div class="progress-bar">
-    <div class="progress progress-750"></div>
+    <div class="progress progress-75" style="width: 75%;"></div>
   </div>
 </div>
 
@@ -74,39 +75,39 @@ categories: pages
 <div class="skill">
   <span class="skill-name">Data Wrangling and Engineering</span>
   <div class="progress-bar">
-    <div class="progress progress-95"></div>
+    <div class="progress progress-95" style="width: 95%;"></div>
   </div>
 </div>
 
 <div class="skill">
   <span class="skill-name">Machine Learning</span>
   <div class="progress-bar">
-    <div class="progress progress-95"></div>
+    <div class="progress progress-95" style="width: 95%;"></div>
   </div>
 </div>
 
 <div class="skill">
   <span class="skill-name">Data Visualization</span>
   <div class="progress-bar">
-    <div class="progress progress-85"></div>
+    <div class="progress progress-85" style="width: 85%;"></div>
   </div>
 </div>
 
 <div class="skill">
   <span class="skill-name">Exploratory Data Analysis (EDA) and Feature Engineering</span>
   <div class="progress-bar">
-    <div class="progress progress-96"></div>
+    <div class="progress progress-96" style="width: 96%;"></div>
   </div>
 </div>
 <div class="skill">
   <span class="skill-name">Strategic Planning & Decision Making</span>
   <div class="progress-bar">
-    <div class="progress progress-92"></div>
+    <div class="progress progress-92" style="width: 92%;"></div>
   </div>
 </div>
 <div class="skill">
   <span class="skill-name">Problem Solving</span>
   <div class="progress-bar">
-    <div class="progress progress-80"></div>
+    <div class="progress progress-80" style="width: 80%;"></div>
   </div>
 </div>
