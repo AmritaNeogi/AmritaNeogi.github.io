@@ -51,7 +51,7 @@ toc_icon: "columns"
     <p style="line-height: 1.5; font-size: 15px;">
       In the realm of cutting-edge technology, the project embarked on a journey of unraveling the potential of deep convolution networks for largescale image classification. Demonstrating precision, the project culminated in an impressive accuracy rate of 91.21%. <br>
       Employing a sophisticated arsenal of Python libraries, including NumPy, Pandas, and PyTorch, the project navigated the complex landscape of image classification.<br>
-      <a href="https://github.com/AmritaNeogi/Data-Science-Project-Salary-Prediction">[GitHub Link]</a><br>      
+      <a href="https://github.com/ISTA421INFO521/final-project-AmritaNeogi">[GitHub Link]</a><br>      
     </p>
    </div> 
     
