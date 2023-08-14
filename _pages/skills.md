@@ -24,20 +24,23 @@ categories: pages
   height: 100%;
 }
 
+.progress-100 {
+  background-color: #4caf50; /* Green */
+}
 .progress-95 {
   background-color: #4caf50; /* Green */
 }
-
+.progress-92 {
+  background-color: #4caf50; /* Yellow */
+}
 .progress-90 {
   background-color: #ff9800; /* Yellow */
 }
-
 .progress-80 {
-  background-color: #ff5722; /* Red */
+  background-color: #ff5722; /* Orange */
 }
-
 .progress-75 {
-  background-color: #ffcc00; /* Orange */
+  background-color: #ffcc00; /* Red */
 }
 </style>
 
@@ -89,14 +92,14 @@ categories: pages
 <div class="skill">
   <span class="skill-name">Data Visualization</span>
   <div class="progress-bar">
-    <div class="progress progress-85" style="width: 85%;"></div>
+    <div class="progress progress-90" style="width: 90%;"></div>
   </div>
 </div>
 
 <div class="skill">
   <span class="skill-name">Exploratory Data Analysis (EDA) and Feature Engineering</span>
   <div class="progress-bar">
-    <div class="progress progress-96" style="width: 96%;"></div>
+    <div class="progress progress-100" style="width: 100%;"></div>
   </div>
 </div>
 <div class="skill">
