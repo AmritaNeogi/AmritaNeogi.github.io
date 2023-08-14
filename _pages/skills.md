@@ -62,20 +62,19 @@ categories: pages
     <div class="progress progress-90"></div>
   </div>
 </div>
-
-## Data Analysis Skills
-
 <div class="skill">
-  <span class="skill-name">Decision Making</span>
+  <span class="skill-name">Core Java</span>
   <div class="progress-bar">
-    <div class="progress progress-90"></div>
+    <div class="progress progress-750"></div>
   </div>
 </div>
 
+## Data Science and Analytic Skills
+
 <div class="skill">
-  <span class="skill-name">Problem Solving</span>
+  <span class="skill-name">Data Wrangling and Engineering</span>
   <div class="progress-bar">
-    <div class="progress progress-80"></div>
+    <div class="progress progress-95"></div>
   </div>
 </div>
 
@@ -83,5 +82,31 @@ categories: pages
   <span class="skill-name">Machine Learning</span>
   <div class="progress-bar">
     <div class="progress progress-95"></div>
+  </div>
+</div>
+
+<div class="skill">
+  <span class="skill-name">Data Visualization</span>
+  <div class="progress-bar">
+    <div class="progress progress-85"></div>
+  </div>
+</div>
+
+<div class="skill">
+  <span class="skill-name">Exploratory Data Analysis (EDA) and Feature Engineering</span>
+  <div class="progress-bar">
+    <div class="progress progress-96"></div>
+  </div>
+</div>
+<div class="skill">
+  <span class="skill-name">Strategic Planning & Decision Making</span>
+  <div class="progress-bar">
+    <div class="progress progress-92"></div>
+  </div>
+</div>
+<div class="skill">
+  <span class="skill-name">Problem Solving</span>
+  <div class="progress-bar">
+    <div class="progress progress-80"></div>
   </div>
 </div>
