@@ -35,7 +35,7 @@ Thank you for visiting my website. Feel free to explore further and connect with
    <div style="text-align: justify; font-size: 17px;">     
     <h2><strong><br>EDUCATION</strong></h2><br>  
     <p style="line-height: 1.5; font-size: 15px;">
-     <strong><i class="fa fa-university"></i>University of Arizona, Tucson, Arizona</strong><br>
+     <strong><i class="fa fa-university"></i> University of Arizona, Tucson, Arizona</strong><br>
      <i>Aug 2022 - Present</i> <br>
      Master of Science in Data Science (CGPA: 4 out of 4 scale)
     <br>
