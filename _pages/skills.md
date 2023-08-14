@@ -10,39 +10,74 @@ categories: pages
 .skill {
   margin-bottom: 20px;
 }
-
 .skill-name {
   font-weight: bold;
 }
-
 .progress-bar {
   height: 15px;
   background-color: #f3f3f3;
 }
-
 .progress {
   height: 100%;
-  width: 60%; /* Change this value to reflect the skill level */
+  width: 95%; /* Change this value to reflect the skill level */
   background-color: #4caf50;
 }
 </style>
-
-## Skills
-
+# Programming Skills
 <div class="skill">
-  <span class="skill-name">Skill 1</span>
+  <span class="skill-name">Python</span>
   <div class="progress-bar">
     <div class="progress"></div>
   </div>
 </div>
-
-<div class="skill">
-  <span class="skill-name">Skill 2</span>
-  <div class="progress-bar">
-    <div class="progress"></div>
-  </div>
-</div>
-
 <!-- Repeat the above structure for each skill -->
 
+<style>
+.skill {
+  margin-bottom: 20px;
+}
+.skill-name {
+  font-weight: bold;
+}
+.progress-bar {
+  height: 15px;
+  background-color: #f3f3f3;
+}
+.progress {
+  height: 100%;
+  width: 95%; /* Change this value to reflect the skill level */
+  background-color: #4caf50;
+}
+</style>
+<div class="skill">
+  <span class="skill-name">R</span>
+  <div class="progress-bar">
+    <div class="progress"></div>
+  </div>
+</div>
+<!-- Repeat the above structure for each skill -->
 
+<style>
+.skill {
+  margin-bottom: 20px;
+}
+.skill-name {
+  font-weight: bold;
+}
+.progress-bar {
+  height: 15px;
+  background-color: #f3f3f3;
+}
+.progress {
+  height: 100%;
+  width: 90%; /* Change this value to reflect the skill level */
+  background-color: #4caf50;
+}
+</style>
+<div class="skill">
+  <span class="skill-name">SQL</span>
+  <div class="progress-bar">
+    <div class="progress"></div>
+  </div>
+</div>
+<!-- Repeat the above structure for each skill -->
