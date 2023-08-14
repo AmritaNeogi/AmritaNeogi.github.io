@@ -7,7 +7,7 @@ categories: pages
 ---
 
 <div style="text-align: justify;">
-  <p style="line-height: 1.5; font-size: 18px;">
+  <p style="line-height: 1.5; font-size: 17px;">
       <strong><br> UNIVERSITY OF ARIZONA, DEPARTMENT OF PEDIATRICS 
       </strong><br>                          
             <strong>Graduate Research Assistant&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
