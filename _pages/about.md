@@ -11,7 +11,7 @@ redirect_from:
 <head>
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
-<div style="text-align: justify; font-size: 20px;">
+<div style="text-align: justify; font-size: 18px;">
   <p style="line-height: 1.5;">
 
 I'm delighted to have you here and share a glimpse into my journey.
