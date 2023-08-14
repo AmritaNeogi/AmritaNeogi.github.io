@@ -8,7 +8,7 @@ categories: pages
 
 <div style="text-align: justify;">
   <p style="line-height: 1.5; font-size: 18px;">
-      <strong> I. University of Arizona, Department of Pediatrics 
+      <strong><br> I. University of Arizona, Department of Pediatrics 
       </strong><br>                          
             <strong>Graduate Research Assistant     </strong>
                   <i>Feb 2023 - Present</i>

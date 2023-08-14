@@ -14,7 +14,7 @@ redirect_from:
 <div style="text-align: justify; font-size: 18px;">
   <p style="line-height: 1.5;">
 
-I'm delighted to have you here and share a glimpse into my journey.
+<br>I'm delighted to have you here and share a glimpse into my journey.
 </p>
   <br>
   <p style="line-height: 1.5;">
