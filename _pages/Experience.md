@@ -8,38 +8,39 @@ categories: pages
 
 <div style="text-align: justify;">
   <p style="line-height: 1.5; font-size: 18px;">
-      <strong> I. University of Arizona, Department of Pediatrics </strong>                                      
-            <strong>Graduate Research Assistant </strong>
-                  <strong>Feb 2023 - Present</strong>
+      <strong> I. University of Arizona, Department of Pediatrics 
+      </strong><br>                          
+            <strong>Graduate Research Assistant </strong><br>
+                  <u>Feb 2023 - Present</u>
    </p>
      <br>
        <p style="line-height: 1.5;font-size: 15px;">
         
-1. **Thorough Data Extraction and Standardization in REDCap:**
+1. <strong>Thorough Data Extraction and Standardization in REDCap:</strong><br>
    I exhibit a strong ability to extract data from various sources and transform them into standardized formats using the REDCap platform. This involves a meticulous approach to ensure that data is accurately captured and formatted for further analysis. By effectively managing the data extraction process, I contribute to the creation of analytical project databases that serve as the foundation for insightful research and decision-making.
 
-2. **Optimization of Database Programs for Seamless Querying:**
+2. <strong>Optimization of Database Programs for Seamless Querying:</strong><br>
    One of my key strengths lies in optimizing database programs to facilitate smooth and efficient data querying processes. This involves enhancing the performance of database systems, allowing users to retrieve the required information rapidly and without encountering performance bottlenecks. I am also dedicated to implementing robust security measures during data transfers and procedures, safeguarding the integrity of the system and maintaining compliance with data protection regulations.
 
-3. **Precise Data Cleaning and Linkage Protocols with Comprehensive Documentation:**<br>
+3. <strong>Precise Data Cleaning and Linkage Protocols with Comprehensive Documentation:</strong><br>
    I excel at executing data cleaning and data linkage protocols with a high degree of precision. This involves identifying and rectifying inaccuracies, inconsistencies, and missing values within datasets. Importantly, I meticulously maintain detailed work logs that document every step of the data refinement process. These comprehensive records serve as valuable references, ensuring the reproducibility of data cleaning procedures and bolstering the credibility of subsequent analyses.
 
-4. **Creation of Data Pipelines from MariaDB to PostgreSQL using Python:**<br>
+4.<strong>Creation of Data Pipelines from MariaDB to PostgreSQL using Python:</strong><br>
    Leveraging my proficiency in Python scripting, I have successfully designed and implemented data pipelines that transfer data from MariaDB to PostgreSQL, transforming and mapping the data to adhere to OMOP (Observational Medical Outcomes Partnership) table structures. This technical capability enables the seamless movement of data between different database systems while ensuring data integrity and compatibility.
 
-5. **Efficient Integration of MTurk Tasks and REDCap Surveys with Data Analysis:**<br>
+5. <strong>Efficient Integration of MTurk Tasks and REDCap Surveys with Data Analysis:</strong><br>
    I have skillfully managed the integration of MTurk tasks and REDCap surveys into a cohesive workflow. After extracting data from completed surveys, I perform data analysis using the R programming language. This streamlined process allows for prompt and comprehensive data analysis following survey completion, contributing to quicker insights and informed decision-making.
 
-6. **Statistical Analysis of Patient Data to Uncover Care Patterns and Demographics:**<br>
+6. <strong>Statistical Analysis of Patient Data to Uncover Care Patterns and Demographics:
+</strong><br>
    Through rigorous statistical tests and regression analysis, I delve into patient data to uncover valuable insights such as care patterns, demographics, and factors influencing engagement and adherence. This analytical approach enables the identification of trends, correlations, and potential causal relationships within the data. These findings are crucial for informing healthcare strategies, optimizing patient care, and enhancing engagement strategies.
-
-These elaborations provide a comprehensive understanding of your expertise and contributions in various data-related tasks, showcasing your ability to manage data effectively, ensure data integrity, and extract meaningful insights from complex datasets.
-         </p>       
+ 
+  </p>       
      <br>
       <p style="line-height: 1.5;font-size: 18px;">
-         <strong> II. Tata Consultancy Services </strong>                                           
-                  <strong> System Engineer </strong>
-                  <strong>Mar 2018 - July 2022</strong>
+         <strong> II. Tata Consultancy Services </strong><br>                                           
+                  <strong> Systems Engineer </strong><br>
+                  <u>Mar 2018 - July 2022</u>
        </p>
      <br>
        <p style="line-height: 1.5;font-size: 15px;">
