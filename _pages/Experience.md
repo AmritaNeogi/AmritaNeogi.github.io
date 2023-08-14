@@ -8,7 +8,7 @@ categories: pages
 
 <div style="text-align: justify;">
   <p style="line-height: 1.5; font-size: 18px;">
-      <strong><br> I. University of Arizona, Department of Pediatrics 
+      <strong><br> UNIVERSITY OF ARIZONA, DEPARTMENT OF PEDIATRICS 
       </strong><br>                          
             <strong>Graduate Research Assistant&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
                   <i>Feb 2023 - Present</i>
@@ -38,7 +38,7 @@ categories: pages
   </p>       
      <br>
       <p style="line-height: 1.5;font-size: 18px;">
-         <strong> II. Tata Consultancy Services </strong><br>                                           
+         <strong>TATA CONSULTANCY SERVICES </strong><br>                                           
                   <strong> Systems Engineer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
                   <i>Mar 2018 - July 2022</i>
        </p>
