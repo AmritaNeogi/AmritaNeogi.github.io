@@ -80,7 +80,7 @@ categories: pages
 <br>
 1. Offered valuable technical guidance and oversaw review processes in a dynamic and fast-paced setting, demonstrating the ability to work effectively with minimal supervision. Ensured high-quality outcomes and maintained governance standards despite the challenging environment.<br>
 <br>
-2. Mentored a team of 7 junior developers, sharing best practices for ETL job development using Informatica. Additionally, adeptly communicated project status updates to foster transparency and cohesion within the team, contributing to efficient workflows.<br>
+2. Mentored a team of 12 junior developers, sharing best practices for ETL job development using Informatica. Additionally, adeptly communicated project status updates to foster transparency and cohesion within the team, contributing to efficient workflows.<br>
 <br>
 3. Provided expert guidance and comprehensive training to junior ETL developers. Covered essential ETL development methodologies, data modeling best practices, and fundamental data integration concepts. This mentoring effort empowered the team with essential skills and knowledge for optimized data workflows.<br>
 </p>
