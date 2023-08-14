@@ -47,13 +47,13 @@ categories: pages
 
 <strong>ETL experience working with Informatica PowerCenter 9.x</strong>:<br>
 
-1. I have proficiently employed Informatica Power Exchange and PowerCenter 9.x to extract, transform, and load data from diverse sources, including mainframes, flat files, Teradata databases, and EDW systems.<br>
+1. Proficiently utilizing Informatica Power Exchange and PowerCenter 9.x, data extraction, transformation, and loading from a range of sources—including mainframes, flat files, Teradata databases, and EDW systems—have been expertly executed.<br>
 
-2. I have dveloped intricate ETL mappings, worklets, and reusable transformations encompassing filters, expressions, joiners, aggregators, and more, ensuring accurate and meaningful data transformation.<br>
+2. Development of intricate ETL mappings, worklets, and reusable transformations has been a focus. These encompass filters, expressions, joiners, aggregators, and more, ensuring precise and purposeful data transformation.<br>
 
-3. I have built and maintained dynamic data pipelines supporting business intelligence, reporting, and analytics, ensuring seamless data integration and processing.<br>
+3. The establishment and maintenance of dynamic data pipelines have been instrumental in supporting business intelligence, reporting, and analytics needs. This meticulous approach guarantees smooth data integration and processing.<br>
 
-4. I have played a key role in streamlining data analysis processes.Reduced data analysis time by One week by creating reusable ETL components and streamlining workflows and optimizing data-driven decision-making processes.<br>
+4. Significantly streamlining data analysis processes, a key role has been played. Through the creation of reusable ETL components and optimization of workflows, data analysis time was reduced by one week, enhancing data-driven decision-making efficiency.<br>
 
 <strong>UNIX and shell scripting for validation testing</strong>:<br>
 
