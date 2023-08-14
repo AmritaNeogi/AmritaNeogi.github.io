@@ -8,8 +8,8 @@ toc: false
 toc_label: "Project"
 toc_icon: "columns"
 ---
-<section class="text-gray-600 body-font">
- <div style="text-align: justify; font-size: 17px;">        
+
+  <div style="text-align: justify; font-size: 17px;">        
       <h1><strong><br>
       Identifying Leaf Phenology of Deciduous Broadleaf Forests from PhenoCam Images
       </strong></h1><br>
@@ -21,8 +21,8 @@ toc_icon: "columns"
       <a href="https://github.com/AmritaNeogi/PhenoCam-Image-Analysis-Using-CNN">[GitHub Link]</a><br>      
     </p>
    </div> 
- </section>  
-<section class="text-gray-600 body-font">
+
+
   <div style="text-align: justify; font-size: 17px;">     
     <h2><strong><br>Credit Card Fraud Detection</strong></h2><br>
      <p><i>Aug 2023</i></p><br>
@@ -34,9 +34,8 @@ toc_icon: "columns"
       <a href="https://github.com/AmritaNeogi/Data-Science-Project-Credit-Card-Fraud-Detection">[GitHub Link]</a><br>      
     </p>
    </div> 
-   </section>
- 
-<section class="text-gray-600 body-font">
+
+
   <div style="text-align: justify; font-size: 17px;">    
     <h3><strong><br>Salary Prediction</strong></h3><br>
       <p><i>July 2023</i></p><br>
@@ -46,10 +45,9 @@ toc_icon: "columns"
       Through meticulous refinement and adept utilization of the Gradient Descent technique, an exceptionally efficient model was constructed. The core of the accomplishment rests in the notable decrease of the Mean Square Error (MSE). The model rapidly reduced the MSE from a substantial 91.2% to an impressive 6.3%.
       <a href="https://github.com/AmritaNeogi/Data-Science-Project-Salary-Prediction">[GitHub Link]</a><br>      
     </p>
-    </div>
-   </section>
+    </div> 
 
-<section class="text-gray-600 body-font">
+
   <div style="text-align: justify; font-size: 17px;">    
     <h4><strong><br>Design and Implementation of an Image Classifier Using CNN</strong></h4><br>
       <p><i>Dec 2022</i></p><br>
@@ -61,5 +59,5 @@ toc_icon: "columns"
       </a><br>      
     </p>
     </div>    
-    </section>                
+                    
   
