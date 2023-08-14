@@ -10,6 +10,7 @@ toc_icon: "columns"
 ---
 
 <div style="text-align: justify; font-size: 17px;">  
+      <br>
       <h1><strong><br>Identifying Leaf Phenology of Deciduous Broadleaf Forests from PhenoCam Images
       </strong></h1><br>
       <p><i>In progress</i></p> <br>
@@ -32,7 +33,7 @@ toc_icon: "columns"
     </p>
     <br>
     <br>
-    <h2><strong><br>Salary Prediction</strong></h2><br>
+    <h3><strong><br>Salary Prediction</strong></h3><br>
       <p><i>July 2023</i></p><br>
       <img src="https://github.com/AmritaNeogi/AmritaNeogi.github.io/blob/dc2fdd03d92a59c99a38b290d37dca687c485877/assets/images/decidousForest.jpg" alt="CreditCard_Image" style="max-width: 100%; height: auto;" ><br>               
     <p style="line-height: 1.5; font-size: 15px;">
@@ -42,16 +43,14 @@ toc_icon: "columns"
     </p>
      <br>
     <br>
-    <h2><strong><br>Design and Implementation of an Image Classifier Using CNN</strong></h2><br>
+    <h4><strong><br>Design and Implementation of an Image Classifier Using CNN</strong></h4><br>
       <p><i>Dec 2022</i></p><br>
       <img src="https://github.com/AmritaNeogi/AmritaNeogi.github.io/blob/dc2fdd03d92a59c99a38b290d37dca687c485877/assets/images/decidousForest.jpg" alt="CreditCard_Image" style="max-width: 100%; height: auto;" ><br>               
     <p style="line-height: 1.5; font-size: 15px;">
       In the realm of cutting-edge technology, the project embarked on a journey of unraveling the potential of deep convolution networks for largescale image classification. Demonstrating precision, the project culminated in an impressive accuracy rate of 91.21%. <br>
       Employing a sophisticated arsenal of Python libraries, including NumPy, Pandas, and PyTorch, the project navigated the complex landscape of image classification.<br>
-      <a href="https://github.com/ISTA421INFO521/final-project-AmritaNeogi">[GitHub Link]</a><br>      
+      <a href="https://github.com/ISTA421INFO521/final-project-AmritaNeogi">[GitHub Link]
+      </a><br>      
     </p>
-
-
-
     </div>                    
   
