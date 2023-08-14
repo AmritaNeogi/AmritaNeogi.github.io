@@ -10,7 +10,7 @@ toc_icon: "columns"
 ---
 
 <div style="text-align: justify; font-size: 17px;">  
-      <br>
+      <p></p><br>
       <h1><strong><br>Identifying Leaf Phenology of Deciduous Broadleaf Forests from PhenoCam Images
       </strong></h1><br>
       <p><i>In progress</i></p> <br>
