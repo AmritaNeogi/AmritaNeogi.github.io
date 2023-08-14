@@ -9,11 +9,11 @@ categories: pages
    <div style="text-align: justify; font-size: 17px;">     
     <h2><strong><br>CERTIFICATION</strong></h2><br>                
     <p style="line-height: 1.5; font-size: 15px;">
-      IBM Data Science by Coursera&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 	<i>In Progress</i><br>
+      IBM Data Science by Coursera&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 	<i>In Progress</i><br><br>
       Google Data Analytics by Coursera&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/EMEK5BC3QWPA">Link</a><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; June 2023</i> <br>
+      <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/EMEK5BC3QWPA">[Link]</a><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; June 2023</i> <br><br>
       Google Project Management by Coursera&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/UCSV3HVH4LQL">Link</a><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; July 2023</i> <br>                
+      <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/UCSV3HVH4LQL">[Link]</a><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; July 2023</i> <br>                
     </p>
    </div>                                                                  
 
