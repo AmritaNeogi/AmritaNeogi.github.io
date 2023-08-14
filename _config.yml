@@ -106,7 +106,7 @@ analytics:
 # Site Author
 author:
   name             : "Amrita Neogi"
-  avatar           : "/assets/images/Amrita_avatar.jpg"
+  avatar           : "/assets/images/Amrita_avatar.png"
   bio              : "Master of Science in Data Science"
   location         : "University of Arizona"                      
   email            : "amritaneogi@arizona.edu"
