@@ -7,12 +7,13 @@ categories: pages
 ---
 
    <div style="text-align: justify; font-size: 17px;">     
-    <h2><strong><br>CERTIFICATION</strong></h2><br>
-     <p><i>In Progress</i></p><br>            
+    <h2><strong><br>CERTIFICATION</strong></h2><br>                
     <p style="line-height: 1.5; font-size: 15px;">
-      IBM Data Science by Coursera 	<i>   In Progress</i><br>
-      <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/EMEK5BC3QWPA">Google Data Analytics by Coursera  <i>   June 2023</i></a> <br>
-      <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/UCSV3HVH4LQL">Google Project Management by Coursera  <i>   July 2023</i></a>           
+      IBM Data Science by Coursera&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 	<i>In Progress</i><br>
+      Google Data Analytics by Coursera&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/EMEK5BC3QWPA">Link</a><i>June 2023</i> <br>
+      Google Project Management by Coursera&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/UCSV3HVH4LQL">Link</a><i>July 2023</i> <br>                
     </p>
    </div>                                                                  
 
