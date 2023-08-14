@@ -27,7 +27,7 @@ Prior to my academic pursuits, I gained invaluable real-world experience as an I
 
 <br>
 
-While my journey might seem unique, my educational foundation in Electrical Engineering plays a significant role in shaping my perspective. I pursued my <strong>Bachelors in Electrical Engineering</strong>, yet my passion for computer science and technology was unswerving, eventually steering me towards the exciting world of data science.
+While my journey might seem unique, my educational foundation in Electrical Engineering plays a significant role in shaping my perspective. I pursued my bachelors in <strong>Electrical Engineering</strong>, yet my passion for computer science and technology was unswerving, eventually steering me towards the exciting world of data science.
 
 <br> 
 <br>
