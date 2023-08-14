@@ -57,20 +57,3 @@ toc_icon: "columns"
     
 
 
-#####################################################################################################
-
-
-
-                     
-  <div style="text-align: justify; font-size: 17px;">        
-      <h1><strong><br>
-      Identifying Leaf Phenology of Deciduous Broadleaf Forests from PhenoCam Images
-      </strong></h1><br>
-      <p><i>In progress</i></p> <br>
-      <img src="https://github.com/AmritaNeogi/AmritaNeogi.github.io/blob/dc2fdd03d92a59c99a38b290d37dca687c485877/assets/images/decidousForest.jpg" alt="PhenoCam_Image" style="max-width: 100%; height: auto;" ><br>               
-    <p style="line-height: 1.5; font-size: 15px;">
-      The ongoing project undertaken by the individual showcases pioneering efforts in advancing phenological research through the integration of state-of-the-art technology and deep learning techniques. The focus lies on predictive modeling and large-scale validation, with the goal of revealing the intricate correlations between PhenoCam images and the development of vegetation phenology <br>
-      At its essence, the project revolves around the creation of a predictive tool employing CNN Regression to anticipate leaf phenology in deciduous broadleaf forests across diverse sites. The project employs three primary methods - AlexNet, ResNet-50, and ResNet-101 - each contributing distinctively to the comprehension of phenology patterns. By harnessing the capabilities of deep learning, the project seeks to unearth nuanced insights from PhenoCam images, potentially uncovering subtleties that evade human observation.<br>
-      <a href="https://github.com/AmritaNeogi/PhenoCam-Image-Analysis-Using-CNN">[GitHub Link]</a><br>      
-    </p>
-   </div> 
