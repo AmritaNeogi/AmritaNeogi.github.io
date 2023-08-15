@@ -37,12 +37,14 @@ Thank you for visiting my website. Feel free to explore further and connect with
     <p style="line-height: 1.5; font-size: 15.5px;">
      <strong><i class="fa fa-university"></i> University of Arizona, Tucson, Arizona</strong><br>
      <i>Aug 2022 - Present</i> <br>
-     Master of Science in Data Science (GPA: 4 out of 4 scale)
+     Master of Science in Data Science <br>
+     GPA: 4 out of 4 scale <br>
     <br>
     <br>
      <strong><i class="fa fa-university"></i> University of Engineering and Management, Jaipur, India</strong><br>
      <i>Aug 2017 - May 2017</i> <br>
-     Bachelor of Technology in Electrical Engineering (GPA: 7.66 out of 10 scale)
+     Bachelor of Technology in Electrical Engineering <br>
+     GPA: 7.66 out of 10 scale <br>
     <br>
     <br>
     </p>
