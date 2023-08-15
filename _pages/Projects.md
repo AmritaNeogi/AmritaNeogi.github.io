@@ -25,7 +25,7 @@ toc_icon: "columns"
    <div style="text-align: justify; font-size: 17px;">     
     <h2><strong><br>Credit Card Fraud Detection</strong></h2>
      <p><i>Aug 2023</i></p><br>
-     <div class="center"><img src="/assets/images/decidousForest.jpg" alt="Project Image"> </div>
+     <div class="center"><img src="/assets/images/credit_card.jpeg" alt="Project Image"> </div>
       <br>               
     <p style="line-height: 1.5; font-size: 15px;">
       In the realm of digital transactions, security is paramount. My project focuses on creating a robust credit card fraud detection model using advanced machine learning algorithms. <br> 
@@ -38,7 +38,7 @@ toc_icon: "columns"
    <div style="text-align: justify; font-size: 17px;">     
     <h2><strong><br>Salary Prediction</strong></h2>
      <p><i>July 2023</i></p><br>
-      <div class="center"><img src="/assets/images/decidousForest.jpg" alt="Project Image"> </div>
+      <div class="center"><img src="/assets/images/salary_pred.jpg" alt="Project Image"> </div>
       <br>               
     <p style="line-height: 1.5; font-size: 15px;">
       The objective of this project is to construct a model for salary prediction contingent on years of experience.<br>
@@ -50,7 +50,7 @@ toc_icon: "columns"
    <div style="text-align: justify; font-size: 17px;">     
     <h2><strong><br>Design and Implementation of an Image Classifier Using CNN</strong></h2>
      <p><i>Dec 2022</i></p><br>
-      <div class="center"><img src="/assets/images/decidousForest.jpg" alt="Project Image"></div>
+      <div class="center"><img src="/assets/images/image_classifier.png" alt="Project Image"></div>
       <br>               
     <p style="line-height: 1.5; font-size: 15px;">    
       In the realm of cutting-edge technology, the project embarked on a journey of unraveling the potential of deep convolution networks for largescale image classification. Demonstrating precision, the project culminated in an impressive accuracy rate of 91.21%. <br>
