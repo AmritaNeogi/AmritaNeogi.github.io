@@ -33,8 +33,8 @@ Thank you for visiting my website. Feel free to explore further and connect with
 </div>
 
    <div style="text-align: justify; font-size: 17px;">     
-    <h2><strong><br>EDUCATION</strong></h2><br>  
-    <p style="line-height: 1.5; font-size: 15px;">
+    <h2><strong><br>EDUCATION</strong></h2> 
+    <p style="line-height: 1.5; font-size: 15.5px;">
      <strong><i class="fa fa-university"></i> University of Arizona, Tucson, Arizona</strong><br>
      <i>Aug 2022 - Present</i> <br>
      Master of Science in Data Science (GPA: 4 out of 4 scale)
@@ -49,7 +49,7 @@ Thank you for visiting my website. Feel free to explore further and connect with
    </div> 
     <div style="text-align: justify; font-size: 17px;">     
     <h2><strong><br>INTEREST</strong></h2> 
-    <p style="line-height: 1.5; font-size: 15px;">
+    <p style="line-height: 1.5; font-size: 15.5px;">
      1. Data Scientist <br>
      2. Data Analytics <br>
      3. Data Engineering
