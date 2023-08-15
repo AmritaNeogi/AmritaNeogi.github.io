@@ -40,8 +40,7 @@ Thank you for visiting my website. Feel free to explore further and connect with
      Master of Science in Data Science <br>
      GPA: 4 out of 4 scale <br>
     <br>
-    <br>
-     <strong><i class="fa fa-university"></i> University of Engineering and Management, Jaipur, India</strong><br>
+    <strong><i class="fa fa-university"></i> University of Engineering and Management, Jaipur, India</strong><br>
      <i>Aug 2017 - May 2017</i> <br>
      Bachelor of Technology in Electrical Engineering <br>
      GPA: 7.66 out of 10 scale <br>
