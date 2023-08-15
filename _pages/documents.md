@@ -6,14 +6,20 @@ date: 2023-7-24
 categories: pages
 ---
 
-## My Resume
-
-Download my resume in PDF format:
+ <div style="text-align: justify; font-size: 17px;">     
+    <h2><strong><br>RESUMR</strong></h2><br>                
+    <p style="line-height: 1.5; font-size: 15px;">
+      Download my resume in PDF format:    
+    </p>
+   </div> 
 
 [Download Resume PDF](/assets/images/Resume_Temp.pdf)
 
-## Unofficial Transcript
-
-Download my unofficial transcript in PDF format:
+ <div style="text-align: justify; font-size: 17px;">     
+    <h2><strong><br>UNOFFICIAL TRANSCRIPT</strong></h2><br>                
+    <p style="line-height: 1.5; font-size: 15px;">
+      Download my unofficial transcript in PDF format:    
+    </p>
+   </div>    
 
 [Download Transcript PDF](/assets/images/unofficial_transcript.pdf)
