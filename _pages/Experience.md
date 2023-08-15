@@ -11,7 +11,7 @@ categories: pages
       <strong><br> UNIVERSITY OF ARIZONA, DEPARTMENT OF PEDIATRICS 
       </strong><br>                          
             <strong>Graduate Research Assistant&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
-                  <i>Feb 2023 - Present</i>
+                  <i style="line-height: 1.5;font-size: 15px;">Feb 2023 - Present</i>
    </p>
      <br>
        <p style="line-height: 1.5;font-size: 15px;">
