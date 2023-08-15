@@ -6,6 +6,20 @@ date: 2023-7-24
 categories: pages
 ---
 
+<style>
+    .image-container {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .project-image {
+        width: 300px; /* Adjust the width as needed */
+        height: 300px; /* Adjust the height as needed */
+        margin: 10px; /* Add some margin between images */
+    }
+</style>
+  
+
    <div style="text-align: justify; font-size: 17px;">     
     <h2><strong><br>CERTIFICATION</strong></h2><br>                
     <p style="line-height: 1.5; font-size: 15px;">
@@ -26,7 +40,8 @@ categories: pages
       <strong>2. Contextual Master Award, Tata Consultancy Services&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong> <i>Mar 2022</i>
       <br>
       Promotion as Senior ETL Developer along with salary increment of 14% and bonus of 20,000 INR. <br>
-      <img src="https://github.com/AmritaNeogi/AmritaNeogi.github.io/blob/dc2fdd03d92a59c99a38b290d37dca687c485877/assets/images/decidousForest.jpg" alt="CreditCard_Image" style="max-width: 100%; height: auto;" ><br><br> 
+      <div class="image-container"><img src="/assets/images/contexual_master.PNG" alt="Project Image"> </div>
+      <br>
       <strong>3. NEN Champions Runners-Up Award&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong> 
       <i>Mar 2016</i>
       <br>
