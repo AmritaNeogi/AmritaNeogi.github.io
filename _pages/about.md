@@ -48,7 +48,7 @@ Thank you for visiting my website. Feel free to explore further and connect with
     </p>
    </div> 
     <div style="text-align: justify; font-size: 17px;">     
-    <h2><strong><br>INTEREST</strong></h2><br>  
+    <h2><strong><br>INTEREST</strong></h2> 
     <p style="line-height: 1.5; font-size: 15px;">
      1. Data Scientist <br>
      2. Data Analytics <br>
