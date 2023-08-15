@@ -44,8 +44,7 @@ Thank you for visiting my website. Feel free to explore further and connect with
      <i>Aug 2017 - May 2017</i> <br>
      Bachelor of Technology in Electrical Engineering <br>
      GPA: 7.66 out of 10 scale <br>
-    <br>
-  </p>  
+    </p>  
    </div> 
     <div style="text-align: justify; font-size: 17px;">     
     <h2><strong><br>INTEREST</strong></h2> 
