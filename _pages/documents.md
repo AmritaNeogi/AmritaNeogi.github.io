@@ -13,7 +13,7 @@ categories: pages
     </p>
    </div> 
 
-[Download Resume PDF](/assets/images/Resume_Temp.pdf)
+[Download Resume PDF](/assets/images/ResumeTemp.pdf)
 
 <!--
  <div style="text-align: justify; font-size: 17px;">     
