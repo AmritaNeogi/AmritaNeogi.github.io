@@ -8,6 +8,12 @@ categories: pages
 
 ## My Resume
 
-Feel free to download my resume in PDF format:
+Download my resume in PDF format:
 
 [Download Resume PDF](/assets/images/Resume_Temp.pdf)
+
+## Unofficial Transcript
+
+Download my unofficial transcript in PDF format:
+
+[Download Transcript PDF](/assets/images/unofficial_transcript.pdf)
