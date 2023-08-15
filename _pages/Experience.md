@@ -41,7 +41,7 @@ categories: pages
       <p style="line-height: 1.5;font-size: 18px;">
          <strong>TATA CONSULTANCY SERVICES </strong><br>                                           
                   <strong> Systems Engineer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
-                  <i>Mar 2018 - July 2022</i>
+                  <i style="line-height: 1.5;font-size: 15px;">Mar 2018 - July 2022</i>
        </p>
      <br>
        <p style="line-height: 1.5;font-size: 15px;">
