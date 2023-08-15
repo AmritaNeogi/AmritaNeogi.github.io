@@ -1,1 +1,1 @@
-# [Amrita Neogi's personal website](https://AmritaNeogi.github.io/)
+# [Personal Website](https://AmritaNeogi.github.io/)
