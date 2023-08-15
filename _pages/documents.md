@@ -15,6 +15,7 @@ categories: pages
 
 [Download Resume PDF](/assets/images/Resume_Temp.pdf)
 
+<!--
  <div style="text-align: justify; font-size: 17px;">     
     <h2><strong><br>UNOFFICIAL TRANSCRIPT</strong></h2><br>                
     <p style="line-height: 1.5; font-size: 16px;">
@@ -23,3 +24,4 @@ categories: pages
    </div>    
 
 [Download Transcript PDF](/assets/images/unofficial_transcript.pdf)
+-->
