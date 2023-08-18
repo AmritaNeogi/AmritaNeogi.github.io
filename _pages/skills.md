@@ -66,13 +66,14 @@ categories: pages
     <div class="progress progress-90" style="width: 90%;"></div>
   </div>
 </div>
+<!--
 <div class="skill">
   <span class="skill-name">Core Java</span>
   <div class="progress-bar">
     <div class="progress progress-75" style="width: 75%;"></div>
   </div>
 </div>
-
+-->
 ## Data Science and Analytic Skills
 
 <div class="skill">
