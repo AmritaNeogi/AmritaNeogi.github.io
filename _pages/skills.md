@@ -110,8 +110,15 @@ categories: pages
   </div>
 </div>
 <div class="skill">
-  <span class="skill-name">Problem Solving</span>
+  <span class="skill-name">Google Cloud Storage(GCP)</span>
   <div class="progress-bar">
     <div class="progress progress-80" style="width: 80%;"></div>
+  </div>
+</div>
+
+<div class="skill">
+  <span class="skill-name">Problem Solving</span>
+  <div class="progress-bar">
+    <div class="progress progress-95" style="width: 95%;"></div>
   </div>
 </div>
