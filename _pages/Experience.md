@@ -17,7 +17,7 @@ categories: pages
        <p style="line-height: 1.5;font-size: 15px;">
         
 1. <strong>Thorough Data Extraction and Standardization in REDCap:</strong><br><br>
-   Extract data from various sources and transform them into standardized formats and build analytical project databases in REDCap. This involves a meticulous approach to ensure that data is accurately captured and formatted for further analysis.
+   Extract data from various sources and transform them into standardized formats and build analytical project databases in REDCap, enhancing data accessibility and saving 15% of data preparation time. This involves a meticulous approach to ensure that data is accurately captured and formatted for further analysis.
 <br><br>
 2. <strong>Optimization of Database Programs for Seamless Querying:</strong><br><br>
    Optimize database programs to facilitate efficient data querying processes; thereby enhancing the performance of database systems, allowing users to retrieve the required information rapidly and without encountering performance constraints.
@@ -25,16 +25,16 @@ categories: pages
 3. <strong>Precise Data Cleaning and Linkage Protocols with Comprehensive Documentation:</strong> <br><br>
     Execute data cleaning and data linkage protocols with a high degree of precision. This involves identifying and rectifying inaccuracies, inconsistencies, and missing values within datasets. Also, maintain detailed work logs that document every step of the data refinement process, ensuring the reproducibility and bolstering the credibility of subsequent analyses.
 <br><br>
-4. <strong>Creation of Data Pipelines from MariaDB to PostgreSQL using Python:</strong><br><br>
-   Leverage Python scripting, to design and implement data pipelines that transfer data from MariaDB to PostgreSQL, transforming and mapping the data to adhere to OMOP (Observational Medical Outcomes Partnership) table structures. Enforcing security protocols for data transfers, ensuring system integrity, and maintaining 100% compliance with data protection regulations.
+4. <strong>Creation of Data Pipelines using Python and utilizing Amazon Athena:</strong><br><br>
+   Leverage Python scripting and utilize Amazon Athena, to design and implement data pipelines that transfer data from MariaDB to PostgreSQL, transforming and mapping the data to adhere to OMOP (Observational Medical Outcomes Partnership) table structures. Enforcing security protocols for data transfers, increasing data transfer speed by 30% compared to previous methods, ensuring system integrity, and maintaining 100% compliance with data protection regulations.
 <br><br>
 5. <strong>Efficient Integration of MTurk Tasks and REDCap Surveys with Data Analysis:</strong>
 <br><br>
-   Manage the integration of MTurk tasks and REDCap surveys into a cohesive workflow. Conduct thorough data analysis using R programming after survey completion, aiding in faster comprehension and informed decision-making.
+   Manage the integration of MTurk tasks and REDCap surveys into a cohesive workflow. Conduct thorough data analysis using R programming after survey completion, aiding in faster comprehension and informed decision-making, and reducing post-survey processing time by 20%.
 <br><br>
 6. <strong>Statistical Analysis of Patient Data to Uncover Care Patterns and Demographics:
 </strong><br>
-   Conduct statistical tests and regression analysis on patient data to reveal insights like care trends, demographics, and factors impacting engagement. This approach identifies trends, correlations, and potential causal links, informing healthcare strategies and improving patient care.
+   Conduct statistical tests and logistic regression on patient data to reveal insights like care trends, demographics, and factors impacting engagement. This approach identifies trends, correlations, and potential causal links, informing healthcare strategies and improving patient care.
  <br>
   </p>       
      <br>
