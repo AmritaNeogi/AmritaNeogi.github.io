@@ -50,9 +50,9 @@ categories: pages
 <br>
 1. Utilized Informatica Power Exchange and PowerCenter 9.x for data extraction, transformation, and loading from a range of sources—including mainframes, flat files, Teradata databases, and EDW systems—have been expertly executed.<br>
 <br>
-2. Developed intricate ETL mappings, worklets, and reusable transformations has been a focus. These encompass filters, expressions, joiners, aggregators, and more, ensuring precise and purposeful data transformation.<br>
+2. Developed intricate ETL mappings, worklets, and reusable transformations has been a focus. These encompass filters, expressions, joiners, aggregators, and more, ensuring precise and purposeful data transformation with a 25% reduction in deployment time and improved efficiency.<br>
 <br>
-3. Estahblished and maintained dynamic data pipelines to support business intelligence, reporting, and analytics needs. This approach guaranteed smooth data integration and processing.<br>
+3. Estahblished and maintained dynamic data pipelines to support business intelligence, reporting, and analytics needs. This approach guaranteed smooth data integration and processing and resulted in a 30% increase in efficiency.<br>
 <br>
 <strong>UNIX and shell scripting for validation testing</strong>:<br>
 <br>
@@ -63,6 +63,7 @@ categories: pages
 1. Identified and addressed performance bottlenecks within long-running CI/CD jobs. Employed advanced optimization techniques at various levels—source, target, mapping, and session—ensuring streamlined processes and efficient data flows.<br><br>
 2. Leveraged the power of cloud computing, particularly in AWS, to significantly optimize ETL operations. Achieved remarkable results with a 50% reduction in processing time, alongside heightened scalability, demonstrating a clear commitment to efficient and agile data processing.<br><br>
 3. Demonstrated proficiency in utilizing ETL tools to streamline data integration workflows. This approach led to a reduction in errors by 28%, enhancement of data quality, and 2.5% cost savings on infrastructure, showcasing an ability to balance effectiveness and efficiency in data management.<br>
+4. Engineered a retrofit solution leveraging contextual knowledge, resulting in the integration of 2.5 million customers for the client, and concurrently boosting performance and code execution speed by 30%. <br>
 <br>
 <strong>Database object migration</strong><br>
 <br>
@@ -70,15 +71,15 @@ categories: pages
 <br>
 <strong>Documentation and Project Tracking</strong>:<br>
 <br>
-1. Engaged in collaboration with onshore and offshore data stewards as well as application development leads to ensure smooth project tracking through JIRA. This joint endeavor enabled effective communication, task handling, and progress oversight, resulting in coordinated project implementation.<br><br>
-2. Oversaw ETL code repositories through continuous integration techniques. Carried out comprehensive code evaluations to maintain rigorous code excellence and compliance with guidelines, guaranteeing the dependability and manageability of the ETL procedures.<br><br>
+1. Engaged in collaboration with onshore and offshore data stewards as well as application development leads to ensure smooth project tracking through JIRA, resulting in a 20% increase in project visibility and coordination efficiency. This joint endeavor enabled effective communication, task handling, and progress oversight, resulting in coordinated project implementation.<br><br>
+2. Oversaw ETL code repositories through continuous integration techniques. Carried out comprehensive code evaluations to maintain rigorous code excellence and compliance with guidelines, guaranteeing the dependability and manageability of the ETL procedures, leading to a 15% decrease in defects and improved development cycle.<br><br>
 3. Demonstrated adeptness in articulating findings and insights to stakeholders in a clear and impactful manner. This effective communication approach facilitated informed decision-making and fostered a shared understanding of project progress and outcomes.<br><br>
 
 <strong>Leadership</strong>:<br>
 <br>
 1. Offered valuable technical guidance and oversaw review processes in a dynamic and fast-paced setting, demonstrating the ability to work effectively with minimal supervision. Ensured high-quality outcomes and maintained governance standards despite the challenging environment.<br>
 <br>
-2. Mentored a team of 12 junior developers, sharing best practices for ETL job development using Informatica. Additionally, adeptly communicated project status updates to foster transparency and cohesion within the team, contributing to efficient workflows.<br>
+2. Led a 12-member ETL development team, driving the design and implementation of data transformation processes for precise data integration into the warehouse, while prioritizing data quality and performance enhancements. Additionally, adeptly communicated project status updates to foster transparency and cohesion within the team, contributing to efficient workflows.<br>
 <br>
 3. Provided expert guidance and comprehensive training to junior ETL developers. Covered essential ETL development methodologies, data modeling best practices, and fundamental data integration concepts. This mentoring effort empowered the team with essential skills and knowledge for optimized data workflows.<br>
 </p>
