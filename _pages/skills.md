@@ -103,6 +103,14 @@ categories: pages
     <div class="progress progress-100" style="width: 100%;"></div>
   </div>
 </div>
+
+<div class="skill">
+  <span class="skill-name">RFM (Recency, Frequency, Monetary) Analysis and Customer Segmentation</span>
+  <div class="progress-bar">
+    <div class="progress progress-100" style="width: 100%;"></div>
+  </div>
+</div>
+
 <div class="skill">
   <span class="skill-name">Strategic Planning & Decision Making</span>
   <div class="progress-bar">
