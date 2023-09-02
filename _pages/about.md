@@ -42,7 +42,7 @@ Thank you for visiting my website. Feel free to explore further and connect with
   </p>
 </div>
 
-   <div style="text-align: justify; font-size: 17px;">     
+   <div style="text-align: justify; font-size: 17px; color: #336699">     
     <h2><strong><br>EDUCATION</strong></h2> 
     <p style="line-height: 1.5; font-size: 15.5px;">
      <strong><i class="fa fa-university"></i> University of Arizona, Tucson, Arizona</strong><br>
@@ -56,7 +56,7 @@ Thank you for visiting my website. Feel free to explore further and connect with
      GPA: 7.66 out of 10 scale <br>
     </p>  
    </div> 
-    <div style="text-align: justify; font-size: 17px;">     
+    <div style="text-align: justify; font-size: 17px; color: #336699">     
     <h2><strong><br>INTEREST</strong></h2> 
     <p style="line-height: 1.5; font-size: 15.5px;">
      1. Data Scientist <br>
