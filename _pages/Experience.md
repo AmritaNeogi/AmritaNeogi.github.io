@@ -8,7 +8,7 @@ categories: pages
 <style>
    /* Style for the title */
     h1 {
-        color: blue; /* Change the title text color to blue */
+        color: #336699; /* Change the title text color to blue */
     }
 </style>
 
