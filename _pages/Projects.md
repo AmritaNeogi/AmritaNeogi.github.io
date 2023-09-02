@@ -8,63 +8,51 @@ toc: false
 toc_label: "Project"
 toc_icon: "columns"
 ---
+<style>
+    .project-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .project {
+        width: calc(50% - 20px); /* Adjust the width and margin as needed */
+        margin: 10px;
+        box-sizing: border-box;
+        padding: 20px;
+        border: 1px solid #ccc;
+    }
 
-{{ define "head" }}
-<meta name="description" content="{{ .Title }} of {{ .Site.Title }}">
-<link rel="stylesheet" href="{{ .Site.Params.staticPath }}/css/projects.css" media="all">
+    .project h2 {
+        margin-top: 0;
+    }
 
-<!-- fontawesome -->
-<script defer src="{{ .Site.Params.staticPath }}/fontawesome-5/all-5.15.4.js"></script>
-{{ end }}
+    .project img {
+        max-width: 100%;
+        height: auto;
+    }
+</style>
 
-{{ define "title" }}
-{{.Title }} | {{ .Site.Title }}
-{{ end }}
-
-{{ define "main" }}
-<div class="container pt-5" id="projects">
-    <h2 class="text-center pb-2">{{.Title}}</h2>
-    <div class="row">
-        {{ range .Paginator.Pages }}
-        <div class="col-lg-4 col-md-6 my-3">
-            <div class="card my-3 h-100" title="{{ .Title }}">
-                <div class="card-head">
-                    <img class="card-img-top" src="{{ .Params.image }}" alt="{{ .Title }}">
-                </div>
-                <div class="card-body bg-transparent p-3">
-                    <div class="pb-2 bg-transparent">
-                        {{ range .Params.badges }}
-                        <span class="badge badge-secondary">{{ . }}</span>
-                        {{ end }}
-                    </div>
-                    <h5 class="card-title bg-transparent">{{ .Title | truncate 50 }}</h5>
-                    <div class="card-text bg-transparent secondary-font">
-                        {{ .Summary | truncate 100 | safeHTML }}
-                    </div>
-                </div>
-                <div class="card-footer py-3">
-                    {{ range .Params.links }}
-                    <span class="m-1 mx-2">
-                        <a href="{{ .url }}" target="_blank">
-                            <i class="{{ .icon }}"></i>
-                            XXXXXX
-                        </a>
-                    </span>
-                    {{ end }}
-                    <span class="float-end">
-                        <a class="btn btn-sm" href="{{ .RelPermalink }}">
-                            Know more
-                        </a>
-                    </span>
-                </div>
-            </div>
-        </div>
-        {{ end }}
-        <div class="row justify-content-center">
-            <div class="col-auto m-3">
-                {{template "_internal/pagination.html" . }}
-            </div>
-        </div>
+<div class="project-container">
+    <div class="project" style="text-align: justify; font-size: 17px;">     
+        <h2><strong>Identifying Leaf Phenology of Deciduous Broadleaf Forests from PhenoCam Images</strong></h2>
+        <p><i>In Progress</i></p>
+        <div class="image-container"><img src="/assets/images/decidousForest.jpg" alt="Project Image"></div>
+        <p style="line-height: 1.5; font-size: 15px;">
+            <!-- Project description -->
+        </p>
+        <a href="https://github.com/AmritaNeogi/PhenoCam-Image-Analysis-Using-CNN">[GitHub Link]</a>
     </div>
+    
+    <div class="project" style="text-align: justify; font-size: 17px;">     
+        <h2><strong>Credit Card Fraud Detection</strong></h2>
+        <p><i>Aug 2023</i></p>
+        <div class="image-container"><img src="/assets/images/credit_card.jpeg" alt="Project Image"></div>
+        <p style="line-height: 1.5; font-size: 15px;">
+            <!-- Project description -->
+        </p>
+        <a href="https://github.com/AmritaNeogi/Data-Science-Project-Credit-Card-Fraud-Detection">[GitHub Link]</a>
+    </div>
+
+    <!-- Add more project divs similarly -->
 </div>
-{{ end }}
