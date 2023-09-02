@@ -97,7 +97,7 @@ toc_icon: "columns"
         </p>
         <a href="https://github.com/AmritaNeogi/Uber_data_Analytics">Know more</a>
     </div>
-    <div id="project2" class="project" style="text-align: justify; font-size: 17px;">     
+    <div id="project3" class="project" style="text-align: justify; font-size: 17px;">     
         <h2><strong>Credit Card Fraud Detection</strong></h2>
         <p><i>August 2023</i></p>
         <div class="image-container"><img src="/assets/images/credit_card.jpeg" alt="Project Image"></div>
@@ -108,7 +108,7 @@ toc_icon: "columns"
         </p>
         <a href="https://github.com/AmritaNeogi/Data-Science-Project-Credit-Card-Fraud-Detection">Know more</a>
     </div>
-       <div id="project2" class="project" style="text-align: justify; font-size: 17px;">     
+       <div id="project4" class="project" style="text-align: justify; font-size: 17px;">     
         <h2><strong>Salary Prediction</strong></h2>
         <p><i>July 2023</i></p>
         <div class="image-container"><img src="/assets/images/salary_pred.jpg" alt="Project Image"></div>
@@ -118,7 +118,7 @@ toc_icon: "columns"
         </p>
         <a href="https://github.com/AmritaNeogi/Data-Science-Project-Salary-Prediction">Know more</a>
     </div>   
-      <div id="project2" class="project" style="text-align: justify; font-size: 17px;">     
+      <div id="project5" class="project" style="text-align: justify; font-size: 17px;">     
         <h2><strong>Design and Implementation of an Image Classifier Using CNN</strong></h2>
         <p><i>December 2022</i></p>
         <div class="image-container"><img src="/assets/images/image_classifier.png" alt="Project Image"></div>
