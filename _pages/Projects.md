@@ -9,6 +9,10 @@ toc_label: "Project"
 toc_icon: "columns"
 ---
 <style>
+    body {
+        color: #333; /* Default text color */
+    }
+    
     .project-container {
         display: flex;
         flex-wrap: wrap;
@@ -46,8 +50,17 @@ toc_icon: "columns"
 
     .legend li {
         margin: 10px 0;
+        font-size: 14px; /* Adjust the font size for the legend */
+    }
+
+    /* Style for the title */
+    h1 {
+        color: blue; /* Change the title text color to blue */
     }
 </style>
+
+<!-- Title of the page in blue -->
+<h1>Projects</h1>
 
 <!-- Legend on the left -->
 <div class="legend">
