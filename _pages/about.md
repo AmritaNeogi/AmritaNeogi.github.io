@@ -27,10 +27,19 @@ redirect_from:
 <br>I'm delighted to have you here and share a glimpse into my journey.
 </p>
 <p style="line-height: 1.5;">
-I am a master's student on the verge of graduating in Data Science 🚀. I am the kind of person who finds data utterly fascinating, and I am on a quest to turn it into captivating stories and turbocharge products with its magic. 🎩✨ 
+I am a graduate student on the verge of graduating in Data Science 🚀.  <br>
+I am the kind of person who finds data utterly fascinating, and I am on a quest to turn it into captivating stories and turbocharge products with its magic. 🎩✨  <br>
 
-When I'm not crunching data, you'll find me grooving to the rhythm of my other passion: music! 🎶. 
+When I am not crunching data, you'll find me grooving to the rhythm of my other passion: music! 🎶 <br>
 I bring over 4.5 years of hands-on experience as an Informatica ETL developer at Tata Consultancy Services in India. My academic journey started in Electrical Engineering, but my unwavering passion for computer science and technology quickly led me to the thrilling world of data science.💡
+<br><br>
+I am currently a Graduate Research Assistant in the Department of Pediatrics at U of A, specializing in Data Science. My expertise lies in data cleaning and optimizing data pipelines. I have a track record of streamlining data workflows, including database programs, to facilitate quick and secure data operations.💫
+<br>
+<br>
+<p style="line-height: 1.5; font-size: 15px;">
+I am Open to work from December 2023!!
+</p>
+<br>
 <br>
 Thank you for visiting my website. Feel free to explore further and connect with me to share insights, ideas, and opportunities.
   </p>
