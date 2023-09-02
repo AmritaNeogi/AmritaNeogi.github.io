@@ -47,6 +47,7 @@ toc_icon: "columns"
                     <span class="m-1 mx-2">
                         <a href="{{ .url }}" target="_blank">
                             <i class="{{ .icon }}"></i>
+                            XXXXXX
                         </a>
                     </span>
                     {{ end }}
