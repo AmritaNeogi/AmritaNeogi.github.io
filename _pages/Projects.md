@@ -32,11 +32,12 @@ toc_icon: "columns"
       <a href="https://github.com/AmritaNeogi/PhenoCam-Image-Analysis-Using-CNN">[GitHub Link]</a><br>      
     </p>
    </div> 
-    <div style="text-align: justify; font-size: 17px;">     
+   
+   <div style="text-align: justify; font-size: 17px;">     
     <h2><strong><br>Uber Data Analytics</strong></h2>
      <p><i>Aug 2023</i></p><br>
      <div class="image-container"><img src="/assets/images/uber-header.jpg" alt="Project Image"> </div>
-      <br>               
+     <br>               
     <p style="line-height: 1.5; font-size: 15px;">     
     Executed a comprehensive end-to-end data engineering project leveraging a real-world Uber dataset to demonstrate my expertise in data handling and analysis. Employed Google Cloud Storage to efficiently manage data extraction and transformation processes. Successfully processed and loaded data using Mage ETL, achieving an impressive average extraction rate of 500 records per second.
     <a class="image-container"><img src="/assets/images/Overview.png" alt="Project Image"></a><br>
@@ -45,7 +46,8 @@ toc_icon: "columns"
     Implemented an interactive and intuitive Looker dashboard that translated raw data into actionable visualizations. The dashboard facilitated dynamic exploration of key performance indicators, resulting in a 30% increase in data accessibility for stakeholders. This project not only strengthened my technical skills but also highlighted my proficiency in creating user-friendly data representation tools.<br>    
     <a href="https://github.com/AmritaNeogi/Uber_data_Analytics"><br>[GitHub Link]</a><br>      
     </p>
-   </div> 
+   </div>
+
    <div style="text-align: justify; font-size: 17px;">     
     <h2><strong><br>Credit Card Fraud Detection</strong></h2>
      <p><i>Aug 2023</i></p><br>
