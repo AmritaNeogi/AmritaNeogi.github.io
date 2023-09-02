@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Skills"
+title: 
 permalink: /skills/
 date: 2023-7-24
 categories: pages
@@ -42,7 +42,14 @@ categories: pages
 .progress-75 {
   background-color: #ffcc00; /* Red */
 }
+/* Style for the title */
+    h1 {
+        color: blue; /* Change the title text color to blue */
+    }
 </style>
+
+<!-- Title of the page in blue -->
+<h1>Skills</h1>
 
 ## Programming Skills
 

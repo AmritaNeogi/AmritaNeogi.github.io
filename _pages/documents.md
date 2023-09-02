@@ -1,10 +1,19 @@
 ---
 layout: single
-title: "Documents"
+title: 
 permalink: /documents/
 date: 2023-7-24
 categories: pages
 ---
+<style>
+   /* Style for the title */
+    h1 {
+        color: blue; /* Change the title text color to blue */
+    }
+</style>
+
+<!-- Title of the page in blue -->
+<h1>Documents</h1>
 
  <div style="text-align: justify; font-size: 17px;">     
     <h2><strong><br>RESUME</strong></h2><br>                

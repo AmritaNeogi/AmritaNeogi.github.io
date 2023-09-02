@@ -1,10 +1,19 @@
 ---
 layout: single
-title: "Experience"
+title: 
 permalink: /Experience/
 date: 2023-8-12
 categories: pages
 ---
+<style>
+   /* Style for the title */
+    h1 {
+        color: blue; /* Change the title text color to blue */
+    }
+</style>
+
+<!-- Title of the page in blue -->
+<h1>Experience</h1>
 
 <div style="text-align: justify;">
   <p style="line-height: 1.5; font-size: 17px;">

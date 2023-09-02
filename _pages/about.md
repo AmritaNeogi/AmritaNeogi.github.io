@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Hello!"
+title: 
 subtitle: "Welcome to my website!"
 excerpt: "About me"
 author_profile: true
@@ -8,6 +8,15 @@ redirect_from:
   - /about/
   - /about.html
 ---
+<style>
+   /* Style for the title */
+    h1 {
+        color: blue; /* Change the title text color to blue */
+    }
+</style>
+
+<!-- Title of the page in blue -->
+<h1>Hello!</h1>
 <head>
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 

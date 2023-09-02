@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Accomplishments"
+title: 
 permalink: /Awards/
 date: 2023-7-24
 categories: pages
@@ -17,7 +17,14 @@ categories: pages
         height: 300px; /* Adjust the height as needed */
         margin: 10px; /* Add some margin between images */
     }
+   /* Style for the title */
+    h1 {
+        color: blue; /* Change the title text color to blue */
+    }
 </style>
+
+<!-- Title of the page in blue -->
+<h1>Accomplishments</h1>
   
 
    <div style="text-align: justify; font-size: 17px;">     
