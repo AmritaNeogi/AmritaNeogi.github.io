@@ -68,7 +68,8 @@ Thank you for visiting my website. Feel free to explore further and connect with
     </p>
   </div>  
   <!-- Right Column - University 2 -->
-  <div style="flex: 1; text-align: justify; font-size: 17px;">    
+  <div style="flex: 1; text-align: justify; font-size: 17px;">
+    <h2 style="color: #336699;"><strong><br>      </strong></h2>
     <p style="line-height: 1.5; font-size: 15.5px;">
       <strong><i class="fa fa-university"></i> University of Engineering and Management, Jaipur, India</strong><br>
       <i>Aug 2013 - May 2017</i> <br>
