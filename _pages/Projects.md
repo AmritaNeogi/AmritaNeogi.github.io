@@ -16,11 +16,11 @@ toc_icon: "columns"
     }
     
     .project {
-        width: calc(50% - 20px); /* Adjust the width and margin as needed */
-        margin: 10px;
+        width: 100%; /* Full width */
         box-sizing: border-box;
         padding: 20px;
         border: 1px solid #ccc;
+        margin-top: 20px; /* Add space between projects */
     }
 
     .project h2 {
@@ -32,26 +32,32 @@ toc_icon: "columns"
         height: auto;
     }
 
-    /* Style for legend links */
+    /* Style for legend on the left */
     .legend {
-        display: flex;
-        justify-content: center;
+        float: left;
+        width: 20%; /* Adjust the width as needed */
+        padding-right: 20px; /* Add space between legend and projects */
+    }
+
+    .legend ul {
         list-style: none;
         padding: 0;
     }
 
     .legend li {
-        margin: 10px;
+        margin: 10px 0;
     }
 </style>
 
-<!-- Legend links -->
-<ul class="legend">
-    <li><a href="#project1">Identifying Leaf Phenology</a></li>
-    <li><a href="#project2">Credit Card Fraud Detection</a></li>
-    <li><a href="#project3">Salary Prediction</a></li>
-    <li><a href="#project4">Image Classifier Using CNN</a></li>
-</ul>
+<!-- Legend on the left -->
+<div class="legend">
+    <ul>
+        <li><a href="#project1">Identifying Leaf Phenology</a></li>
+        <li><a href="#project2">Credit Card Fraud Detection</a></li>
+        <li><a href="#project3">Salary Prediction</a></li>
+        <li><a href="#project4">Image Classifier Using CNN</a></li>
+    </ul>
+</div>
 
 <div class="project-container">
     <div id="project1" class="project" style="text-align: justify; font-size: 17px;">     
@@ -62,7 +68,8 @@ toc_icon: "columns"
             <!-- Project description -->
         </p>
         <a href="https://github.com/AmritaNeogi/PhenoCam-Image-Analysis-Using-CNN">[GitHub Link]</a>
-    </div>    
+    </div>
+    
     <div id="project2" class="project" style="text-align: justify; font-size: 17px;">     
         <h2><strong>Credit Card Fraud Detection</strong></h2>
         <p><i>Aug 2023</i></p>
@@ -72,5 +79,6 @@ toc_icon: "columns"
         </p>
         <a href="https://github.com/AmritaNeogi/Data-Science-Project-Credit-Card-Fraud-Detection">[GitHub Link]</a>
     </div>
+
     <!-- Add more project divs similarly -->
 </div>
