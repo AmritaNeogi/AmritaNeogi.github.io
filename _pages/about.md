@@ -36,7 +36,7 @@ I bring over 4.5 years of hands-on experience as an Informatica ETL developer at
 I am currently a Graduate Research Assistant in the Department of Pediatrics at U of A, specializing in Data Science. My expertise lies in data cleaning and optimizing data pipelines. I have a track record of streamlining data workflows, including database programs, to facilitate quick and secure data operations.💫
 <br>
 <br>
-<p style="line-height: 1.5; font-size: 15px;">
+<p style="line-height: 1.5; font-size: 17px;">
 I am Open to work from December 2023!!
 </p>
 <br>
