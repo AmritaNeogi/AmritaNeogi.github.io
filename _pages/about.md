@@ -56,29 +56,26 @@ Thank you for visiting my website. Feel free to explore further and connect with
      GPA: 7.66 out of 10 scale <br>
     </p>  
    </div>  -->
-   <div style="display: flex;">
-  <!-- Left Column - University 1 -->
-  <div style="flex: 1; text-align: justify; font-size: 17px;">
-    <h2 style="color: #336699;"><strong><br>EDUCATION</strong></h2>
-    <p style="line-height: 1.5; font-size: 15.5px;">
-      <strong><i class="fa fa-university"></i> University of Arizona, Tucson, Arizona</strong><br>
-      <i>Aug 2022 - Present</i> <br>
-      Master of Science in Data Science <br>
-      GPA: 4 out of 4 scale <br>
-    </p>
-  </div>  
-  <!-- Right Column - University 2 -->
-  <div style="flex: 1; text-align: justify; font-size: 17px;">
-    <h2 style="color: #336699;"><strong><br>      </strong></h2>
-    <p style="line-height: 1.5; font-size: 15.5px;">
-      <strong><i class="fa fa-university"></i> University of Engineering and Management, Jaipur, India</strong><br>
-      <i>Aug 2013 - May 2017</i> <br>
-      Bachelor of Technology in Electrical Engineering <br>
-      GPA: 7.66 out of 10 scale <br>
-    </p>
-  </div>
+   <div style="text-align: justify; font-size: 17px;">
+  <h2 style="color: #336699;"><strong>EDUCATION</strong></h2>
+  <p style="line-height: 1.5; font-size: 15.5px;">
+    <div style="display: flex;">
+      <div style="flex: 1;">
+        <strong><i class="fa fa-university"></i> University of Arizona, Tucson, Arizona</strong><br>
+        <i>Aug 2022 - Present</i> <br>
+        Master of Science in Data Science <br>
+        GPA: 4 out of 4 scale <br>
+      </div>
+      <div style="flex: 1;">
+        <strong><i class="fa fa-university"></i> University of Engineering and Management, Jaipur, India</strong><br>
+        <i>Aug 2013 - May 2017</i> <br>
+        Bachelor of Technology in Electrical Engineering <br>
+        GPA: 7.66 out of 10 scale <br>
+      </div>
+    </div>
+  </p>
 </div>
-    <div style="text-align: justify; font-size: 17px;">     
+  <div style="text-align: justify; font-size: 17px;">     
     <h2 style="color: #336699;"><strong><br>INTEREST</strong></h2> 
     <p style="line-height: 1.5; font-size: 15.5px;">
      1. Data Scientist <br>
