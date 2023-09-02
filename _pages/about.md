@@ -62,7 +62,7 @@ Thank you for visiting my website. Feel free to explore further and connect with
     <div style="display: flex;">
       <div style="flex: 1;">
         <strong><i class="fa fa-university"></i> University of Arizona</strong><br>
-         Tucson, Arizona
+         Tucson, Arizona <br>
         <i>Aug 2022 - Present</i> <br>
         <p style="line-height: 1.5; font-size: 15.5px;">
         Master of Science in Data Science <br>
@@ -70,7 +70,7 @@ Thank you for visiting my website. Feel free to explore further and connect with
       </div>
       <div style="flex: 1;">
         <strong><i class="fa fa-university"></i> University of Engineering and Management</strong><br>
-         Jaipur, India
+         Jaipur, India <br>
          <p style="line-height: 1.5; font-size: 15.5px;">
         <i>Aug 2013 - May 2017</i> <br>
         Bachelor of Technology in Electrical Engineering <br>
