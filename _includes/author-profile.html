@@ -27,13 +27,13 @@
     <ul class="author__urls social-icons">
       {% if author.university %}
         <li itemprop="university" itemscope itemtype="https://schema.org/EducationalOrganization">
-          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">{{ author.university }}</span>
+          <i class="fa fa-university" aria-hidden="true"></i> <span itemprop="name" class="p-locality">{{ author.university }}</span>
         </li>
       {% endif %}
 
       {% if author.location %}
         <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
-          <i class="fa fa-university" aria-hidden="true"></i> <span itemprop="name" class="p-locality">{{ author.location }}</span>
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">{{ author.location }}</span>
         </li>
       {% endif %}
 
