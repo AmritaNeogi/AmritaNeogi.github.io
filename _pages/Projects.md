@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Projects"
+title: 
 permalink: /Projects/
 date: 2023-8-13
 categories: pages
