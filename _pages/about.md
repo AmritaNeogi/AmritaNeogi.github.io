@@ -62,9 +62,9 @@ Thank you for visiting my website. Feel free to explore further and connect with
     <div style="display: flex;">
       <div style="flex: 1;">
         <strong><i class="fa fa-university"></i> University of Arizona</strong><br>
-         Tucson, Arizona <br>
-        <i>Aug 2022 - Present</i> <br>
+         Tucson, Arizona <br>        
         <p style="line-height: 1.5; font-size: 15.5px;">
+        <i>Aug 2022 - Present</i> <br>
         Master of Science in Data Science <br>
         GPA: 4 out of 4 scale <br></p>
       </div>
