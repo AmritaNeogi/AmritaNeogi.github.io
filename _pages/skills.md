@@ -65,6 +65,7 @@ categories: pages
 
 <div class="skill">
   <span class="skill-name" style="font-size: 18px; margin-right: 12px;">R</span>
+  <img src="/assets/images/logo/R_logo.jpg" alt="Python Logo" style="height: 24px; margin-right: 12px;">
   <div class="progress-bar">
     <div class="progress progress-95" style="width: 95%;"></div>
   </div>
@@ -72,6 +73,7 @@ categories: pages
 
 <div class="skill">
   <span class="skill-name" style="font-size: 18px; margin-right: 12px;">SQL</span>
+  <img src="/assets/images/logo/sql_logo.png" alt="Python Logo" style="height: 24px; margin-right: 12px;">
   <div class="progress-bar">
     <div class="progress progress-90" style="width: 90%;"></div>
   </div>
@@ -82,6 +84,7 @@ categories: pages
 
 <div class="skill">
   <span class="skill-name" style="font-size: 18px; margin-right: 12px;">Data Wrangling and Engineering</span>
+  <img src="/assets/images/logo/data_wrangle.png" alt="Python Logo" style="height: 24px; margin-right: 12px;">
   <div class="progress-bar">
     <div class="progress progress-95" style="width: 95%;"></div>
   </div>
@@ -89,6 +92,7 @@ categories: pages
 
 <div class="skill">
   <span class="skill-name" style="font-size: 18px; margin-right: 12px;">Machine Learning</span>
+  <img src="/assets/images/logo/ml.jpg" alt="Python Logo" style="height: 24px; margin-right: 12px;">
   <div class="progress-bar">
     <div class="progress progress-95" style="width: 95%;"></div>
   </div>
@@ -96,6 +100,7 @@ categories: pages
 
 <div class="skill">
   <span class="skill-name" style="font-size: 18px; margin-right: 12px;">Data Visualization</span>
+   <img src="/assets/images/logo/viz.jpg" alt="Python Logo" style="height: 24px; margin-right: 12px;">
   <div class="progress-bar">
     <div class="progress progress-90" style="width: 90%;"></div>
   </div>
@@ -103,6 +108,7 @@ categories: pages
 
 <div class="skill">
   <span class="skill-name" style="font-size: 18px; margin-right: 12px;">Exploratory Data Analysis (EDA) and Feature Engineering</span>
+ <img src="/assets/images/logo/eda.png" alt="Python Logo" style="height: 24px; margin-right: 12px;">
   <div class="progress-bar">
     <div class="progress progress-100" style="width: 100%;"></div>
   </div>
@@ -110,6 +116,7 @@ categories: pages
 
 <div class="skill">
   <span class="skill-name" style="font-size: 18px; margin-right: 12px;">RFM (Recency, Frequency, Monetary) Analysis and Customer Segmentation</span>
+  <img src="/assets/images/logo/rfm.png" alt="Python Logo" style="height: 24px; margin-right: 12px;">
   <div class="progress-bar">
     <div class="progress progress-100" style="width: 100%;"></div>
   </div>
@@ -117,12 +124,14 @@ categories: pages
 
 <div class="skill">
   <span class="skill-name" style="font-size: 18px; margin-right: 12px;">Strategic Planning & Decision Making</span>
+  <img src="/assets/images/logo/decision.png" alt="Python Logo" style="height: 24px; margin-right: 12px;">
   <div class="progress-bar">
     <div class="progress progress-92" style="width: 92%;"></div>
   </div>
 </div>
 <div class="skill">
   <span class="skill-name" style="font-size: 18px; margin-right: 12px;">Google Cloud Storage(GCP)</span>
+  <img src="/assets/images/logo/gcp.png" alt="Python Logo" style="height: 24px; margin-right: 12px;">
   <div class="progress-bar">
     <div class="progress progress-80" style="width: 80%;"></div>
   </div>
@@ -130,6 +139,7 @@ categories: pages
 
 <div class="skill">
   <span class="skill-name" style="font-size: 18px; margin-right: 12px;">Problem Solving</span>
+  <img src="/assets/images/logo/problem.png" alt="Python Logo" style="height: 24px; margin-right: 12px;">
   <div class="progress-bar">
     <div class="progress progress-95" style="width: 95%;"></div>
   </div>
