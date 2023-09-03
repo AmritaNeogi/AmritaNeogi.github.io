@@ -52,7 +52,8 @@ categories: pages
 
 <h1>Skills</h1>
 
-## Programming Skills
+<div style="text-align: justify; font-size: 17px;">     
+<h2><strong><br>PROGRAMMING SKILLS</strong></h2><br>       
 
 <div class="skill">
   <span class="skill-name">Python</span>
@@ -82,8 +83,8 @@ categories: pages
   </div>
 </div>
 
-
-## Data Science and Analytic Skills
+<div style="text-align: justify; font-size: 17px;">     
+<h2><strong><br>Data Science and Analytic Skills</strong></h2><br> 
 
 <div class="skill">
   <span class="skill-name">Data Wrangling and Engineering</span>
