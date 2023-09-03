@@ -139,6 +139,8 @@ categories: pages
     <div class="progress progress-95" style="width: 95%;"></div>
   </div>
 </div> 
+
+
 <!--
 <div class="image-container"><img src="/assets/images/skills.jpeg" alt="Project Image"></div>
 -->
