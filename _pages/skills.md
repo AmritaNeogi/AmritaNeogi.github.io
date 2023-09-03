@@ -56,8 +56,8 @@ categories: pages
 <h2><strong><br>PROGRAMMING LANGUAGES</strong></h2><br>       
 
 <div class="skill">
-<img src="/assets/images/logo/python.png" alt="Python Logo" style="height: 24px; margin-right: 12px;">
   <span class="skill-name" style="font-size: 18px; margin-right: 12px;">Python</span>
+  <img src="/assets/images/logo/python.png" alt="Python Logo" style="height: 24px; margin-right: 12px;">
   <div class="progress-bar">
     <div class="progress progress-95" style="width: 95%;"></div>
   </div>
