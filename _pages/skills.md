@@ -15,31 +15,31 @@ categories: pages
   font-weight: bold;
 }
 
-.progress-bar {
+.brick-container {
   height: 15px;
   background-color: #f3f3f3;
 }
 
-.progress {
+.brick {
   height: 100%;
 }
 
-.progress-100 {
+.brick-100 {
   background-color: #4caf50; /* Green */
 }
-.progress-95 {
+.brick-95 {
   background-color: #4caf50; /* Green */
 }
-.progress-92 {
+.brick-92 {
   background-color: #4caf50; /* Yellow */
 }
-.progress-90 {
+.brick-90 {
   background-color: #ff9800; /* Yellow */
 }
-.progress-80 {
+.brick-80 {
   background-color: #ff5722; /* Orange */
 }
-.progress-75 {
+.brick-75 {
   background-color: #ffcc00; /* Red */
 }
 /* Style for the title */
@@ -57,8 +57,8 @@ categories: pages
 
 <div class="skill">
   <span class="skill-name" style="font-size: 18px; margin-right: 12px;">Python</span>
-  <div class="progress-bar" style="width: 70%;">
-    <div class="progress progress-95"></div>
+  <div class="brick-container">
+    <div class="brick" style="width: 95%;"></div>
   </div>
 </div>
 
