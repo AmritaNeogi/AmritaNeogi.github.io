@@ -57,7 +57,7 @@ categories: pages
 
 <div class="skill">
   <span class="skill-name" style="font-size: 18px; margin-right: 12px;">Python</span>
-  <div class="brick-container">
+  <div class="progress-bar">
     <div class="progress progress-95" style="width: 95%;"></div>
   </div>
 </div>
