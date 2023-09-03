@@ -30,27 +30,28 @@ categories: pages
    <div style="text-align: justify; font-size: 17px;">     
     <h2><strong><br>CERTIFICATION</strong></h2><br>                
     <p style="line-height: 1.5; font-size: 15px;">
-      IBM Data Science by Coursera&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 	<i>In Progress</i><br><br>
-      Google Data Analytics by Coursera&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/EMEK5BC3QWPA">[Link]</a><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; June 2023</i> <br><br>
-      Google Project Management by Coursera&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/UCSV3HVH4LQL">[Link]</a><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; July 2023</i> <br>                
+      Google Business Intelligence by Coursera
+      <i><span style="float: right;">In Progress</span></i><br><br>
+      Google Data Analytics by Coursera
+      <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/EMEK5BC3QWPA">[Link]</a><i><span style="float: right;">June 2023</span></i> <br><br>
+      Google Project Management by Coursera
+      <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/UCSV3HVH4LQL">[Link]</a><i><span style="float: right;">July 2023</span></i> <br>                
     </p>
    </div>                                                                  
 
    <div style="text-align: justify; font-size: 17px;">     
     <h2><strong><br>SCHOLARSHIP & AWARDS</strong></h2><br>                 
     <p style="line-height: 1.5; font-size: 15px;">
-      <strong>1. University of Arizona, Department of Pediatrics&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong> <i>Feb 2023, Aug 2023</i>
+      <strong>1. University of Arizona, Department of Pediatrics&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong> <i><span style="float: right;">February 2023, August 2023</span></i>
       <br>
       0.5 FTE with Full Tuition Remission <br><br>
-      <strong>2. Contextual Master Award, Tata Consultancy Services&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong> <i>Mar 2022</i>
+      <strong>2. Contextual Master Award, Tata Consultancy Services&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong> <i><span style="float: right;">March 2022</span></i>
       <br>
       Promotion as Senior ETL Developer along with salary increment of 14% and bonus of 20,000 INR. <br>
       <div class="image-container"><img src="/assets/images/contexual_master.PNG" alt="Project Image"> </div>
       <br>
       <strong>3. NEN Champions Runners-Up Award&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong> 
-      <i>Mar 2016</i>
+      <i><span style="float: right;">March 2016</span></i>
       <br>
       For contributions to entrepreneurship education and innovation at the National Entrepreneurship Network by Wadhwani Foundation <br>
     </p>
