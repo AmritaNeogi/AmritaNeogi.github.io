@@ -29,7 +29,7 @@ redirect_from:
 <p style="line-height: 1.5;">
 I am a final year master's student majoring in Data Science.💡  <br>
 I find data utterly fascinating, and I aim to transform it into captivating stories and infuse products with its transformative power. <br> <br>
-When I am not crunching data, you'll find me grooving to the rhythm of my other passion: music!🎶 <br>
+When I am not crunching data, you'll find me grooving to the rhythm of my other passion, music🎶 <br>
 I bring over 4.5 years of hands-on experience as an Informatica ETL developer at Tata Consultancy Services in India. My academic journey started in Electrical Engineering, but my unwavering passion for computer science and technology quickly led me to the thrilling world of data science.
 <br><br>
 I am currently a Graduate Research Assistant in the Department of Pediatrics at U of A, specializing in Data Science. My expertise lies in data cleaning and optimizing data pipelines. I have a track record of streamlining data workflows, including database programs, to facilitate quick and secure data operations.💫
