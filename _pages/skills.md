@@ -5,7 +5,7 @@ permalink: /skills/
 date: 2023-9-02
 categories: pages
 ---
-
+<!-- 
 <style>
 .skill {
   margin-bottom: 20px;
@@ -49,6 +49,7 @@ categories: pages
 </style>
 
 <!-- Title of the page in blue -->
+<!-- 
 <h1>Skills</h1>
 
 ## Programming Skills
@@ -81,6 +82,7 @@ categories: pages
   </div>
 </div>
 -->
+<!--
 ## Data Science and Analytic Skills
 
 <div class="skill">
@@ -136,4 +138,6 @@ categories: pages
   <div class="progress-bar">
     <div class="progress progress-95" style="width: 95%;"></div>
   </div>
-</div>
+</div> -->
+
+<div class="image-container"><img src="/assets/images/Skills.jpeg" alt="Project Image"></div>
