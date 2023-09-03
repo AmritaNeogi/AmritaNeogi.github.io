@@ -40,7 +40,6 @@ I am currently a Graduate Research Assistant in the Department of Pediatrics at 
 I am Open to work from December 2023!! 📆
 </p>
 <br>
-<br>
 Thank you for visiting my website. Feel free to explore further and connect with me to share insights, ideas, and opportunities.
   </p>
 </div>
