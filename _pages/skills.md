@@ -140,4 +140,4 @@ categories: pages
   </div>
 </div> -->
 
-<div class="image-container"><img src="/assets/images/Skills.jpeg" alt="Project Image"></div>
+<div class="image-container"><img src="/assets/images/skills.jpeg" alt="Project Image"></div>
