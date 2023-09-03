@@ -39,24 +39,8 @@ I am currently a Graduate Research Assistant in the Department of Pediatrics at 
 <p style="line-height: 1.5; font-size: 20px;">
 I am Open to work from December 2023!! 📆
 </p>
-<br>
 </div>
-
-   <!-- <div style="text-align: justify; font-size: 17px;">     
-    <h2 style="color: #336699;"><strong><br>EDUCATION</strong></h2>
-    <p style="line-height: 1.5; font-size: 15.5px;">
-     <strong><i class="fa fa-university"></i> University of Arizona, Tucson, Arizona</strong><br>
-     <i>Aug 2022 - Present</i> <br>
-     Master of Science in Data Science <br>
-     GPA: 4 out of 4 scale <br>
-    <br>
-    <strong><i class="fa fa-university"></i> University of Engineering and Management, Jaipur, India</strong><br>
-     <i>Aug 2013 - May 2017</i> <br>
-     Bachelor of Technology in Electrical Engineering <br>
-     GPA: 7.66 out of 10 scale <br>
-    </p>  
-   </div>  -->
-   <div style="text-align: justify; font-size: 17px;">
+<div style="text-align: justify; font-size: 17px;">
   <h2 style="color: #336699;"><strong>EDUCATION</strong></h2>
   <p style="line-height: 1.5; font-size: 15.5px;">
     <div style="display: flex;">
@@ -89,8 +73,7 @@ I am Open to work from December 2023!! 📆
     <br>
     </p>
    </div> 
-<div><p>
-Thank you for visiting my website. Feel free to explore further and connect with me to share insights, ideas, and opportunities.
-  </p></div>
-
+      <div><p>
+          Thank you for visiting my website. Feel free to explore further and connect with me to share insights, ideas, and opportunities.
+        </p></div>
 </head>
