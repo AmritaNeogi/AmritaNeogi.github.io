@@ -15,31 +15,31 @@ categories: pages
   font-weight: bold;
 }
 
-.brick-container {
+.progress-bar {
   height: 15px;
   background-color: #f3f3f3;
 }
 
-.brick {
+.progress {
   height: 100%;
 }
 
-.brick-100 {
+.progress-100 {
   background-color: #4caf50; /* Green */
 }
-.brick-95 {
+.progress-95 {
   background-color: #4caf50; /* Green */
 }
-.brick-92 {
+.progress-92 {
   background-color: #4caf50; /* Yellow */
 }
-.brick-90 {
+.progress-90 {
   background-color: #ff9800; /* Yellow */
 }
-.brick-80 {
+.progress-80 {
   background-color: #ff5722; /* Orange */
 }
-.brick-75 {
+.progress-75 {
   background-color: #ffcc00; /* Red */
 }
 /* Style for the title */
@@ -58,19 +58,19 @@ categories: pages
 <div class="skill">
   <span class="skill-name" style="font-size: 18px; margin-right: 12px;">Python</span>
   <div class="brick-container">
-    <div class="brick" style="width: 95%;"></div>
+    <div class="progress progress-95" style="width: 95%;"></div>
   </div>
 </div>
 
 <div class="skill">
-  <span class="skill-name">R</span>
+  <span class="skill-name" style="font-size: 18px; margin-right: 12px;">R</span>
   <div class="progress-bar">
     <div class="progress progress-95" style="width: 95%;"></div>
   </div>
 </div>
 
 <div class="skill">
-  <span class="skill-name">SQL</span>
+  <span class="skill-name" style="font-size: 18px; margin-right: 12px;">SQL</span>
   <div class="progress-bar">
     <div class="progress progress-90" style="width: 90%;"></div>
   </div>
@@ -80,55 +80,55 @@ categories: pages
 <h2><strong><br>DATA SCIENCE & ANALYTICS</strong></h2><br> 
 
 <div class="skill">
-  <span class="skill-name">Data Wrangling and Engineering</span>
+  <span class="skill-name" style="font-size: 18px; margin-right: 12px;">Data Wrangling and Engineering</span>
   <div class="progress-bar">
     <div class="progress progress-95" style="width: 95%;"></div>
   </div>
 </div>
 
 <div class="skill">
-  <span class="skill-name">Machine Learning</span>
+  <span class="skill-name" style="font-size: 18px; margin-right: 12px;">Machine Learning</span>
   <div class="progress-bar">
     <div class="progress progress-95" style="width: 95%;"></div>
   </div>
 </div>
 
 <div class="skill">
-  <span class="skill-name">Data Visualization</span>
+  <span class="skill-name" style="font-size: 18px; margin-right: 12px;">Data Visualization</span>
   <div class="progress-bar">
     <div class="progress progress-90" style="width: 90%;"></div>
   </div>
 </div>
 
 <div class="skill">
-  <span class="skill-name">Exploratory Data Analysis (EDA) and Feature Engineering</span>
+  <span class="skill-name" style="font-size: 18px; margin-right: 12px;">Exploratory Data Analysis (EDA) and Feature Engineering</span>
   <div class="progress-bar">
     <div class="progress progress-100" style="width: 100%;"></div>
   </div>
 </div>
 
 <div class="skill">
-  <span class="skill-name">RFM (Recency, Frequency, Monetary) Analysis and Customer Segmentation</span>
+  <span class="skill-name" style="font-size: 18px; margin-right: 12px;">RFM (Recency, Frequency, Monetary) Analysis and Customer Segmentation</span>
   <div class="progress-bar">
     <div class="progress progress-100" style="width: 100%;"></div>
   </div>
 </div>
 
 <div class="skill">
-  <span class="skill-name">Strategic Planning & Decision Making</span>
+  <span class="skill-name" style="font-size: 18px; margin-right: 12px;">Strategic Planning & Decision Making</span>
   <div class="progress-bar">
     <div class="progress progress-92" style="width: 92%;"></div>
   </div>
 </div>
 <div class="skill">
-  <span class="skill-name">Google Cloud Storage(GCP)</span>
+  <span class="skill-name" style="font-size: 18px; margin-right: 12px;">Google Cloud Storage(GCP)</span>
   <div class="progress-bar">
     <div class="progress progress-80" style="width: 80%;"></div>
   </div>
 </div>
 
 <div class="skill">
-  <span class="skill-name">Problem Solving</span>
+  <span class="skill-name" style="font-size: 18px; margin-right: 12px;">Problem Solving</span>
   <div class="progress-bar">
     <div class="progress progress-95" style="width: 95%;"></div>
   </div>
