@@ -18,7 +18,7 @@ redirect_from:
 <!-- Title of the page in blue -->
 <h1>Hello there!</h1>
 
-<head>
+
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
 <div style="text-align: justify; font-size: 15px;">
@@ -28,8 +28,7 @@ redirect_from:
 </p>
 <p style="line-height: 1.5;">
 I am a final year master's student majoring in Data Science.💡  <br>
-I find data utterly fascinating, and I aim to transform it into captivating stories and infuse products with its transformative power. <br>
-
+I find data utterly fascinating, and I aim to transform it into captivating stories and infuse products with its transformative power. <br> <br>
 When I am not crunching data, you'll find me grooving to the rhythm of my other passion: music!🎶 <br>
 I bring over 4.5 years of hands-on experience as an Informatica ETL developer at Tata Consultancy Services in India. My academic journey started in Electrical Engineering, but my unwavering passion for computer science and technology quickly led me to the thrilling world of data science.
 <br><br>
@@ -39,8 +38,7 @@ I am currently a Graduate Research Assistant in the Department of Pediatrics at 
 <p style="line-height: 1.5; font-size: 20px;">
 I am Open to work from December 2023!! 📆
 </p>
-</div>
-</head>
+
 
 <div style="text-align: justify; font-size: 17px;">
   <h2 style="color: #336699;"><strong>EDUCATION</strong></h2>
