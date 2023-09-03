@@ -2,7 +2,7 @@
 layout: single
 title: 
 permalink: /skills/
-date: 2023-7-24
+date: 2023-9-02
 categories: pages
 ---
 
