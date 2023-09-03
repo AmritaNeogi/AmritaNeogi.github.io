@@ -82,7 +82,7 @@ toc_icon: "columns"
            The ongoing project undertaken by the individual showcases pioneering efforts in advancing phenological research through the integration of state-of-the-art technology and deep learning techniques. The focus lies on predictive modeling and large-scale validation, with the goal of revealing the intricate correlations between PhenoCam images and the development of vegetation phenology <br>
            At its essence, the project revolves around the creation of a predictive tool employing CNN Regression to anticipate leaf phenology in deciduous broadleaf forests across diverse sites. The project employs three primary methods - AlexNet, ResNet-50, and ResNet-101 - each contributing distinctively to the comprehension of phenology patterns. By harnessing the capabilities of deep learning, the project seeks to unearth nuanced insights from PhenoCam images, potentially uncovering subtleties that evade human observation.<br>
         </p>
-        <a href="https://github.com/AmritaNeogi/PhenoCam-Image-Analysis-Using-CNN">Know more</a>
+        <a href="https://github.com/AmritaNeogi/PhenoCam-Image-Analysis-Using-CNN">Know More</a>
     </div>
        <div id="project2" class="project" style="text-align: justify; font-size: 17px;">     
         <h2><strong>Uber Data Analytics</strong></h2>
@@ -95,7 +95,7 @@ toc_icon: "columns"
             Performed complex analytical queries on the enriched dataset using BigQuery, showcasing my ability to derive meaningful insights from vast datasets. Developed and optimized queries that consistently yielded results within seconds, contributing to efficient data-driven decision-making. Answered crucial business questions, such as demand patterns and peak hours, enhancing my analytical capabilities.<br>
             Implemented an interactive and intuitive Looker dashboard that translated raw data into actionable visualizations. The dashboard facilitated dynamic exploration of key performance indicators, resulting in a 30% increase in data accessibility for stakeholders. This project not only strengthened my technical skills but also highlighted my proficiency in creating user-friendly data representation tools.<br>  
         </p>
-        <a href="https://github.com/AmritaNeogi/Uber_data_Analytics">Know more</a>
+        <a href="https://github.com/AmritaNeogi/Uber_data_Analytics">Know More</a>
     </div>
     <div id="project3" class="project" style="text-align: justify; font-size: 17px;">     
         <h2><strong>Credit Card Fraud Detection</strong></h2>
@@ -106,7 +106,7 @@ toc_icon: "columns"
             The standout model boasts an accuracy rate that sets a new standard for fraud detection.Machine learning algorithm such as Decision Tree, Logistic Regression, Random Forest and Naive Bayes, have been employed, and obtained an impressive accuracy rate of 99% for the best model. 
             Later, the data imbalance was tackled using SMOTE Technique. Each algorithm was fine-tuned for optimal performance and further acheieved a 10% increase in the accuracy.<br>
         </p>
-        <a href="https://github.com/AmritaNeogi/Data-Science-Project-Credit-Card-Fraud-Detection">Know more</a>
+        <a href="https://github.com/AmritaNeogi/Data-Science-Project-Credit-Card-Fraud-Detection">Know More</a>
     </div>
        <div id="project4" class="project" style="text-align: justify; font-size: 17px;">     
         <h2><strong>Salary Prediction</strong></h2>
@@ -116,7 +116,7 @@ toc_icon: "columns"
            The objective of this project is to construct a model for salary prediction contingent on years of experience.<br>
            Through meticulous refinement and adept utilization of the Gradient Descent technique, an exceptionally efficient model was constructed. The core of the accomplishment rests in the notable decrease of the Mean Square Error (MSE). The model rapidly reduced the MSE from a substantial 91.2% to an impressive 6.3%.<br>
         </p>
-        <a href="https://github.com/AmritaNeogi/Data-Science-Project-Salary-Prediction">Know more</a>
+        <a href="https://github.com/AmritaNeogi/Data-Science-Project-Salary-Prediction">Know More</a>
     </div>   
       <div id="project5" class="project" style="text-align: justify; font-size: 17px;">     
         <h2><strong>Design and Implementation of an Image Classifier Using CNN</strong></h2>
@@ -126,6 +126,6 @@ toc_icon: "columns"
             In the realm of cutting-edge technology, the project embarked on a journey of unraveling the potential of deep convolution networks for largescale image classification. Demonstrating precision, the project culminated in an impressive accuracy rate of 91.21%. <br>
             Employing a sophisticated arsenal of Python libraries, including NumPy, Pandas, and PyTorch, the project navigated the complex landscape of image classification.<br>
         </p>
-        <a href="https://github.com/ISTA421INFO521/final-project-AmritaNeogi">Know more</a>
+        <a href="https://github.com/ISTA421INFO521/final-project-AmritaNeogi">Know More</a>
     </div>  
 </div>
