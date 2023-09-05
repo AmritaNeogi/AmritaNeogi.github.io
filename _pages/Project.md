@@ -1,7 +1,7 @@
 ---
 layout: single
 title: 
-permalink: /Projects/
+permalink: /Project/
 date: 2023-9-02
 categories: pages
 toc: false
@@ -58,10 +58,8 @@ toc_icon: "columns"
         color:  #336699; /* Change the title text color to blue */
     }
 </style>
-
 <!-- Title of the page in blue -->
 <h1>Projects</h1>
-
 <!-- Legend on the left -->
 <div class="legend">
     <ul>
