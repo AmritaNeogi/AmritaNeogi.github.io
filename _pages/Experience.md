@@ -14,7 +14,7 @@ categories: pages
 
 <!-- Title of the page in blue -->
 <h1>Experience</h1>
-
+<br>
 <div style="text-align: justify;">
   <p style="line-height: 1.5; font-size: 17px;">
       <strong><img src="/assets/images/logo/arid.jpg" alt="Python Logo" style="height: 24px; margin-right: 12px;">UNIVERSITY OF ARIZONA, DEPARTMENT OF PEDIATRICS</strong><br>
