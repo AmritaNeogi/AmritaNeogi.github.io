@@ -17,12 +17,13 @@ categories: pages
 <br>
 <div class="legend">
     <ul>
-        <li><a href="#exp1">Graduate Research Asistant</a></li>
-        <li><a href="#exp2">Systems Engineer (ETL Developer)</a></li>
+        <li><a href="#project1">Graduate Research Asistant</a></li>
+        <li><a href="#project2">Systems Engineer (ETL Developer)</a></li>
     </ul>
 </div>
+<br>
 <div class="project-container">
-<div id="exp1" class="project" style="text-align: justify;">
+<div id="project1" class="project" style="text-align: justify;">
   <p style="line-height: 1.5; font-size: 17px;">
       <strong><img src="/assets/images/logo/arid.jpg" alt="Python Logo" style="height: 24px; margin-right: 12px;">UNIVERSITY OF ARIZONA, DEPARTMENT OF PEDIATRICS</strong><br>
       <!-- <strong><br> UNIVERSITY OF ARIZONA, DEPARTMENT OF PEDIATRICS 
@@ -56,7 +57,7 @@ categories: pages
   </p>       
      <br>
      </div>
- <div id="exp2" class="project" style="text-align: justify;">
+ <div id="project2" class="project" style="text-align: justify;">
  <p style="line-height: 1.5;font-size: 17px;">
     <strong><img src="/assets/images/logo/TCS_Logo.jpg" alt="Python Logo" style="height: 24px; margin-right: 12px;">TATA CONSULTANCY SERVICES</strong><br>
          <!-- <strong> TATA CONSULTANCY SERVICES</strong><br>                                            -->
