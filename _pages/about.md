@@ -30,7 +30,7 @@ redirect_from:
 I am a final year master's student majoring in Data Science.💡  <br>
 I find data utterly fascinating, and I aim to transform it into captivating stories and infuse products with its transformative power. <br> <br>
 When I am not crunching data, you'll find me grooving to the rhythm of my other passion, music.🎶<br>
-I bring over 4.5 years of hands-on experience as an Informatica ETL developer at Tata Consultancy Services in India. My academic journey started in Electrical Engineering, but my unwavering passion for computer science and technology quickly led me to the thrilling world of data science.
+I bring over 4.5 years of hands-on experience as an Informatica ETL developer at Tata Consultancy Services India, where I have worked on developing codes for US financial service companies to safeguard personally identifiable information. My academic journey started in Electrical Engineering, but my unwavering passion for computer science and technology quickly led me to the thrilling world of data science.
 <br><br>
 I am currently a Graduate Research Assistant in the Department of Pediatrics at U of A, specializing in data wrangling and analysis. My expertise lies in data cleaning and optimizing data pipelines. I have a track record of streamlining data workflows, including database programs, to facilitate quick and secure data operations.💫
 <br>
@@ -45,8 +45,8 @@ I am Open to work from December 2023!! 📆
   <p style="line-height: 1.5; font-size: 15.5px;">
     <!-- <div style="display: flex;">
       <div style="flex: 1;"> -->
-        <strong><img src="/assets/images/logo/University_of_Arizona_logo.jpg" alt="Python Logo" style="height: 24px; margin-right: 12px;">University of Arizona</strong><br>
-         Tucson, Arizona            
+        <strong><img src="/assets/images/logo/University_of_Arizona_logo.jpg" alt="Python Logo" style="height: 24px; margin-right: 12px;">University of Arizona<span style="float: right;">Tucson, Arizona</span></strong><br>
+         <!-- Tucson, Arizona             -->
         <p style="line-height: 1.5; font-size: 15.5px;">
         <i><span style="float: right;">August 2013 - December 2023</span></i> <br>
         Master of Science in Data Science <br>
