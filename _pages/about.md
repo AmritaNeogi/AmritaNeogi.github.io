@@ -44,10 +44,10 @@ I am Open to work from December 2023!! 📆
   <p style="line-height: 1.5; font-size: 15.5px;">
     <!-- <div style="display: flex;">
       <div style="flex: 1;"> -->
-        <strong><img src="/assets/images/logo/University_of_Arizona_logo.jpg" alt="Python Logo" style="height: 24px; margin-right: 12px;">University of Arizona<span style="float: right;">Tucson, Arizona</span></strong><br>
+        <strong><img src="/assets/images/logo/University_of_Arizona_logo.jpg" alt="Python Logo" style="height: 24px; margin-right: 12px;">University of Arizona</strong><br>
         <p style="line-height: 1.5; font-size: 15.5px;">
-        <span>Tucson, Arizona</span><i><span style="float: right;">August 2013 - December 2023</span></i>       
-        Master of Science in Data Science <br>
+        <p>Tucson, Arizona</p><i><span style="float: right;">August 2013 - December 2023</span></i>       
+        <p>Master of Science in Data Science</p> <br>
         GPA: 4 out of 4 scale <br></p>
       <!-- </div> -->
       <!-- <div style="flex: 1;"> -->
