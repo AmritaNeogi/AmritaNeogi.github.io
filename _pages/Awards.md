@@ -44,8 +44,10 @@ categories: pages
     <p style="line-height: 1.5; font-size: 15px;">
       <strong>1. University of Arizona, Department of Pediatrics&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong> <i><span style="float: right;">February 2023, August 2023</span></i>
       <br>
+      <br>
       0.5 FTE with Full Tuition Remission <br><br>
       <strong>2. Contextual Master Award, Tata Consultancy Services&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong> <i><span style="float: right;">March 2022</span></i>
+      <br>
       <br>
       Promotion as Senior ETL Developer along with salary increment of 14% and bonus of 20,000 INR. <br>
       <div class="image-container"><img src="/assets/images/contexual_master.PNG" alt="Project Image"> </div>
@@ -57,6 +59,7 @@ categories: pages
       <br>
       <strong>3. NEN Champions Runners-Up Award&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong> 
       <i><span style="float: right;">March 2016</span></i>
+      <br>
       <br>
       For contributions to entrepreneurship education and innovation at the National Entrepreneurship Network (NEN) by Wadhwani Foundation <br>
     </p>
