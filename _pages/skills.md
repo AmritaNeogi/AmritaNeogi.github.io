@@ -36,7 +36,7 @@ categories: pages
 <div class="category" style="text-align: justify; font-size: 17px;">
     <h2>PROGRAMMING LANGUAGES</h2>
     <ul>
-        <li>Python</li>
+        <li>Python<img src="/assets/images/logo/python.png" alt="Python Logo" style="height: 24px; margin-right: 12px;"></li>
         <li>R</li>
         <li>SQL/NoSQL</li>        
     </ul>
@@ -55,8 +55,7 @@ categories: pages
         <li>ETL Tool: Informatica Power Center 6</li>
         <li>Agile Tool: JIRA</li>
         <li>Cloud Platforms: AWS Services(Athena), Google Cloud Storage(GCP)</li>
-        <li>Crowdsourcing Platform: Amazon MTurk </li>
-        <li></li>
+        <li>Crowdsourcing Platform: Amazon MTurk </li>        
     </ul>
 </div>
 
