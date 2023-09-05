@@ -48,20 +48,13 @@ I am Open to work from December 2023!! 📆
     Master of Science in Data Science <br>
     GPA: 4 out of 4 scale <br>
     </p>
-    <p style="line-height: 1.5; font-size: 15.5px; display: flex; justify-content: space-between;">
-  <strong>
-    <img src="/assets/images/logo/UEM_logo.png" alt="Python Logo" style="height: 24px; margin-right: 12px;">
-    University of Engineering and Management
-  </strong>
-  <i>August 2013 - May 2017</i>
-</p>
-<p>
-  Jaipur, India <br> 
-  Bachelor of Technology in Electrical Engineering<br>
-  GPA: 7.66 out of 10 scale <br>
-</p>
-
-  </p>
+    <p style="line-height: 1.5; font-size: 15.5px;">
+   <strong><img src="/assets/images/logo/University_of_Arizona_logo.jpg" alt="Python Logo" style="height: 24px; margin-right: 12px;">University of Engineering and Management</strong>
+   <i><span style="float: right;">August 2013 - May 2017</span></i><br> 
+    Jaipur, India<br> 
+    Bachelor of Technology in Electrical Engineering<br>
+    GPA: 7.66 out of 10 scale<br>
+    </p>
 </div>
   <div style="text-align: justify; font-size: 17px;">     
     <h2 style="color: #336699;"><strong><br>INTEREST</strong></h2> 
