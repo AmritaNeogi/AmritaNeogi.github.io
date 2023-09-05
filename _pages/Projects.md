@@ -1,11 +1,11 @@
 ---
 layout: single
 title: 
-permalink: /Project/
+permalink: /Projects/
 date: 2023-9-02
 categories: pages
 toc: false
-toc_label: "Project"
+toc_label: "Projects"
 toc_icon: "columns"
 ---
 <style>
