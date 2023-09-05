@@ -43,24 +43,24 @@ I am Open to work from December 2023!! 📆
 <div style="text-align: justify; font-size: 17px;">
   <h2 style="color: #336699;"><strong>EDUCATION</strong></h2>
   <p style="line-height: 1.5; font-size: 15.5px;">
-    <div style="display: flex;">
-      <div style="flex: 1;">
+    <!-- <div style="display: flex;">
+      <div style="flex: 1;"> -->
         <strong><i class="fa fa-university"></i> University of Arizona</strong><br>
          Tucson, Arizona <br>        
         <p style="line-height: 1.5; font-size: 15.5px;">
         <i>Aug 2022 - Present</i> <br>
         Master of Science in Data Science <br>
         GPA: 4 out of 4 scale <br></p>
-      </div>
-      <div style="flex: 1;">
+      <!-- </div> -->
+      <!-- <div style="flex: 1;"> -->
         <strong><i class="fa fa-university"></i> University of Engineering and Management</strong><br>
          Jaipur, India <br>
          <p style="line-height: 1.5; font-size: 15.5px;">
         <i>Aug 2013 - May 2017</i> <br>
         Bachelor of Technology in Electrical Engineering <br>
         GPA: 7.66 out of 10 scale <br></p>
-      </div>
-    </div>
+      <!-- </div>
+    </div> -->
   </p>
 </div>
   <div style="text-align: justify; font-size: 17px;">     

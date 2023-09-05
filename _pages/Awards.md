@@ -49,10 +49,15 @@ categories: pages
       <br>
       Promotion as Senior ETL Developer along with salary increment of 14% and bonus of 20,000 INR. <br>
       <div class="image-container"><img src="/assets/images/contexual_master.PNG" alt="Project Image"> </div>
+      <p>As a senior ETL developer, I had been working closely with our client for over two and a half years when a major merger reshaped our financial services corporation. The merger meant expanding our brick-and-mortar branches and retrofitting critical customer data security.<br>
+      Given the tight timeline, I leveraged my previous experience with the Protegrity platform to step up and lead the project. I meticulously identified areas needing support, compared and modified codes, and collaborated with my fellow developers.<br>
+      Through my efforts, we not only resolved the client's issues but also improved system performance and reduced code execution time by 30%. This proactive approach built confidence, strengthened customer relationships, and contributed to efficient operations and revenue generation.<br>
+      My strategy and dedication earned recognition from our CTO and his team, resulting in a significant reduction in our annual IT budget. This success solidified our client's trust in our partnership, enhancing overall customer satisfaction.<br>
+      My journey underscored the importance of adaptability, expertise, and collaborative problem-solving in navigating change successfully.</p>
       <br>
       <strong>3. NEN Champions Runners-Up Award&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong> 
       <i><span style="float: right;">March 2016</span></i>
       <br>
-      For contributions to entrepreneurship education and innovation at the National Entrepreneurship Network by Wadhwani Foundation <br>
+      For contributions to entrepreneurship education and innovation at the National Entrepreneurship Network (NEN) by Wadhwani Foundation <br>
     </p>
    </div> 
