@@ -67,9 +67,9 @@ categories: pages
         <li>Data Wrangling</li>
         <li>Data Engineering</li>
         <li>Exploratory Data Analysis (EDA)</li>
+        <li>Feature Engineering: Principal Component Analysis (PCA), One-Hot Encoding</li>
         <li>Machine Learning Algorithms (Classification, Regression, Clustering)</li>
-        <li>Predictive Modeling</li>
-        <li>Feature Engineering</li>
+        <li>Optimization Technique: Gradient Descent, Grid Search</li>    
         <li>Data Visualization</li>
         <li>Excel & Spreadsheet Analysis</li>
         <li>RFM (Recency, Frequency, Monetary) Analysis and Customer Segmentation</li>
