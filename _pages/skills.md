@@ -37,8 +37,9 @@ categories: pages
     <h2>PROGRAMMING LANGUAGES</h2>
     <ul>
         <li>Python<img src="/assets/images/logo/python.png" alt="Python Logo" style="height: 24px; margin-right: 12px;"></li>
-        <li>R</li>
-        <li>SQL/NoSQL</li>        
+        <li>R<img src="/assets/images/logo/R_logo.jpg" alt="Python Logo" style="height: 24px; margin-right: 12px;"></li>
+        <li>SQL<img src="/assets/images/logo/sql_logo.png" alt="Python Logo" style="height: 24px; margin-right: 12px;"></li> 
+        <li>NoSQL<img src="/assets/images/logo/nosql-database.png" alt="Python Logo" style="height: 24px; margin-right: 12px;"></li>      
     </ul>
 </div>
 
@@ -49,7 +50,7 @@ categories: pages
         <li>Jupyter Notebook</li>
         <li>MySQL</li>
         <li>PostgreSQL</li>
-        <li>Teradata<li>
+        <li>Teradata</li>
         <li>Visualization Tools: Tableau, Looker</li>
         <li>Version Control System: Git</li>
         <li>ETL Tool: Informatica Power Center 6</li>
