@@ -47,8 +47,9 @@ I am Open to work from December 2023!! 📆
         <strong><img src="/assets/images/logo/University_of_Arizona_logo.jpg" alt="Python Logo" style="height: 24px; margin-right: 12px;">University of Arizona</strong><br>
         <strong> Tucson, Arizona&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
                   <i style="line-height: 1.5;font-size: 15px;"><span style="float: right;">August 2022 - December 2023</span></i>     
-        <p>Master of Science in Data Science</p> <br>
-        GPA: 4 out of 4 scale <br></p>
+        Master of Science in Data Science <br>
+        GPA: 4 out of 4 scale <br>
+        </p>
       <!-- </div> -->
       <!-- <div style="flex: 1;"> -->
         <strong><img src="/assets/images/logo/UEM_logo.png" alt="Python Logo" style="height: 24px; margin-right: 12px;">University of Engineering and Management</strong><br>
