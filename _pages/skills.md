@@ -36,10 +36,10 @@ categories: pages
 <div class="category" style="text-align: justify; font-size: 17px;">
     <h2>PROGRAMMING LANGUAGES</h2>
     <ul>
-        <li>Python <img src="/assets/images/logo/python.png" alt="Python Logo" style="height: 24px; margin-right: 12px;"></li>
-        <li>R <img src="/assets/images/logo/R_logo.jpg" alt="Python Logo" style="height: 24px; margin-right: 12px;"></li>
-        <li>SQL <img src="/assets/images/logo/sql_logo.png" alt="Python Logo" style="height: 24px; margin-right: 12px;"></li> 
-        <li>NoSQL <img src="/assets/images/logo/nosql-database.png" alt="Python Logo" style="height: 24px; margin-right: 12px;"></li>      
+        <li><img src="/assets/images/logo/python.png" alt="Python Logo" style="height: 24px; margin-right: 12px;"></img> Python</li>
+        <li><img src="/assets/images/logo/R_logo.jpg" alt="Python Logo" style="height: 24px; margin-right: 12px;"></img> R</li>
+        <li><img src="/assets/images/logo/sql_logo.png" alt="Python Logo" style="height: 24px; margin-right: 12px;"></img> SQL</li> 
+        <li><img src="/assets/images/logo/nosql-database.png" alt="Python Logo" style="height: 24px; margin-right: 12px;"></img> NoSQL</li>      
     </ul>
 </div>
 
