@@ -43,7 +43,7 @@ I am Open to work from December 2023!! 📆
   <h2 style="color: #336699;"><strong>EDUCATION</strong></h2>
   <p style="line-height: 1.5; font-size: 15.5px;">
    <strong><img src="/assets/images/logo/University_of_Arizona_logo.jpg" alt="Python Logo" style="height: 24px; margin-right: 12px;">University of Arizona</strong>
-   <i><span style="float: right;">August 2022 - December 2023</span></i>   
+   <i><span style="float: right;">August 2022 - December 2023</span></i><br> 
     Tucson, Arizona <br> 
     Master of Science in Data Science <br>
     GPA: 4 out of 4 scale <br>
