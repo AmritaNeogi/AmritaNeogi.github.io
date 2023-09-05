@@ -15,7 +15,13 @@ categories: pages
 <!-- Title of the page in blue -->
 <h1>Experience</h1>
 <br>
-<div style="text-align: justify;">
+<div class="legend">
+    <ul>
+        <li><a href="#exp1">Graduate Research Asistant</a></li>
+        <li><a href="#exp2">SystemsEngineer (ETL Developer)</a></li>
+    </ul>
+</div>
+<div id="exp1" class="project" style="text-align: justify;">
   <p style="line-height: 1.5; font-size: 17px;">
       <strong><img src="/assets/images/logo/arid.jpg" alt="Python Logo" style="height: 24px; margin-right: 12px;">UNIVERSITY OF ARIZONA, DEPARTMENT OF PEDIATRICS</strong><br>
       <!-- <strong><br> UNIVERSITY OF ARIZONA, DEPARTMENT OF PEDIATRICS 
@@ -48,8 +54,10 @@ categories: pages
  <br>
   </p>       
      <br>
-      <p style="line-height: 1.5;font-size: 18px;">
-         <strong><img src="/assets/images/logo/TCS_Logo.jpg" alt="Python Logo" style="height: 24px; margin-right: 12px;">TATA CONSULTANCY SERVICES</strong><br>
+     </div>
+ <div id="exp1" class="project" style="text-align: justify;">
+ <p style="line-height: 1.5;font-size: 17px;">
+    <strong><img src="/assets/images/logo/TCS_Logo.jpg" alt="Python Logo" style="height: 24px; margin-right: 12px;">TATA CONSULTANCY SERVICES</strong><br>
          <!-- <strong> TATA CONSULTANCY SERVICES</strong><br>                                            -->
                   <strong> Systems Engineer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
                   <i style="line-height: 1.5;font-size: 15px;"><span style="float: right;">March 2018 - July 2022</span></i>
@@ -94,6 +102,6 @@ categories: pages
 <br>
 3. Provided expert guidance and comprehensive training to junior ETL developers. Covered essential ETL development methodologies, data modeling best practices, and fundamental data integration concepts. This mentoring effort empowered the team with essential skills and knowledge for optimized data workflows.<br>
 </p>
-
+</div>
 
 
