@@ -21,7 +21,7 @@ categories: pages
       <!-- <strong><br> UNIVERSITY OF ARIZONA, DEPARTMENT OF PEDIATRICS 
       </strong><br>                           -->
             <strong>Graduate Research Assistant&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
-                  <i style="line-height: 1.5;font-size: 15px;"><span style="float: right;">Feb 2023 - Present</span></i>
+                  <i style="line-height: 1.5;font-size: 15px;"><span style="float: right;">February 2023 - Present</span></i>
    </p>
      <br>
        <p style="line-height: 1.5;font-size: 15px;">
@@ -52,7 +52,7 @@ categories: pages
          <strong><img src="/assets/images/logo/TCS_Logo.jpg" alt="Python Logo" style="height: 24px; margin-right: 12px;">TATA CONSULTANCY SERVICES</strong><br>
          <!-- <strong> TATA CONSULTANCY SERVICES</strong><br>                                            -->
                   <strong> Systems Engineer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
-                  <i style="line-height: 1.5;font-size: 15px;"><span style="float: right;">Mar 2018 - July 2022</span></i>
+                  <i style="line-height: 1.5;font-size: 15px;"><span style="float: right;">March 2018 - July 2022</span></i>
        </p>
      <br>
        <p style="line-height: 1.5;font-size: 15px;">
