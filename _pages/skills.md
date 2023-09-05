@@ -53,7 +53,7 @@ categories: pages
         <li>Teradata</li>
         <li>Visualization Tools: Tableau, Looker</li>
         <li>Version Control System: Git</li>
-        <li>ETL Tool: Informatica Power Center 6</li>
+        <li>ETL Tool: Informatica Power Center</li>
         <li>Agile Tool: JIRA</li>
         <li>Cloud Platforms: AWS Services(Athena), Google Cloud Storage(GCP)</li>
         <li>Crowdsourcing Platform: Amazon MTurk </li>        
