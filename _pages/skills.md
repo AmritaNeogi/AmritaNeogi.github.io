@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Skills
+title: 
 permalink: /skills/
 date: 2023-09-02
 categories: pages
@@ -44,40 +44,48 @@ categories: pages
 
 <!-- Category B -->
 <div class="category" style="text-align: justify; font-size: 17px;">
-    <h2>Category B</h2>
+    <h2>TOOLS & PLATFORMS</h2>
     <ul style="line-height: 1.5; font-size: 15px;">
-        <li>Skill 1</li>
-        <li>Skill 2</li>
-        <li>Skill 3</li>
-        <li>Skill 4</li>
-        <li>Skill 5</li>
-        <li>Skill 6</li>
+        <li>Jupyter Notebook</li>
+        <li>MySQL</li>
+        <li>PostgreSQL</li>
+        <li>Teradata<li>
+        <li>Visualization Tools: Tableau, Looker</li>
+        <li>Version Control System: Git</li>
+        <li>ETL Tool: Informatica Power Center 6</li>
+        <li>Agile Tool: JIRA</li>
+        <li>Cloud Platforms: AWS Services(Athena), Google Cloud Storage(GCP)</li>
+        <li>Crowdsourcing Platform: Amazon MTurk </li>
+        <li></li>
     </ul>
 </div>
 
 <!-- Category C -->
 <div class="category" style="text-align: justify; font-size: 17px;">
-    <h2>Category C</h2>
+    <h2>DATA SCIENCE & ANALYTICS</h2>
     <ul style="line-height: 1.5; font-size: 15px;">
-        <li>Skill 1</li>
-        <li>Skill 2</li>
-        <li>Skill 3</li>
-        <li>Skill 4</li>
-        <li>Skill 5</li>
-        <li>Skill 6</li>
+        <li>Data Wrangling</li>
+        <li>Data Engineering</li>
+        <li>Exploratory Data Analysis (EDA)</li>
+        <li>Machine Learning Algorithms (Classification, Regression, Clustering)</li>
+        <li>Predictive Modeling</li>
+        <li>Feature Engineering</li>
+        <li>Data Visualization</li>
+        <li>Excel & Spreadsheet Analysis</li>
+        <li>RFM (Recency, Frequency, Monetary) Analysis and Customer Segmentation</li>
+        <li>Strategic Planning & Decision Making</li>
+        <li>Problem Solving</li>
     </ul>
 </div>
 
 <!-- Category D -->
 <div class="category" style="text-align: justify; font-size: 17px;">
-    <h2>Category D</h2>
+    <h2>SOFT SKILLS</h2>
     <ul style="line-height: 1.5; font-size: 15px;">
-        <li>Skill 1</li>
-        <li>Skill 2</li>
-        <li>Skill 3</li>
-        <li>Skill 4</li>
-        <li>Skill 5</li>
-        <li>Skill 6</li>
+        <li>Time Management</li>
+        <li>Task Management</li>
+        <li>Data Management</li>
+        <li>Leadership</li>        
     </ul>
 </div>
 
