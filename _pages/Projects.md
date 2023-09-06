@@ -64,11 +64,11 @@ toc_icon: "columns"
 <!-- Legend on the left -->
 <div class="legend" style="font-size: 17px;">
     <ul>
-        <li><a href="#project1">🌿 Identifying Leaf Phenology using CNN</a></li>
-        <li><a href="#project2">🚗 Uber Data Analytics</a></li>
-        <li><a href="#project3">💳 Credit Card Fraud Detection</a></li>
-        <li><a href="#project4">💰 Salary Prediction</a></li>
-        <li><a href="#project5">📷 Image Classifier Using CNN</a></li>
+        <li><a href="#project1" style="text-decoration: none;">🌿 Identifying Leaf Phenology using CNN</a></li>
+        <li><a href="#project2" style="text-decoration: none;">🚗 Uber Data Analytics</a></li>
+        <li><a href="#project3" style="text-decoration: none;">💳 Credit Card Fraud Detection</a></li>
+        <li><a href="#project4" style="text-decoration: none;">💰 Salary Prediction</a></li>
+        <li><a href="#project5" style="text-decoration: none;">📷 Image Classifier Using CNN</a></li>
     </ul>
 </div>
 <br>
