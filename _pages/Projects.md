@@ -21,8 +21,8 @@ toc_icon: "columns"
     
     .project {
         width: 100%; /* Full width */
-        box-sizing: border-box;
-        padding: 20px;
+        /* box-sizing: border-box; */
+        /* padding: 20px; */
         border: 1px solid #ccc;
         margin-top: 20px; /* Add space between projects */
     }
@@ -40,7 +40,7 @@ toc_icon: "columns"
     .legend {
         float: left;
         width: 20%; /* Adjust the width as needed */
-        padding-right: 20px; /* Add space between legend and projects */
+        /* padding-right: 20px; Add space between legend and projects */
     }
 
     .legend ul {
