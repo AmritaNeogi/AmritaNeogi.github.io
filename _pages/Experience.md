@@ -47,7 +47,7 @@ categories: pages
 
     .legend li {
         margin: 10px 0;
-        font-size: 14px; /* Adjust the font size for the legend */
+        font-size: 17px; /* Adjust the font size for the legend */
     }
 
     /* Style for the title */
