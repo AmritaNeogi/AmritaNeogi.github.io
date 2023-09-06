@@ -64,11 +64,11 @@ toc_icon: "columns"
 <!-- Legend on the left -->
 <div class="legend" style="font-size: 17px;">
     <ul>
-        <li><a href="#project1">Identifying Leaf Phenology</a></li>
-        <li><a href="#project2">Uber Data Analytics</a></li>
-        <li><a href="#project3">Credit Card Fraud Detection</a></li>
-        <li><a href="#project4">Salary Prediction</a></li>
-        <li><a href="#project5">Image Classifier Using CNN</a></li>
+        <li><a href="#project1">🌿 Identifying Leaf Phenology using CNN</a></li>
+        <li><a href="#project2">🚗 Uber Data Analytics</a></li>
+        <li><a href="#project3">💳 Credit Card Fraud Detection</a></li>
+        <li><a href="#project4">💰 Salary Prediction</a></li>
+        <li><a href="#project5">📷 Image Classifier Using CNN</a></li>
     </ul>
 </div>
 <br>
@@ -81,7 +81,7 @@ toc_icon: "columns"
            The ongoing project undertaken by the individual showcases pioneering efforts in advancing phenological research through the integration of state-of-the-art technology and deep learning techniques. The focus lies on predictive modeling and large-scale validation, with the goal of revealing the intricate correlations between PhenoCam images and the development of vegetation phenology <br>
            At its essence, the project revolves around the creation of a predictive tool employing CNN Regression to anticipate leaf phenology in deciduous broadleaf forests across diverse sites. The project employs three primary methods - AlexNet, ResNet-50, and ResNet-101 - each contributing distinctively to the comprehension of phenology patterns. By harnessing the capabilities of deep learning, the project seeks to unearth nuanced insights from PhenoCam images, potentially uncovering subtleties that evade human observation.<br>
         </p>
-        <a href="https://github.com/AmritaNeogi/PhenoCam-Image-Analysis-Using-CNN">Know More </a><img src="/assets/images/logo/github.png" alt="Python Logo" style="height: 24px; margin-right: 12px;"> <br>
+        <a href="https://github.com/AmritaNeogi/PhenoCam-Image-Analysis-Using-CNN">Know More </a><img src="/assets/images/logo/github.png" alt="Python Logo" style="height: 24px; margin-right: 12px;"> <br><br>
     </div>
        <div id="project2" class="project" style="text-align: justify; font-size: 15px;">     
         <h2><strong>Uber Data Analytics</strong></h2>
@@ -94,7 +94,7 @@ toc_icon: "columns"
             Performed complex analytical queries on the enriched dataset using BigQuery, showcasing my ability to derive meaningful insights from vast datasets. Developed and optimized queries that consistently yielded results within seconds, contributing to efficient data-driven decision-making. Answered crucial business questions, such as demand patterns and peak hours, enhancing my analytical capabilities.<br>
             Implemented an interactive and intuitive Looker dashboard that translated raw data into actionable visualizations. The dashboard facilitated dynamic exploration of key performance indicators, resulting in a 30% increase in data accessibility for stakeholders. This project not only strengthened my technical skills but also highlighted my proficiency in creating user-friendly data representation tools.<br>  
         </p>
-        <a href="https://github.com/AmritaNeogi/Uber_data_Analytics">Know More </a> <img src="/assets/images/logo/github.png" alt="Python Logo" style="height: 24px; margin-right: 12px;"><br>
+        <a href="https://github.com/AmritaNeogi/Uber_data_Analytics">Know More </a> <img src="/assets/images/logo/github.png" alt="Python Logo" style="height: 24px; margin-right: 12px;"><br><br>
     </div>
     <div id="project3" class="project" style="text-align: justify; font-size: 15px;">     
         <h2><strong>Credit Card Fraud Detection</strong></h2>
@@ -105,7 +105,7 @@ toc_icon: "columns"
             The standout model boasts an accuracy rate that sets a new standard for fraud detection.Machine learning algorithm such as Decision Tree, Logistic Regression, Random Forest and Naive Bayes, have been employed, and obtained an impressive accuracy rate of 99% for the best model. 
             Later, the data imbalance was tackled using SMOTE Technique. Each algorithm was fine-tuned for optimal performance and further acheieved a 10% increase in the accuracy.<br>
         </p>
-        <a href="https://github.com/AmritaNeogi/Data-Science-Project-Credit-Card-Fraud-Detection">Know More </a> <img src="/assets/images/logo/github.png" alt="Python Logo" style="height: 24px; margin-right: 12px;"><br>
+        <a href="https://github.com/AmritaNeogi/Data-Science-Project-Credit-Card-Fraud-Detection">Know More </a> <img src="/assets/images/logo/github.png" alt="Python Logo" style="height: 24px; margin-right: 12px;"><br><br>
     </div>
        <div id="project4" class="project" style="text-align: justify; font-size: 15px;">     
         <h2><strong>Salary Prediction</strong></h2>
@@ -116,7 +116,7 @@ toc_icon: "columns"
            Through meticulous refinement and adept utilization of the Gradient Descent technique, an exceptionally efficient model was constructed. The core of the accomplishment rests in the notable decrease of the Mean Square Error (MSE). The model rapidly reduced the MSE from a substantial 91.2% to an impressive 6.3%.<br>
         </p>
         <a href="https://github.com/AmritaNeogi/Data-Science-Project-Salary-Prediction">Know More </a> <img src="/assets/images/logo/github.png" alt="Python Logo" style="height: 24px; margin-right: 12px;">
-    </div><br>
+    </div><br><br>
       <div id="project5" class="project" style="text-align: justify; font-size: 15px;">     
         <h2><strong>Design and Implementation of an Image Classifier Using CNN</strong></h2>
         <p><i>December 2022</i></p>
