@@ -23,7 +23,7 @@ toc_icon: "columns"
         width: 100%; /* Full width */
         /* box-sizing: border-box; */
         /* padding: 20px; */
-        border: 1px solid #ccc;
+        /* border: 1px solid #ccc; */
         margin-top: 20px; /* Add space between projects */
     }
 
@@ -39,8 +39,8 @@ toc_icon: "columns"
     /* Style for legend on the left */
     .legend {
         float: left;
-        width: 20%; /* Adjust the width as needed */
-        /* padding-right: 20px; Add space between legend and projects */
+        width: 50%; /* Adjust the width as needed */
+        padding-right: 20px; Add space between legend and projects */
     }
 
     .legend ul {
