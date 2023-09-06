@@ -33,9 +33,9 @@ categories: pages
       Google Business Intelligence by Coursera
       <i><span style="float: right;">In Progress</span></i><br><br>
       Google Data Analytics by Coursera
-      <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/EMEK5BC3QWPA">[Link]</a><i><span style="float: right;">June 2023</span></i> <br><br>
+      <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/EMEK5BC3QWPA" style="text-decoration: none;">[Link]</a><i><span style="float: right;">June 2023</span></i> <br><br>
       Google Project Management by Coursera
-      <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/UCSV3HVH4LQL">[Link]</a><i><span style="float: right;">July 2023</span></i> <br>                
+      <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/UCSV3HVH4LQL" style="text-decoration: none;">[Link]</a><i><span style="float: right;">July 2023</span></i> <br>                
     </p>
    </div>                                                                  
 
