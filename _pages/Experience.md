@@ -6,9 +6,53 @@ date: 2023-9-02
 categories: pages
 ---
 <style>
-   /* Style for the title */
+    body {
+        color: #333; /* Default text color */
+    }
+    
+    .project-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .project {
+        width: 100%; /* Full width */
+        box-sizing: border-box; */
+        padding: 20px; */
+        border: 1px solid #ccc; */
+        margin-top: 20px; /* Add space between projects */
+    }
+
+    .project h2 {
+        margin-top: 0;
+    }
+
+    .project img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Style for legend on the left */
+    .legend {
+        float: top;
+        width: 50%; /* Adjust the width as needed */
+        padding-right: 20px; Add space between legend and projects */
+    }
+
+    .legend ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .legend li {
+        margin: 10px 0;
+        font-size: 14px; /* Adjust the font size for the legend */
+    }
+
+    /* Style for the title */
     h1 {
-        color: #336699; /* Change the title text color to blue */
+        color:  #336699; /* Change the title text color to blue */
     }
 </style>
 
@@ -17,8 +61,8 @@ categories: pages
 <br>
 <div class="legend" style="font-size: 17px;">
     <ul>
-        <li><a href="#project1">Graduate Research Asistant</a></li>
-        <li><a href="#project2">Systems Engineer (ETL Developer)</a></li>
+        <li><a href="#project1" style="text-decoration: none;">Graduate Research Asistant</a></li>
+        <li><a href="#project2" style="text-decoration: none;">Systems Engineer (ETL Developer)</a></li>
     </ul>
 </div>
 <br>
