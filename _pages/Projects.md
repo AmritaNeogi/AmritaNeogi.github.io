@@ -64,7 +64,7 @@ toc_icon: "columns"
 <!-- Legend on the top -->
 <div class="legend" style="font-size: 18px;">
     <ul>
-        <li><a href="#project1" style="text-decoration: none;">🌿 Identifying Leaf Phenology using CNN</a></li>
+        <li><a href="#project1" style="text-decoration: none;">🌿 Identifying Leaf Phenology</a></li>
         <li><a href="#project2" style="text-decoration: none;">🚗 Uber Data Analytics</a></li>
         <li><a href="#project3" style="text-decoration: none;">💳 Credit Card Fraud Detection</a></li>
         <li><a href="#project4" style="text-decoration: none;">💰 Salary Prediction</a></li>
@@ -115,8 +115,8 @@ toc_icon: "columns"
            The objective of this project is to construct a model for salary prediction contingent on years of experience.<br>
            Through meticulous refinement and adept utilization of the Gradient Descent technique, an exceptionally efficient model was constructed. The core of the accomplishment rests in the notable decrease of the Mean Square Error (MSE). The model rapidly reduced the MSE from a substantial 91.2% to an impressive 6.3%.<br>
         </p>
-        <a href="https://github.com/AmritaNeogi/Data-Science-Project-Salary-Prediction" style="text-decoration: none;">Know More </a> <img src="/assets/images/logo/github.png" alt="Python Logo" style="height: 24px; margin-right: 12px;">
-    </div><br><br>
+        <a href="https://github.com/AmritaNeogi/Data-Science-Project-Salary-Prediction" style="text-decoration: none;">Know More </a> <img src="/assets/images/logo/github.png" alt="Python Logo" style="height: 24px; margin-right: 12px;"> <br><br>
+    </div>
       <div id="project5" class="project" style="text-align: justify; font-size: 15px;">     
         <h2><strong>DESIGN AND IMPLEMENTATION OF AN IMAGE CLASSIFIER USING CNN</strong></h2>
         <p><i>December 2022</i></p>
