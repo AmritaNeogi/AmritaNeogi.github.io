@@ -61,8 +61,8 @@ categories: pages
 <br>
 <div class="legend" style="font-size: 17px;">
     <ul>
-        <li><a href="#project1" style="text-decoration: none;">Graduate Research Asistant</a></li>
-        <li><a href="#project2" style="text-decoration: none;">Systems Engineer (ETL Developer)</a></li>
+        <li><a href="#project1"  style="text-decoration: none;">Graduate Research Asistant</a></li>
+        <li><a href="#project2"  style="text-decoration: none;">Systems Engineer (ETL Developer)</a></li>
     </ul>
 </div>
 <br>
