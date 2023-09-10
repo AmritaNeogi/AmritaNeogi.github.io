@@ -59,7 +59,7 @@ categories: pages
 <!-- Title of the page in blue -->
 <h1>Experience</h1>
 <br>
-<div class="legend" style="font-size: 17px;">
+<div class="legend" style="font-size: 18px;">
     <ul>
         <li><a href="#project1"  style="text-decoration: none;">Graduate Research Asistant</a></li>
         <li><a href="#project2"  style="text-decoration: none;">Systems Engineer (ETL Developer)</a></li>
