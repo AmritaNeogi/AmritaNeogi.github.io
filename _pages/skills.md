@@ -55,7 +55,7 @@ categories: pages
         <li>Version Control System: Git</li>
         <li>ETL Tool: Informatica Power Center</li>
         <li>Agile Tool: JIRA</li>
-        <li>Cloud Platforms: AWS Services(Athena), Google Cloud Storage(GCP)</li>
+        <li>Cloud Platforms and Services: AWS Services(Athena), Google Cloud Storage(GCP), Snowflake</li>
         <li>Data Security Platform: Protegrity</li>
         <li>Crowdsourcing Platform: Amazon MTurk</li>        
     </ul>
