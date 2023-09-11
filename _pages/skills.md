@@ -51,7 +51,7 @@ categories: pages
         <li>MySQL</li>
         <li>PostgreSQL</li>
         <li>Teradata</li>
-        <li>Visualization Tools: Tableau, Looker</li>
+        <li>Visualization Tools: Tableau, Looker, Seaborn, Plotly, Microsoft Excel</li>
         <li>Version Control System: Git</li>
         <li>ETL Tool: Informatica Power Center</li>
         <li>Agile Tool: JIRA</li>
