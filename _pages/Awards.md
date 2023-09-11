@@ -51,7 +51,7 @@ categories: pages
       <br>
       Promotion as Senior ETL Developer along with salary increment of 14% and bonus of 20,000 INR. <br>
       <div class="image-container"><img src="/assets/images/contexual_master.PNG" alt="Project Image"> </div>
-      <p style="line-height: 1.5; font-size: 15px;">As a senior ETL developer, I had been working closely with our client for over two and a half years when a major merger reshaped our financial services corporation. The merger meant expanding our brick-and-mortar branches and retrofitting critical customer data security.<br>
+      <p style="line-height: 1.5; font-size: 15px;">As a senior ETL developer, I had been working closely with our client(a leading financial service corporation) for over two and a half years when a major merger reshaped the organisation structure. The merger meant expanding the brick-and-mortar branches and retrofitting critical customer data security.<br>
       Given the tight timeline, I leveraged my previous experience with the Protegrity platform to step up and lead the project. I meticulously identified areas needing support, compared and modified codes, and collaborated with my fellow developers.<br>
       Through my efforts, we not only resolved the client's issues but also improved system performance and reduced code execution time by 30%. This proactive approach built confidence, strengthened customer relationships, and contributed to efficient operations and revenue generation.<br>
       My strategy and dedication earned recognition from the Chief Technology Officer (CTO) and his team, resulting in a significant reduction in our annual IT budget. This success solidified our client's trust in our partnership, enhancing overall customer satisfaction.<br>
