@@ -43,14 +43,14 @@ I am Open to work from February 2023!! 📆
   <h2 style="color: #336699;"><strong>EDUCATION</strong></h2>
   <p style="line-height: 1.5; font-size: 15.5px;">
    <strong><img src="/assets/images/logo/University_of_Arizona_logo.jpg" alt="Python Logo" style="height: 24px; margin-right: 12px;">University of Arizona</strong>
-   <i><span style="float: right;">August 2022 - December 2023</span></i><br> 
+   <i><span style="float: right;">December 2023 (Anticipated)</span></i><br> 
     Tucson, Arizona <br> 
     Master of Science in Data Science <br>
     GPA: 4 / 4 <br>
     </p>
     <p style="line-height: 1.5; font-size: 15.5px;">
    <strong><img src="/assets/images/logo/UEM_logo.png" alt="Python Logo" style="height: 24px; margin-right: 12px;">University of Engineering and Management</strong>
-   <i><span style="float: right;">August 2013 - May 2017</span></i><br> 
+   <i><span style="float: right;">May 2017</span></i><br> 
     Jaipur, India<br> 
     Bachelor of Technology in Electrical Engineering<br>
     GPA: 7.66 / 10 (equivalent to magna cum laude)<br>
