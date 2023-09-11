@@ -83,7 +83,7 @@ categories: pages
         <li>Excel & Spreadsheet Analysis</li>
         <li>RFM (Recency, Frequency, Monetary) Analysis and Customer Segmentation</li>
         <li>Strategic Planning & Decision Making</li>
-        <li>Problem Solving</li>
+        <li>Critical Thinking & Problem Solving</li>
     </ul>
 </div>
 
