@@ -51,11 +51,19 @@ categories: pages
         <li>MySQL</li>
         <li>PostgreSQL</li>
         <li>Teradata</li>
-        <li>Visualization Tools: Tableau, Looker, Seaborn, Plotly, Microsoft Excel</li>
+        <li>Visualization Tools: <br>
+            • Tableau<br>
+            • Looker<br>
+            • Seaborn<br>
+            • Plotly<br>
+            • Microsoft Excel</li>
         <li>Version Control System: Git</li>
         <li>ETL Tool: Informatica Power Center</li>
         <li>Agile Tool: JIRA</li>
-        <li>Cloud Platforms and Services: AWS Services(Athena), Google Cloud Storage(GCP), Snowflake</li>
+        <li>Cloud Platforms and Services: <br>
+            • AWS Services(Athena)<br>
+            • Google Cloud Storage(GCP)<br>
+            • Snowflake</li>
         <li>Data Security Platform: Protegrity</li>
         <li>Crowdsourcing Platform: Amazon MTurk</li>        
     </ul>
@@ -68,7 +76,9 @@ categories: pages
         <li>Data Wrangling</li>
         <li>Data Engineering</li>
         <li>Exploratory Data Analysis (EDA)</li>
-        <li>Feature Engineering: Principal Component Analysis (PCA), One-Hot Encoding</li>
+        <li>Feature Engineering: <br>
+            • Principal Component Analysis (PCA)<br>
+            • One-Hot Encoding</li>
         <li>Machine Learning Models:<br>
             •	Regression Models<br>
             •	Classification Models<br> 
@@ -78,7 +88,9 @@ categories: pages
             •	Random Forest<br>
             •	Support Vector Machines<br>
             •	Naïve Bayes</li>
-        <li>Optimization Technique: Gradient Descent, Grid Search</li>    
+        <li>Optimization Technique: <br>
+            • Gradient Descent<br>
+            • Grid Search</li>    
         <li>Data Visualization</li>
         <li>Excel & Spreadsheet Analysis</li>
         <li>RFM (Recency, Frequency, Monetary) Analysis and Customer Segmentation</li>
