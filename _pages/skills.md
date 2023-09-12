@@ -69,15 +69,15 @@ categories: pages
         <li>Data Engineering</li>
         <li>Exploratory Data Analysis (EDA)</li>
         <li>Feature Engineering: Principal Component Analysis (PCA), One-Hot Encoding</li>
-        <li>Machine Learning Models:
-         Regression Models, 
-         Classification Models, 
-         Clustering Analysis,
-         Prediction Models,
-         Decision Trees,
-         Random Forest,
-         Support Vector Machines,
-         Naïve Bayes</li>
+        <li>Machine Learning Models:<br>
+            •	Regression Models<br>
+            •	Classification Models<br> 
+            •	Clustering Analysis<br>
+            •	Prediction Models<br>
+            •	Decision Trees<br>
+            •	Random Forest<br>
+            •	Support Vector Machines<br>
+            •	Naïve Bayes</li>
         <li>Optimization Technique: Gradient Descent, Grid Search</li>    
         <li>Data Visualization</li>
         <li>Excel & Spreadsheet Analysis</li>
