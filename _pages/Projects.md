@@ -117,6 +117,8 @@ toc_icon: "columns"
         <p style="line-height: 1.5; font-size: 15px;">
            The objective of this project is to construct a model for salary prediction contingent on years of experience.<br>
            Through meticulous refinement and adept utilization of the Gradient Descent technique, an exceptionally efficient model was constructed. The core of the accomplishment rests in the notable decrease of the Mean Square Error (MSE). The model rapidly reduced the MSE from a substantial 91.2% to an impressive 6.3%.<br>
+            <a class="image-container"><img src="/assets/images/summary1.png" alt="Project Image"></a><br> 
+            <a class="image-container"><img src="/assets/images/gradient descent.png" alt="Project Image"></a><br> 
         </p>
         <a href="https://github.com/AmritaNeogi/Data-Science-Project-Salary-Prediction" style="text-decoration: none;">Know More </a> <img src="/assets/images/logo/github.png" alt="Python Logo" style="height: 24px; margin-right: 12px;"> <br><br>
     </div>
