@@ -62,7 +62,7 @@ categories: pages
         <li>Agile Tool: JIRA</li>
         <li>Cloud Platforms and Services: <br>
             • AWS Services(Athena)<br>
-            • Google Cloud Storage(GCP)<br>
+            • Google Cloud Platform(GCP)<br>
             • Snowflake</li>
         <li>Data Security Platform: Protegrity</li>
         <li>Crowdsourcing Platform: Amazon MTurk</li>        
