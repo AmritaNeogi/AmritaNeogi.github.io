@@ -58,19 +58,6 @@ toc_icon: "columns"
         color:  #336699; /* Change the title text color to blue */
     }
 </style>
-<style>
-  .image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* You can adjust the height as needed */
-  }
-
-  .image-container img {
-    max-width: 100%;
-    max-height: 100%;
-  }
-</style>
 <!-- Title of the page in blue -->
 <h1>Projects</h1>
 <br>
@@ -89,7 +76,7 @@ toc_icon: "columns"
     <div id="project1" class="project" style="text-align: justify; font-size: 15px;">     
         <h2><strong>IDENTIFYING LEAF PHENOLOGY OF DECIDUOUS BROADLEAF FORESTS FROM PHENOCAM IMAGES</strong></h2>
         <p><i>In Progress</i></p>
-        <div class="image-container" ><img src="/assets/images/decidousForest.jpg" alt="Project Image"></div>
+        <div class="image-container" style= "align-items: center;" ><img src="/assets/images/decidousForest.jpg" alt="Project Image"></div>
         <p style="line-height: 1.5; font-size: 15px;">
            The ongoing project undertaken by the individual showcases pioneering efforts in advancing phenological research through the integration of state-of-the-art technology and deep learning techniques. The focus lies on predictive modeling and large-scale validation, with the goal of revealing the intricate correlations between PhenoCam images and the development of vegetation phenology <br>
            At its essence, the project revolves around the creation of a predictive tool employing CNN Regression to anticipate leaf phenology in deciduous broadleaf forests across diverse sites. The project employs three primary methods - AlexNet, ResNet-50, and ResNet-101 - each contributing distinctively to the comprehension of phenology patterns. By harnessing the capabilities of deep learning, the project seeks to unearth nuanced insights from PhenoCam images, potentially uncovering subtleties that evade human observation.<br>
@@ -114,7 +101,7 @@ toc_icon: "columns"
     <div id="project3" class="project" style="text-align: justify; font-size: 15px;">     
         <h2><strong>CREDIT CARD FRAUD DETECTION</strong></h2>
         <p><i>August 2023</i></p>
-        <div class="image-container"><img src="/assets/images/credit_card.jpeg" alt="Project Image"></div>
+        <div class="image-container" style= "align-items: center;" ><img src="/assets/images/credit_card.jpeg" alt="Project Image"></div>
         <p style="line-height: 1.5; font-size: 15px;">
             In the realm of digital transactions, security is paramount. My project focuses on creating a robust credit card fraud detection model using advanced machine learning algorithms. <br> 
             The standout model boasts an accuracy rate that sets a new standard for fraud detection.Machine learning algorithm such as Decision Tree, Logistic Regression, Random Forest and Naive Bayes, have been employed, and obtained an impressive accuracy rate of 99% for the best model. 
