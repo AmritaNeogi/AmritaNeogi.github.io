@@ -93,6 +93,7 @@ toc_icon: "columns"
             <!-- <a class="image-container"><img src="/assets/images/uber_data_model.jpeg" alt="Project Image"></a><br> -->
             Performed complex analytical queries on the enriched dataset using BigQuery, showcasing my ability to derive meaningful insights from vast datasets. Developed and optimized queries that consistently yielded results within seconds, contributing to efficient data-driven decision-making. Answered crucial business questions, such as demand patterns and peak hours, enhancing my analytical capabilities.<br>
             Implemented an interactive and intuitive Looker dashboard that translated raw data into actionable visualizations. The dashboard facilitated dynamic exploration of key performance indicators, resulting in a 30% increase in data accessibility for stakeholders. This project not only strengthened my technical skills but also highlighted my proficiency in creating user-friendly data representation tools.<br>
+            <a href= "https://lookerstudio.google.com/s/s-nnQQB79Kw" style="text-decoration: none;">Looker Dashboard</a> <br>
             <a class="image-container"><img src="/assets/images/uber_dashboard.jpg" alt="Project Image"></a><br> 
         </p>
         <a href="https://github.com/AmritaNeogi/Uber_data_Analytics" style="text-decoration: none;">Know More </a> <img src="/assets/images/logo/github.png" alt="Python Logo" style="height: 24px; margin-right: 12px;"><br><br>
