@@ -105,7 +105,7 @@ toc_icon: "columns"
         <p style="line-height: 1.5; font-size: 15px;">
             In the realm of digital transactions, security is paramount. My project focuses on creating a robust credit card fraud detection model using advanced machine learning algorithms. <br> 
             The standout model boasts an accuracy rate that sets a new standard for fraud detection.Machine learning algorithm such as Decision Tree, Logistic Regression, Random Forest and Naive Bayes, have been employed, and obtained an impressive accuracy rate of 99% for the best model. 
-            Later, the data imbalance was tackled using SMOTE Technique. Each algorithm was fine-tuned for optimal performance and further acheieved a 10% increase in the accuracy.<br>
+            Later, the data imbalance was tackled using SMOTE Technique. Each algorithm was fine-tuned for optimal performance and further achieved a 10% increase in the accuracy.<br>
             <a class="image-container"><img src="/assets/images/final_summary.png" alt="Project Image"></a><br> 
         </p>
         <a href="https://github.com/AmritaNeogi/Data-Science-Project-Credit-Card-Fraud-Detection" style="text-decoration: none;">Know More </a> <img src="/assets/images/logo/github.png" alt="Python Logo" style="height: 24px; margin-right: 12px;"><br><br>
