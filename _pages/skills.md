@@ -74,7 +74,8 @@ categories: pages
     <h2>DATA SCIENCE & ANALYTICS</h2>
     <ul style="line-height: 1.5; font-size: 15px;">
         <li>Data Wrangling</li>
-        <li>Data Engineering</li>
+        <li>A/B Testing</li>
+        <li>Continuous Integration and Continuous Deployment/Delivery (CI/CD)</li>
         <li>Exploratory Data Analysis (EDA)</li>
         <li>Feature Engineering: <br>
             • Principal Component Analysis (PCA)<br>
