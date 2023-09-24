@@ -39,7 +39,9 @@ categories: pages
         <li><img src="/assets/images/logo/python.png" alt="Python Logo" style="height: 24px; margin-right: 12px;"> Python</li>
         <li><img src="/assets/images/logo/R_logo.jpg" alt="Python Logo" style="height: 24px; margin-right: 12px;"> R</li>
         <li><img src="/assets/images/logo/sql_logo.png" alt="Python Logo" style="height: 24px; margin-right: 12px;"> SQL</li> 
-        <li><img src="/assets/images/logo/nosql-database.png" alt="Python Logo" style="height: 24px; margin-right: 12px;"> NoSQL</li>      
+        <li><img src="/assets/images/logo/nosql-database.png" alt="Python Logo" style="height: 24px; margin-right: 12px;"> NoSQL</li>  
+        <li><img src="/assets/images/logo/java.png" alt="Python Logo" style="height: 24px; margin-right: 12px;"> Core Java</li> 
+        <li><img src="/assets/images/logo/html.jpg" alt="Python Logo" style="height: 24px; margin-right: 12px;"> HTML/CSS</li>     
     </ul>
 </div>
 
@@ -92,7 +94,7 @@ categories: pages
         <li>Optimization Technique: <br>
             • Gradient Descent<br>
             • Grid Search</li>    
-        <li>Data Visualization</li>
+        <li>Google BigQuery</li>
         <li>Excel & Spreadsheet Analysis</li>
         <li>RFM (Recency, Frequency, Monetary) Analysis and Customer Segmentation</li>
         <li>Strategic Planning & Decision Making</li>

@@ -60,8 +60,8 @@ I am Open to work from February 2023!! 📆
     <h2 style="color: #336699;"><strong><br>INTEREST</strong></h2> 
     <p style="line-height: 1.5; font-size: 15.5px;">
      1. Data Scientist <br>
-     2. Data Analytics <br>
-     3. Data Engineering
+     2. Data Analyst <br>
+     3. Data Engineer
     <br>
     <br>
     </p>
