@@ -64,12 +64,12 @@ toc_icon: "columns"
 <!-- Legend on the top -->
 <div class="legend" style="font-size: 18px;">
     <ul>
-        **Data Science & Machine Learning**
+        <strong>Data Science & Machine Learning:</strong>
         <li><a href="#project1" style="text-decoration: none;">🌿 Identifying Leaf Phenology</a></li>
         <li><a href="#project4" style="text-decoration: none;">💰 Salary Prediction</a></li>
         <li><a href="#project5" style="text-decoration: none;">📷 Image Classifier Using CNN</a></li>
         <li><a href="#project3" style="text-decoration: none;">💳 Credit Card Fraud Detection</a></li>
-        **Data Engineering:**       
+        <strong>Data Engineering:</strong>    
         <li><a href="#project2" style="text-decoration: none;">🚗 Uber Data Analytics</a></li>      
     </ul>
 </div>
