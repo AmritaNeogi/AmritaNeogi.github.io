@@ -90,6 +90,19 @@ toc_icon: "columns"
         </p>
         <a href="https://github.com/AmritaNeogi/PhenoCam-Image-Analysis-Using-CNN" style="text-decoration: none;">Know More </a><img src="/assets/images/logo/github.png" alt="Python Logo" style="height: 24px; margin-right: 12px;"> <br><br>
     </div>
+        <div id="project8" class="project" style="text-align: justify; font-size: 15px;">     
+        <h2><strong>HOUSE PRICE PROFILER USING SNOWFLAKE DATABASE</strong></h2>
+        <p><i>October 2023</i></p>
+        <div class="image-container"><img src="/assets/images/houese_price.jpg" alt="Project Image"></div>
+        <p style="line-height: 1.5; font-size: 15px;">            
+            Executed a House Price Profiler Project with Snowflake Database to address the need for structured data in real estate market analysis. Leveraged Bright Data to extract and store data from Otodom website in Snowflake, implemented flattening for efficient analysis, and enriched the dataset through the conversion of latitude and longitude to physical addresses using the Geocode API, along with translation of Polish texts to English with Google Translator. 
+            <a class="image-container"><img src="/assets/images/overview_house.png" alt="Project Image"></a><br>
+            <!-- <a class="image-container"><img src="/assets/images/uber_data_model.jpeg" alt="Project Image"></a><br> -->
+            The project successfully answered 11 pivotal business questions, yielding actionable insights for stakeholders. This project highlights skills in data extraction, transformation, and database management, showcasing a holistic approach to problem-solving in data analysis.<br>
+            <!-- <a class="image-container"><img src="/assets/images/NN_model_accuracy_Loss.png" alt="Project Image"></a><br>              -->
+        </p>
+        <a href="https://github.com/AmritaNeogi/Breast_Cancer_Prediction" style="text-decoration: none;">Know More </a> <img src="/assets/images/logo/github.png" alt="Python Logo" style="height: 24px; margin-right: 12px;"><br><br>
+    </div>
     <div id="project6" class="project" style="text-align: justify; font-size: 15px;">     
         <h2><strong>BREAST CANCER PREDICTION</strong></h2>
         <p><i>October 2023</i></p>
