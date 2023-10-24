@@ -90,6 +90,20 @@ toc_icon: "columns"
         </p>
         <a href="https://github.com/AmritaNeogi/PhenoCam-Image-Analysis-Using-CNN" style="text-decoration: none;">Know More </a><img src="/assets/images/logo/github.png" alt="Python Logo" style="height: 24px; margin-right: 12px;"> <br><br>
     </div>
+    <div id="project6" class="project" style="text-align: justify; font-size: 15px;">     
+        <h2><strong>BREAST CANCER PREDICTION</strong></h2>
+        <p><i>October 2023</i></p>
+        <div class="image-container"><img src="/assets/images/breast_cancer.png" alt="Project Image"></div>
+        <p style="line-height: 1.5; font-size: 15px;">            
+            Executed a breast cancer prediction project, crafting two models: a Logistic Regression model delivering 92.9% accuracy and a superior Neural Network model achieving 97.3% accuracy. This initiative stemmed from a dedication to enhancing early detection. By employing versatile modeling techniques and precise parameter optimization, they highlighted the transformative potential of data-driven solutions in healthcare, emphasizing the criticality of accurate early detection.
+            <a class="image-container"><img src="/assets/images/overview_breastCancer.png" alt="Project Image"></a><br>
+            <!-- <a class="image-container"><img src="/assets/images/uber_data_model.jpeg" alt="Project Image"></a><br> -->
+            For the Logistic Regression Model, they utilized historical patient data, selected relevant features, conducted thorough data preprocessing, fine-tuned model parameters for improved performance, and employed cross-validation to ensure robustness, ultimately achieving a 92.9% prediction accuracy, a significant advancement in early detection. In the case of the Neural Network Model, they implemented it using TensorFlow and Keras, experimented with multiple architectures and activation functions, closely monitored training progress, and adjusted hyperparameters to attain an impressive accuracy of 97.3%, indicating a substantial improvement in predictive capabilities.<br>
+            <a class="image-container"><img src="/assets/images/NN_model_accuracy.png" alt="Project Image"></a><br> 
+            <a class="image-container"><img src="/assets/images/NN_model_loss.png" alt="Project Image"></a><br> 
+        </p>
+        <a href="https://github.com/AmritaNeogi/Breast_Cancer_Prediction" style="text-decoration: none;">Know More </a> <img src="/assets/images/logo/github.png" alt="Python Logo" style="height: 24px; margin-right: 12px;"><br><br>
+    </div>
        <div id="project2" class="project" style="text-align: justify; font-size: 15px;">     
         <h2><strong>UBER DATA ANALYTICS</strong></h2>
         <p><i>August 2023</i></p>
