@@ -68,9 +68,10 @@ toc_icon: "columns"
         <li><a href="#project1" style="text-decoration: none;">🌿 Identifying Leaf Phenology</a></li>
         <!-- <li><a href="#project9" style="text-decoration: none;">😷 Face Mask Detection</a></li> -->
         <li><a href="#project6" style="text-decoration: none;">🎀 Breast Cancer Prediction</a></li>
+        <li><a href="#project3" style="text-decoration: none;">💳 Credit Card Fraud Detection</a></li>
         <li><a href="#project4" style="text-decoration: none;">💰 Salary Prediction</a></li>
         <li><a href="#project5" style="text-decoration: none;">📷 Image Classifier Using CNN</a></li>
-        <li><a href="#project3" style="text-decoration: none;">💳 Credit Card Fraud Detection</a></li>
+        
         <strong>Data Engineering & Data Analytics:</strong>  
         <li><a href="#project8" style="text-decoration: none;">🏠 House Price Profiler using Snowflake Database</a></li>  
         <li><a href="#project7" style="text-decoration: none;">🎥 Youtube Data Pipeline using Apache Airflow</a></li>
