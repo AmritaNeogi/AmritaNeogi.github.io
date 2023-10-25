@@ -90,7 +90,7 @@ toc_icon: "columns"
         </p>
         <a href="https://github.com/AmritaNeogi/PhenoCam-Image-Analysis-Using-CNN" style="text-decoration: none;">Know More </a><img src="/assets/images/logo/github.png" alt="Python Logo" style="height: 24px; margin-right: 12px;"> <br><br>
     </div>
-     <div id="project8" class="project" style="text-align: justify; font-size: 15px;">     
+     <div id="project7" class="project" style="text-align: justify; font-size: 15px;">     
         <h2><strong>YOUTUBE DATA PIPELINE USING APACHE AIRFLOW</strong></h2>
         <p><i>October 2023</i></p>
         <div class="image-container"><img src="/assets/images/yt.jpg" alt="Project Image"></div>
