@@ -68,7 +68,7 @@ categories: pages
         <li>Cloud Platforms and Services: <br>
             • AWS Services(Athena)<br>
             • Google Cloud Platform(GCP)<br>
-            • Amazon S3
+            • Amazon S3 <br>
             • Snowflake Database</li>
         <li>Data Security Platform: Protegrity</li>
         <li>Crowdsourcing Platform: Amazon MTurk</li>        
