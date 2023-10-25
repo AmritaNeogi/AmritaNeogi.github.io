@@ -60,7 +60,7 @@ toc_icon: "columns"
 </style>
 <!-- Title of the page in blue -->
 <h1>Projects</h1>
-<br>
+
 <!-- Legend on the top -->
 <div class="legend" style="font-size: 18px;">
     <ul>

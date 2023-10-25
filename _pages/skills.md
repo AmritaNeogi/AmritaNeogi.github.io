@@ -62,13 +62,14 @@ categories: pages
         <li>Version Control System: Git</li>
         <li>ETL Tool: Informatica Power Center</li>
         <li>Workflow Automation Tool: Apache Airflow</li>
-        <li>Kafka</li>
+        <li>Apache Kafka</li>
         <li>Agile Tool: JIRA</li>
         <li>OHDSI Tool: WhiteRabbit</li>
         <li>Cloud Platforms and Services: <br>
             • AWS Services(Athena)<br>
             • Google Cloud Platform(GCP)<br>
-            • Snowflake</li>
+            • Amazon S3
+            • Snowflake Database</li>
         <li>Data Security Platform: Protegrity</li>
         <li>Crowdsourcing Platform: Amazon MTurk</li>        
     </ul>
