@@ -73,7 +73,7 @@ toc_icon: "columns"
         <li><a href="#project3" style="text-decoration: none;">💳 Credit Card Fraud Detection</a></li>
         <strong>Data Engineering & Data Analytics:</strong>  
         <li><a href="#project8" style="text-decoration: none;">🏠 House Price Profiler using Snowflake Database</a></li>  
-        <!-- <li><a href="#project7" style="text-decoration: none;">🎥 Youtube Data Analysis using Apache Airflow</a></li> -->
+        <li><a href="#project7" style="text-decoration: none;">🎥 Youtube Data Pipeline using Apache Airflow</a></li>
         <li><a href="#project2" style="text-decoration: none;">🚗 Uber Data Analytics</a></li>  
             
     </ul>
@@ -90,6 +90,19 @@ toc_icon: "columns"
         </p>
         <a href="https://github.com/AmritaNeogi/PhenoCam-Image-Analysis-Using-CNN" style="text-decoration: none;">Know More </a><img src="/assets/images/logo/github.png" alt="Python Logo" style="height: 24px; margin-right: 12px;"> <br><br>
     </div>
+     <div id="project8" class="project" style="text-align: justify; font-size: 15px;">     
+        <h2><strong>YOUTUBE DATA PIPELINE USING APACHE AIRFLOW</strong></h2>
+        <p><i>October 2023</i></p>
+        <div class="image-container"><img src="/assets/images/yt.jpg" alt="Project Image"></div>
+        <p style="line-height: 1.5; font-size: 15px;">            
+            This YouTube Data ETL with Airflow project automates the extraction, transformation, and loading of data based on YouTube channels IDs. It uses the YouTube Data API, transforms the data, and stores it in destinations like Amazon S3. Apache Airflow schedules and orchestrates the ETL process, ensuring the data is up-to-date and reliable for analysis. 
+            <a class="image-container"><img src="/assets/images/youtube.png" alt="Project Image"></a><br>
+            <!-- <a class="image-container"><img src="/assets/images/uber_data_model.jpeg" alt="Project Image"></a><br> -->
+            The project consists of components for data extraction, transformation, loading, Airflow integration, and error handling. Its key objectives are to automate data retrieval, ensure data cleanliness, offer flexibility in storage, provide a dependable ETL process with Airflow integration, and offer a customizable framework. In summary, it simplifies YouTube channel data ETL, benefiting data enthusiasts, analysts, and engineers.<br>
+            <!-- <a class="image-container"><img src="/assets/images/NN_model_accuracy_Loss.png" alt="Project Image"></a><br>              -->
+        </p>
+        <a href="https://github.com/AmritaNeogi/YouTube_Data_Pipieline_Using_Airflow" style="text-decoration: none;">Know More </a> <img src="/assets/images/logo/github.png" alt="Python Logo" style="height: 24px; margin-right: 12px;"><br><br>
+    </div>
         <div id="project8" class="project" style="text-align: justify; font-size: 15px;">     
         <h2><strong>HOUSE PRICE PROFILER USING SNOWFLAKE DATABASE</strong></h2>
         <p><i>October 2023</i></p>
@@ -101,7 +114,7 @@ toc_icon: "columns"
             The project successfully answered 11 pivotal business questions, yielding actionable insights for stakeholders, resulting in enhanced decision-making capabilities. This project highlights skills in data extraction, transformation, and database management, showcasing a holistic approach to problem-solving in data analysis.<br>
             <!-- <a class="image-container"><img src="/assets/images/NN_model_accuracy_Loss.png" alt="Project Image"></a><br>              -->
         </p>
-        <a href="https://github.com/AmritaNeogi/Breast_Cancer_Prediction" style="text-decoration: none;">Know More </a> <img src="/assets/images/logo/github.png" alt="Python Logo" style="height: 24px; margin-right: 12px;"><br><br>
+        <a href="https://github.com/AmritaNeogi/Data_Analytics_Project-Housing_Price_Profiler" style="text-decoration: none;">Know More </a> <img src="/assets/images/logo/github.png" alt="Python Logo" style="height: 24px; margin-right: 12px;"><br><br>
     </div>
     <div id="project6" class="project" style="text-align: justify; font-size: 15px;">     
         <h2><strong>BREAST CANCER PREDICTION</strong></h2>
