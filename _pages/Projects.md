@@ -83,14 +83,17 @@ toc_icon: "columns"
 <br>
 <div class="project-container">
     <div id="project1" class="project" style="text-align: justify; font-size: 15px;">     
-        <h2><strong>IDENTIFYING LEAF PHENOLOGY OF DECIDUOUS BROADLEAF FORESTS FROM PHENOCAM IMAGES</strong></h2>
-        <p><i>In Progress</i></p>
+        <h2><strong>Phenophase Image Analysis</strong></h2>
+        <p><i>December 2023</i></p>
         <div class="image-container" ><img src="/assets/images/decidousForest.jpg" alt="Project Image"></div>
         <p style="line-height: 1.5; align-items: center; font-size: 15px;">
-           The ongoing project undertaken by the individual showcases pioneering efforts in advancing phenological research through the integration of state-of-the-art technology and deep learning techniques. The focus lies on predictive modeling and large-scale validation, with the goal of revealing the intricate correlations between PhenoCam images and the development of vegetation phenology <br>
-           At its essence, the project revolves around the creation of a predictive tool employing CNN Regression to anticipate leaf phenology in deciduous broadleaf forests across diverse sites. The project employs three primary methods - AlexNet, ResNet-50, and ResNet-101 - each contributing distinctively to the comprehension of phenology patterns. By harnessing the capabilities of deep learning, the project seeks to unearth nuanced insights from PhenoCam images, potentially uncovering subtleties that evade human observation.<br>
+           The intricate relationship between vegetation phenology and ecosystem functions shapes key ecological processes, influenced by climate-induced asynchrony. Phenological events, known as Phenophase, tie to seasonal transitions and precipitation. Consequences include disruptions like food scarcity and insect population growth. Despite predictive models, uncertainties persist in aligning Phenophase across species. <br>
+            <a class="image-container"><img src="/assets/images/SOS_EOS.png" alt="Project Image"></a><br>
+             <a class="image-container"><img src="/assets/images/GAN.png" alt="Project Image"></a><br>
+            To address this, tools like PhenoCam monitor phenological variations, prompting a demand for automated methods. This project develops tools to recognize Phenophase changes and predictive models for leaf phenology in deciduous broadleaf forests. Unlike single-site methods, it enhances prediction accuracy across multiple sites, focusing on the start (SOS) and end (EOS) dates of leaf growth using PhenoCam images. Steps include data labeling, preprocessing, ResNet50 CNN model development, and Generative Adversarial Networks (GANs) incorporation, aiming to anticipate key ecological events related to leaf growth.<br>  
+             <a class="image-container"><img src="/assets/images/current_day_pred_after1500epoch.png" alt="Project Image"></a><br>          
         </p>
-        <a href="https://github.com/AmritaNeogi/PhenoCam-Image-Analysis-Using-CNN" style="text-decoration: none;">Know More </a><img src="/assets/images/logo/github.png" alt="Python Logo" style="height: 24px; margin-right: 12px;"> <br><br>
+        <a href="PhenoCam-Image-Analysis-Using-CNN/Phenophase_Prediction at main · AmritaNeogi/PhenoCam-Image-Analysis-Using-CNN (github.com)" style="text-decoration: none;">Know More </a><img src="/assets/images/logo/github.png" alt="Python Logo" style="height: 24px; margin-right: 12px;"> <br><br>
     </div>
      <div id="project7" class="project" style="text-align: justify; font-size: 15px;">     
         <h2><strong>YOUTUBE DATA PIPELINE USING APACHE AIRFLOW</strong></h2>
