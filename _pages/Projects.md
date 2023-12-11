@@ -88,7 +88,9 @@ toc_icon: "columns"
         <div class="image-container" ><img src="/assets/images/decidousForest.jpg" alt="Project Image"></div>
         <p style="line-height: 1.5; align-items: center; font-size: 15px;">
            The intricate relationship between vegetation phenology and ecosystem functions shapes key ecological processes, influenced by climate-induced asynchrony. Phenological events, known as Phenophase, tie to seasonal transitions and precipitation. Consequences include disruptions like food scarcity and insect population growth. Despite predictive models, uncertainties persist in aligning Phenophase across species. <br>
+           Leaf Growth and Dormancy phase for different years:
             <a class="image-container"><img src="/assets/images/SOS_EOS.png" alt="Project Image"></a><br>
+            GAN Architechture:
              <a class="image-container"><img src="/assets/images/GAN.png" alt="Project Image"></a><br>
             To address this, tools like PhenoCam monitor phenological variations, prompting a demand for automated methods. This project develops tools to recognize Phenophase changes and predictive models for leaf phenology in deciduous broadleaf forests. Unlike single-site methods, it enhances prediction accuracy across multiple sites, focusing on the start (SOS) and end (EOS) dates of leaf growth using PhenoCam images. Steps include data labeling, preprocessing, ResNet50 CNN model development, and Generative Adversarial Networks (GANs) incorporation, aiming to anticipate key ecological events related to leaf growth.<br>  
              <a class="image-container"><img src="/assets/images/current_day_pred_after1500epoch.png" alt="Project Image"></a><br>          
