@@ -33,7 +33,7 @@ When I am not crunching data, you'll find me grooving to the rhythm of my other 
 My academic journey started in Electrical Engineering, but my unwavering passion for computer science and technology quickly led me to the thrilling world of data science. <br><br>
 I have 5 years of overall experience in Data Engineering and ETL. I have worked as an ETL developer where I contributed to developing codes for US financial service companies, with a focus on safeguarding personally identifiable information.
 <br><br>
- Currently, I work as a Data Science Manager, where I specialize in crafting health data pipelines to drive insights and advancements in healthcare research. My expertise lies in data cleaning and optimizing data pipelines. I have a track record of streamlining data workflows, including database programs, to facilitate quick and secure data operations.💫
+ Currently, I work as a Data Science Manager, where I specialize in crafting health data pipelines to drive insights and advancements in healthcare research. My expertise lies in data cleaning, data wrangling and optimizing data pipelines. I have a track record of streamlining data workflows, including database programs, to facilitate quick and secure data operations.💫
 <br>
 <br>
 <!-- <p style="line-height: 1.5; font-size: 20px;">
