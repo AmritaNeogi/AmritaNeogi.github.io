@@ -61,6 +61,7 @@ categories: pages
 <br>
 <div class="legend" style="font-size: 18px;">
     <ul>
+        <li><a href="#project1"  style="text-decoration: none;">Data Science Manager</a></li>
         <li><a href="#project1"  style="text-decoration: none;">Graduate Research Asistant</a></li>
         <li><a href="#project2"  style="text-decoration: none;">Systems Engineer (ETL Developer)</a></li>
     </ul>
@@ -69,11 +70,52 @@ categories: pages
 <div class="project-container">
 <div id="project1" class="project" style="text-align: justify;">
   <p style="line-height: 1.5; font-size: 17px;">
+      <strong><img src="/assets/images/logo/arid.jpg" alt="Python Logo" style="height: 24px; margin-right: 12px;">ARID Lab, DEPARTMENT OF PEDIATRICS</strong><br>
+      <!-- <strong><br> UNIVERSITY OF ARIZONA, DEPARTMENT OF PEDIATRICS 
+      </strong><br>                           -->
+            <strong>Data Science Manager&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+                  <i style="line-height: 1.5;font-size: 15px;"><span style="float: right;">March 2024 - Present</span></i>
+   </p>
+     <br>
+       <p style="line-height: 1.5;font-size: 15px;">
+        
+1. <strong>Health Data Pipeline Management:</strong><br><br>    
+   - Spearheaded development and maintenance of a robust Health Data Pipeline.
+   - Oversaw onboarding of clinical sites and integration into the pipeline.
+   - Collaborated with the University of Arizona CB2 for population health projects.
+
+2. <strong>Process Optimization:</strong><br><br>    
+   - Established standardized protocols for data processing through CB2.
+   - Streamlined data extraction, cleaning, and consolidation processes.
+   - Made data-driven decisions to optimize pipeline efficiency.
+
+3. <strong>Data Transformation and Quality Assurance:</strong><br><br> 
+   - Led efforts in data transformation and adherence to OHDSI CDM framework.
+   - Implemented rigorous quality checks to ensure data integrity.
+   - Upheld regulatory compliance and best practices for data security.
+
+4. <strong>Project Coordination and Communication:</strong><br><br> 
+   - Facilitated meetings and maintained clear communication with stakeholders.
+   - Coordinated activities with internal and external partners.
+   - Cultivated collaborative relationships with clinical sites and research partners.
+
+5. <strong>Continuous Improvement and Innovation:</strong><br><br> 
+   - Actively sought opportunities to enhance processes and methodologies.
+   - Stayed abreast of emerging trends in data science and healthcare informatics.
+   - Fostered a culture of creativity and innovation within the team.
+<br><br>
+</p>       
+     <br>
+     </div>
+
+<div class="project-container">
+<div id="project1" class="project" style="text-align: justify;">
+  <p style="line-height: 1.5; font-size: 17px;">
       <strong><img src="/assets/images/logo/arid.jpg" alt="Python Logo" style="height: 24px; margin-right: 12px;">UNIVERSITY OF ARIZONA, DEPARTMENT OF PEDIATRICS</strong><br>
       <!-- <strong><br> UNIVERSITY OF ARIZONA, DEPARTMENT OF PEDIATRICS 
       </strong><br>                           -->
             <strong>Graduate Research Assistant&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
-                  <i style="line-height: 1.5;font-size: 15px;"><span style="float: right;">February 2023 - Present</span></i>
+                  <i style="line-height: 1.5;font-size: 15px;"><span style="float: right;">February 2023 - December 2023</span></i>
    </p>
      <br>
        <p style="line-height: 1.5;font-size: 15px;">
