@@ -30,8 +30,8 @@ categories: pages
    <div style="text-align: justify; font-size: 17px;">     
     <h2><strong><br>CERTIFICATION</strong></h2><br>                
     <p style="line-height: 1.5; font-size: 15px;">
-      Google Business Intelligence by Coursera
-      <i><span style="float: right;">In Progress</span></i><br><br>
+    <!--  Google Business Intelligence by Coursera
+      <i><span style="float: right;">In Progress</span></i><br><br> -->
       Google Data Analytics by Coursera
       <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/EMEK5BC3QWPA" style="text-decoration: none;">[Link]</a><i><span style="float: right;">June 2023</span></i> <br><br>
       Google Project Management by Coursera
