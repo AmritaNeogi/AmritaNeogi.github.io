@@ -138,7 +138,7 @@ categories: pages
 <br><br>
 6. <strong>Statistical Analysis of Patient Data to Uncover Care Patterns and Demographics:
 </strong><br>
-   Conduct statistical tests and logistic regression on patient data to reveal insights like care trends, demographics, and factors impacting engagement. This approach identifies trends, correlations, and potential causal links, informing healthcare strategies and improving patient care.
+   Conduct statistical tests and logistic regression on patient data to reveal insights like care trends, demographics, and factors impacting engagement. This approach identifies trends, correlations, and potential causal links, informing healthcare strategies and improving patient care.<br>
  <br><br>
   </p>       
      <br>
