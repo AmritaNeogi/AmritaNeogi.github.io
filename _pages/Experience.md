@@ -80,29 +80,19 @@ categories: pages
        <p style="line-height: 1.5;font-size: 15px;">
         
 1. <strong>Health Data Pipeline Management:</strong><br><br>    
-   - Spearheaded development and maintenance of a robust Health Data Pipeline. <br>
-   - Oversaw onboarding of clinical sites and integration into the pipeline.<br>
-   - Collaborated with the University of Arizona CB2 for population health projects.<br>
+   Spearheaded the development and maintenance of a robust Health Data Pipeline, overseeing the onboarding of clinical sites and their integration into the system. Additionally, collaborated with the University of Arizona's Center for Biomedical Informatics and Biostatistics (CB2) on various population health projects. <br>
 <br>
 2. <strong>Process Optimization:</strong><br><br>    
-   - Established standardized protocols for data processing through CB2.<br>
-   - Streamlined data extraction, cleaning, and consolidation processes.<br>
-   - Made data-driven decisions to optimize pipeline efficiency.<br>
+   Established standardized protocols for data processing through CB2, streamlining data extraction, cleaning, and consolidation processes. Made data-driven decisions to optimize pipeline efficiency.<br>
 <br>
 3. <strong>Data Transformation and Quality Assurance:</strong><br><br> 
-   - Led efforts in data transformation and adherence to OHDSI CDM framework.<br>
-   - Implemented rigorous quality checks to ensure data integrity.<br>
-   - Upheld regulatory compliance and best practices for data security.<br>
+   Led efforts in data transformation and adherence to the OHDSI CDM framework, implementing rigorous quality checks to ensure data integrity. Upheld regulatory compliance and best practices for data security.<br>
 <br>
 4. <strong>Project Coordination and Communication:</strong><br><br> 
-   - Facilitated meetings and maintained clear communication with stakeholders.<br>
-   - Coordinated activities with internal and external partners.<br>
-   - Cultivated collaborative relationships with clinical sites and research partners.<br>
+   Facilitated meetings and maintained clear communication with stakeholders, coordinating activities with internal and external partners. Cultivated collaborative relationships with clinical sites and research partners.<br>
 <br>
 5. <strong>Continuous Improvement and Innovation:</strong><br><br> 
-   - Actively sought opportunities to enhance processes and methodologies.<br>
-   - Stayed abreast of emerging trends in data science and healthcare informatics.<br>
-   - Fostered a culture of creativity and innovation within the team.<br>
+   Enhanced processes and methodologies by staying abreast of emerging trends in data science and healthcare informatics. Fostered a culture of creativity and innovation within the team.<br>
 <br><br>
 </p>       
      <br>
