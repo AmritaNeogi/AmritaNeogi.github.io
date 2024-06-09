@@ -45,7 +45,7 @@ I am Open to work from February 2023!! 📆
   <p style="line-height: 1.5; font-size: 15.5px;">
    <strong><img src="/assets/images/logo/University_of_Arizona_logo.jpg" alt="Python Logo" style="height: 24px; margin-right: 12px;">University of Arizona</strong>
    <i><span style="float: right;">December 2023 </span></i><br> 
-    Arizona <br> 
+    Tucson, Arizona <br> 
     Master of Science in Data Science <br>
     GPA: 4 / 4 <br>
     </p>
@@ -60,8 +60,8 @@ I am Open to work from February 2023!! 📆
   <div style="text-align: justify; font-size: 17px;">     
     <h2 style="color: #336699;"><strong><br>INTEREST</strong></h2> 
     <p style="line-height: 1.5; font-size: 15.5px;">
-     1. Data Engineer <br>
-     2. Data Scientist <br>
+     1. Data Scientist <br>
+     2. Data Engineer <br>
      3. Data Analyst
     <br>
     <br>
