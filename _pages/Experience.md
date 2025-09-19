@@ -15,8 +15,8 @@ categories: pages
     --bg:#f8fafc;
   }
   .exp-wrap{
-    font-family:'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-    max-width: 980px;                 /* centered + comfy width */
+    font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    max-width: 1120px;              /* WIDER CANVAS */
     margin: 0 auto;
     color: var(--ink);
   }
@@ -24,24 +24,17 @@ categories: pages
   p.page-sub{ color:var(--muted); font-size:14.5px; margin:0 0 .8rem; }
 
   /* Top jump navigation */
-  .jump{
-    position: sticky; top: 0; z-index: 1;
-    background: var(--bg);
-    padding: 8px 0; margin-bottom:.6rem;
-    border-bottom:1px solid var(--line);
-  }
+  .jump{ position:sticky; top:0; z-index:1; background:var(--bg); padding:8px 0; margin-bottom:.6rem; border-bottom:1px solid var(--line); }
   .pills{ display:flex; gap:8px; flex-wrap:wrap; }
   .pill-link{
-    text-decoration:none; color:var(--brand);
-    border:1px solid var(--brand); background:#fff;
-    padding:6px 10px; border-radius:999px; font-weight:600; font-size:13px;
+    text-decoration:none; color:var(--brand); border:1px solid var(--brand);
+    background:#fff; padding:6px 10px; border-radius:999px; font-weight:600; font-size:13px;
   }
 
   /* Collapsible role cards */
   details.role{
     border:1px solid var(--line); border-radius:14px; background:var(--card);
-    box-shadow:0 1px 0 var(--ring);
-    margin:.7rem 0; overflow:clip;
+    box-shadow:0 1px 0 var(--ring); margin:.7rem 0; overflow:clip;
   }
   .role > summary{
     list-style:none; cursor:pointer; outline:none;
@@ -58,22 +51,26 @@ categories: pages
   /* Expanded content */
   .content{
     border-top:1px solid var(--line);
-    display:grid; grid-template-columns: 1fr; gap:12px; padding:12px 14px 14px;
-    font-size:15px; line-height:1.6;
+    display:grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr);  /* FLEX COLUMNS */
+    gap:16px; padding:12px 14px 14px; font-size:14.75px; line-height:1.6;
+    overflow-wrap:anywhere;
   }
-  @media (min-width:860px){
-    .content{ grid-template-columns: 1fr 1fr; }
+  @media (max-width: 820px){
+    .content{ grid-template-columns: 1fr; }
   }
   .highlights, .full{
     background:#fff; border:1px dashed #e9edf3; border-radius:10px; padding:10px 12px;
   }
   .highlights h4, .full h4{ margin:.1rem 0 .35rem; color:var(--brand); font-size:14.5px; }
-  ul.tight{ margin:.2rem 0 0; padding-left:18px; }
+  ul.tight{ margin:.2rem 0 0; padding-left:16px; }
   ul.tight li{ margin:.2rem 0; }
   .tagrow{ display:flex; gap:6px; flex-wrap:wrap; margin-top:.5rem; }
   .tag{ font-size:12px; color:#0f172a; background:#eef3f8; border:1px solid #dbe2ea; padding:3px 8px; border-radius:999px; }
   .backtop{ text-align:right; margin-top:.3rem; }
   .backtop a{ font-size:12.5px; color:var(--brand); text-decoration:none; }
+
+  /* Optional: even wider on big screens */
+  @media (min-width:1280px){ .exp-wrap{ max-width:1180px; } }
 </style>
 
 <div class="exp-wrap" id="top">
