@@ -31,7 +31,8 @@ categories: pages
   .section h2{
     color:var(--brand); font-size:18px; margin:.2rem 0 .5rem;
   }
-  .section-sub{ color:var(--muted); font-size:14px; margin:-.25rem 0 .6rem; }
+  .section-sub{ color:var(--muted); font-size:14.5px; margin:-.25rem 0 .6rem; }
+
 
   /* Cards */
   .card{
