@@ -13,16 +13,18 @@ categories: pages
     --brand:#336699; --ink:#1f2937; --muted:#6b7280;
     --card:#fff; --line:#e5e7eb; --ring:rgba(51,102,153,.12);
     --bg:#f8fafc;
+    --wrap-max: 1000px;  /* <<< Tweak me: 960–1060px are good values */
   }
 
-  /* ===== Base layout ===== */
+  /* ===== Base layout (never overflow parent) ===== */
   .exp-wrap{
     font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-    max-width: 1180px;                 /* roomy canvas */
-    margin: 0 auto;
+    width: 100%;
+    max-width: min(100%, var(--wrap-max));      /* fits parent container */
+    margin-inline: auto;
+    padding-inline: 12px;                       /* small gutter so borders never kiss edge */
     color: var(--ink);
     box-sizing: border-box;
-    width: 100%;
   }
   h1.page-title{ color:var(--brand); margin:.25rem 0 .6rem; font-size:clamp(24px,3vw,30px); }
   p.page-sub{ color:var(--muted); font-size:14.5px; margin:0 0 .8rem; }
@@ -39,7 +41,7 @@ categories: pages
   details.role{
     border:1px solid var(--line); border-radius:14px; background:var(--card);
     box-shadow:0 1px 0 var(--ring); margin:.7rem 0;
-    overflow: hidden;                    /* keep inner borders INSIDE the card */
+    overflow: hidden;                        /* keep inner borders INSIDE the card */
     box-sizing: border-box; width: 100%;
   }
   .role > summary{
@@ -54,15 +56,15 @@ categories: pages
   .org{ color:var(--muted); font-size:13.5px; }
   .dates{ color:var(--muted); font-size:13.5px; white-space:nowrap; }
 
-  /* ===== Expanded content (two columns) ===== */
+  /* ===== Expanded content (two columns, no overflow) ===== */
   .content{
     border-top:1px solid var(--line);
     display:grid;
-    grid-template-columns: minmax(0,1fr) minmax(0,1fr);  /* flexible columns */
+    grid-template-columns: minmax(0,1fr) minmax(0,1fr);   /* flexible columns that can shrink */
     gap:16px;
-    padding:12px 16px 14px;           /* a bit more right padding */
+    padding:12px 16px 14px;           /* right padding so text never kisses edge */
     font-size:14.75px; line-height:1.6;
-    overflow-wrap:anywhere;
+    overflow-wrap:anywhere;           /* break long tokens safely */
     box-sizing:border-box; width:100%;
   }
   @media (max-width: 860px){
@@ -71,8 +73,8 @@ categories: pages
 
   .highlights, .full{
     background:#fff; border:1px dashed #e9edf3; border-radius:10px; padding:10px 12px;
-    margin:0;                            /* avoid spilling past rounded edges */
-    box-sizing:border-box;
+    margin:0;                            /* avoid spill past rounded edges */
+    box-sizing:border-box; width:100%;
   }
   .highlights h4, .full h4{ margin:.1rem 0 .35rem; color:var(--brand); font-size:14.5px; }
   ul.tight{ margin:.2rem 0 0; padding-left:16px; }
@@ -81,9 +83,6 @@ categories: pages
   .tag{ font-size:12px; color:#0f172a; background:#eef3f8; border:1px solid #dbe2ea; padding:3px 8px; border-radius:999px; }
   .backtop{ text-align:right; margin-top:.3rem; }
   .backtop a{ font-size:12.5px; color:var(--brand); text-decoration:none; }
-
-  /* Optional: even wider on very large screens */
-  @media (min-width:1400px){ .exp-wrap{ max-width:1240px; } }
 </style>
 
 <div class="exp-wrap" id="top">
