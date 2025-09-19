@@ -74,7 +74,7 @@ redirect_from:
 
     <div class="cta">
       <!-- Update to your existing projects page -->
-      <a class="btn primary" href="{{ '/Volumes/Personal Drive/GitHub/AmritaNeogi.github.io/_pages/Projects.md' | relative_url }}">See projects →</a>
+      <!-- <a class="btn primary" href="{{ '/projects/' | relative_url }}">See projects →</a> -->
 
       <!-- Resume + Email wired below (see notes) -->
       <a class="btn ghost" href="{{ '/assets/docs/Resume_Neogi.pdf' | relative_url }}" download target="_blank" rel="noopener">Download resume →</a>
