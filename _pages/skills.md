@@ -120,9 +120,7 @@ categories: pages
         <span class="badge"><!-- <img class="ico" src="/assets/images/logo/python.png"> -->Python</span>
         <span class="badge"><!-- <img class="ico" src="/assets/images/logo/R_logo.jpg"> -->R</span>
         <span class="badge"><!-- <img class="ico" src="/assets/images/logo/sql_logo.png"> -->SQL</span>
-        <span class="badge">NoSQL</span>
-        <span class="badge"><!-- <img class="ico" src="/assets/images/logo/java.png"> -->Core&nbsp;Java</span>
-        <span class="badge"><!-- <img class="ico" src="/assets/images/logo/html.jpg"> -->HTML/CSS</span>
+        <span class="badge">NoSQL</span>  
       </div>
     </div>
   </section>
@@ -165,6 +163,7 @@ categories: pages
           <h4>Visualization & BI</h4>
           <div class="badges">
             <span class="badge">Tableau</span>
+            <span class="badge">Power BI</span>
             <span class="badge">Looker Studio</span>
             <span class="badge">Plotly</span>
             <span class="badge">Seaborn</span>
@@ -198,55 +197,71 @@ categories: pages
   </section>
 
   <!-- DATA SCIENCE & ANALYTICS -->
-  <section class="card" id="ds">
-    <div class="card-header">
-      <div class="card-title">Data Science & Analytics</div>
-      <div class="card-sub">Modeling, evaluation, experimentation</div>
+<section class="card" id="ds">
+  <div class="card-header">
+    <div class="card-title">Data Science & Analytics</div>
+    <div class="card-sub">Modeling, evaluation, experimentation</div>
+  </div>
+  <div class="card-body">
+    <!-- NEW: Featured strip -->
+    <div class="group" style="margin-bottom:10px;">
+      <h4 style="margin:.1rem 0 .35rem;">Featured: ML & Analytics</h4>
+      <div class="badges">
+        <span class="badge">Classification</span>
+        <span class="badge">Regression</span>
+        <span class="badge">Clustering</span>
+        <span class="badge">Time-Series</span>
+        <span class="badge">Trend Analysis</span>
+        <span class="badge">Causal Inference</span>
+        <span class="badge">Deep Learning (CNN/RNN/LSTM)</span>
+        <span class="badge">Anomaly Detection</span>
+        <span class="badge">Summary Statistics</span>
+        <span class="badge">Data Quality &amp; Validation</span>
+      </div>
     </div>
-    <div class="card-body">
-      <div class="grid">
-        <div class="group">
-          <h4>Core</h4>
-          <div class="badges">
-            <span class="badge">Data Wrangling</span>
-            <span class="badge">EDA</span>
-            <span class="badge">Feature Engineering</span>
-            <span class="badge">A/B Testing</span>
-          </div>
+
+    <!-- Existing grid (kept minimal) -->
+    <div class="grid">
+      <div class="group">
+        <h4>Core</h4>
+        <div class="badges">
+          <span class="badge">Data Wrangling</span>
+          <span class="badge">EDA</span>
+          <span class="badge">Feature Engineering</span>
+          <span class="badge">A/B Testing</span>
         </div>
-        <div class="group">
-          <h4>Models</h4>
-          <div class="badges">
-            <span class="badge">Regression</span>
-            <span class="badge">Classification</span>
-            <span class="badge">Clustering</span>
-            <span class="badge">Decision Trees</span>
-            <span class="badge">Random Forest</span>
-            <span class="badge">SVM</span>
-            <span class="badge">Naïve Bayes</span>
-          </div>
+      </div>
+      <div class="group">
+        <h4>Models</h4>
+        <div class="badges">
+          <span class="badge">Decision Trees</span>
+          <span class="badge">Random Forest</span>
+          <span class="badge">SVM</span>
+          <span class="badge">Naïve Bayes</span>
         </div>
-        <div class="group">
-          <h4>Optimization & Tuning</h4>
-          <div class="badges">
-            <span class="badge">Gradient Descent</span>
-            <span class="badge">Grid Search</span>
-            <span class="badge">PCA</span>
-            <span class="badge">One-Hot Encoding</span>
-          </div>
+      </div>
+      <div class="group">
+        <h4>Optimization & Tuning</h4>
+        <div class="badges">
+          <span class="badge">Gradient Descent</span>
+          <span class="badge">Grid Search</span>
+          <span class="badge">PCA</span>
+          <span class="badge">One-Hot Encoding</span>
         </div>
-        <div class="group">
-          <h4>Business & Strategy</h4>
-          <div class="badges">
-            <span class="badge">RFM Segmentation</span>
-            <span class="badge">Strategic Planning</span>
-            <span class="badge">Decision Making</span>
-            <span class="badge">Excel Analysis</span>
-          </div>
+      </div>
+      <div class="group">
+        <h4>Business & Strategy</h4>
+        <div class="badges">
+          <span class="badge">RFM Segmentation</span>
+          <span class="badge">Strategic Planning</span>
+          <span class="badge">Decision Making</span>
+          <span class="badge">Excel Analysis</span>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
 
   <!-- SOFT SKILLS -->
   <section class="card" id="soft">
