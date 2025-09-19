@@ -1,66 +1,196 @@
 ---
 layout: single
-title: 
+title:
 permalink: /Awards/
-date: 2023-9-02
+date: 2023-09-02
 categories: pages
 ---
 
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
 <style>
-    .image-container {
-        display: flex;
-        justify-content: center;
-    }
-    
-    .project-image {
-        width: 300px; /* Adjust the width as needed */
-        height: 300px; /* Adjust the height as needed */
-        margin: 10px; /* Add some margin between images */
-    }
-   /* Style for the title */
-    h1 {
-        color:  #336699; /* Change the title text color to blue */
-    }
+  :root{
+    --brand:#336699; --ink:#1f2937; --muted:#6b7280;
+    --card:#ffffff; --line:#e5e7eb; --ring:rgba(51,102,153,.12);
+    --bg:#f8fafc; --wrap-max: 1000px;
+  }
+
+  .awards-wrap{
+    font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    width:100%; max-width:min(100%, var(--wrap-max));
+    margin-inline:auto; padding-inline:12px; box-sizing:border-box;
+    color:var(--ink);
+  }
+  h1.page-title{ color:var(--brand); margin:.25rem 0 .6rem; font-size:clamp(24px,3vw,30px); }
+  p.page-sub{ color:var(--muted); font-size:14.5px; margin:0 0 .9rem; }
+
+  /* Section headers */
+  .section{
+    margin: .8rem 0;
+  }
+  .section h2{
+    color:var(--brand); font-size:18px; margin:.2rem 0 .5rem;
+  }
+  .section-sub{ color:var(--muted); font-size:14px; margin:-.25rem 0 .6rem; }
+
+  /* Cards */
+  .card{
+    background:var(--card); border:1px solid var(--line); border-radius:14px;
+    box-shadow:0 1px 0 var(--ring); margin:.6rem 0; overflow:hidden;
+  }
+  .card-head{
+    display:flex; justify-content:space-between; align-items:center;
+    gap:10px; padding:12px 14px; background:#fff;
+  }
+  .title{ font-weight:700; font-size:16px; color:var(--ink); }
+  .meta{ color:var(--muted); font-size:13.5px; white-space:nowrap; }
+  .card-body{ padding:12px 14px 14px; border-top:1px solid var(--line); font-size:15px; line-height:1.55; }
+
+  /* Certifications grid */
+  .grid{
+    display:grid; gap:10px; grid-template-columns: repeat(1, minmax(0,1fr));
+  }
+  @media (min-width:760px){ .grid{ grid-template-columns: repeat(2, minmax(0,1fr)); } }
+
+  .btn{
+    display:inline-block; text-decoration:none; font-weight:600; font-size:14px;
+    padding:7px 10px; border-radius:9px; border:1px solid var(--brand); color:var(--brand); background:#fff;
+  }
+  .btn:hover{ background:var(--brand); color:#fff; }
+
+  /* Collapsible award cards */
+  details.award{ border:1px solid var(--line); border-radius:14px; background:#fff; box-shadow:0 1px 0 var(--ring); margin:.6rem 0; overflow:hidden; }
+  .award > summary{
+    list-style:none; cursor:pointer; outline:none;
+    display:grid; grid-template-columns: 1fr auto; align-items:center; gap:12px; padding:12px 14px;
+  }
+  .award > summary::-webkit-details-marker{ display:none; }
+  .award .summary-title{ display:flex; flex-direction:column; gap:2px; }
+  .award .summary-title .role{ font-weight:700; color:var(--ink); font-size:16px; }
+  .award .summary-title .org{ color:var(--muted); font-size:13.5px; }
+  .award .dates{ color:var(--muted); font-size:13.5px; white-space:nowrap; }
+
+  .award-body{ border-top:1px solid var(--line); padding:12px 14px 14px; display:grid; gap:12px; grid-template-columns:1fr; }
+  @media (min-width:860px){ .award-body{ grid-template-columns: 1fr 320px; } }
+
+  .desc{ font-size:15px; line-height:1.6; }
+  .image-wrap{
+    display:flex; align-items:center; justify-content:center;
+    background:var(--bg); border:1px solid var(--line); border-radius:12px; padding:8px;
+  }
+  .image-wrap img{ width:100%; height:auto; border-radius:8px; }
+
+  /* Small list */
+  ul.tight{ margin:.25rem 0 0; padding-left:18px; }
+  ul.tight li{ margin:.2rem 0; }
 </style>
 
-<!-- Title of the page in blue -->
-<h1>Accomplishments</h1>
-  
+<div class="awards-wrap">
+  <h1 class="page-title">Accomplishments</h1>
+  <p class="page-sub">Selected certifications, scholarships, and awards.</p>
 
-   <div style="text-align: justify; font-size: 17px;">     
-    <h2><strong><br>CERTIFICATION</strong></h2><br>                
-    <p style="line-height: 1.5; font-size: 15px;">
-    <!--  Google Business Intelligence by Coursera
-      <i><span style="float: right;">In Progress</span></i><br><br> -->
-      Google Data Analytics by Coursera
-      <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/EMEK5BC3QWPA" style="text-decoration: none;">[Link]</a><i><span style="float: right;">June 2023</span></i> <br><br>
-      Google Project Management by Coursera
-      <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/UCSV3HVH4LQL" style="text-decoration: none;">[Link]</a><i><span style="float: right;">July 2023</span></i> <br>                
-    </p>
-   </div>                                                                  
+  <!-- ================= CERTIFICATIONS ================ -->
+  <section class="section" id="certs">
+    <h2>Certifications</h2>
+    <p class="section-sub">Credential links open in a new tab.</p>
 
-   <div style="text-align: justify; font-size: 17px;">     
-    <h2><strong><br>SCHOLARSHIP & AWARDS</strong></h2><br>                 
-    <p style="line-height: 1.5; font-size: 15px;">
-      <strong>1. University of Arizona, Department of Pediatrics&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong> <i><span style="float: right;">February 2023, August 2023</span></i>
-      <br>
-      <br>
-      0.5 FTE with Full Tuition Remission <br><br>
-      <strong>2. Contextual Master Award, Tata Consultancy Services&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong> <i><span style="float: right;">March 2022</span></i>
-      <br>
-      <br>
-      Promotion as Senior ETL Developer along with salary increment of 14% and bonus of 20,000 INR. <br>
-      <div class="image-container"><img src="/assets/images/contexual_master.PNG" alt="Project Image"> </div>
-      <p style="line-height: 1.5; font-size: 15px;">As a senior ETL developer, I had been working closely with our client(a leading financial service corporation) for over two and a half years when a major merger reshaped the organisation structure. The merger meant expanding the brick-and-mortar branches and retrofitting critical customer data security.<br>
-      Given the tight timeline, I leveraged my previous experience with the Protegrity platform to step up and lead the project. I meticulously identified areas needing support, compared and modified codes, and collaborated with my fellow developers.<br>
-      Through my efforts, we not only resolved the client's issues but also improved system performance and reduced code execution time by 30%. This proactive approach built confidence, strengthened customer relationships, and contributed to efficient operations and revenue generation.<br>
-      My strategy and dedication earned recognition from the Chief Technology Officer (CTO) and his team, resulting in a significant reduction in our annual IT budget. This success solidified our client's trust in our partnership, enhancing overall customer satisfaction.<br>
-      My journey underscored the importance of adaptability, expertise, and collaborative problem-solving in navigating change successfully.</p>
-      <br>
-      <strong>3. NEN Champions Runners-Up Award&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong> 
-      <i><span style="float: right;">March 2016</span></i>
-      <br>
-      <br>
-      For contributions to entrepreneurship education and innovation at the National Entrepreneurship Network (NEN) by Wadhwani Foundation <br>
-    </p>
-   </div> 
+    <div class="grid">
+      <!-- Google Data Analytics -->
+      <article class="card">
+        <div class="card-head">
+          <div class="title">Google Data Analytics (Coursera)</div>
+          <div class="meta">June 2023</div>
+        </div>
+        <div class="card-body">
+          Foundational analytics certificate covering cleaning, visualization, SQL, spreadsheets, and stakeholder-ready insights.
+          <div style="margin-top:.6rem;">
+            <a class="btn" href="https://www.coursera.org/account/accomplishments/specialization/certificate/EMEK5BC3QWPA" target="_blank" rel="noopener">View certificate →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Google Project Management -->
+      <article class="card">
+        <div class="card-head">
+          <div class="title">Google Project Management (Coursera)</div>
+          <div class="meta">July 2023</div>
+        </div>
+        <div class="card-body">
+          Agile methods, sprint planning, risk tracking, and stakeholder communication for delivery at pace.
+          <div style="margin-top:.6rem;">
+            <a class="btn" href="https://www.coursera.org/account/accomplishments/specialization/certificate/UCSV3HVH4LQL" target="_blank" rel="noopener">View certificate →</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============== SCHOLARSHIP & AWARDS ============== -->
+  <section class="section" id="awards">
+    <h2>Scholarship & Awards</h2>
+
+    <!-- UArizona Dept of Pediatrics -->
+    <details class="award" open>
+      <summary>
+        <div class="summary-title">
+          <div class="role">Dept. of Pediatrics, University of Arizona</div>
+          <div class="org">Scholarship: 0.5 FTE with Full Tuition Remission</div>
+        </div>
+        <div class="dates">Feb 2023 &middot; Aug 2023</div>
+      </summary>
+      <div class="award-body">
+        <div class="desc">
+          Supported graduate research and teaching with tuition fully remitted at 0.5 FTE. Recognized for strong academic performance and research contributions.
+          <ul class="tight">
+            <li>Graduate appointment supporting data pipelines and analytics for ARID Lab.</li>
+            <li>Collaborative work with clinicians and biostatisticians on population-health projects.</li>
+          </ul>
+        </div>
+      </div>
+    </details>
+
+    <!-- TCS Contextual Master Award -->
+    <details class="award">
+      <summary>
+        <div class="summary-title">
+          <div class="role">Contextual Master Award</div>
+          <div class="org">Tata Consultancy Services (Financial Services)</div>
+        </div>
+        <div class="dates">Mar 2022</div>
+      </summary>
+      <div class="award-body">
+        <div class="desc">
+          Recognition for leading a critical retrofit during a major client merger, improving performance and data security.
+          <ul class="tight">
+            <li>Promoted to Senior ETL Developer with a 14% salary increase and ₹20,000 bonus.</li>
+            <li>Resolved production issues and cut code execution time by ~30% using Protegrity expertise.</li>
+            <li>Strengthened client trust; contributed to reduced annual IT budget and smoother integration.</li>
+          </ul>
+        </div>
+        <div class="image-wrap">
+          <img src="/assets/images/contexual_master.PNG" alt="TCS Contextual Master Award certificate">
+        </div>
+      </div>
+    </details>
+
+    <!-- NEN Champions Runners-Up -->
+    <details class="award">
+      <summary>
+        <div class="summary-title">
+          <div class="role">NEN Champions — Runners-Up</div>
+          <div class="org">National Entrepreneurship Network (Wadhwani Foundation)</div>
+        </div>
+        <div class="dates">Mar 2016</div>
+      </summary>
+      <div class="award-body">
+        <div class="desc">
+          Recognized for contributions to entrepreneurship education and innovation initiatives.
+          <ul class="tight">
+            <li>Organized campus programs and workshops to promote early-stage venture skills.</li>
+            <li>Coordinated student teams and community mentors for sustained engagement.</li>
+          </ul>
+        </div>
+      </div>
+    </details>
+  </section>
+</div>
