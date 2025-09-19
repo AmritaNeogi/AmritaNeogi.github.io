@@ -15,19 +15,19 @@ categories: pages
     --bg:#f8fafc;
   }
 
-  /* Base layout */
+  /* ===== Base layout ===== */
   .exp-wrap{
     font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-    max-width: 1180px;                     /* wider canvas */
+    max-width: 1180px;                 /* roomy canvas */
     margin: 0 auto;
     color: var(--ink);
-    box-sizing: border-box;                 /* include padding/border in width calc */
+    box-sizing: border-box;
     width: 100%;
   }
   h1.page-title{ color:var(--brand); margin:.25rem 0 .6rem; font-size:clamp(24px,3vw,30px); }
   p.page-sub{ color:var(--muted); font-size:14.5px; margin:0 0 .8rem; }
 
-  /* Jump nav */
+  /* ===== Jump nav ===== */
   .jump{ position:sticky; top:0; z-index:1; background:var(--bg); padding:8px 0; margin-bottom:.6rem; border-bottom:1px solid var(--line); }
   .pills{ display:flex; gap:8px; flex-wrap:wrap; }
   .pill-link{
@@ -35,11 +35,11 @@ categories: pages
     background:#fff; padding:6px 10px; border-radius:999px; font-weight:600; font-size:13px;
   }
 
-  /* Role card */
+  /* ===== Role card ===== */
   details.role{
     border:1px solid var(--line); border-radius:14px; background:var(--card);
     box-shadow:0 1px 0 var(--ring); margin:.7rem 0;
-    overflow: visible;                         /* FIX: allow full border/content */
+    overflow: hidden;                    /* keep inner borders INSIDE the card */
     box-sizing: border-box; width: 100%;
   }
   .role > summary{
@@ -54,15 +54,15 @@ categories: pages
   .org{ color:var(--muted); font-size:13.5px; }
   .dates{ color:var(--muted); font-size:13.5px; white-space:nowrap; }
 
-  /* Expanded content columns */
+  /* ===== Expanded content (two columns) ===== */
   .content{
     border-top:1px solid var(--line);
     display:grid;
-    grid-template-columns: minmax(0,1fr) minmax(0,1fr);   /* FLEX cols that won’t overflow */
+    grid-template-columns: minmax(0,1fr) minmax(0,1fr);  /* flexible columns */
     gap:16px;
-    padding:12px 14px 14px;
+    padding:12px 16px 14px;           /* a bit more right padding */
     font-size:14.75px; line-height:1.6;
-    overflow-wrap:anywhere;                               /* break long tokens */
+    overflow-wrap:anywhere;
     box-sizing:border-box; width:100%;
   }
   @media (max-width: 860px){
@@ -71,6 +71,7 @@ categories: pages
 
   .highlights, .full{
     background:#fff; border:1px dashed #e9edf3; border-radius:10px; padding:10px 12px;
+    margin:0;                            /* avoid spilling past rounded edges */
     box-sizing:border-box;
   }
   .highlights h4, .full h4{ margin:.1rem 0 .35rem; color:var(--brand); font-size:14.5px; }
@@ -81,7 +82,7 @@ categories: pages
   .backtop{ text-align:right; margin-top:.3rem; }
   .backtop a{ font-size:12.5px; color:var(--brand); text-decoration:none; }
 
-  /* Optional: even wider on ultrawide screens */
+  /* Optional: even wider on very large screens */
   @media (min-width:1400px){ .exp-wrap{ max-width:1240px; } }
 </style>
 
@@ -89,6 +90,7 @@ categories: pages
   <h1 class="page-title">Experience</h1>
   <p class="page-sub">Click a role to expand. Summaries first; full responsibilities inside each card.</p>
 
+  <!-- Jump navigation -->
   <nav class="jump" aria-label="Jump navigation">
     <div class="pills">
       <a class="pill-link" href="#arid-dsm">Data Science Manager — ARID Lab</a>
@@ -97,7 +99,7 @@ categories: pages
     </div>
   </nav>
 
-  <!-- Role 1 -->
+  <!-- ===== Role 1: Data Science Manager ===== -->
   <details class="role" id="arid-dsm" open>
     <summary>
       <img class="logo" src="/assets/images/logo/arid.jpg" alt="ARID Lab logo">
@@ -136,7 +138,7 @@ categories: pages
     <div class="backtop"><a href="#top">Back to top ↑</a></div>
   </details>
 
-  <!-- Role 2 -->
+  <!-- ===== Role 2: Graduate Research Assistant ===== -->
   <details class="role" id="arid-gra">
     <summary>
       <img class="logo" src="/assets/images/logo/arid.jpg" alt="University of Arizona logo">
@@ -175,7 +177,7 @@ categories: pages
     <div class="backtop"><a href="#top">Back to top ↑</a></div>
   </details>
 
-  <!-- Role 3 -->
+  <!-- ===== Role 3: Software Development Engineer (ETL) ===== -->
   <details class="role" id="tcs-sde">
     <summary>
       <img class="logo" src="/assets/images/logo/TCS_Logo.jpg" alt="TCS logo">
