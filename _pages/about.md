@@ -77,8 +77,8 @@ redirect_from:
       <a class="btn primary" href="{{ '/projects/' | relative_url }}">See projects →</a>
 
       <!-- Resume + Email wired below (see notes) -->
-      <a class="btn ghost" href="{{ '/assets/docs/resume.pdf' | relative_url }}" download target="_blank" rel="noopener">Download resume →</a>
-      <a class="btn ghost" href="mailto:amrita@email.com?subject=Hello&body=Hi%20Amrita%2C">Get in touch →</a>
+      <a class="btn ghost" href="{{ '/assets/docs/Resume_Neogi.pdf' | relative_url }}" download target="_blank" rel="noopener">Download resume →</a>
+      <a class="btn ghost" href="mailto:neogiamrita111@gmail.com?subject=Hello&body=Hi%20Amrita%2C">Get in touch →</a>
     </div>
   </section>
 
