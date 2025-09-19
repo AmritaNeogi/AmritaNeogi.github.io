@@ -1,185 +1,210 @@
 ---
 layout: single
-title: 
+title:
 permalink: /Experience/
-date: 2023-9-02
+date: 2023-09-02
 categories: pages
 ---
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
 <style>
-    body {
-        color: #333; /* Default text color */
-    }
-    
-    .project-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    
-    .project {
-        width: 100%; /* Full width */
-        box-sizing: border-box; */
-        padding: 20px; */
-        border: 1px solid #ccc; */
-        margin-top: 20px; /* Add space between projects */
-    }
+  :root{
+    --brand:#336699; --ink:#1f2937; --muted:#6b7280;
+    --card:#fff; --line:#e5e7eb; --ring:rgba(51,102,153,.12);
+    --bg:#f8fafc;
+  }
+  .exp-wrap{
+    font-family:'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    max-width: 980px;                 /* centered + comfy width */
+    margin: 0 auto;
+    color: var(--ink);
+  }
+  h1.page-title{ color:var(--brand); margin:.25rem 0 .6rem; font-size:clamp(24px,3vw,30px); }
+  p.page-sub{ color:var(--muted); font-size:14.5px; margin:0 0 .8rem; }
 
-    .project h2 {
-        margin-top: 0;
-    }
+  /* Top jump navigation */
+  .jump{
+    position: sticky; top: 0; z-index: 1;
+    background: var(--bg);
+    padding: 8px 0; margin-bottom:.6rem;
+    border-bottom:1px solid var(--line);
+  }
+  .pills{ display:flex; gap:8px; flex-wrap:wrap; }
+  .pill-link{
+    text-decoration:none; color:var(--brand);
+    border:1px solid var(--brand); background:#fff;
+    padding:6px 10px; border-radius:999px; font-weight:600; font-size:13px;
+  }
 
-    .project img {
-        max-width: 100%;
-        height: auto;
-    }
+  /* Collapsible role cards */
+  details.role{
+    border:1px solid var(--line); border-radius:14px; background:var(--card);
+    box-shadow:0 1px 0 var(--ring);
+    margin:.7rem 0; overflow:clip;
+  }
+  .role > summary{
+    list-style:none; cursor:pointer; outline:none;
+    display:grid; grid-template-columns: 44px 1fr auto;
+    gap:12px; align-items:center; padding:12px 14px;
+  }
+  .role > summary::-webkit-details-marker{ display:none; }
+  .logo{ width:44px; height:44px; border-radius:8px; border:1px solid var(--line); object-fit:cover; background:#fff; }
+  .head{ display:flex; flex-direction:column; gap:2px; }
+  .title{ font-weight:700; font-size:16px; color:var(--ink); }
+  .org{ color:var(--muted); font-size:13.5px; }
+  .dates{ color:var(--muted); font-size:13.5px; white-space:nowrap; }
 
-    /* Style for legend on the left */
-    .legend {
-        float: top;
-        width: 50%; /* Adjust the width as needed */
-        padding-right: 20px; Add space between legend and projects */
-    }
-
-    .legend ul {
-        list-style: none;
-        padding: 0;
-    }
-
-    .legend li {
-        margin: 10px 0;
-        font-size: 17px; /* Adjust the font size for the legend */
-    }
-
-    /* Style for the title */
-    h1 {
-        color:  #336699; /* Change the title text color to blue */
-    }
+  /* Expanded content */
+  .content{
+    border-top:1px solid var(--line);
+    display:grid; grid-template-columns: 1fr; gap:12px; padding:12px 14px 14px;
+    font-size:15px; line-height:1.6;
+  }
+  @media (min-width:860px){
+    .content{ grid-template-columns: 1fr 1fr; }
+  }
+  .highlights, .full{
+    background:#fff; border:1px dashed #e9edf3; border-radius:10px; padding:10px 12px;
+  }
+  .highlights h4, .full h4{ margin:.1rem 0 .35rem; color:var(--brand); font-size:14.5px; }
+  ul.tight{ margin:.2rem 0 0; padding-left:18px; }
+  ul.tight li{ margin:.2rem 0; }
+  .tagrow{ display:flex; gap:6px; flex-wrap:wrap; margin-top:.5rem; }
+  .tag{ font-size:12px; color:#0f172a; background:#eef3f8; border:1px solid #dbe2ea; padding:3px 8px; border-radius:999px; }
+  .backtop{ text-align:right; margin-top:.3rem; }
+  .backtop a{ font-size:12.5px; color:var(--brand); text-decoration:none; }
 </style>
 
-<!-- Title of the page in blue -->
-<h1>Experience</h1>
-<br>
-<div class="legend" style="font-size: 18px;">
-    <ul>
-        <li><a href="#project3"  style="text-decoration: none;">Data Science Manager</a></li>
-        <li><a href="#project1"  style="text-decoration: none;">Graduate Research Asistant</a></li>
-        <li><a href="#project2"  style="text-decoration: none;">Systems Engineer (ETL Developer)</a></li>
-    </ul>
+<div class="exp-wrap" id="top">
+  <h1 class="page-title">Experience</h1>
+  <p class="page-sub">Click a role to expand. Summaries first; full responsibilities inside each card.</p>
+
+  <!-- Jump navigation -->
+  <nav class="jump" aria-label="Jump navigation">
+    <div class="pills">
+      <a class="pill-link" href="#arid-dsm">Data Science Manager — ARID Lab</a>
+      <a class="pill-link" href="#arid-gra">Graduate Research Assistant — UArizona</a>
+      <a class="pill-link" href="#tcs-sde">Software Development Engineer — TCS</a>
+    </div>
+  </nav>
+
+  <!-- ===== Role 1: Data Science Manager ===== -->
+  <details class="role" id="arid-dsm" open>
+    <summary>
+      <img class="logo" src="/assets/images/logo/arid.jpg" alt="ARID Lab logo">
+      <div class="head">
+        <div class="title">Data Science Manager</div>
+        <div class="org">ARID Lab, Dept. of Pediatrics, University of Arizona — Tucson, AZ</div>
+      </div>
+      <div class="dates">Mar 2024 – Present</div>
+    </summary>
+
+    <div class="content">
+      <div class="highlights">
+        <h4>Highlights</h4>
+        <ul class="tight">
+          <li>Lead multi-site health-data pipelines: onboarding, standardization (OMOP-style), and QA.</li>
+          <li>Cut prep time and raised data reliability via documented processing standards with CB2.</li>
+          <li>Partner with clinicians/biostatisticians; communicate results in clear, decision-ready formats.</li>
+        </ul>
+        <div class="tagrow">
+          <span class="tag">Python/R/SQL</span><span class="tag">EHR/Medicaid</span><span class="tag">OMOP</span>
+          <span class="tag">Causal Inference</span><span class="tag">PHI/PII</span><span class="tag">Airflow-style orchestration</span>
+        </div>
+      </div>
+
+      <div class="full">
+        <h4>Scope & Responsibilities</h4>
+        <ul class="tight">
+          <li><b>Pipeline management:</b> onboard clinical sites; integrate source feeds; maintain reproducible ingestion/standardization/validation flows.</li>
+          <li><b>Process optimization:</b> define CB2 processing protocols; streamline extraction, cleaning, consolidation; track SLAs.</li>
+          <li><b>Data quality & compliance:</b> enforce OHDSI/CDM mappings; run profiling/audits; ensure HIPAA-aligned PHI/PII handling.</li>
+          <li><b>Stakeholder coordination:</b> schedule/lead touchpoints; align deliverables across internal and external partners.</li>
+          <li><b>Continuous improvement:</b> evaluate new methods; document standards; mentor students on testing & reproducibility.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="backtop"><a href="#top">Back to top ↑</a></div>
+  </details>
+
+  <!-- ===== Role 2: Graduate Research Assistant ===== -->
+  <details class="role" id="arid-gra">
+    <summary>
+      <img class="logo" src="/assets/images/logo/arid.jpg" alt="University of Arizona logo">
+      <div class="head">
+        <div class="title">Graduate Research Assistant</div>
+        <div class="org">University of Arizona — Dept. of Pediatrics (ARID Lab)</div>
+      </div>
+      <div class="dates">Feb 2023 – Dec 2023</div>
+    </summary>
+
+    <div class="content">
+      <div class="highlights">
+        <h4>Highlights</h4>
+        <ul class="tight">
+          <li>Built analytical databases in REDCap; standardized multi-source data → <i>~15% faster prep</i>.</li>
+          <li>Authored Python pipelines (MariaDB→Postgres) mapped to OMOP; secure transfers with audit logs.</li>
+          <li>Linked MTurk/REDCap survey outputs; R analyses reduced post-survey processing by <i>~20%</i>.</li>
+        </ul>
+        <div class="tagrow">
+          <span class="tag">Python</span><span class="tag">R</span><span class="tag">SQL</span>
+          <span class="tag">REDCap</span><span class="tag">Amazon Athena</span><span class="tag">OMOP</span>
+        </div>
+      </div>
+
+      <div class="full">
+        <h4>Scope & Responsibilities</h4>
+        <ul class="tight">
+          <li>Extracted/standardized data to analytical REDCap projects with reproducible metadata.</li>
+          <li>Optimized database programs for low-latency queries and reliable downstream modeling.</li>
+          <li>Executed rigorous cleaning and linkage with full change logs for reproducibility.</li>
+          <li>Designed secure pipelines (MariaDB→PostgreSQL) adhering to OMOP tables; enforced transfer policies.</li>
+          <li>Ran statistical tests/logistic models to profile care patterns, demographics, and engagement drivers.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="backtop"><a href="#top">Back to top ↑</a></div>
+  </details>
+
+  <!-- ===== Role 3: Software Development Engineer (ETL) ===== -->
+  <details class="role" id="tcs-sde">
+    <summary>
+      <img class="logo" src="/assets/images/logo/TCS_Logo.jpg" alt="TCS logo">
+      <div class="head">
+        <div class="title">Software Development Engineer (ETL Developer)</div>
+        <div class="org">Tata Consultancy Services — Financial Services (EDW/Teradata/Mainframe)</div>
+      </div>
+      <div class="dates">Mar 2018 – Jul 2022</div>
+    </summary>
+
+    <div class="content">
+      <div class="highlights">
+        <h4>Highlights</h4>
+        <ul class="tight">
+          <li>Built/maintained PowerCenter 9.x pipelines across mainframe, flat files, Teradata, EDW.</li>
+          <li>Performance-tuned long CI/CD jobs; delivered <i>~50%</i> faster runs; improved reliability.</li>
+          <li>Led a 12-member ETL team; enforced code reviews, migration discipline, and quality gates.</li>
+        </ul>
+        <div class="tagrow">
+          <span class="tag">Informatica PowerCenter</span><span class="tag">Teradata/SQL</span><span class="tag">Unix/Shell</span>
+          <span class="tag">PL/SQL</span><span class="tag">CI/CD</span><span class="tag">AWS</span>
+        </div>
+      </div>
+
+      <div class="full">
+        <h4>Scope & Responsibilities</h4>
+        <ul class="tight">
+          <li>Developed complex mappings/worklets (filters, joins, aggregations, reusable txns) with reusable patterns → lower deployment time.</li>
+          <li>Wrote Unix shell & PL/SQL validation suites; automated integrity checks for large feeds.</li>
+          <li>Optimized source/target/mapping/session layers; reduced runtime and infra costs; improved data quality.</li>
+          <li>Managed object migration across Dev/Test/UAT/Prod; maintained auditability and rollback plans.</li>
+          <li>Drove JIRA-based tracking, code reviews, and mentorship; reduced defects and raised delivery predictability.</li>
+          <li>Delivered a major retrofit enabling integration of 2.5M customer records with ~30% perf gain.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="backtop"><a href="#top">Back to top ↑</a></div>
+  </details>
+
 </div>
-<br>
-<div class="project-container">
-<div id="project3" class="project" style="text-align: justify;">
-  <p style="line-height: 1.5; font-size: 17px;">
-      <strong><img src="/assets/images/logo/arid.jpg" alt="Python Logo" style="height: 24px; margin-right: 12px;">ARID Lab, DEPARTMENT OF PEDIATRICS</strong><br>
-      <!-- <strong><br> UNIVERSITY OF ARIZONA, DEPARTMENT OF PEDIATRICS 
-      </strong><br>                           -->
-            <strong>Data Science Manager&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
-                  <i style="line-height: 1.5;font-size: 15px;"><span style="float: right;">March 2024 - Present</span></i>
-   </p>
-     <br>
-       <p style="line-height: 1.5;font-size: 15px;">
-        
-1. <strong>Health Data Pipeline Management:</strong><br><br>    
-   Spearheaded the development and maintenance of a robust Health Data Pipeline, overseeing the onboarding of clinical sites and their integration into the system. Additionally, collaborated with the University of Arizona's Center for Biomedical Informatics and Biostatistics (CB2) on various population health projects. <br>
-<br>
-2. <strong>Process Optimization:</strong><br><br>    
-   Established standardized protocols for data processing through CB2, streamlining data extraction, cleaning, and consolidation processes. Made data-driven decisions to optimize pipeline efficiency.<br>
-<br>
-3. <strong>Data Transformation and Quality Assurance:</strong><br><br> 
-   Led efforts in data transformation and adherence to the OHDSI CDM framework, implementing rigorous quality checks to ensure data integrity. Upheld regulatory compliance and best practices for data security.<br>
-<br>
-4. <strong>Project Coordination and Communication:</strong><br><br> 
-   Facilitated meetings and maintained clear communication with stakeholders, coordinating activities with internal and external partners. Cultivated collaborative relationships with clinical sites and research partners.<br>
-<br>
-5. <strong>Continuous Improvement and Innovation:</strong><br><br> 
-   Enhanced processes and methodologies by staying abreast of emerging trends in data science and healthcare informatics. Fostered a culture of creativity and innovation within the team.<br>
-<br><br>
-</p>       
-     <br>
-     </div>
-
-<div class="project-container">
-<div id="project1" class="project" style="text-align: justify;">
-  <p style="line-height: 1.5; font-size: 17px;">
-      <strong><img src="/assets/images/logo/arid.jpg" alt="Python Logo" style="height: 24px; margin-right: 12px;">UNIVERSITY OF ARIZONA, DEPARTMENT OF PEDIATRICS</strong><br>
-      <!-- <strong><br> UNIVERSITY OF ARIZONA, DEPARTMENT OF PEDIATRICS 
-      </strong><br>                           -->
-            <strong>Graduate Research Assistant&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
-                  <i style="line-height: 1.5;font-size: 15px;"><span style="float: right;">February 2023 - December 2023</span></i>
-   </p>
-     <br>
-       <p style="line-height: 1.5;font-size: 15px;">
-        
-1. <strong>Thorough Data Extraction and Standardization in REDCap:</strong><br><br>
-   Extract data from various sources and transform them into standardized formats and build analytical project databases in REDCap, enhancing data accessibility and saving 15% of data preparation time. This involves a meticulous approach to ensure that data is accurately captured and formatted for further analysis.
-<br><br>
-2. <strong>Optimization of Database Programs for Seamless Querying:</strong><br><br>
-   Optimize database programs to facilitate efficient data querying processes; thereby enhancing the performance of database systems, allowing users to retrieve the required information rapidly and without encountering performance constraints.
-<br><br>
-3. <strong>Precise Data Cleaning and Linkage Protocols with Comprehensive Documentation:</strong> <br><br>
-    Execute data cleaning and data linkage protocols with a high degree of precision. This involves identifying and rectifying inaccuracies, inconsistencies, and missing values within datasets. Also, maintain detailed work logs that document every step of the data refinement process, ensuring the reproducibility and bolstering the credibility of subsequent analyses.
-<br><br>
-4. <strong>Creation of Data Pipelines using Python and utilizing Amazon Athena:</strong><br><br>
-   Leverage Python scripting and utilize Amazon Athena, to design and implement data pipelines that transfer data from MariaDB to PostgreSQL, transforming and mapping the data to adhere to OMOP (Observational Medical Outcomes Partnership) table structures. Enforcing security protocols for data transfers, increasing data transfer speed by 30% compared to previous methods, ensuring system integrity, and maintaining 100% compliance with data protection regulations.
-<br><br>
-5. <strong>Efficient Integration of MTurk Tasks and REDCap Surveys with Data Analysis:</strong>
-<br><br>
-   Manage the integration of MTurk tasks and REDCap surveys into a cohesive workflow. Conduct thorough data analysis using R programming after survey completion, aiding in faster comprehension and informed decision-making, and reducing post-survey processing time by 20%.
-<br><br>
-6. <strong>Statistical Analysis of Patient Data to Uncover Care Patterns and Demographics:
-</strong><br>
-   Conduct statistical tests and logistic regression on patient data to reveal insights like care trends, demographics, and factors impacting engagement. This approach identifies trends, correlations, and potential causal links, informing healthcare strategies and improving patient care.<br>
- <br><br>
-  </p>       
-     <br>
-     </div>
- <div id="project2" class="project" style="text-align: justify;">
- <p style="line-height: 1.5;font-size: 17px;">
-    <strong><img src="/assets/images/logo/TCS_Logo.jpg" alt="Python Logo" style="height: 24px; margin-right: 12px;">TATA CONSULTANCY SERVICES</strong><br>
-         <!-- <strong> TATA CONSULTANCY SERVICES</strong><br>                                            -->
-                  <strong> Systems Engineer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
-                  <i style="line-height: 1.5;font-size: 15px;"><span style="float: right;">March 2018 - July 2022</span></i>
-       </p>
-     <br>
-       <p style="line-height: 1.5;font-size: 15px;">
-
-<strong>ETL experience working with Informatica PowerCenter 9.x</strong>:<br>
-<br>
-1. Utilized Informatica Power Exchange and PowerCenter 9.x for data extraction, transformation, and loading from a range of sources—including mainframes, flat files, Teradata databases, and EDW systems—have been expertly executed.<br>
-<br>
-2. Developed intricate ETL mappings, worklets, and reusable transformations has been a focus. These encompass filters, expressions, joiners, aggregators, and more, ensuring precise and purposeful data transformation with a 25% reduction in deployment time and improved efficiency.<br>
-<br>
-3. Estahblished and maintained dynamic data pipelines to support business intelligence, reporting, and analytics needs. This approach guaranteed smooth data integration and processing and resulted in a 30% increase in efficiency.<br>
-<br>
-<strong>UNIX and shell scripting for validation testing</strong>:<br>
-<br>
-1. Developed UNIX shell scripts tailored for specific validation testing requirements. Leveraged these scripts to validate data integrity and accuracy within complex datasets. Additionally, customized PLSQL scripts to further enhance the validation process, ensuring comprehensive and reliable testing outcomes.<br>
-<br>
-<strong>Performance tuning and optimization</strong>:<br>
-<br>
-1. Identified and addressed performance bottlenecks within long-running CI/CD jobs. Employed advanced optimization techniques at various levels—source, target, mapping, and session—ensuring streamlined processes and efficient data flows.<br><br>
-2. Leveraged the power of cloud computing, particularly in AWS, to significantly optimize ETL operations. Achieved remarkable results with a 50% reduction in processing time, alongside heightened scalability, demonstrating a clear commitment to efficient and agile data processing.<br><br>
-3. Demonstrated proficiency in utilizing ETL tools to streamline data integration workflows. This approach led to a reduction in errors by 28%, enhancement of data quality, and 2.5% cost savings on infrastructure, showcasing an ability to balance effectiveness and efficiency in data management.<br>
-4. Engineered a retrofit solution leveraging contextual knowledge, resulting in the integration of 2.5 million customers for the client, and concurrently boosting performance and code execution speed by 30%. <br>
-<br>
-<strong>Database object migration</strong><br>
-<br>
-1. Managed the migration of crucial database objects across a range of environments, including Development, Testing, UAT, and Production. Ensured a smooth transition of these objects, maintaining data integrity and consistency throughout the lifecycle. This approach facilitated multi-stage deployment, enhancing robustness and reliability.<br>
-<br>
-<strong>Documentation and Project Tracking</strong>:<br>
-<br>
-1. Engaged in collaboration with onshore and offshore data stewards as well as application development leads to ensure smooth project tracking through JIRA, resulting in a 20% increase in project visibility and coordination efficiency. This joint endeavor enabled effective communication, task handling, and progress oversight, resulting in coordinated project implementation.<br><br>
-2. Oversaw ETL code repositories through continuous integration techniques. Carried out comprehensive code evaluations to maintain rigorous code excellence and compliance with guidelines, guaranteeing the dependability and manageability of the ETL procedures, leading to a 15% decrease in defects and improved development cycle.<br><br>
-3. Demonstrated adeptness in articulating findings and insights to stakeholders in a clear and impactful manner. This effective communication approach facilitated informed decision-making and fostered a shared understanding of project progress and outcomes.<br><br>
-
-<strong>Leadership</strong>:<br>
-<br>
-1. Offered valuable technical guidance and oversaw review processes in a dynamic and fast-paced setting, demonstrating the ability to work effectively with minimal supervision. Ensured high-quality outcomes and maintained governance standards despite the challenging environment.<br>
-<br>
-2. Led a 12-member ETL development team, driving the design and implementation of data transformation processes for precise data integration into the warehouse, while prioritizing data quality and performance enhancements. Additionally, adeptly communicated project status updates to foster transparency and cohesion within the team, contributing to efficient workflows.<br>
-<br>
-3. Provided expert guidance and comprehensive training to junior ETL developers. Covered essential ETL development methodologies, data modeling best practices, and fundamental data integration concepts. This mentoring effort empowered the team with essential skills and knowledge for optimized data workflows.<br>
-</p>
-</div>
-</div>
-
