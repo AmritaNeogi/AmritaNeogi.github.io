@@ -39,6 +39,7 @@ redirect_from:
   .btn.primary{ background:var(--brand); color:#fff; }
   .btn.ghost{ border:1px solid var(--brand); color:var(--brand); background:#fff; }
 
+  /* ===== Education (collapsible cards) ===== */
   .edu { margin:1rem 0 .3rem; }
   .edu h2{ color:var(--brand); font-size:20px; margin:0 0 .5rem; }
   .edu-grid{ display:grid; gap:12px; grid-template-columns:repeat(1, minmax(260px, 1fr)); }
@@ -49,7 +50,6 @@ redirect_from:
   }
   .edu-card img{ height:28px; width:28px; object-fit:contain; border-radius:4px; }
 
-  /* Collapsible details */
   .edu-details { width:100%; }
   .edu-details summary {
     list-style:none; cursor:pointer;
@@ -77,49 +77,47 @@ redirect_from:
 
   .foot{ color:var(--muted); font-size:14px; margin-top:.8rem; }
 
-  /* Roadmap (horizontal stepper) */
+  /* ===== Roadmap (super clean; no dots/circles) ===== */
   .road{ margin:1.2rem 0 .6rem; }
   .road h2{ color:var(--brand); font-size:20px; margin:0 0 .5rem; }
 
-  .rm{ border:1px solid #e5e7eb; border-radius:12px; background:#fff; box-shadow:0 1px 0 var(--ring); padding:10px 12px; }
+  .rm{ border:1px solid #e5e7eb; border-radius:12px; background:#fff; box-shadow:0 1px 0 var(--ring); padding:12px; }
   .rm input[type="radio"]{ position:absolute; left:-9999px; }
-  .rm-strip{ position:relative; display:flex; gap:10px; align-items:center; overflow:auto; scroll-snap-type:x mandatory; padding-bottom:8px; }
-  .rm-track{ position:absolute; left:0; right:0; height:2px; background:#e5e7eb; top:22px; }
+
+  .rm-strip{
+    display:flex; gap:16px; align-items:center;
+    overflow:auto; scroll-snap-type:x mandatory; padding:2px 0 6px;
+  }
   .rm-node{
-    position:relative; z-index:1; scroll-snap-align:start;
-    display:flex; align-items:center; gap:8px;
-    white-space:nowrap; font-size:14px; font-weight:600; color:#374151;
-    padding:6px 10px; border:1px solid #e5e7eb; border-radius:999px; background:#fff;
-    transition:transform .12s ease, box-shadow .12s ease, border-color .12s ease;
+    scroll-snap-align:start; white-space:nowrap;
+    border:none; background:none; cursor:pointer;
+    font-size:15px; font-weight:700; color:#374151; padding:0;
   }
-  .rm-node::before{
-    content:""; position:absolute; left:12px; top:18px; width:10px; height:10px;
-    background:#fff; border:2px solid var(--muted); border-radius:50%;
-  }
+
+  /* Active step: blue underline + color */
   #rm1:checked ~ .rm-strip label[for="rm1"],
   #rm2:checked ~ .rm-strip label[for="rm2"],
   #rm3:checked ~ .rm-strip label[for="rm3"],
   #rm4:checked ~ .rm-strip label[for="rm4"],
   #rm5:checked ~ .rm-strip label[for="rm5"]{
-    border-color:var(--brand); color:var(--brand);
-    box-shadow:0 0 0 4px var(--ring); transform:translateY(-1px);
+    color:var(--brand);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 2px;
   }
-  #rm1:checked ~ .rm-strip label[for="rm1"]::before,
-  #rm2:checked ~ .rm-strip label[for="rm2"]::before,
-  #rm3:checked ~ .rm-strip label[for="rm3"]::before,
-  #rm4:checked ~ .rm-strip label[for="rm4"]::before,
-  #rm5:checked ~ .rm-strip label[for="rm5"]::before{ border-color:var(--brand); background:#fff; }
 
-  .rm-panels{ margin-top:10px; }
-  .rm-panel{ display:none; font-size:14px; line-height:1.55; color:#374151; }
+  .rm-panels{ margin-top:8px; }
+  .rm-panel{ display:none; font-size:15px; line-height:1.6; color:#374151; }
   #rm1:checked ~ .rm-panels .p1,
   #rm2:checked ~ .rm-panels .p2,
   #rm3:checked ~ .rm-panels .p3,
   #rm4:checked ~ .rm-panels .p4,
   #rm5:checked ~ .rm-panels .p5{ display:block; }
 
-  .rm-panel .tag{ display:inline-block; font-size:12px; font-weight:600; color:var(--brand);
-    border:1px solid var(--brand); border-radius:999px; padding:2px 6px; margin-right:6px; }
+  .rm-panel .tag{
+    display:inline-block; font-size:12px; font-weight:600; color:var(--brand);
+    border:1px solid var(--brand); border-radius:999px; padding:2px 6px; margin-right:6px;
+  }
 </style>
 
 <div class="landing">
@@ -144,7 +142,7 @@ redirect_from:
     </div>
   </section>
 
-  <!-- Education: collapsible, two-column details -->
+  <!-- ===== Education: collapsible, two-column details ===== -->
   <section class="edu">
     <h2><strong>Education</strong></h2>
 
@@ -211,111 +209,46 @@ redirect_from:
     </div>
   </section>
 
-  <!-- Career Roadmap: playful, keyboard-accessible stepper -->
-  <style>
-  /* === Minimal Roadmap === */
-  .road{ margin:1.2rem 0 .6rem; }
-  .road h2{ color:var(--brand); font-size:20px; margin:0 0 .5rem; }
+  <!-- ===== Career Roadmap: clean, underline style ===== -->
+  <section class="road" aria-labelledby="roadmap-title">
+    <h2 id="roadmap-title"><strong>Career Roadmap</strong></h2>
+    <div class="rm">
+      <!-- State radios -->
+      <input type="radio" name="rm" id="rm1" checked>
+      <input type="radio" name="rm" id="rm2">
+      <input type="radio" name="rm" id="rm3">
+      <input type="radio" name="rm" id="rm4">
+      <input type="radio" name="rm" id="rm5">
 
-  .rm{ border:1px solid #e5e7eb; border-radius:12px; background:#fff; box-shadow:0 1px 0 var(--ring); padding:12px; }
-  .rm input[type="radio"]{ position:absolute; left:-9999px; }
-
-  .rm-strip{
-    --dot: 8px;
-    position:relative; display:flex; gap:18px; align-items:center;
-    overflow:auto; scroll-snap-type:x mandatory; padding:4px 0 10px;
-  }
-  .rm-track{ position:absolute; left:0; right:0; height:1px; background:#e5e7eb; top:18px; }
-
-  .rm-node{
-    position:relative; z-index:1; display:flex; align-items:center; gap:8px;
-    scroll-snap-align:start; white-space:nowrap;
-    font-size:14px; font-weight:600; color:#374151; padding:2px 0;
-    border:none; background:none; cursor:pointer;
-  }
-  .rm-node::before{
-    content:""; width:var(--dot); height:var(--dot); border-radius:50%;
-    background:#cbd5e1; outline:3px solid #fff; box-shadow:0 0 0 1px #e5e7eb;
-  }
-
-  /* Selected state: color + slightly bigger dot */
-  #rm1:checked ~ .rm-strip label[for="rm1"]::before,
-  #rm2:checked ~ .rm-strip label[for="rm2"]::before,
-  #rm3:checked ~ .rm-strip label[for="rm3"]::before,
-  #rm4:checked ~ .rm-strip label[for="rm4"]::before,
-  #rm5:checked ~ .rm-strip label[for="rm5"]::before{
-    background:var(--brand); box-shadow:0 0 0 1px var(--brand);
-  }
-  #rm1:checked ~ .rm-strip label[for="rm1"],
-  #rm2:checked ~ .rm-strip label[for="rm2"],
-  #rm3:checked ~ .rm-strip label[for="rm3"],
-  #rm4:checked ~ .rm-strip label[for="rm4"],
-  #rm5:checked ~ .rm-strip label[for="rm5"]{
-    color:var(--brand);
-  }
-
-  .rm-panels{ margin-top:8px; }
-  .rm-panel{ display:none; font-size:15px; line-height:1.6; color:#374151; }
-  #rm1:checked ~ .rm-panels .p1,
-  #rm2:checked ~ .rm-panels .p2,
-  #rm3:checked ~ .rm-panels .p3,
-  #rm4:checked ~ .rm-panels .p4,
-  #rm5:checked ~ .rm-panels .p5{ display:block; }
-
-  .rm-panel .tag{
-    display:inline-block; font-size:12px; font-weight:600; color:var(--brand);
-    border:1px solid var(--brand); border-radius:999px; padding:2px 6px; margin-right:6px;
-  }
-
-  /* Compact on small screens */
-  @media (max-width:600px){
-    .rm-strip{ gap:14px; }
-    .rm-panel{ font-size:14px; }
-  }
-</style>
-
-<section class="road" aria-labelledby="roadmap-title">
-  <h2 id="roadmap-title"><strong>Career Roadmap</strong></h2>
-  <div class="rm">
-    <!-- State radios -->
-    <input type="radio" name="rm" id="rm1" checked>
-    <input type="radio" name="rm" id="rm2">
-    <input type="radio" name="rm" id="rm3">
-    <input type="radio" name="rm" id="rm4">
-    <input type="radio" name="rm" id="rm5">
-
-    <!-- Steps -->
-    <div class="rm-strip" role="tablist" aria-label="Career steps">
-      <div class="rm-track" aria-hidden="true"></div>
-
-      <label class="rm-node" for="rm1" role="tab" aria-controls="panel-1">🎓 B.Tech — Electrical Eng.</label>
-      <label class="rm-node" for="rm2" role="tab" aria-controls="panel-2">💻 SDE — TCS</label>
-      <label class="rm-node" for="rm3" role="tab" aria-controls="panel-3">📊 M.S. — Data Science</label>
-      <label class="rm-node" for="rm4" role="tab" aria-controls="panel-4">🔬 Graduate Research Asst.</label>
-      <label class="rm-node" for="rm5" role="tab" aria-controls="panel-5">🏥 ARID Lab — DS/Analyst</label>
-    </div>
-
-    <!-- Panels -->
-    <div class="rm-panels">
-      <div id="panel-1" class="rm-panel p1">
-        <span class="tag">Foundation</span> Systems thinking, control, and computation. This set the discipline for how I approach messy data and complex pipelines today.
+      <!-- Steps -->
+      <div class="rm-strip" role="tablist" aria-label="Career steps">
+        <label class="rm-node" for="rm1" role="tab" aria-controls="panel-1">🎓 B.Tech — Electrical Eng.</label>
+        <label class="rm-node" for="rm2" role="tab" aria-controls="panel-2">💻 SDE — TCS</label>
+        <label class="rm-node" for="rm3" role="tab" aria-controls="panel-3">📊 M.S. — Data Science</label>
+        <label class="rm-node" for="rm4" role="tab" aria-controls="panel-4">🔬 Graduate Research Asst.</label>
+        <label class="rm-node" for="rm5" role="tab" aria-controls="panel-5">🏥 ARID Lab — DS/Analyst</label>
       </div>
-      <div id="panel-2" class="rm-panel p2">
-        <span class="tag">Engineering</span> Built enterprise ETL and data products at scale (Teradata/Informatica → Python/Unix). Learned reliability, SLAs, and clear handoffs.
-      </div>
-      <div id="panel-3" class="rm-panel p3">
-        <span class="tag">Analysis</span> Formal training in ML, causal inference, and data engineering. Focused on reproducible Python/R/SQL workflows and privacy-aware analytics.
-      </div>
-      <div id="panel-4" class="rm-panel p4">
-        <span class="tag">Research</span> Prototyped pipelines, experiments, and dashboards that made results more actionable for teams.
-      </div>
-      <div id="panel-5" class="rm-panel p5">
-        <span class="tag">Impact</span> Standardized 500k+ EHR/Medicaid rows to an OMOP-style model, automated geocoding, and shipped dashboards that informed care decisions.
+
+      <!-- Panels -->
+      <div class="rm-panels">
+        <div id="panel-1" class="rm-panel p1">
+          <span class="tag">Foundation</span> Systems thinking, control, and computation. This set the discipline for how I approach messy data and complex pipelines today.
+        </div>
+        <div id="panel-2" class="rm-panel p2">
+          <span class="tag">Engineering</span> Built enterprise ETL and data products at scale (Teradata/Informatica → Python/Unix). Learned reliability, SLAs, and clear handoffs.
+        </div>
+        <div id="panel-3" class="rm-panel p3">
+          <span class="tag">Analysis</span> Formal training in ML, causal inference, and data engineering. Focused on reproducible Python/R/SQL workflows and privacy-aware analytics.
+        </div>
+        <div id="panel-4" class="rm-panel p4">
+          <span class="tag">Research</span> Prototyped pipelines, experiments, and dashboards that made results more actionable for teams.
+        </div>
+        <div id="panel-5" class="rm-panel p5">
+          <span class="tag">Impact</span> Standardized 500k+ EHR/Medicaid rows to an OMOP-style model, automated geocoding, and shipped dashboards that informed care decisions.
+        </div>
       </div>
     </div>
-  </div>
-</section>
-
+  </section>
 
   <p class="foot">Thanks for visiting—feel free to explore and connect.</p>
 </div>
