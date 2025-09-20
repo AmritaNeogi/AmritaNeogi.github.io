@@ -8,7 +8,7 @@ main:
     url: /skills/
   - title: "Accomplishments"
     url: /Awards/
-  - title: "Documents"
-    url: /documents/  
+  # - title: "Documents"
+  #   url: /documents/  
 
     # main links
