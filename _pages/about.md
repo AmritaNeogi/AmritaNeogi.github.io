@@ -212,47 +212,110 @@ redirect_from:
   </section>
 
   <!-- Career Roadmap: playful, keyboard-accessible stepper -->
-  <section class="road" aria-labelledby="roadmap-title">
-    <h2 id="roadmap-title"><strong>Career Roadmap</strong></h2>
-    <div class="rm">
-      <!-- State radios -->
-      <input type="radio" name="rm" id="rm1" checked>
-      <input type="radio" name="rm" id="rm2">
-      <input type="radio" name="rm" id="rm3">
-      <input type="radio" name="rm" id="rm4">
-      <input type="radio" name="rm" id="rm5">
+  <style>
+  /* === Minimal Roadmap === */
+  .road{ margin:1.2rem 0 .6rem; }
+  .road h2{ color:var(--brand); font-size:20px; margin:0 0 .5rem; }
 
-      <!-- Clickable steps -->
-      <div class="rm-strip" role="tablist" aria-label="Career steps">
-        <div class="rm-track" aria-hidden="true"></div>
+  .rm{ border:1px solid #e5e7eb; border-radius:12px; background:#fff; box-shadow:0 1px 0 var(--ring); padding:12px; }
+  .rm input[type="radio"]{ position:absolute; left:-9999px; }
 
-        <label class="rm-node" for="rm1" role="tab" aria-controls="panel-1">🎓 B.Tech — Electrical Eng.</label>
-        <label class="rm-node" for="rm2" role="tab" aria-controls="panel-2">💻 SDE — TCS</label>
-        <label class="rm-node" for="rm3" role="tab" aria-controls="panel-3">📊 M.S. — Data Science</label>
-        <label class="rm-node" for="rm4" role="tab" aria-controls="panel-4">🔬 Graduate Research Asst.</label>
-        <label class="rm-node" for="rm5" role="tab" aria-controls="panel-5">🏥 ARID Lab — DS/Analyst</label>
+  .rm-strip{
+    --dot: 8px;
+    position:relative; display:flex; gap:18px; align-items:center;
+    overflow:auto; scroll-snap-type:x mandatory; padding:4px 0 10px;
+  }
+  .rm-track{ position:absolute; left:0; right:0; height:1px; background:#e5e7eb; top:18px; }
+
+  .rm-node{
+    position:relative; z-index:1; display:flex; align-items:center; gap:8px;
+    scroll-snap-align:start; white-space:nowrap;
+    font-size:14px; font-weight:600; color:#374151; padding:2px 0;
+    border:none; background:none; cursor:pointer;
+  }
+  .rm-node::before{
+    content:""; width:var(--dot); height:var(--dot); border-radius:50%;
+    background:#cbd5e1; outline:3px solid #fff; box-shadow:0 0 0 1px #e5e7eb;
+  }
+
+  /* Selected state: color + slightly bigger dot */
+  #rm1:checked ~ .rm-strip label[for="rm1"]::before,
+  #rm2:checked ~ .rm-strip label[for="rm2"]::before,
+  #rm3:checked ~ .rm-strip label[for="rm3"]::before,
+  #rm4:checked ~ .rm-strip label[for="rm4"]::before,
+  #rm5:checked ~ .rm-strip label[for="rm5"]::before{
+    background:var(--brand); box-shadow:0 0 0 1px var(--brand);
+  }
+  #rm1:checked ~ .rm-strip label[for="rm1"],
+  #rm2:checked ~ .rm-strip label[for="rm2"],
+  #rm3:checked ~ .rm-strip label[for="rm3"],
+  #rm4:checked ~ .rm-strip label[for="rm4"],
+  #rm5:checked ~ .rm-strip label[for="rm5"]{
+    color:var(--brand);
+  }
+
+  .rm-panels{ margin-top:8px; }
+  .rm-panel{ display:none; font-size:15px; line-height:1.6; color:#374151; }
+  #rm1:checked ~ .rm-panels .p1,
+  #rm2:checked ~ .rm-panels .p2,
+  #rm3:checked ~ .rm-panels .p3,
+  #rm4:checked ~ .rm-panels .p4,
+  #rm5:checked ~ .rm-panels .p5{ display:block; }
+
+  .rm-panel .tag{
+    display:inline-block; font-size:12px; font-weight:600; color:var(--brand);
+    border:1px solid var(--brand); border-radius:999px; padding:2px 6px; margin-right:6px;
+  }
+
+  /* Compact on small screens */
+  @media (max-width:600px){
+    .rm-strip{ gap:14px; }
+    .rm-panel{ font-size:14px; }
+  }
+</style>
+
+<section class="road" aria-labelledby="roadmap-title">
+  <h2 id="roadmap-title"><strong>Career Roadmap</strong></h2>
+  <div class="rm">
+    <!-- State radios -->
+    <input type="radio" name="rm" id="rm1" checked>
+    <input type="radio" name="rm" id="rm2">
+    <input type="radio" name="rm" id="rm3">
+    <input type="radio" name="rm" id="rm4">
+    <input type="radio" name="rm" id="rm5">
+
+    <!-- Steps -->
+    <div class="rm-strip" role="tablist" aria-label="Career steps">
+      <div class="rm-track" aria-hidden="true"></div>
+
+      <label class="rm-node" for="rm1" role="tab" aria-controls="panel-1">🎓 B.Tech — Electrical Eng.</label>
+      <label class="rm-node" for="rm2" role="tab" aria-controls="panel-2">💻 SDE — TCS</label>
+      <label class="rm-node" for="rm3" role="tab" aria-controls="panel-3">📊 M.S. — Data Science</label>
+      <label class="rm-node" for="rm4" role="tab" aria-controls="panel-4">🔬 Graduate Research Asst.</label>
+      <label class="rm-node" for="rm5" role="tab" aria-controls="panel-5">🏥 ARID Lab — DS/Analyst</label>
+    </div>
+
+    <!-- Panels -->
+    <div class="rm-panels">
+      <div id="panel-1" class="rm-panel p1">
+        <span class="tag">Foundation</span> Systems thinking, control, and computation. This set the discipline for how I approach messy data and complex pipelines today.
       </div>
-
-      <!-- Panels -->
-      <div class="rm-panels">
-        <div id="panel-1" class="rm-panel p1">
-          <span class="tag">Foundation</span> Systems thinking, control, and computation. This set the discipline for how I approach messy data and complex pipelines today.
-        </div>
-        <div id="panel-2" class="rm-panel p2">
-          <span class="tag">Engineering</span> Built enterprise ETL and data products at scale (Teradata/Informatica → Python/Unix). Learned reliability, SLAs, and clear handoffs.
-        </div>
-        <div id="panel-3" class="rm-panel p3">
-          <span class="tag">Analysis</span> Formal training in ML, causal inference, and data engineering. Focused on reproducible Python/R/SQL workflows and privacy-aware analytics.
-        </div>
-        <div id="panel-4" class="rm-panel p4">
-          <span class="tag">Research</span> Prototyped pipelines, experiments, and dashboards that made results more actionable for teams (without over-promising).
-        </div>
-        <div id="panel-5" class="rm-panel p5">
-          <span class="tag">Impact</span> Standardized 500k+ EHR/Medicaid rows to an OMOP-style model, automated geocoding, and shipped dashboards that informed care decisions.
-        </div>
+      <div id="panel-2" class="rm-panel p2">
+        <span class="tag">Engineering</span> Built enterprise ETL and data products at scale (Teradata/Informatica → Python/Unix). Learned reliability, SLAs, and clear handoffs.
+      </div>
+      <div id="panel-3" class="rm-panel p3">
+        <span class="tag">Analysis</span> Formal training in ML, causal inference, and data engineering. Focused on reproducible Python/R/SQL workflows and privacy-aware analytics.
+      </div>
+      <div id="panel-4" class="rm-panel p4">
+        <span class="tag">Research</span> Prototyped pipelines, experiments, and dashboards that made results more actionable for teams.
+      </div>
+      <div id="panel-5" class="rm-panel p5">
+        <span class="tag">Impact</span> Standardized 500k+ EHR/Medicaid rows to an OMOP-style model, automated geocoding, and shipped dashboards that informed care decisions.
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
 
   <p class="foot">Thanks for visiting—feel free to explore and connect.</p>
 </div>
