@@ -1,9 +1,11 @@
 ---
 permalink: /
+layout: single
+classes: wide
 title:
 subtitle: "Welcome to my website!"
 excerpt: "About me"
-author_profile: true
+author_profile: true   # keep your left profile; set to false for full-bleed center
 redirect_from:
   - /about/
   - /about.html
