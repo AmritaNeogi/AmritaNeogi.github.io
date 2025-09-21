@@ -15,34 +15,41 @@ categories: pages
     --card:#ffffff; --line:#e5e7eb; --ring:rgba(51,102,153,.12);
     --bg:#f8fafc;
 
-    /* Left edge + max width for this page */
-    --edge: clamp(16px, 3vw, 28px);     /* how close to the very left we sit */
-    --wrap-max: 1200px;                 /* widen containers */
+    /* make left edge line up with “Home” in the masthead */
+    --masthead-left: 24px;        /* tweak to 20–28px if you need a pixel-perfect line-up */
+    --wrap-max: 1200px;           /* container max width on wide screens */
   }
 
-  /* ===== OVERRIDES: break out of Minimal Mistakes centering on THIS PAGE ===== */
+  /* ========= OVERRIDES: remove all theme centering + left padding on THIS PAGE ========= */
   @media (min-width: 900px){
-    /* kill sidebar if present */
+    /* hide any sidebar reservations */
     .layout--single .sidebar,
     .layout--single .page__sidebar{ display:none !important; }
 
-    /* drop the theme flex and centering; give us full width */
-    .layout--single .page{ display:block !important; }
+    /* nuke flex grid and the inner left padding the theme adds */
+    .layout--single .page{ display:block !important; max-width:none !important; }
     .layout--single .page__inner-wrap{ padding-left:0 !important; padding-right:0 !important; }
-    .layout--single .page__content{
-      max-width:none !important; width:100% !important;
-      margin:0 !important; padding:0 !important;
+
+    /* remove the centered shell constraints */
+    .layout--single .initial-content,
+    .layout--single .page,
+    .layout--single .page__content,
+    .layout--single .archive{
+      max-width:none !important;
+      width:100% !important;
+      margin:0 !important;
+      padding:0 !important;
     }
-    .initial-content{ max-width:none !important; }
   }
 
-  /* ===== Page wrapper (LEFT-ALIGNED, not centered) ===== */
+  /* ========= Left-aligned page wrapper ========= */
   .skills-wrap{
     font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
     color:var(--ink);
-    width: min(var(--wrap-max), calc(100vw - var(--edge) - 16px)); /* 16px right breathing room */
-    margin-left: var(--edge);     /* ← stick to the left */
+    /* sit directly under “Home” */
+    margin-left: var(--masthead-left);
     margin-right: 16px;
+    width: min(var(--wrap-max), calc(100vw - var(--masthead-left) - 16px));
     box-sizing:border-box;
   }
 
