@@ -1,7 +1,6 @@
 ---
 
 layout: single
-classes: wide
 title:
 permalink: /Projects/
 date: 2023-09-02
@@ -9,8 +8,10 @@ categories: pages
 toc: false
 toc_label: "Projects"
 toc_icon: "columns"
-author_profile: false     # ⟵ add this
-sidebar: false            # ⟵ and this (MM hint)
+author_profile: false
+sidebar: false
+classes: wide
+
 
 
 ---
@@ -372,32 +373,36 @@ sidebar: false            # ⟵ and this (MM hint)
   });
 </script>
 <style>
-/* Reclaim the space Minimal Mistakes reserves for the left sidebar/padding */
-@media (min-width: 1024px){
+/* Minimal, safe reclaim of the left gutter on layout:single */
+@media (min-width:1024px){
+  /* Hide any sidebar column */
   .layout--single .sidebar,
   .layout--single .page__sidebar{ display:none !important; }
-  .layout--single .page{ display:block !important; }
 
-  /* NEW: also remove default left padding on the inner wrap */
-  .layout--single .page__inner-wrap{ padding-left:0 !important; }  /* ← add this */
+  /* Keep the theme's flex layout (important!) */
+  .layout--single .page{ display:flex !important; }
 
+  /* Let the content column expand and drop leftover padding/margins */
+  .layout--single .page__inner-wrap{ padding-left:0 !important; }
   .layout--single .page__content{
+    flex: 1 1 auto !important;
     max-width: none !important;
-    width: 100% !important;
     margin: 0 auto !important;
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
 
+  /* Center your inner container and set the width you want */
   .layout--single .page__content > .wrap{
-    max-width: 1140px;
+    width: 100%;
+    max-width: 1140px;   /* bump to 1200px if you want wider */
     margin-left: auto;
     margin-right: auto;
   }
 }
 
-/* Optional: make the card grid fill the width on XL screens */
-@media (min-width: 1400px){
+/* Optional: 3 columns on very wide screens */
+@media (min-width:1400px){
   .cards{ grid-template-columns: 1fr 1fr 1fr; }
 }
 </style>
