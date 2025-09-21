@@ -2,10 +2,11 @@
 permalink: /
 layout: single
 classes: wide
+author_profile: true   # ← turns on the author sidebar only here
+sidebar: true          # (optional) keeps the column reserved
 title:
 subtitle: "Welcome to my website!"
 excerpt: "About me"
-author_profile: true
 redirect_from:
   - /about/
   - /about.html
