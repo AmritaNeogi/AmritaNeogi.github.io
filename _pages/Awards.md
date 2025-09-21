@@ -13,27 +13,49 @@ categories: pages
   :root{
     --brand:#336699; --ink:#1f2937; --muted:#6b7280;
     --card:#ffffff; --line:#e5e7eb; --ring:rgba(51,102,153,.12);
-    --bg:#f8fafc; --wrap-max: 1000px;
+    --bg:#f8fafc;
+
+    /* align left edge with the “Home” label in the masthead */
+    --masthead-left: 24px;      /* nudge +/- a couple px if you want perfect alignment */
+    --wrap-max: 1200px;         /* wider container on large screens */
   }
 
+  /* ===== Kill Minimal Mistakes’ centered shell JUST on this page ===== */
+  @media (min-width: 900px){
+    .layout--single .sidebar,
+    .layout--single .page__sidebar{ display:none !important; }
+
+    .layout--single .page{ display:block !important; max-width:none !important; }
+    .layout--single .page__inner-wrap{ padding-left:0 !important; padding-right:0 !important; }
+
+    .layout--single .initial-content,
+    .layout--single .page,
+    .layout--single .page__content,
+    .layout--single .archive{
+      max-width:none !important;
+      width:100% !important;
+      margin:0 !important;
+      padding:0 !important;
+    }
+  }
+
+  /* ===== Left-aligned wrapper ===== */
   .awards-wrap{
     font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-    width:100%; max-width:min(100%, var(--wrap-max));
-    margin-inline:auto; padding-inline:12px; box-sizing:border-box;
     color:var(--ink);
+    margin-left: var(--masthead-left);                 /* ← stick to the left, under “Home” */
+    margin-right: 16px;
+    width: min(var(--wrap-max), calc(100vw - var(--masthead-left) - 16px));
+    box-sizing: border-box;
   }
+
   h1.page-title{ color:var(--brand); margin:.25rem 0 .6rem; font-size:clamp(24px,3vw,30px); }
   p.page-sub{ color:var(--muted); font-size:14.5px; margin:0 0 .9rem; }
 
   /* Section headers */
-  .section{
-    margin: .8rem 0;
-  }
-  .section h2{
-    color:var(--brand); font-size:18px; margin:.2rem 0 .5rem;
-  }
+  .section{ margin:.8rem 0; }
+  .section h2{ color:var(--brand); font-size:18px; margin:.2rem 0 .5rem; }
   .section-sub{ color:var(--muted); font-size:14.5px; margin:-.25rem 0 .6rem; }
-
 
   /* Cards */
   .card{
@@ -49,10 +71,8 @@ categories: pages
   .card-body{ padding:12px 14px 14px; border-top:1px solid var(--line); font-size:15px; line-height:1.55; }
 
   /* Certifications grid */
-  .grid{
-    display:grid; gap:10px; grid-template-columns: repeat(1, minmax(0,1fr));
-  }
-  @media (min-width:760px){ .grid{ grid-template-columns: repeat(2, minmax(0,1fr)); } }
+  .grid{ display:grid; gap:10px; grid-template-columns:repeat(1, minmax(0,1fr)); }
+  @media (min-width:760px){ .grid{ grid-template-columns:repeat(2, minmax(0,1fr)); } }
 
   .btn{
     display:inline-block; text-decoration:none; font-weight:600; font-size:14px;
@@ -61,10 +81,14 @@ categories: pages
   .btn:hover{ background:var(--brand); color:#fff; }
 
   /* Collapsible award cards */
-  details.award{ border:1px solid var(--line); border-radius:14px; background:#fff; box-shadow:0 1px 0 var(--ring); margin:.6rem 0; overflow:hidden; }
+  details.award{
+    border:1px solid var(--line); border-radius:14px; background:#fff;
+    box-shadow:0 1px 0 var(--ring); margin:.6rem 0; overflow:hidden;
+  }
   .award > summary{
     list-style:none; cursor:pointer; outline:none;
-    display:grid; grid-template-columns: 1fr auto; align-items:center; gap:12px; padding:12px 14px;
+    display:grid; grid-template-columns: 1fr auto; align-items:center;
+    gap:12px; padding:12px 14px;
   }
   .award > summary::-webkit-details-marker{ display:none; }
   .award .summary-title{ display:flex; flex-direction:column; gap:2px; }
@@ -72,7 +96,12 @@ categories: pages
   .award .summary-title .org{ color:var(--muted); font-size:13.5px; }
   .award .dates{ color:var(--muted); font-size:13.5px; white-space:nowrap; }
 
-  .award-body{ border-top:1px solid var(--line); padding:12px 14px 14px; display:grid; gap:12px; grid-template-columns:1fr; }
+  .award-body{
+    border-top:1px solid var(--line);
+    padding:12px 14px 14px;
+    display:grid; gap:12px; grid-template-columns:1fr;
+    box-sizing:border-box; overflow-wrap:anywhere;        /* prevent text spill on narrow viewports */
+  }
   @media (min-width:860px){ .award-body{ grid-template-columns: 1fr 320px; } }
 
   .desc{ font-size:15px; line-height:1.6; }
@@ -86,94 +115,6 @@ categories: pages
   ul.tight{ margin:.25rem 0 0; padding-left:18px; }
   ul.tight li{ margin:.2rem 0; }
 </style>
-<style>
-/* ========= 1) Make the SITE wider on desktop ========= */
-/* Works nicely with Minimal Mistakes / similar Jekyll shells */
-:root{
-  --site-max: 1280px;     /* overall shell width */
-  --content-max: 1060px;  /* inner content column width */
-}
-@media (min-width: 1200px){
-  /* Header + main wrappers */
-  .masthead__inner-wrap,
-  .initial-content,
-  .page,
-  .archive,
-  .page__inner-wrap,
-  .page__content{
-    max-width: var(--site-max) !important;
-  }
-  /* If your theme centers via margin auto, keep it centered */
-  .masthead__inner-wrap,
-  .initial-content,
-  .page,
-  .archive{ margin-left:auto; margin-right:auto; }
-}
-
-/* Optional: slightly narrow the left author sidebar to reclaim space */
-@media (min-width: 1200px){
-  .sidebar { flex-basis: 260px !important; max-width: 260px !important; }
-  .page__content { max-width: calc(var(--site-max) - 260px - 48px) !important; } /* 48px gutters */
-}
-
-/* ========= 2) Widen the ABOUT landing area ========= */
-/* Your page uses .landing; just let it breathe more on large screens */
-.landing{ max-width: min(var(--content-max), 92vw) !important; }
-@media (min-width: 1400px){
-  :root{ --site-max: 1360px; --content-max: 1140px; }
-}
-
-/* Slightly increase readable size on big screens */
-@media (min-width: 1200px){
-  .landing .lede{ font-size: 18px; line-height: 1.6; }
-  .story{ font-size: 16px; }
-}
-
-/* ========= 3) Give “proof” chips more columns on wide screens ========= */
-@media (min-width: 1200px){
-  .proof{ grid-template-columns: repeat(3, minmax(0,1fr)); gap: 12px; }
-}
-
-/* ========= 4) Projects list: arrange in 2 columns on desktop ========= */
-/* If your projects are a vertical list, turn them into a grid */
-@media (min-width: 1100px){
-  .projects-grid,             /* use if you already have a grid class */
-  .archive__item-list,        /* Minimal Mistakes posts/projects list */
-  .project-list{              /* fallback */
-    display: grid !important;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
-  }
-  /* Ensure each card stretches nicely */
-  .archive__item,
-  .project-card{ height: 100%; }
-}
-
-/* ========= 5) Skills: allow boxes to use the width ========= */
-@media (min-width: 1100px){
-  .skills-sections,
-  .feature__wrapper{          /* common container name in themes */
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0,1fr));
-    gap: 16px;
-  }
-}
-
-/* ========= 6) Trim excess vertical whitespace ========= */
-section + section{ margin-top: 2rem; }
-@media (min-width: 1200px){
-  section + section{ margin-top: 2.25rem; }
-}
-
-/* ========= 7) Optional “full-bleed” helper ========= */
-/* Use <section class="fullbleed"> ... </section> to span the full width */
-.fullbleed{
-  margin-left: 50%;
-  transform: translateX(-50%);
-  width: min(var(--site-max), 96vw);
-}
-</style>
-
 
 <div class="awards-wrap">
   <h1 class="page-title">Accomplishments</h1>
