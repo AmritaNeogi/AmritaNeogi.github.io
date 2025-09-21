@@ -22,15 +22,12 @@ categories: pages
 
   /* ========= OVERRIDES: remove all theme centering + left padding on THIS PAGE ========= */
   @media (min-width: 900px){
-    /* hide any sidebar reservations */
     .layout--single .sidebar,
     .layout--single .page__sidebar{ display:none !important; }
 
-    /* nuke flex grid and the inner left padding the theme adds */
     .layout--single .page{ display:block !important; max-width:none !important; }
     .layout--single .page__inner-wrap{ padding-left:0 !important; padding-right:0 !important; }
 
-    /* remove the centered shell constraints */
     .layout--single .initial-content,
     .layout--single .page,
     .layout--single .page__content,
@@ -46,7 +43,6 @@ categories: pages
   .skills-wrap{
     font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
     color:var(--ink);
-    /* sit directly under “Home” */
     margin-left: var(--masthead-left);
     margin-right: 16px;
     width: min(var(--wrap-max), calc(100vw - var(--masthead-left) - 16px));
@@ -56,7 +52,7 @@ categories: pages
   h1.page-title{ color:var(--brand); margin:.25rem 0 .6rem; font-size:clamp(24px,3vw,30px); }
   p.page-sub{ color:var(--muted); font-size:14.5px; margin:0 0 .8rem; }
 
-  /* Sticky nav + filter */
+  /* Top pills + filter */
   .topbar{
     position:sticky; top:0; z-index:1; background:var(--bg);
     border-bottom:1px solid var(--line); padding:8px 0; margin-bottom:.8rem;
@@ -73,20 +69,33 @@ categories: pages
     font-size:14px; width:180px; background:#fff;
   }
 
-  /* Cards */
-  .card{
-    background:var(--card); border:1px solid var(--line); border-radius:14px;
-    box-shadow:0 1px 0 var(--ring); margin:.7rem 0; overflow:hidden;
+  /* ===== Collapsible Cards ===== */
+  details.card{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:14px;
+    box-shadow:0 1px 0 var(--ring);
+    margin:.7rem 0;
+    overflow:hidden;
   }
-  .card-header{
+  .card > summary{
+    list-style:none; cursor:pointer; outline:none;
     display:flex; justify-content:space-between; align-items:center;
-    padding:12px 14px; background:#fff;
+    gap:12px; padding:12px 14px; background:#fff;
   }
+  .card > summary::-webkit-details-marker{ display:none; }
   .card-title{ font-weight:700; color:var(--brand); font-size:16px; }
   .card-sub{ color:var(--muted); font-size:13.5px; }
   .card-body{ padding:12px 14px 14px; border-top:1px solid var(--line); }
 
-  /* Grid inside cards (widens nicely) */
+  /* Tiny chevron indicator */
+  .card summary .chev{
+    margin-left:10px; font-size:14px; color:var(--muted);
+    transition: transform .18s ease;
+  }
+  details.card[open] summary .chev{ transform: rotate(180deg); }
+
+  /* Grid inside cards */
   .grid{ display:grid; gap:10px; grid-template-columns: repeat(1, minmax(0,1fr)); }
   @media (min-width:760px){ .grid{ grid-template-columns: repeat(2, minmax(0,1fr)); } }
   @media (min-width:980px){ .grid{ grid-template-columns: repeat(3, minmax(0,1fr)); } }
@@ -125,12 +134,12 @@ categories: pages
     </div>
   </div>
 
-  <!-- PROGRAMMING -->
-  <section class="card" id="prog">
-    <div class="card-header">
-      <div class="card-title">Programming Languages</div>
-      <div class="card-sub">Daily drivers & working knowledge</div>
-    </div>
+  <!-- PROGRAMMING (collapsible) -->
+  <details class="card" id="prog" open>
+    <summary>
+      <span class="card-title">Programming Languages</span>
+      <span class="card-sub">Daily drivers & working knowledge <span class="chev">▾</span></span>
+    </summary>
     <div class="card-body">
       <div class="badges">
         <span class="badge">Python</span>
@@ -139,14 +148,14 @@ categories: pages
         <span class="badge">NoSQL</span>
       </div>
     </div>
-  </section>
+  </details>
 
-  <!-- TOOLS & PLATFORMS -->
-  <section class="card" id="tools">
-    <div class="card-header">
-      <div class="card-title">Tools & Platforms</div>
-      <div class="card-sub">Data, orchestration, BI, cloud, security</div>
-    </div>
+  <!-- TOOLS & PLATFORMS (collapsible) -->
+  <details class="card" id="tools" open>
+    <summary>
+      <span class="card-title">Tools & Platforms</span>
+      <span class="card-sub">Data, orchestration, BI, cloud, security <span class="chev">▾</span></span>
+    </summary>
     <div class="card-body">
       <div class="grid">
         <div class="group">
@@ -199,14 +208,14 @@ categories: pages
         </div>
       </div>
     </div>
-  </section>
+  </details>
 
-  <!-- DATA SCIENCE & ANALYTICS -->
-  <section class="card" id="ds">
-    <div class="card-header">
-      <div class="card-title">Data Science & Analytics</div>
-      <div class="card-sub">Modeling, evaluation, experimentation</div>
-    </div>
+  <!-- DATA SCIENCE & ANALYTICS (collapsible) -->
+  <details class="card" id="ds" open>
+    <summary>
+      <span class="card-title">Data Science & Analytics</span>
+      <span class="card-sub">Modeling, evaluation, experimentation <span class="chev">▾</span></span>
+    </summary>
     <div class="card-body">
       <div class="group" style="margin-bottom:10px;">
         <h4 style="margin:.1rem 0 .35rem;">Featured: ML & Analytics</h4>
@@ -219,7 +228,6 @@ categories: pages
           <span class="badge">Data Quality &amp; Validation</span>
         </div>
       </div>
-
       <div class="grid">
         <div class="group">
           <h4>Core</h4>
@@ -251,14 +259,14 @@ categories: pages
         </div>
       </div>
     </div>
-  </section>
+  </details>
 
-  <!-- SOFT SKILLS -->
-  <section class="card" id="soft">
-    <div class="card-header">
-      <div class="card-title">Soft Skills</div>
-      <div class="card-sub">How I like to work</div>
-    </div>
+  <!-- SOFT SKILLS (collapsible) -->
+  <details class="card" id="soft" open>
+    <summary>
+      <span class="card-title">Soft Skills</span>
+      <span class="card-sub">How I like to work <span class="chev">▾</span></span>
+    </summary>
     <div class="card-body">
       <div class="badges">
         <span class="badge">Leadership</span><span class="badge">Time Management</span>
@@ -267,7 +275,7 @@ categories: pages
         <span class="badge">Clear Communication</span>
       </div>
     </div>
-  </section>
+  </details>
 </div>
 
 <script>
@@ -282,4 +290,11 @@ categories: pages
       });
     });
   }
+
+  // (Optional) keep only one section open at a time — enable if you want accordion behavior:
+  // document.querySelectorAll('details.card').forEach(d => {
+  //   d.addEventListener('toggle', () => {
+  //     if (d.open) document.querySelectorAll('details.card').forEach(o => { if (o !== d) o.removeAttribute('open'); });
+  //   });
+  // });
 </script>
