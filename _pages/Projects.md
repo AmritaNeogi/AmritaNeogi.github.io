@@ -1,4 +1,5 @@
 ---
+
 layout: single
 classes: wide
 title:
@@ -8,6 +9,10 @@ categories: pages
 toc: false
 toc_label: "Projects"
 toc_icon: "columns"
+author_profile: false     # ⟵ add this
+sidebar: false            # ⟵ and this (MM hint)
+
+
 ---
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
@@ -109,6 +114,19 @@ toc_icon: "columns"
   /* Section divider */
   .divider{ height:1px; background:var(--line); margin: 1.1rem 0 .8rem; }
 </style>
+<style>
+  @media (min-width: 1024px){
+    /* Hide sidebar column if any and reclaim the space */
+    .layout--single .sidebar{ display:none !important; }
+    .layout--single .page{ display:block !important; } /* collapse the MM flex grid */
+    .layout--single .page__content{
+      padding-left: 0 !important;
+      margin-left: auto; margin-right: auto;
+      max-width: 1140px;  /* match your --content-max */
+    }
+  }
+</style>
+
 
 <div class="wrap">
 
