@@ -371,3 +371,34 @@ sidebar: false            # ⟵ and this (MM hint)
     });
   });
 </script>
+<style>
+/* Reclaim the space Minimal Mistakes reserves for the left sidebar/padding */
+@media (min-width: 1024px){
+  .layout--single .sidebar,
+  .layout--single .page__sidebar{ display:none !important; }
+  .layout--single .page{ display:block !important; }
+
+  /* NEW: also remove default left padding on the inner wrap */
+  .layout--single .page__inner-wrap{ padding-left:0 !important; }  /* ← add this */
+
+  .layout--single .page__content{
+    max-width: none !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .layout--single .page__content > .wrap{
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Optional: make the card grid fill the width on XL screens */
+@media (min-width: 1400px){
+  .cards{ grid-template-columns: 1fr 1fr 1fr; }
+}
+</style>
+
