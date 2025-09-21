@@ -1,5 +1,6 @@
 ---
 layout: single
+classes: wide
 title:
 permalink: /Experience/
 date: 2023-09-02
@@ -84,6 +85,94 @@ categories: pages
   .backtop{ text-align:right; margin-top:.3rem; }
   .backtop a{ font-size:12.5px; color:var(--brand); text-decoration:none; }
 </style>
+<style>
+/* ========= 1) Make the SITE wider on desktop ========= */
+/* Works nicely with Minimal Mistakes / similar Jekyll shells */
+:root{
+  --site-max: 1280px;     /* overall shell width */
+  --content-max: 1060px;  /* inner content column width */
+}
+@media (min-width: 1200px){
+  /* Header + main wrappers */
+  .masthead__inner-wrap,
+  .initial-content,
+  .page,
+  .archive,
+  .page__inner-wrap,
+  .page__content{
+    max-width: var(--site-max) !important;
+  }
+  /* If your theme centers via margin auto, keep it centered */
+  .masthead__inner-wrap,
+  .initial-content,
+  .page,
+  .archive{ margin-left:auto; margin-right:auto; }
+}
+
+/* Optional: slightly narrow the left author sidebar to reclaim space */
+@media (min-width: 1200px){
+  .sidebar { flex-basis: 260px !important; max-width: 260px !important; }
+  .page__content { max-width: calc(var(--site-max) - 260px - 48px) !important; } /* 48px gutters */
+}
+
+/* ========= 2) Widen the ABOUT landing area ========= */
+/* Your page uses .landing; just let it breathe more on large screens */
+.landing{ max-width: min(var(--content-max), 92vw) !important; }
+@media (min-width: 1400px){
+  :root{ --site-max: 1360px; --content-max: 1140px; }
+}
+
+/* Slightly increase readable size on big screens */
+@media (min-width: 1200px){
+  .landing .lede{ font-size: 18px; line-height: 1.6; }
+  .story{ font-size: 16px; }
+}
+
+/* ========= 3) Give “proof” chips more columns on wide screens ========= */
+@media (min-width: 1200px){
+  .proof{ grid-template-columns: repeat(3, minmax(0,1fr)); gap: 12px; }
+}
+
+/* ========= 4) Projects list: arrange in 2 columns on desktop ========= */
+/* If your projects are a vertical list, turn them into a grid */
+@media (min-width: 1100px){
+  .projects-grid,             /* use if you already have a grid class */
+  .archive__item-list,        /* Minimal Mistakes posts/projects list */
+  .project-list{              /* fallback */
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  /* Ensure each card stretches nicely */
+  .archive__item,
+  .project-card{ height: 100%; }
+}
+
+/* ========= 5) Skills: allow boxes to use the width ========= */
+@media (min-width: 1100px){
+  .skills-sections,
+  .feature__wrapper{          /* common container name in themes */
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0,1fr));
+    gap: 16px;
+  }
+}
+
+/* ========= 6) Trim excess vertical whitespace ========= */
+section + section{ margin-top: 2rem; }
+@media (min-width: 1200px){
+  section + section{ margin-top: 2.25rem; }
+}
+
+/* ========= 7) Optional “full-bleed” helper ========= */
+/* Use <section class="fullbleed"> ... </section> to span the full width */
+.fullbleed{
+  margin-left: 50%;
+  transform: translateX(-50%);
+  width: min(var(--site-max), 96vw);
+}
+</style>
+
 
 <div class="exp-wrap" id="top">
   <h1 class="page-title">Experience</h1>

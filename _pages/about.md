@@ -5,23 +5,65 @@ classes: wide
 title:
 subtitle: "Welcome to my website!"
 excerpt: "About me"
-author_profile: true   # keep your left profile; set to false for full-bleed center
+author_profile: true
 redirect_from:
   - /about/
   - /about.html
 ---
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<!-- Inter + display font for the hero heading -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Fraunces:opsz,wght@9..144,600&display=swap" rel="stylesheet">
 
 <style>
-  :root { --brand:#336699; --ink:#1f2937; --muted:#6b7280; --ring:rgba(51,102,153,0.12); }
+  :root { 
+    --brand:#336699; --ink:#1f2937; --muted:#6b7280; --ring:rgba(51,102,153,0.12);
+    /* one place to control the size of both lede + foot */
+    --lede-size: clamp(15px, 2vw, 18px);
+  }
+
   .landing { 
     font-family:'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     max-width: 720px;
     margin: 0 auto; 
   }
-  .landing h1 { color:var(--brand); font-size:clamp(24px, 3vw, 30px); margin:0 0 .25rem; }
-  .landing .lede { color:var(--ink); font-size:clamp(15px, 2vw, 16px); line-height:1.55; margin:0 0 .75rem; }
+
+  /* Hero heading: different font + animated gradient */
+  .landing h1 { 
+    color:var(--brand); 
+    font-size:clamp(28px, 4vw, 36px); 
+    margin:0 0 .25rem; 
+    font-family: 'Fraunces', Georgia, serif;  /* new font */
+    line-height: 1.15;
+  }
+  /* Subtle animated gradient text (accessible & respects reduced-motion) */
+  .hero-title{
+    background: linear-gradient(90deg, var(--brand), #7c3aed, #0ea5e9, var(--brand));
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: heroGradient 6s ease-in-out infinite;
+  }
+  .hero-enter{
+    opacity:0; transform: translateY(6px);
+    animation: heroEnter .6s ease .1s both;
+  }
+  @keyframes heroGradient{
+    0%{background-position:0% 0}
+    50%{background-position:100% 0}
+    100%{background-position:0% 0}
+  }
+  @keyframes heroEnter{
+    to{opacity:1; transform:none}
+  }
+  @media (prefers-reduced-motion: reduce){
+    .hero-title{ animation: none; }
+    .hero-enter{ animation: none; opacity:1; transform:none; }
+  }
+
+  /* Lede & closing foot: identical size now */
+  .landing .lede { color:var(--ink); font-size:var(--lede-size); line-height:1.6; margin:0 0 .75rem; }
+  .foot{ color:var(--muted); font-size:var(--lede-size); margin-top:.8rem; }
 
   .story {
     margin:.75rem 0 1rem; padding:.75rem .8rem;
@@ -77,9 +119,7 @@ redirect_from:
   .meta dt{ color:var(--muted); font-weight:500; }
   .meta dd{ margin:0 0 8px; font-weight:600; }
 
-  .foot{ color:var(--muted); font-size:14px; margin-top:.8rem; }
-
-  /* ===== Roadmap (super clean; no dots/circles) ===== */
+  /* ===== Roadmap (clean underline style) ===== */
   .road{ margin:1.2rem 0 .6rem; }
   .road h2{ color:var(--brand); font-size:20px; margin:0 0 .5rem; }
 
@@ -117,100 +157,31 @@ redirect_from:
   #rm5:checked ~ .rm-panels .p5{ display:block; }
 
   .rm-panel .tag{
-    display:inline-block; font-size:12px; font-weight:600; color:var(--brand);
+    display:inline-block; font-size:12px; font-weight:600; color:#menbrand;
     border:1px solid var(--brand); border-radius:999px; padding:2px 6px; margin-right:6px;
   }
 </style>
+
+<!-- (wider site shell overrides you already added) -->
 <style>
-/* ========= 1) Make the SITE wider on desktop ========= */
-/* Works nicely with Minimal Mistakes / similar Jekyll shells */
-:root{
-  --site-max: 1280px;     /* overall shell width */
-  --content-max: 1060px;  /* inner content column width */
-}
+:root{ --site-max: 1280px; --content-max: 1060px; }
 @media (min-width: 1200px){
-  /* Header + main wrappers */
-  .masthead__inner-wrap,
-  .initial-content,
-  .page,
-  .archive,
-  .page__inner-wrap,
-  .page__content{
-    max-width: var(--site-max) !important;
+  .masthead__inner-wrap, .initial-content, .page, .archive, .page__inner-wrap, .page__content{
+    max-width: var(--site-max) !important; margin-left:auto; margin-right:auto;
   }
-  /* If your theme centers via margin auto, keep it centered */
-  .masthead__inner-wrap,
-  .initial-content,
-  .page,
-  .archive{ margin-left:auto; margin-right:auto; }
-}
-
-/* Optional: slightly narrow the left author sidebar to reclaim space */
-@media (min-width: 1200px){
   .sidebar { flex-basis: 260px !important; max-width: 260px !important; }
-  .page__content { max-width: calc(var(--site-max) - 260px - 48px) !important; } /* 48px gutters */
+  .page__content { max-width: calc(var(--site-max) - 260px - 48px) !important; }
 }
-
-/* ========= 2) Widen the ABOUT landing area ========= */
-/* Your page uses .landing; just let it breathe more on large screens */
 .landing{ max-width: min(var(--content-max), 92vw) !important; }
 @media (min-width: 1400px){
   :root{ --site-max: 1360px; --content-max: 1140px; }
 }
-
-/* Slightly increase readable size on big screens */
-@media (min-width: 1200px){
-  .landing .lede{ font-size: 18px; line-height: 1.6; }
-  .story{ font-size: 16px; }
-}
-
-/* ========= 3) Give “proof” chips more columns on wide screens ========= */
-@media (min-width: 1200px){
-  .proof{ grid-template-columns: repeat(3, minmax(0,1fr)); gap: 12px; }
-}
-
-/* ========= 4) Projects list: arrange in 2 columns on desktop ========= */
-/* If your projects are a vertical list, turn them into a grid */
-@media (min-width: 1100px){
-  .projects-grid,             /* use if you already have a grid class */
-  .archive__item-list,        /* Minimal Mistakes posts/projects list */
-  .project-list{              /* fallback */
-    display: grid !important;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
-  }
-  /* Ensure each card stretches nicely */
-  .archive__item,
-  .project-card{ height: 100%; }
-}
-
-/* ========= 5) Skills: allow boxes to use the width ========= */
-@media (min-width: 1100px){
-  .skills-sections,
-  .feature__wrapper{          /* common container name in themes */
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0,1fr));
-    gap: 16px;
-  }
-}
-
-/* ========= 6) Trim excess vertical whitespace ========= */
-section + section{ margin-top: 2rem; }
-@media (min-width: 1200px){
-  section + section{ margin-top: 2.25rem; }
-}
-
-/* ========= 7) Optional “full-bleed” helper ========= */
-/* Use <section class="fullbleed"> ... </section> to span the full width */
-.fullbleed{
-  margin-left: 50%;
-  transform: translateX(-50%);
-  width: min(var(--site-max), 96vw);
-}
 </style>
 
 <div class="landing">
-  <h1>Hello there!</h1>
+  <!-- NEW: hero classes added -->
+  <h1 class="hero-title hero-enter">Hello there!</h1>
+
   <p class="lede">I’m a data scientist focused on making messy health data usable—clean pipelines, clear metrics, and results people can act on.</p>
 
   <section class="story">
@@ -225,18 +196,15 @@ section + section{ margin-top: 2rem; }
     </ul>
 
     <div class="cta">
-      <!-- <a class="btn primary" href="{{ '/projects/' | relative_url }}">See projects →</a> -->
       <a class="btn ghost" href="{{ '/assets/docs/Resume_Neogi.pdf' | relative_url }}" download target="_blank" rel="noopener">Download resume →</a>
       <a class="btn ghost" href="mailto:neogiamrita111@gmail.com?subject=Hello&body=Hi%20Amrita%2C">Get in touch →</a>
     </div>
   </section>
 
-  <!-- ===== Education: collapsible, two-column details ===== -->
+  <!-- Education (unchanged) -->
   <section class="edu">
     <h2><strong>Education</strong></h2>
-
     <div class="edu-grid">
-      <!-- MS Data Science -->
       <div class="edu-card">
         <img src="/assets/images/logo/University_of_Arizona_logo.jpg" alt="University of Arizona logo">
         <details class="edu-details" open>
@@ -267,7 +235,6 @@ section + section{ margin-top: 2rem; }
         </details>
       </div>
 
-      <!-- B.Tech Electrical Engineering -->
       <div class="edu-card">
         <img src="/assets/images/logo/UEM_logo.png" alt="University of Engineering and Management logo">
         <details class="edu-details">
@@ -298,18 +265,16 @@ section + section{ margin-top: 2rem; }
     </div>
   </section>
 
-  <!-- ===== Career Roadmap: clean, underline style ===== -->
+  <!-- Career Roadmap -->
   <section class="road" aria-labelledby="roadmap-title">
     <h2 id="roadmap-title"><strong>Career Roadmap</strong></h2>
     <div class="rm">
-      <!-- State radios -->
       <input type="radio" name="rm" id="rm1" checked>
       <input type="radio" name="rm" id="rm2">
       <input type="radio" name="rm" id="rm3">
       <input type="radio" name="rm" id="rm4">
       <input type="radio" name="rm" id="rm5">
 
-      <!-- Steps -->
       <div class="rm-strip" role="tablist" aria-label="Career steps">
         <label class="rm-node" for="rm1" role="tab" aria-controls="panel-1">🎓 B.Tech — Electrical Eng.</label>
         <label class="rm-node" for="rm2" role="tab" aria-controls="panel-2">💻 SDE — TCS</label>
@@ -318,7 +283,6 @@ section + section{ margin-top: 2rem; }
         <label class="rm-node" for="rm5" role="tab" aria-controls="panel-5">🏥 ARID Lab — DS/Analyst</label>
       </div>
 
-      <!-- Panels -->
       <div class="rm-panels">
         <div id="panel-1" class="rm-panel p1">
           <span class="tag">Foundation</span> Systems thinking, control, and computation. This set the discipline for how I approach messy data and complex pipelines today.
@@ -342,8 +306,8 @@ section + section{ margin-top: 2rem; }
   <p class="foot">Thanks for visiting—feel free to explore and connect.</p>
 </div>
 
-<!-- Optional: one-open-at-a-time behavior for the education accordion -->
 <script>
+  // one-open-at-a-time for education accordion
   document.addEventListener('click', (e) => {
     const det = e.target.closest('.edu-details');
     if (!det) return;
