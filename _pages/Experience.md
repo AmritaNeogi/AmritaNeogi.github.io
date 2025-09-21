@@ -131,6 +131,41 @@ classes: wide
     .exp-wrap .content{ grid-template-columns: 1fr; }
   }
 </style>
+<style>
+/* Keep everything inside the rounded card and prevent right-edge spill */
+.exp-wrap .role{
+  border-radius:14px;
+  overflow:hidden !important;                 /* clip children to the card */
+  /* extra belt-and-suspenders for some browsers */
+  clip-path: inset(0 round 14px);
+}
+
+.exp-wrap .content{
+  padding:12px 14px !important;               /* small, consistent inset */
+  gap:14px !important;
+  grid-template-columns: minmax(0,1fr) minmax(0,1fr);  /* shrinkable columns */
+}
+
+.exp-wrap .content > *{
+  min-width:0 !important;                     /* allow wrapping instead of forcing overflow */
+}
+
+.exp-wrap .highlights,
+.exp-wrap .full{
+  margin:0 !important;                        /* margins can “push” outside rounded parent */
+  width:100% !important;
+  max-width:100% !important;
+  box-sizing:border-box !important;           /* borders/padding stay inside */
+  border-radius:10px;                          /* your dashed boxes keep their radius */
+}
+
+/* (Optional) if you still see a 1px bleed on some zoom levels */
+@supports (-webkit-mask-image: none) {
+  .exp-wrap .role{
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+  }
+}
+</style>
 
 <div class="exp-wrap" id="top">
   <h1 class="page-title">Experience</h1>
