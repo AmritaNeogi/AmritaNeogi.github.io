@@ -18,14 +18,34 @@ classes: wide
   :root{
     --brand:#336699; --ink:#1f2937; --muted:#6b7280; --card:#ffffff;
     --line:#e5e7eb; --ring:rgba(51,102,153,0.12); --bg:#f8fafc;
-    --site-max: 1360px;      /* slightly wider shell */
-    --content-max: 1280px;   /* wider inner content column */
+
+    /* Control the OUTER shell and the inner content width for THIS PAGE */
+    --site-max: 1400px;     /* widen the theme’s page container */
+    --content-max: 1280px;  /* inner content column for your cards */
   }
 
-  /* ===== Page container ===== */
+  /* ===== Make the Minimal Mistakes shell wider on this page ===== */
+  @media (min-width:1200px){
+    /* widen outer wrappers the theme uses */
+    .masthead__inner-wrap,
+    .initial-content,
+    .page,
+    .archive,
+    .page__inner-wrap,
+    .page__content{
+      max-width: var(--site-max) !important;
+      margin-left:auto; margin-right:auto;
+    }
+
+    /* ensure there's no sidebar column reserved */
+    .layout--single .sidebar,
+    .layout--single .page__sidebar{ display:none !important; }
+  }
+
+  /* ===== Your inner container ===== */
   .wrap{
     font-family:'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-    max-width: min(var(--content-max), 96vw);   /* let content breathe */
+    max-width: min(var(--content-max), 96vw);
     margin: 0 auto;
     color: var(--ink);
   }
@@ -41,13 +61,13 @@ classes: wide
     font-size: 14.5px;
   }
 
-  /* ===== Card grid (more columns on wider screens) ===== */
+  /* ===== Card grid ===== */
   .cards{ display:grid; gap:16px; }
-  @media (min-width: 1000px){
-    .cards{ grid-template-columns: repeat(3, 1fr); }  /* 3-up on desktop */
+  @media (min-width:1000px){
+    .cards{ grid-template-columns: repeat(3, 1fr); }   /* 3-up on desktop */
   }
-  @media (min-width: 1600px){
-    .cards{ grid-template-columns: repeat(4, 1fr); }  /* 4-up on very wide */
+  @media (min-width:1600px){
+    .cards{ grid-template-columns: repeat(4, 1fr); }   /* 4-up on very wide */
   }
 
   /* ===== Collapsible cards ===== */
@@ -58,10 +78,8 @@ classes: wide
     box-shadow: 0 1px 0 var(--ring);
     overflow: clip;
   }
-  .card + .card{ margin-top: 10px; }           /* mobile spacing */
-  @media (min-width:1000px){
-    .card + .card{ margin-top: 0; }            /* grid handles gaps */
-  }
+  .card + .card{ margin-top: 10px; }
+  @media (min-width:1000px){ .card + .card{ margin-top: 0; } }
 
   /* Summary row */
   .card > summary{
@@ -94,25 +112,23 @@ classes: wide
     border-top:1px solid var(--line); padding: 12px 14px 14px;
     font-size:15px; line-height:1.55;
   }
-  @media (min-width: 860px){
-    .content{ grid-template-columns: 320px 1fr; } /* image | text (slightly looser) */
+  @media (min-width:860px){
+    .content{ grid-template-columns: 320px 1fr; }   /* image | text */
   }
 
-  /* Tidy thumbnails: consistent aspect ratio */
   .thumb{
-    width:100%; aspect-ratio: 16/10; object-fit: cover;
-    border-radius:10px; border:1px solid var(--line); background: var(--bg);
+    width:100%; aspect-ratio:16/10; object-fit:cover;
+    border-radius:10px; border:1px solid var(--line); background:var(--bg);
   }
 
-  .bullets{ margin:.25rem 0 0; padding-left: 18px; }
+  .bullets{ margin:.25rem 0 0; padding-left:18px; }
   .bullets li{ margin:.2rem 0; }
   .links{ display:flex; gap:10px; flex-wrap:wrap; margin-top:.5rem; }
   .btn{ display:inline-block; text-decoration:none; font-weight:600;
         padding:7px 10px; border-radius:9px; font-size:14px; }
   .btn.ghost{ border:1px solid var(--brand); color:var(--brand); }
 
-  /* Section divider */
-  .divider{ height:1px; background:var(--line); margin: 1.1rem 0 .8rem; }
+  .divider{ height:1px; background:var(--line); margin:1.1rem 0 .8rem; }
 </style>
 
 <div class="wrap">
