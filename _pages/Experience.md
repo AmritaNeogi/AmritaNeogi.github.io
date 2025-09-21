@@ -105,6 +105,32 @@ classes: wide
   .backtop{ text-align:right; margin-top:.3rem; }
   .backtop a{ font-size:12.5px; color:var(--brand); text-decoration:none; }
 </style>
+<style>
+  /* --- Fix right-edge clipping in expanded Experience cards --- */
+  .exp-wrap .role { 
+    overflow: visible;                /* don't clip inner content */
+  }
+
+  .exp-wrap .content{
+    grid-template-columns: minmax(0,1fr) minmax(0,1fr);  /* columns may shrink */
+    max-width: 100%;
+    padding-right: 16px;              /* keep content inside the border on the right */
+    box-sizing: border-box;
+  }
+
+  /* Let grid children shrink instead of forcing overflow */
+  .exp-wrap .content > *{
+    min-width: 0;
+    overflow-wrap: anywhere;          /* break long tokens just in case */
+  }
+
+  /* Optional: a tiny bit more page gutter so borders never kiss the viewport */
+  .exp-wrap{ padding-inline: 16px; }
+
+  @media (max-width: 860px){
+    .exp-wrap .content{ grid-template-columns: 1fr; }
+  }
+</style>
 
 <div class="exp-wrap" id="top">
   <h1 class="page-title">Experience</h1>
