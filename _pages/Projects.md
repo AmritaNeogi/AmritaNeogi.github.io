@@ -123,6 +123,39 @@ classes: wide
 
   .divider{ height:1px; background:var(--line); margin:1.1rem 0 .8rem; }
 </style>
+<style>
+/* ===== FIX: keep card content from overflowing ===== */
+.cards details.card { overflow: visible; } /* or keep 'clip' if you prefer, the tracks below will fit */
+
+.cards .content{
+  display: grid;
+  grid-template-columns: 1fr;       /* default: stack image over text */
+  gap: 12px;
+}
+
+/* When there’s room for two columns, use a flexible left track that never overflows */
+@media (min-width: 900px){
+  .cards .content{
+    /* Left track is min 260px, max ~42% of the card width */
+    grid-template-columns: minmax(260px, 42%) 1fr;
+  }
+}
+
+/* On wider screens, allow a bit more space for the image */
+@media (min-width: 1200px){
+  .cards .content{
+    grid-template-columns: minmax(300px, 45%) 1fr;
+  }
+}
+
+/* Super wide: give the image even more room without breaking the card */
+@media (min-width: 1600px){
+  .cards .content{
+    grid-template-columns: minmax(340px, 46%) 1fr;
+  }
+}
+</style>
+
 
 <div class="edge">
   <div class="wrap">
