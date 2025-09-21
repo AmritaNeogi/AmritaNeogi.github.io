@@ -19,30 +19,38 @@ classes: wide
     --brand:#336699; --ink:#1f2937; --muted:#6b7280; --card:#ffffff;
     --line:#e5e7eb; --ring:rgba(51,102,153,0.12); --bg:#f8fafc;
 
-    /* Control the OUTER shell and the inner content width for THIS PAGE */
-    --site-max: 1400px;     /* widen the theme’s page container */
-    --content-max: 1280px;  /* inner content column for your cards */
+    /* widen the page shell + inner column */
+    --site-max: 1440px;
+    --content-max: 1280px;
   }
 
-  /* ===== Make the Minimal Mistakes shell wider on this page ===== */
+  /* WIDEN THEME WRAPPERS (so there isn’t a narrow center column) */
   @media (min-width:1200px){
-    /* widen outer wrappers the theme uses */
     .masthead__inner-wrap,
     .initial-content,
     .page,
-    .archive,
     .page__inner-wrap,
     .page__content{
       max-width: var(--site-max) !important;
       margin-left:auto; margin-right:auto;
     }
-
-    /* ensure there's no sidebar column reserved */
-    .layout--single .sidebar,
-    .layout--single .page__sidebar{ display:none !important; }
   }
 
-  /* ===== Your inner container ===== */
+  /* CRITICAL: remove the reserved sidebar column on layout:single */
+  @media (min-width:1024px){
+    .layout--single .page__sidebar{ display:none !important; }
+    .layout--single .page{ display:block !important; }         /* no two-column flex */
+    .layout--single .page__content{
+      float:none !important;                                   /* MM floats content and leaves a left gutter */
+      width:100% !important;                                   /* take full width */
+      max-width:none !important;
+      margin:0 auto !important;
+      padding-left:0 !important; padding-right:0 !important;
+    }
+    .layout--single .page__inner-wrap{ padding-left:0 !important; padding-right:0 !important; }
+  }
+
+  /* Your inner container */
   .wrap{
     font-family:'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     max-width: min(var(--content-max), 96vw);
@@ -50,82 +58,37 @@ classes: wide
     color: var(--ink);
   }
 
-  h1.section-title{
-    color: var(--brand);
-    margin: .25rem 0 .4rem;
-    font-size: clamp(24px, 3vw, 30px);
-  }
-  p.section-sub{
-    margin: 0 0 .9rem;
-    color: var(--muted);
-    font-size: 14.5px;
-  }
+  h1.section-title{ color:var(--brand); margin:.25rem 0 .4rem; font-size:clamp(24px,3vw,30px); }
+  p.section-sub{ margin:0 0 .9rem; color:var(--muted); font-size:14.5px; }
 
-  /* ===== Card grid ===== */
+  /* Card grid */
   .cards{ display:grid; gap:16px; }
-  @media (min-width:1000px){
-    .cards{ grid-template-columns: repeat(3, 1fr); }   /* 3-up on desktop */
-  }
-  @media (min-width:1600px){
-    .cards{ grid-template-columns: repeat(4, 1fr); }   /* 4-up on very wide */
-  }
+  @media (min-width:1000px){ .cards{ grid-template-columns: repeat(3, 1fr); } }   /* desktop: 3-up */
+  @media (min-width:1600px){ .cards{ grid-template-columns: repeat(4, 1fr); } }   /* very wide: 4-up */
 
-  /* ===== Collapsible cards ===== */
-  details.card{
-    border: 1px solid var(--line);
-    border-radius: 12px;
-    background: var(--card);
-    box-shadow: 0 1px 0 var(--ring);
-    overflow: clip;
-  }
-  .card + .card{ margin-top: 10px; }
-  @media (min-width:1000px){ .card + .card{ margin-top: 0; } }
+  /* Cards */
+  details.card{ border:1px solid var(--line); border-radius:12px; background:var(--card); box-shadow:0 1px 0 var(--ring); overflow:clip; }
+  .card + .card{ margin-top:10px; }
+  @media (min-width:1000px){ .card + .card{ margin-top:0; } }
 
-  /* Summary row */
-  .card > summary{
-    list-style:none; cursor:pointer;
-    display:flex; align-items:center; gap:12px; flex-wrap:wrap;
-    padding: 12px 14px; outline:none;
-  }
+  .card > summary{ list-style:none; cursor:pointer; display:flex; align-items:center; gap:12px; flex-wrap:wrap; padding:12px 14px; outline:none; }
   .card > summary::-webkit-details-marker{ display:none; }
 
-  .pill{
-    font-size:12px; font-weight:600;
-    color: var(--brand); background:#eef3f8;
-    padding: 4px 10px; border-radius:999px;
-    border:1px solid #dbe2ea; white-space: nowrap;
-  }
+  .pill{ font-size:12px; font-weight:600; color:var(--brand); background:#eef3f8; padding:4px 10px; border-radius:999px; border:1px solid #dbe2ea; white-space:nowrap; }
   .title{ font-weight:600; font-size:16px; color:var(--ink); }
-  .meta{
-    margin-left:auto; display:flex; gap:10px; align-items:center;
-    color:var(--muted); font-size:13px;
-  }
-  .meta .gh{
-    text-decoration:none; border:1px solid var(--brand); color:var(--brand);
-    padding: 5px 8px; border-radius:8px; font-weight:600; font-size:13px;
-  }
-  .meta .gh:hover{ background: var(--brand); color:#fff; }
+  .meta{ margin-left:auto; display:flex; gap:10px; align-items:center; color:var(--muted); font-size:13px; }
+  .meta .gh{ text-decoration:none; border:1px solid var(--brand); color:var(--brand); padding:5px 8px; border-radius:8px; font-weight:600; font-size:13px; }
+  .meta .gh:hover{ background:var(--brand); color:#fff; }
 
-  /* Expanded content */
-  .content{
-    display:grid; grid-template-columns: 1fr; gap: 12px;
-    border-top:1px solid var(--line); padding: 12px 14px 14px;
-    font-size:15px; line-height:1.55;
-  }
-  @media (min-width:860px){
-    .content{ grid-template-columns: 320px 1fr; }   /* image | text */
-  }
+  .content{ display:grid; grid-template-columns:1fr; gap:12px; border-top:1px solid var(--line); padding:12px 14px 14px; font-size:15px; line-height:1.55; }
+  @media (min-width:860px){ .content{ grid-template-columns:320px 1fr; } }
 
-  .thumb{
-    width:100%; aspect-ratio:16/10; object-fit:cover;
-    border-radius:10px; border:1px solid var(--line); background:var(--bg);
-  }
+  .thumb{ width:100%; aspect-ratio:16/10; object-fit:cover; border-radius:10px; border:1px solid var(--line); background:var(--bg); }
 
   .bullets{ margin:.25rem 0 0; padding-left:18px; }
   .bullets li{ margin:.2rem 0; }
   .links{ display:flex; gap:10px; flex-wrap:wrap; margin-top:.5rem; }
-  .btn{ display:inline-block; text-decoration:none; font-weight:600;
-        padding:7px 10px; border-radius:9px; font-size:14px; }
+  .btn{ display:inline-block; text-decoration:none; font-weight:600; padding:7px 10px; border-radius:9px; font-size:14px; }
   .btn.ghost{ border:1px solid var(--brand); color:var(--brand); }
 
   .divider{ height:1px; background:var(--line); margin:1.1rem 0 .8rem; }
