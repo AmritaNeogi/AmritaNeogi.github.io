@@ -14,20 +14,20 @@ toc_icon: "columns"
 
 <style>
   :root{
-    --brand:#336699;
-    --ink:#1f2937;
-    --muted:#6b7280;
-    --card:#ffffff;
-    --line:#e5e7eb;
-    --ring:rgba(51,102,153,0.12);
-    --bg:#f8fafc;
+    --brand:#336699; --ink:#1f2937; --muted:#6b7280; --card:#ffffff;
+    --line:#e5e7eb; --ring:rgba(51,102,153,0.12); --bg:#f8fafc;
+    --site-max: 1280px;     /* matches About page overrides */
+    --content-max: 1140px;  /* inner column width for this page */
   }
+
+  /* ===== Page container ===== */
   .wrap{
     font-family:'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-    max-width: 980px;                /* wider so pills fit one line */
+    max-width: min(var(--content-max), 94vw);   /* wider on desktop */
     margin: 0 auto;
     color: var(--ink);
   }
+
   h1.section-title{
     color: var(--brand);
     margin: .25rem 0 .4rem;
@@ -36,27 +36,33 @@ toc_icon: "columns"
   p.section-sub{
     margin: 0 0 .9rem;
     color: var(--muted);
-    font-size: 14.5px;               /* smaller + subtler */
+    font-size: 14.5px;
   }
 
-  /* Collapsible cards */
+  /* ===== Card grid (desktop: 2 columns) ===== */
+  .cards{ display:grid; gap:16px; }
+  @media (min-width: 1100px){
+    .cards{ grid-template-columns: 1fr 1fr; }
+  }
+
+  /* ===== Collapsible cards ===== */
   details.card{
     border: 1px solid var(--line);
     border-radius: 12px;
     background: var(--card);
     box-shadow: 0 1px 0 var(--ring);
-    margin: 10px 0;
     overflow: clip;
   }
-  /* Horizontal summary row */
+  .card + .card{ margin-top: 10px; }           /* mobile spacing */
+  @media (min-width:1100px){
+    .card + .card{ margin-top: 0; }            /* grid handles gaps */
+  }
+
+  /* Summary row */
   .card > summary{
-    list-style:none;
-    cursor:pointer;
-    display:flex;
-    align-items:center;
-    gap: 12px;
-    padding: 12px 14px;
-    outline:none;
+    list-style:none; cursor:pointer;
+    display:flex; align-items:center; gap:12px; flex-wrap:wrap;
+    padding: 12px 14px; outline:none;
   }
   .card > summary::-webkit-details-marker{ display:none; }
 
@@ -64,45 +70,35 @@ toc_icon: "columns"
     font-size:12px; font-weight:600;
     color: var(--brand); background:#eef3f8;
     padding: 4px 10px; border-radius:999px;
-    border:1px solid #dbe2ea;
-    white-space: nowrap;              /* keep on one line */
+    border:1px solid #dbe2ea; white-space: nowrap;
   }
-  .title{
-    font-weight:600;
-    font-size:16px;
-    color:var(--ink);
-  }
+  .title{ font-weight:600; font-size:16px; color:var(--ink); }
   .meta{
-    margin-left:auto;
-    display:flex; gap:10px; align-items:center;
-    color:var(--muted);
-    font-size:13px;
+    margin-left:auto; display:flex; gap:10px; align-items:center;
+    color:var(--muted); font-size:13px;
   }
   .meta .gh{
-    text-decoration:none;
-    border:1px solid var(--brand);
-    color:var(--brand);
-    padding: 5px 8px; border-radius:8px;
-    font-weight:600; font-size:13px;
+    text-decoration:none; border:1px solid var(--brand); color:var(--brand);
+    padding: 5px 8px; border-radius:8px; font-weight:600; font-size:13px;
   }
   .meta .gh:hover{ background: var(--brand); color:#fff; }
 
   /* Expanded content */
   .content{
-    display:grid;
-    grid-template-columns: 1fr;
-    gap: 12px;
-    border-top:1px solid var(--line);
-    padding: 12px 14px 14px;
+    display:grid; grid-template-columns: 1fr; gap: 12px;
+    border-top:1px solid var(--line); padding: 12px 14px 14px;
     font-size:15px; line-height:1.55;
   }
-  @media (min-width: 820px){
-    .content{ grid-template-columns: 320px 1fr; } /* image | text */
+  @media (min-width: 860px){
+    .content{ grid-template-columns: 360px 1fr; } /* image | text */
   }
+
+  /* Tidy thumbnails: consistent aspect ratio */
   .thumb{
-    width:100%; height:auto; border-radius:10px; border:1px solid var(--line);
-    background: var(--bg);
+    width:100%; aspect-ratio: 16/10; object-fit: cover;
+    border-radius:10px; border:1px solid var(--line); background: var(--bg);
   }
+
   .bullets{ margin:.25rem 0 0; padding-left: 18px; }
   .bullets li{ margin:.2rem 0; }
   .links{ display:flex; gap:10px; flex-wrap:wrap; margin-top:.5rem; }
@@ -111,98 +107,8 @@ toc_icon: "columns"
   .btn.ghost{ border:1px solid var(--brand); color:var(--brand); }
 
   /* Section divider */
-  .divider{
-    height:1px; background:var(--line); margin: 1.1rem 0 .8rem;
-  }
+  .divider{ height:1px; background:var(--line); margin: 1.1rem 0 .8rem; }
 </style>
-<style>
-/* ========= 1) Make the SITE wider on desktop ========= */
-/* Works nicely with Minimal Mistakes / similar Jekyll shells */
-:root{
-  --site-max: 1280px;     /* overall shell width */
-  --content-max: 1060px;  /* inner content column width */
-}
-@media (min-width: 1200px){
-  /* Header + main wrappers */
-  .masthead__inner-wrap,
-  .initial-content,
-  .page,
-  .archive,
-  .page__inner-wrap,
-  .page__content{
-    max-width: var(--site-max) !important;
-  }
-  /* If your theme centers via margin auto, keep it centered */
-  .masthead__inner-wrap,
-  .initial-content,
-  .page,
-  .archive{ margin-left:auto; margin-right:auto; }
-}
-
-/* Optional: slightly narrow the left author sidebar to reclaim space */
-@media (min-width: 1200px){
-  .sidebar { flex-basis: 260px !important; max-width: 260px !important; }
-  .page__content { max-width: calc(var(--site-max) - 260px - 48px) !important; } /* 48px gutters */
-}
-
-/* ========= 2) Widen the ABOUT landing area ========= */
-/* Your page uses .landing; just let it breathe more on large screens */
-.landing{ max-width: min(var(--content-max), 92vw) !important; }
-@media (min-width: 1400px){
-  :root{ --site-max: 1360px; --content-max: 1140px; }
-}
-
-/* Slightly increase readable size on big screens */
-@media (min-width: 1200px){
-  .landing .lede{ font-size: 18px; line-height: 1.6; }
-  .story{ font-size: 16px; }
-}
-
-/* ========= 3) Give “proof” chips more columns on wide screens ========= */
-@media (min-width: 1200px){
-  .proof{ grid-template-columns: repeat(3, minmax(0,1fr)); gap: 12px; }
-}
-
-/* ========= 4) Projects list: arrange in 2 columns on desktop ========= */
-/* If your projects are a vertical list, turn them into a grid */
-@media (min-width: 1100px){
-  .projects-grid,             /* use if you already have a grid class */
-  .archive__item-list,        /* Minimal Mistakes posts/projects list */
-  .project-list{              /* fallback */
-    display: grid !important;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
-  }
-  /* Ensure each card stretches nicely */
-  .archive__item,
-  .project-card{ height: 100%; }
-}
-
-/* ========= 5) Skills: allow boxes to use the width ========= */
-@media (min-width: 1100px){
-  .skills-sections,
-  .feature__wrapper{          /* common container name in themes */
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0,1fr));
-    gap: 16px;
-  }
-}
-
-/* ========= 6) Trim excess vertical whitespace ========= */
-section + section{ margin-top: 2rem; }
-@media (min-width: 1200px){
-  section + section{ margin-top: 2.25rem; }
-}
-
-/* ========= 7) Optional “full-bleed” helper ========= */
-/* Use <section class="fullbleed"> ... </section> to span the full width */
-.fullbleed{
-  margin-left: 50%;
-  transform: translateX(-50%);
-  width: min(var(--site-max), 96vw);
-}
-</style>
-
 
 <div class="wrap">
 
@@ -210,182 +116,184 @@ section + section{ margin-top: 2rem; }
   <h1 class="section-title">Projects</h1>
   <p class="section-sub">Browse selected personal projects. Click a card to view a short summary, visuals, and links.</p>
 
-  <!-- PROJECT 1 -->
-  <details class="card" id="phenophase">
-    <summary>
-      <span class="pill">Computer Vision</span>
-      <span class="title">Phenophase Image Analysis (ResNet-50 + GANs)</span>
-      <span class="meta">
-        <span>Dec&nbsp;2023</span>
-        <a class="gh" href="https://github.com/AmritaNeogi/PhenoCam-Image-Analysis-Using-CNN" target="_blank" rel="noopener">GitHub</a>
-      </span>
-    </summary>
-    <div class="content">
-      <img class="thumb" src="/assets/images/decidousForest.jpg" alt="Phenology project">
-      <div>
-        Detect leaf phenophase from PhenoCam images and forecast SOS/EOS across sites with augmentation for rare phases.
-        <ul class="bullets">
-          <li>ResNet-50 classifier; GANs for data scarcity</li>
-          <li>Cross-site generalization beyond single camera tuning</li>
-          <li>Calendar-level SOS/EOS with confidence bands</li>
-        </ul>
-        <div class="links">
-          <a class="btn ghost" href="/assets/images/SOS_EOS.png" target="_blank">SOS/EOS plot</a>
-          <a class="btn ghost" href="/assets/images/GAN.png" target="_blank">GAN architecture</a>
+  <div class="cards">
+    <!-- PROJECT 1 -->
+    <details class="card" id="phenophase">
+      <summary>
+        <span class="pill">Computer Vision</span>
+        <span class="title">Phenophase Image Analysis (ResNet-50 + GANs)</span>
+        <span class="meta">
+          <span>Dec&nbsp;2023</span>
+          <a class="gh" href="https://github.com/AmritaNeogi/PhenoCam-Image-Analysis-Using-CNN" target="_blank" rel="noopener">GitHub</a>
+        </span>
+      </summary>
+      <div class="content">
+        <img class="thumb" src="/assets/images/decidousForest.jpg" alt="Phenology project">
+        <div>
+          Detect leaf phenophase from PhenoCam images and forecast SOS/EOS across sites with augmentation for rare phases.
+          <ul class="bullets">
+            <li>ResNet-50 classifier; GANs for data scarcity</li>
+            <li>Cross-site generalization beyond single camera tuning</li>
+            <li>Calendar-level SOS/EOS with confidence bands</li>
+          </ul>
+          <div class="links">
+            <a class="btn ghost" href="/assets/images/SOS_EOS.png" target="_blank">SOS/EOS plot</a>
+            <a class="btn ghost" href="/assets/images/GAN.png" target="_blank">GAN architecture</a>
+          </div>
         </div>
       </div>
-    </div>
-  </details>
+    </details>
 
-  <!-- PROJECT 2 -->
-  <details class="card" id="airflow-youtube">
-    <summary>
-      <span class="pill">Data Engineering</span>
-      <span class="title">YouTube Data Pipeline with Apache Airflow</span>
-      <span class="meta">
-        <span>Oct&nbsp;2023</span>
-        <a class="gh" href="https://github.com/AmritaNeogi/YouTube_Data_Pipieline_Using_Airflow" target="_blank" rel="noopener">GitHub</a>
-      </span>
-    </summary>
-    <div class="content">
-      <img class="thumb" src="/assets/images/yt.jpg" alt="YouTube pipeline">
-      <div>
-        Config-driven ETL from YouTube API to S3/Snowflake with Airflow orchestration.
-        <ul class="bullets">
-          <li>Incremental loads, retries, schema checks, logs</li>
-          <li>Idempotent upserts; downstream content analytics</li>
-        </ul>
-        <div class="links">
-          <a class="btn ghost" href="/assets/images/youtube.png" target="_blank">Pipeline overview</a>
+    <!-- PROJECT 2 -->
+    <details class="card" id="airflow-youtube">
+      <summary>
+        <span class="pill">Data Engineering</span>
+        <span class="title">YouTube Data Pipeline with Apache Airflow</span>
+        <span class="meta">
+          <span>Oct&nbsp;2023</span>
+          <a class="gh" href="https://github.com/AmritaNeogi/YouTube_Data_Pipieline_Using_Airflow" target="_blank" rel="noopener">GitHub</a>
+        </span>
+      </summary>
+      <div class="content">
+        <img class="thumb" src="/assets/images/yt.jpg" alt="YouTube pipeline">
+        <div>
+          Config-driven ETL from YouTube API to S3/Snowflake with Airflow orchestration.
+          <ul class="bullets">
+            <li>Incremental loads, retries, schema checks, logs</li>
+            <li>Idempotent upserts; downstream content analytics</li>
+          </ul>
+          <div class="links">
+            <a class="btn ghost" href="/assets/images/youtube.png" target="_blank">Pipeline overview</a>
+          </div>
         </div>
       </div>
-    </div>
-  </details>
+    </details>
 
-  <!-- PROJECT 3 -->
-  <details class="card" id="snowflake-housing">
-    <summary>
-      <span class="pill">Analytics</span>
-      <span class="title">House Price Profiler on Snowflake</span>
-      <span class="meta">
-        <span>Oct&nbsp;2023</span>
-        <a class="gh" href="https://github.com/AmritaNeogi/Data_Analytics_Project-Housing_Price_Profiler" target="_blank" rel="noopener">GitHub</a>
-      </span>
-    </summary>
-    <div class="content">
-      <img class="thumb" src="/assets/images/houese_price.jpg" alt="Housing profiler">
-      <div>
-        60k+ listings scraped and standardized; modeled price drivers and sensitivity.
-        <ul class="bullets">
-          <li>Flattened JSON → ~40% faster queries; full geocoding</li>
-          <li>Answered 11 key business questions</li>
-        </ul>
-        <div class="links">
-          <a class="btn ghost" href="/assets/images/overview_house.png" target="_blank">Schema overview</a>
+    <!-- PROJECT 3 -->
+    <details class="card" id="snowflake-housing">
+      <summary>
+        <span class="pill">Analytics</span>
+        <span class="title">House Price Profiler on Snowflake</span>
+        <span class="meta">
+          <span>Oct&nbsp;2023</span>
+          <a class="gh" href="https://github.com/AmritaNeogi/Data_Analytics_Project-Housing_Price_Profiler" target="_blank" rel="noopener">GitHub</a>
+        </span>
+      </summary>
+      <div class="content">
+        <img class="thumb" src="/assets/images/houese_price.jpg" alt="Housing profiler">
+        <div>
+          60k+ listings scraped and standardized; modeled price drivers and sensitivity.
+          <ul class="bullets">
+            <li>Flattened JSON → ~40% faster queries; full geocoding</li>
+            <li>Answered 11 key business questions</li>
+          </ul>
+          <div class="links">
+            <a class="btn ghost" href="/assets/images/overview_house.png" target="_blank">Schema overview</a>
+          </div>
         </div>
       </div>
-    </div>
-  </details>
+    </details>
 
-  <!-- PROJECT 4 -->
-  <details class="card" id="breast-cancer">
-    <summary>
-      <span class="pill">ML</span>
-      <span class="title">Breast Cancer Prediction (LR vs. NN)</span>
-      <span class="meta">
-        <span>Oct&nbsp;2023</span>
-        <a class="gh" href="https://github.com/AmritaNeogi/Breast_Cancer_Prediction" target="_blank" rel="noopener">GitHub</a>
-      </span>
-    </summary>
-    <div class="content">
-      <img class="thumb" src="/assets/images/breast_cancer.png" alt="Breast cancer project">
-      <div>
-        Compare classical and deep approaches for early detection on tabular features.
-        <ul class="bullets">
-          <li>LR 92.9% acc; Keras NN 97.3% acc</li>
-          <li>SMOTE for imbalance; calibrated probabilities</li>
-        </ul>
-        <div class="links">
-          <a class="btn ghost" href="/assets/images/overview_breastCancer.png" target="_blank">Model summary</a>
-          <a class="btn ghost" href="/assets/images/NN_model_accuracy_Loss.png" target="_blank">Training curves</a>
+    <!-- PROJECT 4 -->
+    <details class="card" id="breast-cancer">
+      <summary>
+        <span class="pill">ML</span>
+        <span class="title">Breast Cancer Prediction (LR vs. NN)</span>
+        <span class="meta">
+          <span>Oct&nbsp;2023</span>
+          <a class="gh" href="https://github.com/AmritaNeogi/Breast_Cancer_Prediction" target="_blank" rel="noopener">GitHub</a>
+        </span>
+      </summary>
+      <div class="content">
+        <img class="thumb" src="/assets/images/breast_cancer.png" alt="Breast cancer project">
+        <div>
+          Compare classical and deep approaches for early detection on tabular features.
+          <ul class="bullets">
+            <li>LR 92.9% acc; Keras NN 97.3% acc</li>
+            <li>SMOTE for imbalance; calibrated probabilities</li>
+          </ul>
+          <div class="links">
+            <a class="btn ghost" href="/assets/images/overview_breastCancer.png" target="_blank">Model summary</a>
+            <a class="btn ghost" href="/assets/images/NN_model_accuracy_Loss.png" target="_blank">Training curves</a>
+          </div>
         </div>
       </div>
-    </div>
-  </details>
+    </details>
 
-  <!-- PROJECT 5 -->
-  <details class="card" id="uber">
-    <summary>
-      <span class="pill">DE & BI</span>
-      <span class="title">Uber Data Analytics (GCS · Mage · BigQuery · Looker)</span>
-      <span class="meta">
-        <span>Aug&nbsp;2023</span>
-        <a class="gh" href="https://github.com/AmritaNeogi/Uber_data_Analytics" target="_blank" rel="noopener">GitHub</a>
-      </span>
-    </summary>
-    <div class="content">
-      <img class="thumb" src="/assets/images/uber-header.jpg" alt="Uber analytics">
-      <div>
-        End-to-end pipeline to BI with KPI queries returning in seconds.
-        <ul class="bullets">
-          <li>Stakeholder dashboard for demand peaks & supply gaps</li>
-        </ul>
-        <div class="links">
-          <a class="btn ghost" href="https://lookerstudio.google.com/s/s-nnQQB79Kw" target="_blank" rel="noopener">Dashboard</a>
-          <a class="btn ghost" href="/assets/images/uber_dashboard.jpg" target="_blank">Dashboard preview</a>
+    <!-- PROJECT 5 -->
+    <details class="card" id="uber">
+      <summary>
+        <span class="pill">DE & BI</span>
+        <span class="title">Uber Data Analytics (GCS · Mage · BigQuery · Looker)</span>
+        <span class="meta">
+          <span>Aug&nbsp;2023</span>
+          <a class="gh" href="https://github.com/AmritaNeogi/Uber_data_Analytics" target="_blank" rel="noopener">GitHub</a>
+        </span>
+      </summary>
+      <div class="content">
+        <img class="thumb" src="/assets/images/uber-header.jpg" alt="Uber analytics">
+        <div>
+          End-to-end pipeline to BI with KPI queries returning in seconds.
+          <ul class="bullets">
+            <li>Stakeholder dashboard for demand peaks & supply gaps</li>
+          </ul>
+          <div class="links">
+            <a class="btn ghost" href="https://lookerstudio.google.com/s/s-nnQQB79Kw" target="_blank" rel="noopener">Dashboard</a>
+            <a class="btn ghost" href="/assets/images/uber_dashboard.jpg" target="_blank">Dashboard preview</a>
+          </div>
         </div>
       </div>
-    </div>
-  </details>
+    </details>
 
-  <!-- PROJECT 6 -->
-  <details class="card" id="fraud">
-    <summary>
-      <span class="pill">ML</span>
-      <span class="title">Credit Card Fraud Detection</span>
-      <span class="meta">
-        <span>Aug&nbsp;2023</span>
-        <a class="gh" href="https://github.com/AmritaNeogi/Data-Science-Project-Credit-Card-Fraud-Detection" target="_blank" rel="noopener">GitHub</a>
-      </span>
-    </summary>
-    <div class="content">
-      <img class="thumb" src="/assets/images/credit_card.jpeg" alt="Fraud detection">
-      <div>
-        Imbalanced classification with SMOTE and model comparison (DT, LR, RF, NB).
-        <ul class="bullets">
-          <li>Best model ~99% accuracy; +~10% after rebalancing</li>
-        </ul>
-        <div class="links">
-          <a class="btn ghost" href="/assets/images/final_summary.png" target="_blank">Results snapshot</a>
+    <!-- PROJECT 6 -->
+    <details class="card" id="fraud">
+      <summary>
+        <span class="pill">ML</span>
+        <span class="title">Credit Card Fraud Detection</span>
+        <span class="meta">
+          <span>Aug&nbsp;2023</span>
+          <a class="gh" href="https://github.com/AmritaNeogi/Data-Science-Project-Credit-Card-Fraud-Detection" target="_blank" rel="noopener">GitHub</a>
+        </span>
+      </summary>
+      <div class="content">
+        <img class="thumb" src="/assets/images/credit_card.jpeg" alt="Fraud detection">
+        <div>
+          Imbalanced classification with SMOTE and model comparison (DT, LR, RF, NB).
+          <ul class="bullets">
+            <li>Best model ~99% accuracy; +~10% after rebalancing</li>
+          </ul>
+          <div class="links">
+            <a class="btn ghost" href="/assets/images/final_summary.png" target="_blank">Results snapshot</a>
+          </div>
         </div>
       </div>
-    </div>
-  </details>
+    </details>
 
-  <!-- PROJECT 7 -->
-  <details class="card" id="salary">
-    <summary>
-      <span class="pill">Regression</span>
-      <span class="title">Salary Prediction (Gradient Descent)</span>
-      <span class="meta">
-        <span>Jul&nbsp;2023</span>
-        <a class="gh" href="https://github.com/AmritaNeogi/Data-Science-Project-Salary-Prediction" target="_blank" rel="noopener">GitHub</a>
-      </span>
-    </summary>
-    <div class="content">
-      <img class="thumb" src="/assets/images/salary_pred.jpg" alt="Salary prediction">
-      <div>
-        From baseline to tuned GD with strong MSE reduction and clear diagnostics.
-        <ul class="bullets">
-          <li>MSE reduced from 91.2% → 6.3% with scaling & step tuning</li>
-        </ul>
-        <div class="links">
-          <a class="btn ghost" href="/assets/images/summary1.png" target="_blank">Summary</a>
-          <a class="btn ghost" href="/assets/images/gradient%20descent.png" target="_blank">GD visualization</a>
+    <!-- PROJECT 7 -->
+    <details class="card" id="salary">
+      <summary>
+        <span class="pill">Regression</span>
+        <span class="title">Salary Prediction (Gradient Descent)</span>
+        <span class="meta">
+          <span>Jul&nbsp;2023</span>
+          <a class="gh" href="https://github.com/AmritaNeogi/Data-Science-Project-Salary-Prediction" target="_blank" rel="noopener">GitHub</a>
+        </span>
+      </summary>
+      <div class="content">
+        <img class="thumb" src="/assets/images/salary_pred.jpg" alt="Salary prediction">
+        <div>
+          From baseline to tuned GD with strong MSE reduction and clear diagnostics.
+          <ul class="bullets">
+            <li>MSE reduced from 91.2% → 6.3% with scaling & step tuning</li>
+          </ul>
+          <div class="links">
+            <a class="btn ghost" href="/assets/images/summary1.png" target="_blank">Summary</a>
+            <a class="btn ghost" href="/assets/images/gradient%20descent.png" target="_blank">GD visualization</a>
+          </div>
         </div>
       </div>
-    </div>
-  </details>
+    </details>
+  </div><!-- /.cards -->
 
   <div class="divider"></div>
 
@@ -393,63 +301,55 @@ section + section{ margin-top: 2rem; }
   <h1 class="section-title">Research</h1>
   <p class="section-sub">Work in progress from the ARID Lab at the University of Arizona. Click to view a brief, non-confidential summary.</p>
 
-  <!-- RESEARCH 1 -->
-  <details class="card" id="insurance-infant">
-    <summary>
-      <span class="pill">Causal Inference</span>
-      <span class="title">Insurance at Birth & Infant Outcomes (EHR, multi-site)</span>
-      <span class="meta"><span>Sep&nbsp;2025</span></span>
-    </summary>
-    <div class="content">
-      <img class="thumb" src="/assets/images/research_placeholder_1.png" alt="Insurance & infant outcomes (placeholder)">
-      <div>
-        Causal/logistic modeling to assess payer-type effects on infant survival using multi-site EHR.
-        <ul class="bullets">
-          <li>Quantified payer disparities: uninsured/self-pay highest risk; Medicaid ~10% survival gain; private ~70% strongest protection</li>
-          <li>Reproducible pipelines for subgroup analyses and equity-focused reporting</li>
-        </ul>
-        <div class="links">
-          <!-- Add figures later as assets, keep buttons consistent -->
-          <!-- <a class="btn ghost" href="/assets/images/your_figure.png" target="_blank">Kaplan–Meier plot</a> -->
+  <div class="cards">
+    <!-- RESEARCH 1 -->
+    <details class="card" id="insurance-infant">
+      <summary>
+        <span class="pill">Causal Inference</span>
+        <span class="title">Insurance at Birth & Infant Outcomes (EHR, multi-site)</span>
+        <span class="meta"><span>Sep&nbsp;2025</span></span>
+      </summary>
+      <div class="content">
+        <img class="thumb" src="/assets/images/research_placeholder_1.png" alt="Insurance & infant outcomes (placeholder)">
+        <div>
+          Causal/logistic modeling to assess payer-type effects on infant survival using multi-site EHR.
+          <ul class="bullets">
+            <li>Disparities: uninsured/self-pay highest risk; Medicaid ~10% survival gain; private ~70% strongest protection</li>
+            <li>Reproducible pipelines for subgroup analyses and equity-focused reporting</li>
+          </ul>
         </div>
       </div>
-    </div>
-  </details>
+    </details>
 
-  <!-- RESEARCH 2 -->
-  <details class="card" id="utilization-guidelines">
-    <summary>
-      <span class="pill">Health Analytics</span>
-      <span class="title">Healthcare Utilization & Guideline Adherence</span>
-      <span class="meta"><span>Aug&nbsp;2025</span></span>
-    </summary>
-    <div class="content">
-      <img class="thumb" src="/assets/images/research_placeholder_2.png" alt="Utilization & adherence (placeholder)">
-      <div>
-        ML/statistical models on 50k+ records to evaluate compliance and long-horizon utilization patterns.
-        <ul class="bullets">
-          <li>Identified 3 distinct utilization patterns + top 5 predictors of continuous care</li>
-          <li>Analyzed 10-year trajectories across pediatric/adult cohorts; equity-focused insights and scalable sequence models</li>
-        </ul>
-        <div class="links">
-          <!-- <a class="btn ghost" href="/assets/images/another_figure.png" target="_blank">Trajectory plot</a> -->
+    <!-- RESEARCH 2 -->
+    <details class="card" id="utilization-guidelines">
+      <summary>
+        <span class="pill">Health Analytics</span>
+        <span class="title">Healthcare Utilization & Guideline Adherence</span>
+        <span class="meta"><span>Aug&nbsp;2025</span></span>
+      </summary>
+      <div class="content">
+        <img class="thumb" src="/assets/images/research_placeholder_2.png" alt="Utilization & adherence (placeholder)">
+        <div>
+          ML/statistical models on 50k+ records to evaluate compliance and long-horizon utilization patterns.
+          <ul class="bullets">
+            <li>Identified 3 distinct utilization patterns + top 5 predictors of continuous care</li>
+            <li>Analyzed 10-year trajectories across pediatric/adult cohorts; equity-focused insights and scalable sequence models</li>
+          </ul>
         </div>
       </div>
-    </div>
-  </details>
+    </details>
+  </div><!-- /.cards -->
 
 </div>
 
 <script>
-  // Keep only one card open per section
-  function singleOpen(scope){
-    scope.querySelectorAll('details.card').forEach((d) => {
+  // Keep only one card open per grid
+  document.querySelectorAll('.cards').forEach((grid) => {
+    grid.querySelectorAll('details.card').forEach((d) => {
       d.addEventListener('toggle', () => {
-        if (d.open) {
-          scope.querySelectorAll('details.card').forEach(o => { if (o !== d) o.removeAttribute('open'); });
-        }
+        if (d.open) grid.querySelectorAll('details.card').forEach(o => { if (o !== d) o.removeAttribute('open'); });
       });
     });
-  }
-  document.querySelectorAll('.wrap').forEach(singleOpen);
+  });
 </script>
