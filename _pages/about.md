@@ -304,7 +304,7 @@ redirect_from:
     </div>
   </section>
 
-  <p class="foot">Thanks for visiting—feel free to explore and connect.</p>
+  <p class="foot"><br>Thanks for visiting! Feel free to explore and connect.</p>
 </div>
 
 <script>
