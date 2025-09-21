@@ -1,10 +1,12 @@
 ---
 layout: single
-classes: wide
 title:
 permalink: /Experience/
 date: 2023-09-02
 categories: pages
+author_profile: false     # no author panel on this page
+sidebar: false            # no page sidebar either
+classes: wide
 ---
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
@@ -14,19 +16,35 @@ categories: pages
     --brand:#336699; --ink:#1f2937; --muted:#6b7280;
     --card:#fff; --line:#e5e7eb; --ring:rgba(51,102,153,.12);
     --bg:#f8fafc;
-    --wrap-max: 1000px;  /* <<< Tweak me: 960–1060px are good values */
+    --wrap-max: 1200px;  /* overall width of the Experience content */
   }
 
-  /* ===== Base layout (never overflow parent) ===== */
+  /* ====== reclaim LEFT space + start content flush-left on desktop ====== */
+  @media (min-width:1024px){
+    .layout--single .sidebar,
+    .layout--single .page__sidebar{ display:none !important; }  /* kill the left column */
+    .layout--single .page{ display:flex !important; }            /* keep theme layout sane */
+    .layout--single .page__inner-wrap{ padding-left:0 !important; padding-right:0 !important; }
+    .layout--single .page__content{
+      flex:1 1 auto !important;
+      max-width:none !important;
+      margin:0 !important;          /* <<< this removes the left gutter */
+      padding:0 !important;
+    }
+  }
+
+  /* ===== Base layout (content block) ===== */
   .exp-wrap{
     font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
     width: 100%;
-    max-width: min(100%, var(--wrap-max));      /* fits parent container */
-    margin-inline: auto;
-    padding-inline: 12px;                       /* small gutter so borders never kiss edge */
+    max-width: min(100%, var(--wrap-max));
+    margin-left: 0;                 /* flush-left */
+    margin-right: auto;             /* allow room on the right if narrower than viewport */
+    padding-inline: 12px;           /* small inner gutter */
     color: var(--ink);
     box-sizing: border-box;
   }
+
   h1.page-title{ color:var(--brand); margin:.25rem 0 .6rem; font-size:clamp(24px,3vw,30px); }
   p.page-sub{ color:var(--muted); font-size:14.5px; margin:0 0 .8rem; }
 
@@ -42,7 +60,7 @@ categories: pages
   details.role{
     border:1px solid var(--line); border-radius:14px; background:var(--card);
     box-shadow:0 1px 0 var(--ring); margin:.7rem 0;
-    overflow: hidden;                        /* keep inner borders INSIDE the card */
+    overflow: hidden;
     box-sizing: border-box; width: 100%;
   }
   .role > summary{
@@ -57,15 +75,15 @@ categories: pages
   .org{ color:var(--muted); font-size:13.5px; }
   .dates{ color:var(--muted); font-size:13.5px; white-space:nowrap; }
 
-  /* ===== Expanded content (two columns, no overflow) ===== */
+  /* ===== Expanded content ===== */
   .content{
     border-top:1px solid var(--line);
     display:grid;
-    grid-template-columns: minmax(0,1fr) minmax(0,1fr);   /* flexible columns that can shrink */
+    grid-template-columns: minmax(0,1fr) minmax(0,1fr);
     gap:16px;
-    padding:12px 16px 14px;           /* right padding so text never kisses edge */
+    padding:12px 16px 14px;
     font-size:14.75px; line-height:1.6;
-    overflow-wrap:anywhere;           /* break long tokens safely */
+    overflow-wrap:anywhere;
     box-sizing:border-box; width:100%;
   }
   @media (max-width: 860px){
@@ -74,8 +92,7 @@ categories: pages
 
   .highlights, .full{
     background:#fff; border:1px dashed #e9edf3; border-radius:10px; padding:10px 12px;
-    margin:0;                            /* avoid spill past rounded edges */
-    box-sizing:border-box; width:100%;
+    margin:0; box-sizing:border-box; width:100%;
   }
   .highlights h4, .full h4{ margin:.1rem 0 .35rem; color:var(--brand); font-size:14.5px; }
   ul.tight{ margin:.2rem 0 0; padding-left:16px; }
@@ -85,94 +102,6 @@ categories: pages
   .backtop{ text-align:right; margin-top:.3rem; }
   .backtop a{ font-size:12.5px; color:var(--brand); text-decoration:none; }
 </style>
-<style>
-/* ========= 1) Make the SITE wider on desktop ========= */
-/* Works nicely with Minimal Mistakes / similar Jekyll shells */
-:root{
-  --site-max: 1280px;     /* overall shell width */
-  --content-max: 1060px;  /* inner content column width */
-}
-@media (min-width: 1200px){
-  /* Header + main wrappers */
-  .masthead__inner-wrap,
-  .initial-content,
-  .page,
-  .archive,
-  .page__inner-wrap,
-  .page__content{
-    max-width: var(--site-max) !important;
-  }
-  /* If your theme centers via margin auto, keep it centered */
-  .masthead__inner-wrap,
-  .initial-content,
-  .page,
-  .archive{ margin-left:auto; margin-right:auto; }
-}
-
-/* Optional: slightly narrow the left author sidebar to reclaim space */
-@media (min-width: 1200px){
-  .sidebar { flex-basis: 260px !important; max-width: 260px !important; }
-  .page__content { max-width: calc(var(--site-max) - 260px - 48px) !important; } /* 48px gutters */
-}
-
-/* ========= 2) Widen the ABOUT landing area ========= */
-/* Your page uses .landing; just let it breathe more on large screens */
-.landing{ max-width: min(var(--content-max), 92vw) !important; }
-@media (min-width: 1400px){
-  :root{ --site-max: 1360px; --content-max: 1140px; }
-}
-
-/* Slightly increase readable size on big screens */
-@media (min-width: 1200px){
-  .landing .lede{ font-size: 18px; line-height: 1.6; }
-  .story{ font-size: 16px; }
-}
-
-/* ========= 3) Give “proof” chips more columns on wide screens ========= */
-@media (min-width: 1200px){
-  .proof{ grid-template-columns: repeat(3, minmax(0,1fr)); gap: 12px; }
-}
-
-/* ========= 4) Projects list: arrange in 2 columns on desktop ========= */
-/* If your projects are a vertical list, turn them into a grid */
-@media (min-width: 1100px){
-  .projects-grid,             /* use if you already have a grid class */
-  .archive__item-list,        /* Minimal Mistakes posts/projects list */
-  .project-list{              /* fallback */
-    display: grid !important;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
-  }
-  /* Ensure each card stretches nicely */
-  .archive__item,
-  .project-card{ height: 100%; }
-}
-
-/* ========= 5) Skills: allow boxes to use the width ========= */
-@media (min-width: 1100px){
-  .skills-sections,
-  .feature__wrapper{          /* common container name in themes */
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0,1fr));
-    gap: 16px;
-  }
-}
-
-/* ========= 6) Trim excess vertical whitespace ========= */
-section + section{ margin-top: 2rem; }
-@media (min-width: 1200px){
-  section + section{ margin-top: 2.25rem; }
-}
-
-/* ========= 7) Optional “full-bleed” helper ========= */
-/* Use <section class="fullbleed"> ... </section> to span the full width */
-.fullbleed{
-  margin-left: 50%;
-  transform: translateX(-50%);
-  width: min(var(--site-max), 96vw);
-}
-</style>
-
 
 <div class="exp-wrap" id="top">
   <h1 class="page-title">Experience</h1>
