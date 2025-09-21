@@ -115,7 +115,13 @@ categories: pages
   ul.tight{ margin:.25rem 0 0; padding-left:18px; }
   ul.tight li{ margin:.2rem 0; }
 </style>
-
+<style>
+  .section-sub{
+    color: var(--muted);
+    font-size: 13px;           /* smaller than body, matches the vibe of the page-sub */
+    margin: -.35rem 0 .5rem;   /* tiny tighten so it tucks under the h2 nicely */
+  }
+</style>
 <div class="awards-wrap">
   <h1 class="page-title">Accomplishments</h1>
   <p class="page-sub">Selected certifications, scholarships, and awards.</p>
