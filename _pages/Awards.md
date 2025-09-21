@@ -116,12 +116,18 @@ categories: pages
   ul.tight li{ margin:.2rem 0; }
 </style>
 <style>
-  .section-sub{
+  /* Make the helper line under Certifications smaller */
+  .awards-wrap p.section-sub{
+    font-size: 13px !important;
+    line-height: 1.45;
     color: var(--muted);
-    font-size: 13px;           /* smaller than body, matches the vibe of the page-sub */
-    margin: -.35rem 0 .5rem;   /* tiny tighten so it tucks under the h2 nicely */
+    margin: -.25rem 0 .5rem;
   }
+
+  /* (Optional) tighten the h2 above it so they sit closer together */
+  .awards-wrap .section > h2{ margin: .2rem 0 .35rem; }
 </style>
+
 <div class="awards-wrap">
   <h1 class="page-title">Accomplishments</h1>
   <p class="page-sub">Selected certifications, scholarships, and awards.</p>
