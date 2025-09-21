@@ -1,5 +1,4 @@
 ---
-
 layout: single
 title:
 permalink: /Projects/
@@ -11,9 +10,6 @@ toc_icon: "columns"
 author_profile: false
 sidebar: false
 classes: wide
-
-
-
 ---
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
@@ -22,14 +18,14 @@ classes: wide
   :root{
     --brand:#336699; --ink:#1f2937; --muted:#6b7280; --card:#ffffff;
     --line:#e5e7eb; --ring:rgba(51,102,153,0.12); --bg:#f8fafc;
-    --site-max: 1280px;     /* matches About page overrides */
-    --content-max: 1140px;  /* inner column width for this page */
+    --site-max: 1360px;      /* slightly wider shell */
+    --content-max: 1280px;   /* wider inner content column */
   }
 
   /* ===== Page container ===== */
   .wrap{
     font-family:'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-    max-width: min(var(--content-max), 94vw);   /* wider on desktop */
+    max-width: min(var(--content-max), 96vw);   /* let content breathe */
     margin: 0 auto;
     color: var(--ink);
   }
@@ -45,10 +41,13 @@ classes: wide
     font-size: 14.5px;
   }
 
-  /* ===== Card grid (desktop: 2 columns) ===== */
+  /* ===== Card grid (more columns on wider screens) ===== */
   .cards{ display:grid; gap:16px; }
-  @media (min-width: 1100px){
-    .cards{ grid-template-columns: 1fr 1fr; }
+  @media (min-width: 1000px){
+    .cards{ grid-template-columns: repeat(3, 1fr); }  /* 3-up on desktop */
+  }
+  @media (min-width: 1600px){
+    .cards{ grid-template-columns: repeat(4, 1fr); }  /* 4-up on very wide */
   }
 
   /* ===== Collapsible cards ===== */
@@ -60,7 +59,7 @@ classes: wide
     overflow: clip;
   }
   .card + .card{ margin-top: 10px; }           /* mobile spacing */
-  @media (min-width:1100px){
+  @media (min-width:1000px){
     .card + .card{ margin-top: 0; }            /* grid handles gaps */
   }
 
@@ -96,7 +95,7 @@ classes: wide
     font-size:15px; line-height:1.55;
   }
   @media (min-width: 860px){
-    .content{ grid-template-columns: 360px 1fr; } /* image | text */
+    .content{ grid-template-columns: 320px 1fr; } /* image | text (slightly looser) */
   }
 
   /* Tidy thumbnails: consistent aspect ratio */
@@ -115,19 +114,6 @@ classes: wide
   /* Section divider */
   .divider{ height:1px; background:var(--line); margin: 1.1rem 0 .8rem; }
 </style>
-<style>
-  @media (min-width: 1024px){
-    /* Hide sidebar column if any and reclaim the space */
-    .layout--single .sidebar{ display:none !important; }
-    .layout--single .page{ display:block !important; } /* collapse the MM flex grid */
-    .layout--single .page__content{
-      padding-left: 0 !important;
-      margin-left: auto; margin-right: auto;
-      max-width: 1140px;  /* match your --content-max */
-    }
-  }
-</style>
-
 
 <div class="wrap">
 
@@ -372,38 +358,3 @@ classes: wide
     });
   });
 </script>
-<style>
-/* Minimal, safe reclaim of the left gutter on layout:single */
-@media (min-width:1024px){
-  /* Hide any sidebar column */
-  .layout--single .sidebar,
-  .layout--single .page__sidebar{ display:none !important; }
-
-  /* Keep the theme's flex layout (important!) */
-  .layout--single .page{ display:flex !important; }
-
-  /* Let the content column expand and drop leftover padding/margins */
-  .layout--single .page__inner-wrap{ padding-left:0 !important; }
-  .layout--single .page__content{
-    flex: 1 1 auto !important;
-    max-width: none !important;
-    margin: 0 auto !important;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-  }
-
-  /* Center your inner container and set the width you want */
-  .layout--single .page__content > .wrap{
-    width: 100%;
-    max-width: 1140px;   /* bump to 1200px if you want wider */
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-/* Optional: 3 columns on very wide screens */
-@media (min-width:1400px){
-  .cards{ grid-template-columns: 1fr 1fr 1fr; }
-}
-</style>
-
