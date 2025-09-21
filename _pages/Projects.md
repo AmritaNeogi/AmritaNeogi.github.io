@@ -155,6 +155,30 @@ classes: wide
   }
 }
 </style>
+<style>
+/* === Stack project card contents vertically on all screen sizes === */
+.cards .content{
+  display: grid;
+  grid-template-columns: 1fr !important;  /* kill the 2-col rules */
+  gap: 12px;
+}
+
+/* Make the image full-width at top with a little breathing room */
+.cards .thumb{
+  width: 100%;
+  aspect-ratio: 16/9;       /* tweak as you like (16/10, 4/3, etc.) */
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  margin-bottom: 6px;
+}
+
+/* Nice spacing for the links row */
+.cards .links{ margin-top: .6rem; }
+
+/* Optional: keep cards from clipping interior content if they grow */
+.cards details.card{ overflow: visible; }
+</style>
 
 
 <div class="edge">
