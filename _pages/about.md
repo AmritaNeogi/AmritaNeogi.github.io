@@ -183,7 +183,7 @@ redirect_from:
   <!-- NEW: hero classes added -->
   <h1 class="hero-title hero-enter">Hello there!</h1>
 
-  <p class="lede">I’m a data scientist focused on making messy health data usable—clean pipelines, clear metrics, and results people can act on.</p>
+  <p class="lede">I’m a data scientist focused on making messy data usable—clean pipelines, clear metrics, and results people can act on.</p>
 
   <section class="story">
     A recent meeting started with three dashboards and no agreement. I combined provider data, county context, and outcomes into one
