@@ -186,13 +186,12 @@ redirect_from:
   <p class="lede">I’m a data scientist focused on making messy data usable—clean pipelines, clear metrics, and results people can act on.</p>
 
   <section class="story">
-    A recent meeting started with three dashboards and no agreement. I combined provider data, county context, and outcomes into one
-    reproducible pipeline—and one honest chart. The debate ended, and the team aligned on the first fix. That’s my north star:
+    A debate started with three dashboards and no agreement. I pulled the sources into one reproducible pipeline and one honest chart. The debate ended; the team aligned on the first fix. That’s my north star:
     <b>reliable data, simple communication, practical action</b>.
 
     <ul class="proof">
-      <li><b>500k+</b> multi-site EHR/Medicaid rows standardized into an OMOP-style model</li>
-      <li><b>~60%</b> reduction in prep time via streamlined ETL & automated geocoding</li>
+      <li><b>500k+</b> multi-source records standardized into one model</li>
+      <li><b>~60%</b> faster prep via streamlined ETL & automated validation</li>
       <li><b>+25%</b> improvement in clinical-text extraction accuracy with LLM-assisted QA</li>
     </ul>
 
