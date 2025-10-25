@@ -18,10 +18,10 @@ classes: wide
   :root{
     --brand:#336699; --ink:#1f2937; --muted:#6b7280; --card:#ffffff;
     --line:#e5e7eb; --ring:rgba(51,102,153,0.12); --bg:#f8fafc;
-    --content-max: 1200px; /* match Experience look */
+    --content-max: 1200px;
   }
 
-  /* ===== Force the same centered content frame as Experience ===== */
+  /* ===== ALIGN LIKE EXPERIENCE PAGE (kill sidebar/float widths) ===== */
   .layout--single .page__content{
     float:none !important;
     width:100% !important;
@@ -33,12 +33,11 @@ classes: wide
   .layout--single .page__inner-wrap{
     max-width:var(--content-max) !important;
     margin:0 auto !important;
-    padding-left:24px !important;
-    padding-right:24px !important;
+    padding:0 24px !important;
     box-sizing:border-box;
   }
 
-  /* ===== Page typography ===== */
+  /* ===== TYPO ===== */
   .projects-page{
     font-family:'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     color:var(--ink);
@@ -46,22 +45,19 @@ classes: wide
   h1.section-title{ color:var(--brand); margin:.25rem 0 .4rem; font-size:clamp(24px,3vw,30px); }
   p.section-sub{ margin:0 0 .9rem; color:var(--muted); font-size:14.5px; }
 
-  /* ===== Cards grid — fills the available width, no overflow ===== */
+  /* ===== GRID (fills width; no right cutoff) ===== */
   .cards{ display:grid; gap:18px; }
-  @media (min-width: 768px){
-    .cards{ grid-template-columns: repeat(2, 1fr); }
-  }
-  @media (min-width: 1100px){
-    .cards{ grid-template-columns: repeat(3, 1fr); }
+  @media (min-width: 0px){
+    .cards{ grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); }
   }
 
-  /* ===== Card styles ===== */
+  /* ===== CARDS ===== */
   details.card{
     border:1px solid var(--line);
     border-radius:12px;
     background:var(--card);
     box-shadow:0 1px 0 var(--ring);
-    overflow:hidden;
+    overflow:hidden; /* prevent weird overflows */
   }
   .card > summary{
     list-style:none; cursor:pointer;
@@ -87,7 +83,7 @@ classes: wide
   }
   .meta .gh:hover{ background:var(--brand); color:#fff; }
 
-  /* ===== Inside a card ===== */
+  /* ===== INSIDE CARD ===== */
   .content{
     display:grid;
     grid-template-columns: 1fr;
@@ -165,7 +161,7 @@ classes: wide
         <div>
           Production-style CV pipeline to classify leaf phenophases and forecast SOS/EOS across sites.
           <ul class="bullets">
-            <li>ResNet-50 with GAN augmentation for rare phases; calibrated probabilities</li>
+            <li>ResNet-50 + GAN augmentation for rare phases; calibrated probabilities</li>
             <li>Cross-site generalization; reproducible training with experiment tracking</li>
             <li>Automated evaluation & reporting artifacts for stakeholders</li>
           </ul>
