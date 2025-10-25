@@ -144,8 +144,9 @@ categories: pages
       <div class="badges">
         <span class="badge">Python</span>
         <span class="badge">R</span>
-        <span class="badge">SQL</span>
-        <span class="badge">NoSQL</span>
+        <span class="badge">SQL/NoSQL</span>
+        <span class="badge">SAS</span>
+        <span class="badge">Stata</span>
       </div>
     </div>
   </details>
@@ -154,7 +155,7 @@ categories: pages
   <details class="card" id="tools" open>
     <summary>
       <span class="card-title">Tools & Platforms</span>
-      <span class="card-sub">Data, orchestration, BI, cloud, security <span class="chev">▾</span></span>
+      <span class="card-sub">Data, Orchestration, BI, Cloud, Security <span class="chev">▾</span></span>
     </summary>
     <div class="card-body">
       <div class="grid">
@@ -203,7 +204,7 @@ categories: pages
           <h4>Security & Workflow</h4>
           <div class="badges">
             <span class="badge">Protegrity</span><span class="badge">JIRA</span>
-            <span class="badge">Amazon MTurk</span>
+            <span class="badge">Amazon Mechanical Turk</span>
           </div>
         </div>
       </div>
@@ -214,7 +215,7 @@ categories: pages
   <details class="card" id="ds" open>
     <summary>
       <span class="card-title">Data Science & Analytics</span>
-      <span class="card-sub">Modeling, evaluation, experimentation <span class="chev">▾</span></span>
+      <span class="card-sub">Modeling, Evaluation, Experimentation <span class="chev">▾</span></span>
     </summary>
     <div class="card-body">
       <div class="group" style="margin-bottom:10px;">
@@ -270,9 +271,9 @@ categories: pages
     <div class="card-body">
       <div class="badges">
         <span class="badge">Leadership</span><span class="badge">Time Management</span>
-        <span class="badge">Task Management</span><span class="badge">Data Management</span>
+        <span class="badge">Cross-Functional Communication</span><span class="badge">Stakeholder Alignment</span>
         <span class="badge">Critical Thinking</span><span class="badge">Problem Solving</span>
-        <span class="badge">Clear Communication</span>
+        <span class="badge">Analytical Storytelling</span>
       </div>
     </div>
   </details>

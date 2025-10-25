@@ -331,9 +331,11 @@ classes: wide
       <div class="content">
         <img class="thumb" src="/assets/images/research_placeholder_1.png" alt="Insurance & infant outcomes">
         <div>
-          Causal/logistic modeling to assess payer-type effects on infant survival using multi-site EHR.
+          Evaluated how payer type and care access influence infant survival using real-world multi-site EHR data and causal inference modeling.
           <ul class="bullets">
-            <li>Equity-focused subgroup analyses; reproducible pipelines and audit readiness</li>
+            <li>Designed reproducible pipelines linking 10+ systems (EHR + Medicaid) into an OMOP-style dataset.</li>
+            <li>Applied logistic and Cox survival models with causal inference and SHAP interpretability.</li>
+            <li>Quantified payer-linked survival disparities (~10% higher for Medicaid, ~70% higher for private insurance).</li>
           </ul>
         </div>
       </div>
@@ -348,9 +350,11 @@ classes: wide
       <div class="content">
         <img class="thumb" src="/assets/images/research_placeholder_2.png" alt="Utilization & adherence">
         <div>
-          ML/statistical models on 50k+ records to evaluate compliance and long-horizon utilization patterns.
+          Assessed longitudinal adherence to pediatric care guidelines using machine learning and statistical modeling on multi-site data.
           <ul class="bullets">
-            <li>Identified utilization profiles and top predictors; sequence modeling at scale</li>
+            <li>Built 10-year patient cohorts (50K+ records) harmonizing claims, encounters, and EHR data.</li>
+            <li>Applied clustering and regression models to identify utilization patterns and key predictors of adherence.</li>
+            <li>Delivered dashboards and policy briefs highlighting 3 distinct care profiles and high-risk subgroup</li>
           </ul>
         </div>
       </div>
