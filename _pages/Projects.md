@@ -342,23 +342,33 @@ classes: wide
     </details>
 
     <details class="card" id="utilization-guidelines">
-      <summary>
+    <summary>
         <span class="pill">Health Analytics</span>
-        <span class="title">Healthcare Utilization & Guideline Adherence</span>
+        <span class="title">Healthcare Utilization &amp; Guideline Adherence</span>
         <span class="meta"><span>Aug&nbsp;2025</span></span>
-      </summary>
-      <div class="content">
-        <img class="thumb" src="/assets/images/research_placeholder_2.png" alt="Utilization & adherence">
+    </summary>
+    <div class="content">
+        <!-- Main thumbnail (choose any of the four) -->
+        <img class="thumb" src="/assets/images/hcu_adherence_by_group.png" alt="Guideline adherence by group">
         <div>
-          Assessed longitudinal adherence to pediatric care guidelines using machine learning and statistical modeling on multi-site data.
-          <ul class="bullets">
-            <li>Built 10-year patient cohorts (50K+ records) harmonizing claims, encounters, and EHR data.</li>
-            <li>Applied clustering and regression models to identify utilization patterns and key predictors of adherence.</li>
-            <li>Delivered dashboards and policy briefs highlighting 3 distinct care profiles and high-risk subgroup</li>
-          </ul>
+        Evaluated how closely patients with congenital heart disease received care aligned with AHA/ACC guidance, and which factors drove staying in care or returning after gaps.
+        <ul class="bullets">
+            <li>Built a 10-year, multi-site CHD cohort (50K+ records) harmonizing claims, encounters, and EHR data.</li>
+            <li>Applied clustering and regression to identify utilization patterns and predictors of adherence.</li>
+            <li>Delivered dashboards and policy briefs highlighting three care profiles and high-risk subgroups.</li>
+        </ul>
+
+        <!-- Plot links row (small buttons) -->
+        <div class="links">
+            <a class="btn ghost" href="/assets/images/hcu_adherence_by_group.png" target="_blank" rel="noopener">Adherence by Group</a>
+            <a class="btn ghost" href="/assets/images/hcu_gap_hist.png" target="_blank" rel="noopener">Care Gaps</a>
+            <a class="btn ghost" href="/assets/images/hcu_return_km.png" target="_blank" rel="noopener">Return-to-Care (KM)</a>
+            <a class="btn ghost" href="/assets/images/hcu_feature_importance.png" target="_blank" rel="noopener">Predictors (OR)</a>
         </div>
-      </div>
+        </div>
+    </div>
     </details>
+
   </div><!-- /.cards -->
 
 </div>
