@@ -18,60 +18,41 @@ classes: wide
   :root{
     --brand:#336699; --ink:#1f2937; --muted:#6b7280; --card:#ffffff;
     --line:#e5e7eb; --ring:rgba(51,102,153,0.12); --bg:#f8fafc;
-
-    --site-max: 1440px;
-    --content-max: 1400px; /* allow a bit more width */
+    --content-max: 1200px;
   }
 
-  /* ===== Remove theme’s left gutter on this page ===== */
-  @media (min-width: 768px){
-    .layout--single .initial-content,
-    .layout--single .page__inner-wrap{ padding-left:0 !important; }
-    .layout--single .page__content{
-      float:none !important;
-      width:100% !important;
-      max-width:none !important;
-      margin:0 !important;
-      padding-left:0 !important; padding-right:0 !important;
-    }
-  }
-
-  /* ===== Full-bleed wrapper: starts at viewport’s hard left ===== */
-  .edge{
-    width:100vw;
-    margin-left: calc(50% - 50vw);
-  }
-
-  /* Inner container (no left margin so it stays flush) */
-  .wrap{
+  /* Base */
+  .projects-page{
     font-family:'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     color:var(--ink);
-    max-width:min(var(--content-max), 98vw);
-    margin:0;                /* keep flush left */
-    padding:0 16px 0 0;      /* tiny right pad; left = 0 to be hard-left */
+    background:transparent;
+  }
+  .container{
+    max-width:var(--content-max);
+    width:100%;
+    margin:0 auto;
+    padding:0 16px;
+    box-sizing:border-box;
   }
 
+  /* Headings */
   h1.section-title{ color:var(--brand); margin:.25rem 0 .4rem; font-size:clamp(24px,3vw,30px); }
   p.section-sub{ margin:0 0 .9rem; color:var(--muted); font-size:14.5px; }
 
-  /* ===== Wider, responsive card grid ===== */
+  /* Card grid */
   .cards{ display:grid; gap:18px; }
-  /* Wider minimum card size → makes each card “a little more” wide */
   @media (min-width: 900px){
     .cards{ grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); }
   }
 
-  /* ===== Cards ===== */
+  /* Cards */
   details.card{
     border:1px solid var(--line);
     border-radius:12px;
     background:var(--card);
     box-shadow:0 1px 0 var(--ring);
-    overflow:clip;
+    overflow:hidden;
   }
-  .card + .card{ margin-top:10px; }
-  @media (min-width:900px){ .card + .card{ margin-top:0; } }
-
   .card > summary{
     list-style:none; cursor:pointer;
     display:flex; align-items:center; gap:12px; flex-wrap:wrap;
@@ -96,21 +77,20 @@ classes: wide
   }
   .meta .gh:hover{ background:var(--brand); color:#fff; }
 
-  /* Wider inner layout for image/text */
+  /* Inside card */
   .content{
-    display:grid; grid-template-columns:1fr; gap:12px;
+    display:grid;
+    grid-template-columns: 1fr;
+    gap:12px;
     border-top:1px solid var(--line); padding:12px 14px 14px;
     font-size:15px; line-height:1.55;
   }
-  @media (min-width: 900px){
-    .content{ grid-template-columns: 360px 1fr; } /* was ~320 → wider */
-  }
-  @media (min-width: 1200px){
-    .content{ grid-template-columns: 380px 1fr; } /* a touch wider on XL */
+  @media (min-width: 1000px){
+    .content{ grid-template-columns: minmax(320px, 40%) 1fr; }
   }
 
   .thumb{
-    width:100%; aspect-ratio:16/10; object-fit:cover;
+    width:100%; aspect-ratio:16/9; object-fit:cover;
     border-radius:10px; border:1px solid var(--line); background:var(--bg);
   }
 
@@ -120,76 +100,49 @@ classes: wide
   .btn{ display:inline-block; text-decoration:none; font-weight:600;
         padding:7px 10px; border-radius:9px; font-size:14px; }
   .btn.ghost{ border:1px solid var(--brand); color:var(--brand); }
+  .btn.ghost:hover{ background:var(--brand); color:#fff; }
 
   .divider{ height:1px; background:var(--line); margin:1.1rem 0 .8rem; }
 </style>
-<style>
-/* ===== FIX: keep card content from overflowing ===== */
-.cards details.card { overflow: visible; } /* or keep 'clip' if you prefer, the tracks below will fit */
 
-.cards .content{
-  display: grid;
-  grid-template-columns: 1fr;       /* default: stack image over text */
-  gap: 12px;
-}
-
-/* When there’s room for two columns, use a flexible left track that never overflows */
-@media (min-width: 900px){
-  .cards .content{
-    /* Left track is min 260px, max ~42% of the card width */
-    grid-template-columns: minmax(260px, 42%) 1fr;
-  }
-}
-
-/* On wider screens, allow a bit more space for the image */
-@media (min-width: 1200px){
-  .cards .content{
-    grid-template-columns: minmax(300px, 45%) 1fr;
-  }
-}
-
-/* Super wide: give the image even more room without breaking the card */
-@media (min-width: 1600px){
-  .cards .content{
-    grid-template-columns: minmax(340px, 46%) 1fr;
-  }
-}
-</style>
-<style>
-/* === Stack project card contents vertically on all screen sizes === */
-.cards .content{
-  display: grid;
-  grid-template-columns: 1fr !important;  /* kill the 2-col rules */
-  gap: 12px;
-}
-
-/* Make the image full-width at top with a little breathing room */
-.cards .thumb{
-  width: 100%;
-  aspect-ratio: 16/9;       /* tweak as you like (16/10, 4/3, etc.) */
-  object-fit: cover;
-  border-radius: 10px;
-  border: 1px solid var(--line);
-  margin-bottom: 6px;
-}
-
-/* Nice spacing for the links row */
-.cards .links{ margin-top: .6rem; }
-
-/* Optional: keep cards from clipping interior content if they grow */
-.cards details.card{ overflow: visible; }
-</style>
-
-
-<div class="edge">
-  <div class="wrap">
+<div class="projects-page">
+  <div class="container">
 
     <!-- ===================== PROJECTS ===================== -->
     <h1 class="section-title">Projects</h1>
-    <p class="section-sub">Browse selected personal projects. Click a card to view a short summary, visuals, and links.</p>
+    <p class="section-sub">Browse selected projects. Click a card to view a short summary, visuals, and links.</p>
 
     <div class="cards">
-      <!-- PROJECT 1 -->
+
+      <!-- NEW PROJECT: GDPR / CCPA risk pipeline -->
+      <details class="card" id="gdpr-pipeline">
+        <summary>
+          <span class="pill">Data Engineering · ML</span>
+          <span class="title">Regulatory Risk Pipeline (Airflow · BigQuery · T5 · LSTM)</span>
+          <span class="meta">
+            <span>Jul&nbsp;2025</span>
+            <a class="gh" href="https://github.com/AmritaNeogi/GDPR-CCPA-Risk-Pipeline-with-Airflow" target="_blank" rel="noopener">GitHub</a>
+          </span>
+        </summary>
+        <div class="content">
+          <!-- Replace placeholder with your image path if you have one -->
+          <img class="thumb" src="/assets/images/research_placeholder_1.png" alt="Regulatory risk ETL and ML pipeline">
+          <div>
+            Automated daily ingestion of GDPR/CCPA updates into a governed dataset with model-driven risk signals for compliance teams.
+            <ul class="bullets">
+              <li>Airflow → BigQuery ETL with data standards, lineage, audit logs, and validation gates</li>
+              <li>Fine-tuned T5 for multi-label policy classification; LSTM/Prophet for trend forecasting</li>
+              <li>Monitoring + experiment tracking; dashboards surfacing ranked risks and forecast error &lt;15%</li>
+              <li>Reduced manual monitoring ~75%; production-ready CI/CD with rollback</li>
+            </ul>
+            <div class="links">
+              <a class="btn ghost" href="https://github.com/AmritaNeogi/GDPR-CCPA-Risk-Pipeline-with-Airflow" target="_blank" rel="noopener">Repository</a>
+            </div>
+          </div>
+        </div>
+      </details>
+
+      <!-- PROJECT: Phenophase CV -->
       <details class="card" id="phenophase">
         <summary>
           <span class="pill">Computer Vision</span>
@@ -202,11 +155,11 @@ classes: wide
         <div class="content">
           <img class="thumb" src="/assets/images/decidousForest.jpg" alt="Phenology project">
           <div>
-            Detect leaf phenophase from PhenoCam images and forecast SOS/EOS across sites with augmentation for rare phases.
+            Production-style CV pipeline to classify leaf phenophases and forecast SOS/EOS across sites.
             <ul class="bullets">
-              <li>ResNet-50 classifier; GANs for data scarcity</li>
-              <li>Cross-site generalization beyond single camera tuning</li>
-              <li>Calendar-level SOS/EOS with confidence bands</li>
+              <li>ResNet-50 classifier with GAN augmentation for rare phases; calibrated probabilities</li>
+              <li>Cross-site generalization; reproducible training with experiment tracking</li>
+              <li>Automated evaluation & reporting artifacts (plots, metrics) for stakeholders</li>
             </ul>
             <div class="links">
               <a class="btn ghost" href="/assets/images/SOS_EOS.png" target="_blank">SOS/EOS plot</a>
@@ -216,7 +169,7 @@ classes: wide
         </div>
       </details>
 
-      <!-- PROJECT 2 -->
+      <!-- PROJECT: Airflow YouTube -->
       <details class="card" id="airflow-youtube">
         <summary>
           <span class="pill">Data Engineering</span>
@@ -229,10 +182,10 @@ classes: wide
         <div class="content">
           <img class="thumb" src="/assets/images/yt.jpg" alt="YouTube pipeline">
           <div>
-            Config-driven ETL from YouTube API to S3/Snowflake with Airflow orchestration.
+            Config-driven ETL from YouTube API to S3/Snowflake with idempotent upserts and downstream analytics.
             <ul class="bullets">
-              <li>Incremental loads, retries, schema checks, logs</li>
-              <li>Idempotent upserts; downstream content analytics</li>
+              <li>Incremental loads, retries, schema & quality checks, structured logs</li>
+              <li>Ready-to-query marts for content performance and growth KPIs</li>
             </ul>
             <div class="links">
               <a class="btn ghost" href="/assets/images/youtube.png" target="_blank">Pipeline overview</a>
@@ -241,7 +194,7 @@ classes: wide
         </div>
       </details>
 
-      <!-- PROJECT 3 -->
+      <!-- PROJECT: Snowflake housing -->
       <details class="card" id="snowflake-housing">
         <summary>
           <span class="pill">Analytics</span>
@@ -254,10 +207,10 @@ classes: wide
         <div class="content">
           <img class="thumb" src="/assets/images/houese_price.jpg" alt="Housing profiler">
           <div>
-            60k+ listings scraped and standardized; modeled price drivers and sensitivity.
+            60k+ listings standardized into analytics tables; modeled price drivers and sensitivity for planning.
             <ul class="bullets">
-              <li>Flattened JSON → ~40% faster queries; full geocoding</li>
-              <li>Answered 11 key business questions</li>
+              <li>Flattened JSON → ~40% faster queries; full geocoding & feature engineering</li>
+              <li>Answer set of key business questions with clear visuals and SQL notebooks</li>
             </ul>
             <div class="links">
               <a class="btn ghost" href="/assets/images/overview_house.png" target="_blank">Schema overview</a>
@@ -266,33 +219,7 @@ classes: wide
         </div>
       </details>
 
-      <!-- PROJECT 4 -->
-      <details class="card" id="breast-cancer">
-        <summary>
-          <span class="pill">ML</span>
-          <span class="title">Breast Cancer Prediction (LR vs. NN)</span>
-          <span class="meta">
-            <span>Oct&nbsp;2023</span>
-            <a class="gh" href="https://github.com/AmritaNeogi/Breast_Cancer_Prediction" target="_blank" rel="noopener">GitHub</a>
-          </span>
-        </summary>
-        <div class="content">
-          <img class="thumb" src="/assets/images/breast_cancer.png" alt="Breast cancer project">
-          <div>
-            Compare classical and deep approaches for early detection on tabular features.
-            <ul class="bullets">
-              <li>LR 92.9% acc; Keras NN 97.3% acc</li>
-              <li>SMOTE for imbalance; calibrated probabilities</li>
-            </ul>
-            <div class="links">
-              <a class="btn ghost" href="/assets/images/overview_breastCancer.png" target="_blank">Model summary</a>
-              <a class="btn ghost" href="/assets/images/NN_model_accuracy_Loss.png" target="_blank">Training curves</a>
-            </div>
-          </div>
-        </div>
-      </details>
-
-      <!-- PROJECT 5 -->
+      <!-- PROJECT: Uber analytics -->
       <details class="card" id="uber">
         <summary>
           <span class="pill">DE & BI</span>
@@ -305,9 +232,10 @@ classes: wide
         <div class="content">
           <img class="thumb" src="/assets/images/uber-header.jpg" alt="Uber analytics">
           <div>
-            End-to-end pipeline to BI with KPI queries returning in seconds.
+            End-to-end pipeline to BI for demand/supply insights with KPI queries that return in seconds.
             <ul class="bullets">
-              <li>Stakeholder dashboard for demand peaks & supply gaps</li>
+              <li>Partitioned & clustered BigQuery tables; fast Looker Studio dashboard</li>
+              <li>Stakeholder views on peak demand, supply gaps, and driver incentives</li>
             </ul>
             <div class="links">
               <a class="btn ghost" href="https://lookerstudio.google.com/s/s-nnQQB79Kw" target="_blank" rel="noopener">Dashboard</a>
@@ -317,31 +245,7 @@ classes: wide
         </div>
       </details>
 
-      <!-- PROJECT 6 -->
-      <details class="card" id="fraud">
-        <summary>
-          <span class="pill">ML</span>
-          <span class="title">Credit Card Fraud Detection</span>
-          <span class="meta">
-            <span>Aug&nbsp;2023</span>
-            <a class="gh" href="https://github.com/AmritaNeogi/Data-Science-Project-Credit-Card-Fraud-Detection" target="_blank" rel="noopener">GitHub</a>
-          </span>
-        </summary>
-        <div class="content">
-          <img class="thumb" src="/assets/images/credit_card.jpeg" alt="Fraud detection">
-          <div>
-            Imbalanced classification with SMOTE and model comparison (DT, LR, RF, NB).
-            <ul class="bullets">
-              <li>Best model ~99% accuracy; +~10% after rebalancing</li>
-            </ul>
-            <div class="links">
-              <a class="btn ghost" href="/assets/images/final_summary.png" target="_blank">Results snapshot</a>
-            </div>
-          </div>
-        </div>
-      </details>
-
-      <!-- PROJECT 7 -->
+      <!-- PROJECT: Salary regression -->
       <details class="card" id="salary">
         <summary>
           <span class="pill">Regression</span>
@@ -354,9 +258,10 @@ classes: wide
         <div class="content">
           <img class="thumb" src="/assets/images/salary_pred.jpg" alt="Salary prediction">
           <div>
-            From baseline to tuned GD with strong MSE reduction and clear diagnostics.
+            From baseline to tuned GD with diagnostics and measurable error reduction.
             <ul class="bullets">
-              <li>MSE reduced from 91.2% → 6.3% with scaling & step tuning</li>
+              <li>MSE improved from 91.2% → 6.3% via scaling, feature selection, step tuning</li>
+              <li>Clear learning-rate visualization & convergence criteria</li>
             </ul>
             <div class="links">
               <a class="btn ghost" href="/assets/images/summary1.png" target="_blank">Summary</a>
@@ -365,6 +270,7 @@ classes: wide
           </div>
         </div>
       </details>
+
     </div><!-- /.cards -->
 
     <div class="divider"></div>
@@ -386,8 +292,7 @@ classes: wide
           <div>
             Causal/logistic modeling to assess payer-type effects on infant survival using multi-site EHR.
             <ul class="bullets">
-              <li>Disparities: uninsured/self-pay highest risk; Medicaid ~10% survival gain; private ~70% strongest protection</li>
-              <li>Reproducible pipelines for subgroup analyses and equity-focused reporting</li>
+              <li>Equity-focused subgroup analyses; reproducible pipelines and audit readiness</li>
             </ul>
           </div>
         </div>
@@ -405,8 +310,7 @@ classes: wide
           <div>
             ML/statistical models on 50k+ records to evaluate compliance and long-horizon utilization patterns.
             <ul class="bullets">
-              <li>Identified 3 distinct utilization patterns + top 5 predictors of continuous care</li>
-              <li>Analyzed 10-year trajectories across pediatric/adult cohorts; equity-focused insights and scalable sequence models</li>
+              <li>Identified utilization profiles and top predictors; sequence modeling at scale</li>
             </ul>
           </div>
         </div>
