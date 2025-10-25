@@ -168,7 +168,7 @@ classes: wide
         </span>
       </summary>
       <div class="content">
-        <img class="thumb" src="/assets/images/research_placeholder_1.png" alt="Regulatory risk ETL and ML pipeline">
+        <img class="thumb" src="/assets/images/gdpr.png" alt="Regulatory risk ETL and ML pipeline">
         <div>
           Automated daily ingestion of GDPR/CCPA updates into a governed dataset with model-driven risk signals for compliance teams.
           <ul class="bullets">
