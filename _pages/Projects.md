@@ -329,16 +329,22 @@ classes: wide
         <span class="meta"><span>Sep&nbsp;2025</span></span>
       </summary>
       <div class="content">
-        <img class="thumb" src="/assets/images/research_placeholder_1.png" alt="Insurance & infant outcomes">
+        <img class="thumb" src="/assets/images/mort_forest_plot.png" alt="Insurance & infant outcomes">
         <div>
           Evaluated how payer type and care access influence infant survival using real-world multi-site EHR data and causal inference modeling.
           <ul class="bullets">
-            <li>Designed reproducible pipelines linking 10+ systems (EHR + Medicaid) into an OMOP-style dataset.</li>
-            <li>Applied logistic and Cox survival models with causal inference and SHAP interpretability.</li>
-            <li>Quantified payer-linked survival disparities (~10% higher for Medicaid, ~70% higher for private insurance).</li>
-          </ul>
+            <li>Built a large-scale cohort from CDC's CHD STAR surveillance system spanning 7 states, harmonizing EHR, claims, and vital statistics data with complex ICD-9/10 coding algorithms to classify 114K infants by CHD severity, insurance status, and 50+ clinical/demographic variables</li>
+            <li>Applied multivariate logistic regression adjusting for confounders (CHD severity, socioeconomic status, geography, clinical factors) to reveal that uninsured infants had 2.65x increased odds of infant mortality (95% CI: 1.74-3.92, p < 0.001) compared to privately insured infants</li>
+            <li>Identified critical disparities showing publicly insured infants had 11-21% increased odds of organ dysfunction morbidities (neurologic, respiratory, sepsis) despite similar survival, while uninsured infants exhibited paradoxical survival bias with highest mortality but lowest documented morbidity rates</li>
+            </ul>
+        <div class="links">
+            <a class="btn ghost" href="/assets/images/mort_forest_plot.png" target="_blank" rel="noopener">Risk Factors (Forest Plot)</a>
+            <a class="btn ghost" href="/assets/images/mort_morbidity_by_insurance.png" target="_blank" rel="noopener">Morbidity Patterns</a>
+            <a class="btn ghost" href="/assets/images/mort_demographics_stacked.png" target="_blank" rel="noopener">Population Demographics</a>
+            <a class="btn ghost" href="/assets/images/mort_rates_by_insurance.png" target="_blank" rel="noopener">Mortality Rates</a>
         </div>
-      </div>
+        </div>
+    </div>
     </details>
 
     <details class="card" id="utilization-guidelines">
