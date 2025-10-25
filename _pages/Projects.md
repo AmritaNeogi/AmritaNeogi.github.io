@@ -18,51 +18,51 @@ classes: wide
   :root{
     --brand:#336699; --ink:#1f2937; --muted:#6b7280; --card:#ffffff;
     --line:#e5e7eb; --ring:rgba(51,102,153,0.12); --bg:#f8fafc;
-    --content-max: 1200px;
+    --content-max: 1200px; /* match Experience page width */
   }
 
-  /* ===== ALIGN LIKE EXPERIENCE PAGE (kill sidebar/float widths) ===== */
+  /* ===== Match Experience page frame; remove floats/gutters & top gap ===== */
   .layout--single .page__content{
-    float:none !important;
-    width:100% !important;
-    max-width:none !important;
-    margin:0 !important;
-    padding:0 !important;
+    float:none !important; width:100% !important; max-width:none !important;
+    margin:0 !important; padding:0 !important;
   }
   .layout--single .initial-content,
   .layout--single .page__inner-wrap{
     max-width:var(--content-max) !important;
     margin:0 auto !important;
-    padding:0 24px !important;
+    padding:0 24px !important;   /* even left/right padding */
     box-sizing:border-box;
   }
+  /* put H1 right under the navbar */
+  .layout--single .page__inner-wrap{ padding-top:0 !important; }
+  .layout--single .page__content > h1:first-child{ margin-top:0 !important; }
 
-  /* ===== TYPO ===== */
+  /* ===== Typography ===== */
   .projects-page{
     font-family:'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     color:var(--ink);
   }
-  h1.section-title{ color:var(--brand); margin:.25rem 0 .4rem; font-size:clamp(24px,3vw,30px); }
-  p.section-sub{ margin:0 0 .9rem; color:var(--muted); font-size:14.5px; }
+  h1.section-title{ color:var(--brand); margin:.25rem 0 .6rem; font-size:clamp(26px,3vw,32px); }
+  p.section-sub{ margin:0 0 1.0rem; color:var(--muted); font-size:15px; }
 
-  /* ===== GRID (fills width; no right cutoff) ===== */
-  .cards{ display:grid; gap:18px; }
-  @media (min-width: 0px){
-    .cards{ grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); }
+  /* ===== Single-column list of cards ===== */
+  .cards{
+    display:grid; gap:18px;
+    grid-template-columns: 1fr; /* always one column */
   }
 
-  /* ===== CARDS ===== */
+  /* ===== Card styles ===== */
   details.card{
     border:1px solid var(--line);
     border-radius:12px;
     background:var(--card);
     box-shadow:0 1px 0 var(--ring);
-    overflow:hidden; /* prevent weird overflows */
+    overflow:visible; /* don't clip content */
   }
   .card > summary{
     list-style:none; cursor:pointer;
     display:flex; align-items:center; gap:12px; flex-wrap:wrap;
-    padding:12px 14px; outline:none;
+    padding:14px 16px; outline:none;
   }
   .card > summary::-webkit-details-marker{ display:none; }
 
@@ -72,10 +72,10 @@ classes: wide
     padding:4px 10px; border-radius:999px;
     border:1px solid #dbe2ea; white-space:nowrap;
   }
-  .title{ font-weight:600; font-size:16px; color:var(--ink); }
+  .title{ font-weight:600; font-size:17px; color:var(--ink); }
   .meta{
     margin-left:auto; display:flex; gap:10px; align-items:center;
-    color:var(--muted); font-size:13px;
+    color:var(--muted); font-size:13px; white-space:nowrap;
   }
   .meta .gh{
     text-decoration:none; border:1px solid var(--brand); color:var(--brand);
@@ -83,32 +83,33 @@ classes: wide
   }
   .meta .gh:hover{ background:var(--brand); color:#fff; }
 
-  /* ===== INSIDE CARD ===== */
+  /* ===== Inside each card ===== */
   .content{
-    display:grid;
-    grid-template-columns: 1fr;
-    gap:12px;
-    border-top:1px solid var(--line); padding:12px 14px 14px;
-    font-size:15px; line-height:1.55;
+    display:grid; gap:12px;
+    grid-template-columns: 1fr;            /* mobile: stack */
+    border-top:1px solid var(--line);
+    padding:12px 16px 16px;
+    font-size:15px; line-height:1.6;
   }
-  @media (min-width: 1000px){
-    .content{ grid-template-columns: minmax(320px, 40%) 1fr; }
+  @media (min-width: 900px){
+    .content{ grid-template-columns: minmax(360px, 44%) 1fr; } /* img left, text right */
   }
 
   .thumb{
-    width:100%; aspect-ratio:16/9; object-fit:cover;
+    width:100%;
+    aspect-ratio:16/9; object-fit:cover;
     border-radius:10px; border:1px solid var(--line); background:var(--bg);
   }
 
-  .bullets{ margin:.25rem 0 0; padding-left:18px; }
-  .bullets li{ margin:.2rem 0; }
-  .links{ display:flex; gap:10px; flex-wrap:wrap; margin-top:.5rem; }
+  .bullets{ margin:.35rem 0 0; padding-left:18px; }
+  .bullets li{ margin:.22rem 0; }
+  .links{ display:flex; gap:10px; flex-wrap:wrap; margin-top:.6rem; }
   .btn{ display:inline-block; text-decoration:none; font-weight:600;
         padding:7px 10px; border-radius:9px; font-size:14px; }
   .btn.ghost{ border:1px solid var(--brand); color:var(--brand); }
   .btn.ghost:hover{ background:var(--brand); color:#fff; }
 
-  .divider{ height:1px; background:var(--line); margin:1.1rem 0 .8rem; }
+  .divider{ height:1px; background:var(--line); margin:1.2rem 0 .9rem; }
 </style>
 
 <div class="projects-page">
@@ -161,7 +162,7 @@ classes: wide
         <div>
           Production-style CV pipeline to classify leaf phenophases and forecast SOS/EOS across sites.
           <ul class="bullets">
-            <li>ResNet-50 + GAN augmentation for rare phases; calibrated probabilities</li>
+            <li>ResNet-50 with GAN augmentation for rare phases; calibrated probabilities</li>
             <li>Cross-site generalization; reproducible training with experiment tracking</li>
             <li>Automated evaluation & reporting artifacts for stakeholders</li>
           </ul>
@@ -214,7 +215,7 @@ classes: wide
           60k+ listings standardized into analytics tables; modeled price drivers and sensitivity for planning.
           <ul class="bullets">
             <li>Flattened JSON → ~40% faster queries; full geocoding & feature engineering</li>
-            <li>Answer set of key business questions with clear visuals and SQL notebooks</li>
+            <li>Key business questions answered with clear visuals and SQL notebooks</li>
           </ul>
           <div class="links">
             <a class="btn ghost" href="/assets/images/overview_house.png" target="_blank">Schema overview</a>
