@@ -18,34 +18,44 @@ classes: wide
   :root{
     --brand:#336699; --ink:#1f2937; --muted:#6b7280; --card:#ffffff;
     --line:#e5e7eb; --ring:rgba(51,102,153,0.12); --bg:#f8fafc;
-    --content-max: 1200px;
+    --content-max: 1200px; /* match Experience look */
   }
 
-  /* Base */
-  .projects-page{
-    font-family:'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-    color:var(--ink);
-    background:transparent;
+  /* ===== Force the same centered content frame as Experience ===== */
+  .layout--single .page__content{
+    float:none !important;
+    width:100% !important;
+    max-width:none !important;
+    margin:0 !important;
+    padding:0 !important;
   }
-  .container{
-    max-width:var(--content-max);
-    width:100%;
-    margin:0 auto;
-    padding:0 16px;
+  .layout--single .initial-content,
+  .layout--single .page__inner-wrap{
+    max-width:var(--content-max) !important;
+    margin:0 auto !important;
+    padding-left:24px !important;
+    padding-right:24px !important;
     box-sizing:border-box;
   }
 
-  /* Headings */
+  /* ===== Page typography ===== */
+  .projects-page{
+    font-family:'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    color:var(--ink);
+  }
   h1.section-title{ color:var(--brand); margin:.25rem 0 .4rem; font-size:clamp(24px,3vw,30px); }
   p.section-sub{ margin:0 0 .9rem; color:var(--muted); font-size:14.5px; }
 
-  /* Card grid */
+  /* ===== Cards grid — fills the available width, no overflow ===== */
   .cards{ display:grid; gap:18px; }
-  @media (min-width: 900px){
-    .cards{ grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); }
+  @media (min-width: 768px){
+    .cards{ grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (min-width: 1100px){
+    .cards{ grid-template-columns: repeat(3, 1fr); }
   }
 
-  /* Cards */
+  /* ===== Card styles ===== */
   details.card{
     border:1px solid var(--line);
     border-radius:12px;
@@ -77,7 +87,7 @@ classes: wide
   }
   .meta .gh:hover{ background:var(--brand); color:#fff; }
 
-  /* Inside card */
+  /* ===== Inside a card ===== */
   .content{
     display:grid;
     grid-template-columns: 1fr;
@@ -106,218 +116,213 @@ classes: wide
 </style>
 
 <div class="projects-page">
-  <div class="container">
 
-    <!-- ===================== PROJECTS ===================== -->
-    <h1 class="section-title">Projects</h1>
-    <p class="section-sub">Browse selected projects. Click a card to view a short summary, visuals, and links.</p>
+  <!-- ===================== PROJECTS ===================== -->
+  <h1 class="section-title">Projects</h1>
+  <p class="section-sub">Browse selected projects. Click a card to view a short summary, visuals, and links.</p>
 
-    <div class="cards">
+  <div class="cards">
 
-      <!-- NEW PROJECT: GDPR / CCPA risk pipeline -->
-      <details class="card" id="gdpr-pipeline">
-        <summary>
-          <span class="pill">Data Engineering · ML</span>
-          <span class="title">Regulatory Risk Pipeline (Airflow · BigQuery · T5 · LSTM)</span>
-          <span class="meta">
-            <span>Jul&nbsp;2025</span>
-            <a class="gh" href="https://github.com/AmritaNeogi/GDPR-CCPA-Risk-Pipeline-with-Airflow" target="_blank" rel="noopener">GitHub</a>
-          </span>
-        </summary>
-        <div class="content">
-          <!-- Replace placeholder with your image path if you have one -->
-          <img class="thumb" src="/assets/images/research_placeholder_1.png" alt="Regulatory risk ETL and ML pipeline">
-          <div>
-            Automated daily ingestion of GDPR/CCPA updates into a governed dataset with model-driven risk signals for compliance teams.
-            <ul class="bullets">
-              <li>Airflow → BigQuery ETL with data standards, lineage, audit logs, and validation gates</li>
-              <li>Fine-tuned T5 for multi-label policy classification; LSTM/Prophet for trend forecasting</li>
-              <li>Monitoring + experiment tracking; dashboards surfacing ranked risks and forecast error &lt;15%</li>
-              <li>Reduced manual monitoring ~75%; production-ready CI/CD with rollback</li>
-            </ul>
-            <div class="links">
-              <a class="btn ghost" href="https://github.com/AmritaNeogi/GDPR-CCPA-Risk-Pipeline-with-Airflow" target="_blank" rel="noopener">Repository</a>
-            </div>
+    <!-- GDPR / CCPA risk pipeline -->
+    <details class="card" id="gdpr-pipeline">
+      <summary>
+        <span class="pill">Data Engineering · ML</span>
+        <span class="title">Regulatory Risk Pipeline (Airflow · BigQuery · T5 · LSTM)</span>
+        <span class="meta">
+          <span>Jul&nbsp;2025</span>
+          <a class="gh" href="https://github.com/AmritaNeogi/GDPR-CCPA-Risk-Pipeline-with-Airflow" target="_blank" rel="noopener">GitHub</a>
+        </span>
+      </summary>
+      <div class="content">
+        <img class="thumb" src="/assets/images/research_placeholder_1.png" alt="Regulatory risk ETL and ML pipeline">
+        <div>
+          Automated daily ingestion of GDPR/CCPA updates into a governed dataset with model-driven risk signals for compliance teams.
+          <ul class="bullets">
+            <li>Airflow → BigQuery ETL with data standards, lineage, audit logs, validation gates</li>
+            <li>Fine-tuned T5 for multi-label policy classification; LSTM/Prophet for trend forecasts</li>
+            <li>Monitoring & experiment tracking; dashboards with ranked risks; forecast error &lt;15%</li>
+            <li>~75% reduction in manual monitoring; CI/CD with rollback</li>
+          </ul>
+          <div class="links">
+            <a class="btn ghost" href="https://github.com/AmritaNeogi/GDPR-CCPA-Risk-Pipeline-with-Airflow" target="_blank" rel="noopener">Repository</a>
           </div>
         </div>
-      </details>
+      </div>
+    </details>
 
-      <!-- PROJECT: Phenophase CV -->
-      <details class="card" id="phenophase">
-        <summary>
-          <span class="pill">Computer Vision</span>
-          <span class="title">Phenophase Image Analysis (ResNet-50 + GANs)</span>
-          <span class="meta">
-            <span>Dec&nbsp;2023</span>
-            <a class="gh" href="https://github.com/AmritaNeogi/PhenoCam-Image-Analysis-Using-CNN" target="_blank" rel="noopener">GitHub</a>
-          </span>
-        </summary>
-        <div class="content">
-          <img class="thumb" src="/assets/images/decidousForest.jpg" alt="Phenology project">
-          <div>
-            Production-style CV pipeline to classify leaf phenophases and forecast SOS/EOS across sites.
-            <ul class="bullets">
-              <li>ResNet-50 classifier with GAN augmentation for rare phases; calibrated probabilities</li>
-              <li>Cross-site generalization; reproducible training with experiment tracking</li>
-              <li>Automated evaluation & reporting artifacts (plots, metrics) for stakeholders</li>
-            </ul>
-            <div class="links">
-              <a class="btn ghost" href="/assets/images/SOS_EOS.png" target="_blank">SOS/EOS plot</a>
-              <a class="btn ghost" href="/assets/images/GAN.png" target="_blank">GAN architecture</a>
-            </div>
+    <!-- Phenophase CV -->
+    <details class="card" id="phenophase">
+      <summary>
+        <span class="pill">Computer Vision</span>
+        <span class="title">Phenophase Image Analysis (ResNet-50 + GANs)</span>
+        <span class="meta">
+          <span>Dec&nbsp;2023</span>
+          <a class="gh" href="https://github.com/AmritaNeogi/PhenoCam-Image-Analysis-Using-CNN" target="_blank" rel="noopener">GitHub</a>
+        </span>
+      </summary>
+      <div class="content">
+        <img class="thumb" src="/assets/images/decidousForest.jpg" alt="Phenology project">
+        <div>
+          Production-style CV pipeline to classify leaf phenophases and forecast SOS/EOS across sites.
+          <ul class="bullets">
+            <li>ResNet-50 with GAN augmentation for rare phases; calibrated probabilities</li>
+            <li>Cross-site generalization; reproducible training with experiment tracking</li>
+            <li>Automated evaluation & reporting artifacts for stakeholders</li>
+          </ul>
+          <div class="links">
+            <a class="btn ghost" href="/assets/images/SOS_EOS.png" target="_blank">SOS/EOS plot</a>
+            <a class="btn ghost" href="/assets/images/GAN.png" target="_blank">GAN architecture</a>
           </div>
         </div>
-      </details>
+      </div>
+    </details>
 
-      <!-- PROJECT: Airflow YouTube -->
-      <details class="card" id="airflow-youtube">
-        <summary>
-          <span class="pill">Data Engineering</span>
-          <span class="title">YouTube Data Pipeline with Apache Airflow</span>
-          <span class="meta">
-            <span>Oct&nbsp;2023</span>
-            <a class="gh" href="https://github.com/AmritaNeogi/YouTube_Data_Pipieline_Using_Airflow" target="_blank" rel="noopener">GitHub</a>
-          </span>
-        </summary>
-        <div class="content">
-          <img class="thumb" src="/assets/images/yt.jpg" alt="YouTube pipeline">
-          <div>
-            Config-driven ETL from YouTube API to S3/Snowflake with idempotent upserts and downstream analytics.
-            <ul class="bullets">
-              <li>Incremental loads, retries, schema & quality checks, structured logs</li>
-              <li>Ready-to-query marts for content performance and growth KPIs</li>
-            </ul>
-            <div class="links">
-              <a class="btn ghost" href="/assets/images/youtube.png" target="_blank">Pipeline overview</a>
-            </div>
+    <!-- Airflow YouTube -->
+    <details class="card" id="airflow-youtube">
+      <summary>
+        <span class="pill">Data Engineering</span>
+        <span class="title">YouTube Data Pipeline with Apache Airflow</span>
+        <span class="meta">
+          <span>Oct&nbsp;2023</span>
+          <a class="gh" href="https://github.com/AmritaNeogi/YouTube_Data_Pipieline_Using_Airflow" target="_blank" rel="noopener">GitHub</a>
+        </span>
+      </summary>
+      <div class="content">
+        <img class="thumb" src="/assets/images/yt.jpg" alt="YouTube pipeline">
+        <div>
+          Config-driven ETL from YouTube API to S3/Snowflake with idempotent upserts and downstream analytics.
+          <ul class="bullets">
+            <li>Incremental loads, retries, schema & quality checks, structured logs</li>
+            <li>Ready-to-query marts for content performance and growth KPIs</li>
+          </ul>
+          <div class="links">
+            <a class="btn ghost" href="/assets/images/youtube.png" target="_blank">Pipeline overview</a>
           </div>
         </div>
-      </details>
+      </div>
+    </details>
 
-      <!-- PROJECT: Snowflake housing -->
-      <details class="card" id="snowflake-housing">
-        <summary>
-          <span class="pill">Analytics</span>
-          <span class="title">House Price Profiler on Snowflake</span>
-          <span class="meta">
-            <span>Oct&nbsp;2023</span>
-            <a class="gh" href="https://github.com/AmritaNeogi/Data_Analytics_Project-Housing_Price_Profiler" target="_blank" rel="noopener">GitHub</a>
-          </span>
-        </summary>
-        <div class="content">
-          <img class="thumb" src="/assets/images/houese_price.jpg" alt="Housing profiler">
-          <div>
-            60k+ listings standardized into analytics tables; modeled price drivers and sensitivity for planning.
-            <ul class="bullets">
-              <li>Flattened JSON → ~40% faster queries; full geocoding & feature engineering</li>
-              <li>Answer set of key business questions with clear visuals and SQL notebooks</li>
-            </ul>
-            <div class="links">
-              <a class="btn ghost" href="/assets/images/overview_house.png" target="_blank">Schema overview</a>
-            </div>
+    <!-- Snowflake housing -->
+    <details class="card" id="snowflake-housing">
+      <summary>
+        <span class="pill">Analytics</span>
+        <span class="title">House Price Profiler on Snowflake</span>
+        <span class="meta">
+          <span>Oct&nbsp;2023</span>
+          <a class="gh" href="https://github.com/AmritaNeogi/Data_Analytics_Project-Housing_Price_Profiler" target="_blank" rel="noopener">GitHub</a>
+        </span>
+      </summary>
+      <div class="content">
+        <img class="thumb" src="/assets/images/houese_price.jpg" alt="Housing profiler">
+        <div>
+          60k+ listings standardized into analytics tables; modeled price drivers and sensitivity for planning.
+          <ul class="bullets">
+            <li>Flattened JSON → ~40% faster queries; full geocoding & feature engineering</li>
+            <li>Answer set of key business questions with clear visuals and SQL notebooks</li>
+          </ul>
+          <div class="links">
+            <a class="btn ghost" href="/assets/images/overview_house.png" target="_blank">Schema overview</a>
           </div>
         </div>
-      </details>
+      </div>
+    </details>
 
-      <!-- PROJECT: Uber analytics -->
-      <details class="card" id="uber">
-        <summary>
-          <span class="pill">DE & BI</span>
-          <span class="title">Uber Data Analytics (GCS · Mage · BigQuery · Looker)</span>
-          <span class="meta">
-            <span>Aug&nbsp;2023</span>
-            <a class="gh" href="https://github.com/AmritaNeogi/Uber_data_Analytics" target="_blank" rel="noopener">GitHub</a>
-          </span>
-        </summary>
-        <div class="content">
-          <img class="thumb" src="/assets/images/uber-header.jpg" alt="Uber analytics">
-          <div>
-            End-to-end pipeline to BI for demand/supply insights with KPI queries that return in seconds.
-            <ul class="bullets">
-              <li>Partitioned & clustered BigQuery tables; fast Looker Studio dashboard</li>
-              <li>Stakeholder views on peak demand, supply gaps, and driver incentives</li>
-            </ul>
-            <div class="links">
-              <a class="btn ghost" href="https://lookerstudio.google.com/s/s-nnQQB79Kw" target="_blank" rel="noopener">Dashboard</a>
-              <a class="btn ghost" href="/assets/images/uber_dashboard.jpg" target="_blank">Dashboard preview</a>
-            </div>
+    <!-- Uber analytics -->
+    <details class="card" id="uber">
+      <summary>
+        <span class="pill">DE & BI</span>
+        <span class="title">Uber Data Analytics (GCS · Mage · BigQuery · Looker)</span>
+        <span class="meta">
+          <span>Aug&nbsp;2023</span>
+          <a class="gh" href="https://github.com/AmritaNeogi/Uber_data_Analytics" target="_blank" rel="noopener">GitHub</a>
+        </span>
+      </summary>
+      <div class="content">
+        <img class="thumb" src="/assets/images/uber-header.jpg" alt="Uber analytics">
+        <div>
+          End-to-end pipeline to BI for demand/supply insights with KPI queries that return in seconds.
+          <ul class="bullets">
+            <li>Partitioned & clustered BigQuery tables; fast Looker Studio dashboard</li>
+            <li>Stakeholder views on peak demand, supply gaps, and driver incentives</li>
+          </ul>
+          <div class="links">
+            <a class="btn ghost" href="https://lookerstudio.google.com/s/s-nnQQB79Kw" target="_blank" rel="noopener">Dashboard</a>
+            <a class="btn ghost" href="/assets/images/uber_dashboard.jpg" target="_blank">Dashboard preview</a>
           </div>
         </div>
-      </details>
+      </div>
+    </details>
 
-      <!-- PROJECT: Salary regression -->
-      <details class="card" id="salary">
-        <summary>
-          <span class="pill">Regression</span>
-          <span class="title">Salary Prediction (Gradient Descent)</span>
-          <span class="meta">
-            <span>Jul&nbsp;2023</span>
-            <a class="gh" href="https://github.com/AmritaNeogi/Data-Science-Project-Salary-Prediction" target="_blank" rel="noopener">GitHub</a>
-          </span>
-        </summary>
-        <div class="content">
-          <img class="thumb" src="/assets/images/salary_pred.jpg" alt="Salary prediction">
-          <div>
-            From baseline to tuned GD with diagnostics and measurable error reduction.
-            <ul class="bullets">
-              <li>MSE improved from 91.2% → 6.3% via scaling, feature selection, step tuning</li>
-              <li>Clear learning-rate visualization & convergence criteria</li>
-            </ul>
-            <div class="links">
-              <a class="btn ghost" href="/assets/images/summary1.png" target="_blank">Summary</a>
-              <a class="btn ghost" href="/assets/images/gradient%20descent.png" target="_blank">GD visualization</a>
-            </div>
+    <!-- Salary regression -->
+    <details class="card" id="salary">
+      <summary>
+        <span class="pill">Regression</span>
+        <span class="title">Salary Prediction (Gradient Descent)</span>
+        <span class="meta">
+          <span>Jul&nbsp;2023</span>
+          <a class="gh" href="https://github.com/AmritaNeogi/Data-Science-Project-Salary-Prediction" target="_blank" rel="noopener">GitHub</a>
+        </span>
+      </summary>
+      <div class="content">
+        <img class="thumb" src="/assets/images/salary_pred.jpg" alt="Salary prediction">
+        <div>
+          From baseline to tuned GD with diagnostics and measurable error reduction.
+          <ul class="bullets">
+            <li>MSE improved from 91.2% → 6.3% via scaling, feature selection, step tuning</li>
+            <li>Clear learning-rate visualization & convergence criteria</li>
+          </ul>
+          <div class="links">
+            <a class="btn ghost" href="/assets/images/summary1.png" target="_blank">Summary</a>
+            <a class="btn ghost" href="/assets/images/gradient%20descent.png" target="_blank">GD visualization</a>
           </div>
         </div>
-      </details>
+      </div>
+    </details>
 
-    </div><!-- /.cards -->
+  </div><!-- /.cards -->
 
-    <div class="divider"></div>
+  <div class="divider"></div>
 
-    <!-- ===================== RESEARCH ===================== -->
-    <h1 class="section-title">Research</h1>
-    <p class="section-sub">Work in progress from the ARID Lab at the University of Arizona. Click to view a brief, non-confidential summary.</p>
+  <!-- ===================== RESEARCH ===================== -->
+  <h1 class="section-title">Research</h1>
+  <p class="section-sub">Work in progress from the ARID Lab at the University of Arizona. Click to view a brief, non-confidential summary.</p>
 
-    <div class="cards">
-      <!-- RESEARCH 1 -->
-      <details class="card" id="insurance-infant">
-        <summary>
-          <span class="pill">Causal Inference</span>
-          <span class="title">Insurance at Birth & Infant Outcomes (EHR, multi-site)</span>
-          <span class="meta"><span>Sep&nbsp;2025</span></span>
-        </summary>
-        <div class="content">
-          <img class="thumb" src="/assets/images/research_placeholder_1.png" alt="Insurance & infant outcomes (placeholder)">
-          <div>
-            Causal/logistic modeling to assess payer-type effects on infant survival using multi-site EHR.
-            <ul class="bullets">
-              <li>Equity-focused subgroup analyses; reproducible pipelines and audit readiness</li>
-            </ul>
-          </div>
+  <div class="cards">
+    <details class="card" id="insurance-infant">
+      <summary>
+        <span class="pill">Causal Inference</span>
+        <span class="title">Insurance at Birth & Infant Outcomes (EHR, multi-site)</span>
+        <span class="meta"><span>Sep&nbsp;2025</span></span>
+      </summary>
+      <div class="content">
+        <img class="thumb" src="/assets/images/research_placeholder_1.png" alt="Insurance & infant outcomes">
+        <div>
+          Causal/logistic modeling to assess payer-type effects on infant survival using multi-site EHR.
+          <ul class="bullets">
+            <li>Equity-focused subgroup analyses; reproducible pipelines and audit readiness</li>
+          </ul>
         </div>
-      </details>
+      </div>
+    </details>
 
-      <!-- RESEARCH 2 -->
-      <details class="card" id="utilization-guidelines">
-        <summary>
-          <span class="pill">Health Analytics</span>
-          <span class="title">Healthcare Utilization & Guideline Adherence</span>
-          <span class="meta"><span>Aug&nbsp;2025</span></span>
-        </summary>
-        <div class="content">
-          <img class="thumb" src="/assets/images/research_placeholder_2.png" alt="Utilization & adherence (placeholder)">
-          <div>
-            ML/statistical models on 50k+ records to evaluate compliance and long-horizon utilization patterns.
-            <ul class="bullets">
-              <li>Identified utilization profiles and top predictors; sequence modeling at scale</li>
-            </ul>
-          </div>
+    <details class="card" id="utilization-guidelines">
+      <summary>
+        <span class="pill">Health Analytics</span>
+        <span class="title">Healthcare Utilization & Guideline Adherence</span>
+        <span class="meta"><span>Aug&nbsp;2025</span></span>
+      </summary>
+      <div class="content">
+        <img class="thumb" src="/assets/images/research_placeholder_2.png" alt="Utilization & adherence">
+        <div>
+          ML/statistical models on 50k+ records to evaluate compliance and long-horizon utilization patterns.
+          <ul class="bullets">
+            <li>Identified utilization profiles and top predictors; sequence modeling at scale</li>
+          </ul>
         </div>
-      </details>
-    </div><!-- /.cards -->
+      </div>
+    </details>
+  </div><!-- /.cards -->
 
-  </div>
 </div>
 
 <script>
