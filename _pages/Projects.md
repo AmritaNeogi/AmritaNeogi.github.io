@@ -264,7 +264,7 @@ classes: wide
     <!-- Uber analytics -->
     <details class="card" id="uber">
       <summary>
-        <span class="pill">DE & BI</span>
+        <span class="pill">Data Engineering & Business Intelligence</span>
         <span class="title">Uber Data Analytics (GCS · Mage · BigQuery · Looker)</span>
         <span class="meta">
           <span>Aug&nbsp;2023</span>
@@ -386,7 +386,9 @@ classes: wide
     width: 100%;
     aspect-ratio: 16 / 9;   /* consistent frame */
     height: auto;
-    object-fit: cover;       /* crop edges to fill frame (clean look) */
+    object-fit: contain;
+    background: #f6f7fb; /* soft backdrop for letterbox space */
+    padding: 8px;        /* optional */
     object-position: center; /* keep the center in view */
     border-radius: 12px;     /* optional: match your card style */
     display: block;
