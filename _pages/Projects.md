@@ -378,6 +378,25 @@ classes: wide
   </div><!-- /.cards -->
 
 </div>
+<head>
+<style>
+  /* Make ONLY the two research thumbnails fit nicely */
+  #insurance-infant img.thumb,
+  #utilization-guidelines img.thumb{
+    width: 100%;
+    aspect-ratio: 16 / 9;   /* consistent frame */
+    height: auto;
+    object-fit: cover;       /* crop edges to fill frame (clean look) */
+    object-position: center; /* keep the center in view */
+    border-radius: 12px;     /* optional: match your card style */
+    display: block;
+  }
+
+  /* If any crop looks off-center, you can nudge it per-card:
+  #insurance-infant img.thumb{ object-position: 40% 50%; }
+  */
+</style>
+</head>
 
 <script>
   // Keep only one card open per grid
