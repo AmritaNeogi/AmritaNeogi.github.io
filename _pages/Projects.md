@@ -329,7 +329,7 @@ classes: wide
         <span class="meta"><span>Sep&nbsp;2025</span></span>
       </summary>
       <div class="content">
-        <img class="thumb" src="/assets/images/mort_forest_plot.png" alt="Insurance & infant outcomes">
+        <img class="thumb" src="/assets/images/infant.png" alt="Insurance & infant outcomes">
         <div>
           Evaluated how payer type and care access influence infant survival using real-world multi-site EHR data and causal inference modeling.
           <ul class="bullets">
@@ -355,7 +355,7 @@ classes: wide
     </summary>
     <div class="content">
         <!-- Main thumbnail (choose any of the four) -->
-        <img class="thumb" src="/assets/images/hcu_adherence_by_group.png" alt="Guideline adherence by group">
+        <img class="thumb" src="/assets/images/hcu.png" alt="Guideline adherence by group">
         <div>
         Evaluated how closely patients with congenital heart disease received care aligned with AHA/ACC guidance, and which factors drove staying in care or returning after gaps.
         <ul class="bullets">
