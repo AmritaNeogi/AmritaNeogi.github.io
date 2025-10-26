@@ -139,7 +139,7 @@ classes: wide
       <summary>
         <img class="logo" src="/assets/images/logo/arid.jpg" alt="ARID Lab logo">
         <div class="head">
-          <div class="title">Data Scientist / Data Analyst II</div>
+          <div class="title">Data Science Manager</div>
           <div class="org">ARID Lab, University of Arizona — Tucson, AZ</div>
         </div>
         <div class="dates">Feb 2024 – Oct 2025</div>
