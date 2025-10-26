@@ -134,7 +134,7 @@ classes: wide
   </nav>
 
   <div class="roles">
-    <!-- Role 1: Data Scientist / Data Analyst II -->
+    <!-- Role 1: Data Science Manager -->
     <details class="role" id="arid-ds" open>
       <summary>
         <img class="logo" src="/assets/images/logo/arid.jpg" alt="ARID Lab logo">
