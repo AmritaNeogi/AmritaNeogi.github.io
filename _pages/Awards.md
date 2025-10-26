@@ -203,7 +203,7 @@ categories: pages
           <div class="role">Scholarship</div>
           <div class="org">Dept. of Pediatrics, University of Arizona</div>
         </div>
-        <div class="dates">Jan 2023</div>
+        <div class="dates">Nov 2022</div>
       </summary>
       <div class="award-body">
         <div class="desc">
