@@ -217,17 +217,17 @@ redirect_from:
               <div class="subhead">Selected courses</div>
               <ul class="courses-list">
                 <li>Machine Learning & Predictive Modeling</li>
-                <li>Causal Inference & Experimental Design</li>
-                <li>Databases (SQL, BigQuery) & Data Engineering</li>
-                <li>Cloud & Workflow Orchestration (Airflow)</li>
-                <li>NLP for Clinical Text</li>
-                <li>Statistical Computing with R/Python</li>
+                <li>Data Analysis and Visualization</li>
+                <li>Data Mining and Discovery</li>
+                <li>Artificial Intelligence</li>
+                <li>Natural Language Processing</li>
+                <li>Database Development and Management</li>
               </ul>
             </div>
             <div class="meta">
               <dl>
-                <dt>Focus</dt><dd>Reproducible pipelines (Python/R/SQL), privacy-aware analytics</dd>
-                <dt>Capstone</dt><dd>Clinical ETL → OMOP-style model, geocoding automation</dd>
+                <dt>Focus</dt><dd>Applied Machine Learning, Statistical Inference, and Data-Driven Decision Science across diverse industries.</dd>
+                <dt>Capstone</dt><dd>Phenophase Image Analysis (ResNet-50 + GANs) → Boosted classification accuracy through synthetic data generation.</dd>
                 <dt>Recognition</dt><dd>GPA 4.0/4.0</dd>
               </dl>
             </div>
