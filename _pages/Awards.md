@@ -176,8 +176,8 @@ categories: pages
     <details class="award">
       <summary>
         <div class="summary-title">
-          <div class="role">School of Information</div>
-          <div class="org">University of Arizona</div>
+          <div class="role">Academic Achievements</div>
+          <div class="org">School of Information, University of Arizona</div>
         </div>
         <div class="dates">Dec 2023</div>
       </summary>
@@ -200,10 +200,10 @@ categories: pages
     <details class="award" open>
       <summary>
         <div class="summary-title">
-          <div class="role">Dept. of Pediatrics, University of Arizona</div>
-          <div class="org">Scholarship: 0.5 FTE with Full Tuition Remission</div>
+          <div class="role">Scholarship</div>
+          <div class="org">Dept. of Pediatrics, University of Arizona</div>
         </div>
-        <div class="dates">Feb 2023 &middot; Aug 2023</div>
+        <div class="dates">Feb 2023 &middot; Jan 2023</div>
       </summary>
       <div class="award-body">
         <div class="desc">
