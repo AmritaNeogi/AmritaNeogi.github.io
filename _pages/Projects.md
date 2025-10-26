@@ -168,15 +168,17 @@ classes: wide
         </span>
       </summary>
       <div class="content">
-        <img class="thumb" src="/assets/images/gdpr.png" alt="Regulatory risk ETL and ML pipeline">
+        <img class="thumb" src="/assets/images/gdpr_pic.png" alt="Regulatory risk ETL and ML pipeline">
         <div>
           Automated daily ingestion of GDPR/CCPA updates into a governed dataset with model-driven risk signals for compliance teams.
           <ul class="bullets">
-            <li>Airflow → BigQuery ETL with data standards, lineage, audit logs, validation gates</li>
-            <li>Fine-tuned T5 for multi-label policy classification; LSTM/Prophet for trend forecasts</li>
-            <li>Monitoring & experiment tracking; dashboards with ranked risks; forecast error &lt;15%</li>
-            <li>~75% reduction in manual monitoring; CI/CD with rollback</li>
+            <li>Developed Airflow pipeline ingesting daily regulatory updates into BigQuery with data validation, audit logging, and lineage tracking.</li>
+            <li>Fine-tuned T5 model to classify policy changes across multiple categories and built LSTM/Prophet models forecasting regulatory trends with under 15% error.</li>
+            <li>Reduced manual monitoring effort by 75% through automated risk dashboards, experiment tracking, and CI/CD deployment with rollback capabilities.</li>
           </ul>
+          <div class="links">
+            <a class="btn ghost" href="/assets/images/gdpr.png" target="_blank">Schema overview</a>
+          </div>
           <div class="links">
             <a class="btn ghost" href="https://github.com/AmritaNeogi/GDPR-CCPA-Risk-Pipeline-with-Airflow" target="_blank" rel="noopener">Repository</a>
           </div>
@@ -195,13 +197,13 @@ classes: wide
         </span>
       </summary>
       <div class="content">
-        <img class="thumb" src="/assets/images/decidousForest.jpg" alt="Phenology project">
+        <img class="thumb" src="/assets/images/leaf.png" alt="Phenology project">
         <div>
-          Production-style CV pipeline to classify leaf phenophases and forecast SOS/EOS across sites.
+          Built computer vision pipeline to classify plant leaf stages and forecast seasonal timing patterns across field sites.
           <ul class="bullets">
-            <li>ResNet-50 with GAN augmentation for rare phases; calibrated probabilities</li>
-            <li>Cross-site generalization; reproducible training with experiment tracking</li>
-            <li>Automated evaluation & reporting artifacts for stakeholders</li>
+            <li>Trained deep learning model (ResNet-50) to classify leaf development phases, using data augmentation to address class imbalance.</li>
+            <li>Validated model performance across multiple field sites to ensure predictions worked in different environmental conditions.</li>
+            <li>Automated model evaluation and report generation to deliver results and performance metrics to research teams.</li>
           </ul>
           <div class="links">
             <a class="btn ghost" href="/assets/images/SOS_EOS.png" target="_blank">SOS/EOS plot</a>
@@ -222,12 +224,13 @@ classes: wide
         </span>
       </summary>
       <div class="content">
-        <img class="thumb" src="/assets/images/yt.jpg" alt="YouTube pipeline">
+        <img class="thumb" src="/assets/images/youTube_pic.png" alt="YouTube pipeline">
         <div>
-          Config-driven ETL from YouTube API to S3/Snowflake with idempotent upserts and downstream analytics.
+          Developed automated pipeline to collect YouTube channel data and prepare it for business analytics.
           <ul class="bullets">
-            <li>Incremental loads, retries, schema & quality checks, structured logs</li>
-            <li>Ready-to-query marts for content performance and growth KPIs</li>
+            <li>Built data extraction process from YouTube API with automated error handling and incremental updates to reduce processing time.</li>
+            <li>Designed data loading system that prevented duplicates and maintained data quality through validation checks.</li>
+            <li>Created structured data tables enabling content performance analysis and channel growth metrics for stakeholders.</li>
           </ul>
           <div class="links">
             <a class="btn ghost" href="/assets/images/youtube.png" target="_blank">Pipeline overview</a>
@@ -247,12 +250,13 @@ classes: wide
         </span>
       </summary>
       <div class="content">
-        <img class="thumb" src="/assets/images/houese_price.jpg" alt="Housing profiler">
+        <img class="thumb" src="/assets/images/snowflake.png" alt="Housing profiler">
         <div>
-          60k+ listings standardized into analytics tables; modeled price drivers and sensitivity for planning.
+          Cleaned and standardized 60,000+ Otodom listings to analyze pricing patterns and market drivers.
           <ul class="bullets">
-            <li>Flattened JSON → ~40% faster queries; full geocoding & feature engineering</li>
-            <li>Key business questions answered with clear visuals and SQL notebooks</li>
+            <li>Transformed nested JSON data into structured tables, improving query performance by 40% and enabling faster analysis.</li>
+            <li>Enriched dataset with geocoding and engineered features to support price sensitivity and demand modeling.</li>
+            <li>Delivered business insights through SQL analysis and visualizations answering key pricing and market questions.</li>
           </ul>
           <div class="links">
             <a class="btn ghost" href="/assets/images/overview_house.png" target="_blank">Schema overview</a>
@@ -272,12 +276,13 @@ classes: wide
         </span>
       </summary>
       <div class="content">
-        <img class="thumb" src="/assets/images/uber-header.jpg" alt="Uber analytics">
+        <img class="thumb" src="/assets/images/uber.png" alt="Uber analytics">
         <div>
-          End-to-end pipeline to BI for demand/supply insights with KPI queries that return in seconds.
+          Built end-to-end data pipeline delivering ride-sharing demand and supply analytics through interactive dashboards.
           <ul class="bullets">
-            <li>Partitioned & clustered BigQuery tables; fast Looker Studio dashboard</li>
-            <li>Stakeholder views on peak demand, supply gaps, and driver incentives</li>
+            <li>Designed optimized BigQuery tables with partitioning and clustering strategies enabling sub-second query performance.</li>
+            <li>Created Looker Studio dashboard providing real-time visibility into demand patterns, supply gaps, and operational metrics.</li>
+            <li>Delivered stakeholder-ready views tracking peak demand periods, driver availability, and incentive program effectiveness.</li>
           </ul>
           <div class="links">
             <a class="btn ghost" href="https://lookerstudio.google.com/s/s-nnQQB79Kw" target="_blank" rel="noopener">Dashboard</a>
@@ -298,12 +303,13 @@ classes: wide
         </span>
       </summary>
       <div class="content">
-        <img class="thumb" src="/assets/images/salary_pred.jpg" alt="Salary prediction">
+        <img class="thumb" src="/assets/images/salary.png" alt="Salary prediction">
         <div>
-          From baseline to tuned GD with diagnostics and measurable error reduction.
+          Implemented and optimized gradient descent algorithm to predict housing prices with significant error reduction.
           <ul class="bullets">
-            <li>MSE improved from 91.2% → 6.3% via scaling, feature selection, step tuning</li>
-            <li>Clear learning-rate visualization & convergence criteria</li>
+            <li>Reduced prediction error from 91.2% to 6.3% through data scaling, feature selection, and learning rate optimization.</li>
+            <li>Built diagnostic tools to visualize learning rate impact and monitor model convergence during training.</li>
+            <li>Demonstrated systematic approach to model tuning with documented performance improvements at each optimization step.</li>
           </ul>
           <div class="links">
             <a class="btn ghost" href="/assets/images/summary1.png" target="_blank">Summary</a>
