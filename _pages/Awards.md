@@ -172,7 +172,31 @@ categories: pages
   <section class="section" id="awards">
     <h2>Scholarship & Awards</h2>
 
-    <!-- UArizona Dept of Pediatrics -->
+     <!-- Academic Achievements -->
+    <details class="award">
+      <summary>
+        <div class="summary-title">
+          <div class="role">School of Information</div>
+          <div class="org">University of Arizona</div>
+        </div>
+        <div class="dates">Dec 2023</div>
+      </summary>
+      <div class="award-body">
+        <div class="desc">
+          Recognition for leading a critical retrofit during a major client merger, improving performance and data security.
+          <ul class="tight">
+            <li>Graduated with a 4.0/4.0 GPA from the M.S. in Data Science program at the University of Arizona.</li>
+            <li>Recognized on the Dean’s List for exceptional academic performance and applied research in analytics and machine learning.</li>
+            <li>Excelled across advanced coursework in statistical modeling, machine learning, and large-scale data systems, reflecting both technical rigor and practical impact.</li>
+          </ul>
+        </div>
+        <div class="image-wrap">
+          <img src="/assets/images/deansList.png" alt="Dean's List">
+        </div>
+      </div>
+    </details>
+
+    <!-- Scholarship -->
     <details class="award" open>
       <summary>
         <div class="summary-title">
