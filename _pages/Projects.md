@@ -243,7 +243,7 @@ classes: wide
     <details class="card" id="snowflake-housing">
       <summary>
         <span class="pill">Analytics</span>
-        <span class="title">House Price Profiler on Snowflake</span>
+        <span class="title">Data-Driven Insights into Real Estate Price Sensitivity (Snowflake)</span>
         <span class="meta">
           <span>Oct&nbsp;2023</span>
           <a class="gh" href="https://github.com/AmritaNeogi/Data_Analytics_Project-Housing_Price_Profiler" target="_blank" rel="noopener">GitHub</a>
