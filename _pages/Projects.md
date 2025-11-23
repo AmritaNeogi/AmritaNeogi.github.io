@@ -212,8 +212,10 @@ classes: wide
         </div>
       </div>
     </details>
-<!-- 
-    <!-- Airflow YouTube -->
+
+
+<!--
+    <!-- Airflow YouTube 
     <details class="card" id="airflow-youtube">
       <summary>
         <span class="pill">Data Engineering</span>
@@ -239,7 +241,7 @@ classes: wide
       </div>
     </details>
 
-    <!-- Snowflake housing -->
+    <!-- Snowflake housing 
     <details class="card" id="snowflake-housing">
       <summary>
         <span class="pill">Analytics</span>
@@ -265,7 +267,7 @@ classes: wide
       </div>
     </details>
 
-    <!-- Uber analytics -->
+    <!-- Uber analytics 
     <details class="card" id="uber">
       <summary>
         <span class="pill">Data Engineering & Business Intelligence</span>
@@ -292,7 +294,7 @@ classes: wide
       </div>
     </details>
 
-    <!-- Salary regression -->
+    <!-- Salary regression 
     <details class="card" id="salary">
       <summary>
         <span class="pill">Regression</span>
@@ -318,10 +320,10 @@ classes: wide
         </div>
       </div>
     </details>
-
+-->
   </div><!-- /.cards -->
 
-  <div class="divider"></div> -->
+  <div class="divider"></div>
 
   <!-- ===================== RESEARCH ===================== -->
   <h1 class="section-title">Research</h1>
