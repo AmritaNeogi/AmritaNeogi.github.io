@@ -212,7 +212,7 @@ classes: wide
         </div>
       </div>
     </details>
-
+<!-- 
     <!-- Airflow YouTube -->
     <details class="card" id="airflow-youtube">
       <summary>
@@ -321,7 +321,7 @@ classes: wide
 
   </div><!-- /.cards -->
 
-  <div class="divider"></div>
+  <div class="divider"></div> -->
 
   <!-- ===================== RESEARCH ===================== -->
   <h1 class="section-title">Research</h1>
