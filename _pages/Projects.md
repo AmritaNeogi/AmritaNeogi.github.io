@@ -160,8 +160,8 @@ classes: wide
     <!-- GDPR / CCPA risk pipeline -->
     <details class="card" id="gdpr-pipeline">
       <summary>
-        <span class="pill">Data Engineering · ML</span>
-        <span class="title">Regulatory Risk Pipeline (Airflow · BigQuery · T5 · LSTM)</span>
+        <span class="pill">ML · Data Engineering</span>
+        <span class="title">Regulatory Risk Pipeline (Airflow · LLMs · T5 · LSTM)</span>
         <span class="meta">
           <span>Jul&nbsp;2025</span>
           <a class="gh" href="https://github.com/AmritaNeogi/GDPR-CCPA-Risk-Pipeline-with-Airflow" target="_blank" rel="noopener">GitHub</a>
@@ -189,7 +189,7 @@ classes: wide
     <!-- Phenophase CV -->
     <details class="card" id="phenophase">
       <summary>
-        <span class="pill">Computer Vision</span>
+        <span class="pill">Computer Vision · Generative AI</span>
         <span class="title">Phenophase Image Analysis (ResNet-50 + GANs)</span>
         <span class="meta">
           <span>Dec&nbsp;2023</span>
