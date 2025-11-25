@@ -265,7 +265,7 @@ redirect_from:
     </div>
   </section>
 
-  <!-- Career Roadmap -->
+  <!-- Career Roadmap
   <section class="road" aria-labelledby="roadmap-title">
     <h2 id="roadmap-title"><strong>Career Roadmap</strong></h2>
     <div class="rm">
@@ -302,7 +302,7 @@ redirect_from:
       </div>
     </div>
   </section>
-
+-->
   <p class="foot"><br>Thanks for visiting! Feel free to explore and connect.</p>
 </div>
 
