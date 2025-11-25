@@ -332,7 +332,7 @@ classes: wide
   <div class="cards">
     <details class="card" id="insurance-infant">
       <summary>
-        <span class="pill">Causal Inference</span>
+        <span class="pill">Healthcare Analytics · Large-Scale EHR Data Analysis · Multi-Site Data Harmonization</span>
         <span class="title">Insurance at Birth & Infant Outcomes (EHR, multi-site)</span>
         <span class="meta"><span>Sep&nbsp;2025</span></span>
       </summary>
@@ -350,6 +350,7 @@ classes: wide
             <a class="btn ghost" href="/assets/images/mort_morbidity_by_insurance.png" target="_blank" rel="noopener">Morbidity Patterns</a>
             <a class="btn ghost" href="/assets/images/mort_demographics_stacked.png" target="_blank" rel="noopener">Population Demographics</a>
             <a class="btn ghost" href="/assets/images/mort_rates_by_insurance.png" target="_blank" rel="noopener">Mortality Rates</a>
+
         </div>
         </div>
     </div>
@@ -357,7 +358,7 @@ classes: wide
 
     <details class="card" id="utilization-guidelines">
     <summary>
-        <span class="pill">Health Analytics</span>
+        <span class="pill">Care Utilization Patterns · Risk Stratification · Longitudinal Analysis </span>
         <span class="title">Healthcare Utilization &amp; Guideline Adherence</span>
         <span class="meta"><span>Aug&nbsp;2025</span></span>
     </summary>
