@@ -165,6 +165,7 @@ classes: wide
         <span class="meta">
           <span>Jul&nbsp;2025</span>
           <a class="gh" href="https://github.com/AmritaNeogi/GDPR-CCPA-Risk-Pipeline-with-Airflow" target="_blank" rel="noopener">GitHub</a>
+          
         </span>
       </summary>
       <div class="content">
@@ -177,10 +178,7 @@ classes: wide
             <li>Reduced manual monitoring effort by 75% through automated risk dashboards, experiment tracking, and CI/CD deployment with rollback capabilities.</li>
           </ul>
           <div class="links">
-            <a class="btn ghost" href="/assets/images/gdpr.png" target="_blank">Schema overview</a>
-          </div>
-          <div class="links">
-            <a class="btn ghost" href="https://github.com/AmritaNeogi/GDPR-CCPA-Risk-Pipeline-with-Airflow" target="_blank" rel="noopener">Repository</a>
+            <a class="btn ghost" href="/assets/images/pipeline.png" target="_blank">Pipeline</a>
           </div>
         </div>
       </div>
