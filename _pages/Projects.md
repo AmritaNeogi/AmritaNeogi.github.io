@@ -179,6 +179,11 @@ classes: wide
           </ul>
           <div class="links">
             <a class="btn ghost" href="/assets/images/pipeline.png" target="_blank">Pipeline</a>
+            <a class="btn ghost" 
+           href="https://public.tableau.com/views/YOUR-DASHBOARD-NAME/Dashboard1" 
+           target="_blank">
+          Tableau Dashboard
+        </a>
           </div>
         </div>
       </div>
