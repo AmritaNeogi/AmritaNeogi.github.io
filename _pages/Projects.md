@@ -180,7 +180,7 @@ classes: wide
           <div class="links">
             <a class="btn ghost" href="/assets/images/pipeline.png" target="_blank">Pipeline</a>
             <a class="btn ghost" 
-           href="https://public.tableau.com/views/YOUR-DASHBOARD-NAME/Dashboard1" 
+           href="https://public.tableau.com/views/GDPRDashboard/Dashboard1?:language=en-US&:sid=&:redirect=auth&publish=yes&showOnboarding=true&:display_count=n&:origin=viz_share_link" 
            target="_blank">
           Tableau Dashboard
         </a>
